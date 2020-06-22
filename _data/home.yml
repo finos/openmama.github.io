@@ -1,0 +1,25 @@
+features:
+  - title: Entitlements
+    summary: OpenMAMA can easily integrate with third party Entitlements providers.
+    icon: images/3076368.svg
+  - title: Data Recovery
+    summary: May include sequence numbers to allow your stream to recover, even if the underlying middleware has gapped.
+    icon: images/2644389.png
+  - title: Extensible
+    summary: OpenMAMA features a C++ plugin API to allow you to hook into every part of the data stream for analysis or audit trail.
+    icon: images/feature-icon-c.png
+  - title: Portable
+    summary: Works on Windows, Linux and MacOS and is endian safe.
+    icon: images/feature-icon-d.png
+  - title: Cross-Language
+    summary: Supports C, C++, Java and C# with more on the way.
+    icon: images/2881142.svg
+  - title: Bridgable API
+    summary: OpenMAMA is designed to allow third parties, both open source and proprietary, to interface with each other.
+    icon: images/2275022.png
+  - title: Pure Messaging
+    summary: Don't need the market data capabilities? You can still use OpenMAMA to abstract yourself from underlying middlewares used solely for messaging.
+    icon: images/926500.svg
+  - title: Market Data Integration
+    summary: Comes with support for Order Books, Option Chains and last value cache listeners. Supports all asset classes including Equities, FX, Futures, Options and Bonds.
+    icon: images/3029197.png
