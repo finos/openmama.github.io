@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['mamda_5ferror_5fbad_5fsymbol',['MAMDA_ERROR_BAD_SYMBOL',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597aa19ac22c175dc256ce55aea85d4f9406',1,'Wombat']]],
+  ['mamda_5ferror_5fbandwidth_5fexceeded',['MAMDA_ERROR_BANDWIDTH_EXCEEDED',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597ae60e08d1383794092ef037e2ed7f21b0',1,'Wombat']]],
+  ['mamda_5ferror_5fdelete',['MAMDA_ERROR_DELETE',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597aebf8261852772ee16b42f75c6ee7fbaf',1,'Wombat']]],
+  ['mamda_5ferror_5fexception',['MAMDA_ERROR_EXCEPTION',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597ae78cf5b2626f6f32b441c01ce0b97bce',1,'Wombat']]],
+  ['mamda_5ferror_5fexpired',['MAMDA_ERROR_EXPIRED',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597ab0dd6231bf33776cf02113c7d6784daf',1,'Wombat']]],
+  ['mamda_5ferror_5fline_5fdown',['MAMDA_ERROR_LINE_DOWN',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597a31f3bd186cf10a02bae29ee374498ecf',1,'Wombat']]],
+  ['mamda_5ferror_5fmisc',['MAMDA_ERROR_MISC',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597a208c64caeabebcf3f4ae7e0532fb2f8c',1,'Wombat']]],
+  ['mamda_5ferror_5fno_5fsubscribers',['MAMDA_ERROR_NO_SUBSCRIBERS',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597aae551e193aa6149ddd60afbed4319ed0',1,'Wombat']]],
+  ['mamda_5ferror_5fnot_5fentitled',['MAMDA_ERROR_NOT_ENTITLED',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597a0e7b3b5e233e084916ac220647665fea',1,'Wombat']]],
+  ['mamda_5ferror_5fnot_5ffound',['MAMDA_ERROR_NOT_FOUND',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597a0cce3da692b94b50ecac105ec337b389',1,'Wombat']]],
+  ['mamda_5ferror_5fnot_5fpermissioned',['MAMDA_ERROR_NOT_PERMISSIONED',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597ab1335a92025449f6606f343fbd6fb70b',1,'Wombat']]],
+  ['mamda_5ferror_5fplatform_5fstatus',['MAMDA_ERROR_PLATFORM_STATUS',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597a0d922fb1e00c8bbcd31ff1e8a0d46b08',1,'Wombat']]],
+  ['mamda_5ferror_5fpossibly_5fstale',['MAMDA_ERROR_POSSIBLY_STALE',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597ab298b728433df3ad8e1cf38e18156b04',1,'Wombat']]],
+  ['mamda_5ferror_5fstale',['MAMDA_ERROR_STALE',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597a2bfd43e43c8050475ff440f38c67813b',1,'Wombat']]],
+  ['mamda_5ferror_5ftimeout',['MAMDA_ERROR_TIMEOUT',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597a5bbe6f6edb8bab244e9cabad1d21e707',1,'Wombat']]],
+  ['mamda_5ferror_5ftopic_5fchange',['MAMDA_ERROR_TOPIC_CHANGE',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597ab8c07380ab689b351abe549f9b114781',1,'Wombat']]],
+  ['mamda_5fno_5ferror',['MAMDA_NO_ERROR',['../namespaceWombat.html#a0bef5aac9df8b606704a54a376f45597a3079ee3fc39f0044e38e2aaa7c944067',1,'Wombat']]],
+  ['mamda_5fquality_5fmaybe_5fstale',['MAMDA_QUALITY_MAYBE_STALE',['../namespaceWombat.html#ad0a31b728a1b74057b5555c701636dd3a2e85ff7e8639e8e8d44b2d36243cb1b8',1,'Wombat']]],
+  ['mamda_5fquality_5fok',['MAMDA_QUALITY_OK',['../namespaceWombat.html#ad0a31b728a1b74057b5555c701636dd3a2b06fd02866659cac60d16b06a1a849e',1,'Wombat']]],
+  ['mamda_5fquality_5fstale',['MAMDA_QUALITY_STALE',['../namespaceWombat.html#ad0a31b728a1b74057b5555c701636dd3ac19101aa949407c38165676356b2fe7d',1,'Wombat']]],
+  ['mamda_5fseverity_5fhigh',['MAMDA_SEVERITY_HIGH',['../namespaceWombat.html#a10f0aa05514c69e0d8e360af40278c8cab8755b00ed533e88be37719b4ba3639c',1,'Wombat']]],
+  ['mamda_5fseverity_5flow',['MAMDA_SEVERITY_LOW',['../namespaceWombat.html#a10f0aa05514c69e0d8e360af40278c8cab0fd66e5d3157d60d4b6c92466a64973',1,'Wombat']]],
+  ['mamda_5fseverity_5fok',['MAMDA_SEVERITY_OK',['../namespaceWombat.html#a10f0aa05514c69e0d8e360af40278c8ca6d495bcefb9c32067013a169422513d7',1,'Wombat']]],
+  ['mid_5fquote',['MID_QUOTE',['../namespaceWombat.html#adfa12d59727e97c1baa4ce65513d2a3ca450cd62d141becca0608e7d36d32d7db',1,'Wombat']]],
+  ['modified',['MODIFIED',['../namespaceWombat.html#a93aac974f2ab713554fd12a1fa3b7d2aa40e3819215b52841e19a7cac06b5f065',1,'Wombat']]]
+];

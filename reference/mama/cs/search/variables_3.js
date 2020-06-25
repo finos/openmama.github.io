@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['mamadotnet_5fversion',['MAMADOTNET_VERSION',['../classWombat_1_1MamaVersion.html#a4c060c707eaf5e30d73bcffe104e6257',1,'Wombat::MamaVersion']]],
+  ['mamadotnet_5fversion_5fmajor',['MAMADOTNET_VERSION_MAJOR',['../classWombat_1_1MamaVersion.html#a271ff2ab1de935907ca84fe22ed3f83e',1,'Wombat::MamaVersion']]],
+  ['mamadotnet_5fversion_5fminor',['MAMADOTNET_VERSION_MINOR',['../classWombat_1_1MamaVersion.html#aab1cf19e9ea84da97864ce558468bbe6',1,'Wombat::MamaVersion']]],
+  ['mamadotnet_5fversion_5frelease',['MAMADOTNET_VERSION_RELEASE',['../classWombat_1_1MamaVersion.html#a174b29e5e383ecc0ddb4ca3ccbc5b9a4',1,'Wombat::MamaVersion']]],
+  ['mcallbackdelegates',['mCallbackDelegates',['../classWombat_1_1MamaBasicSubscription.html#a865cb515093926c587d2413930fe6f84',1,'Wombat::MamaBasicSubscription']]],
+  ['mclosure',['mClosure',['../classWombat_1_1MamaBasicSubscription.html#a386a112e3fdda2e129bb77a5a9591aae',1,'Wombat::MamaBasicSubscription']]],
+  ['mcreate',['mCreate',['../structWombat_1_1MamaBasicSubscription_1_1NativeMethods_1_1SubscriptionCallbacks.html#a8b56fd452f95c9f910e843998f6b1806',1,'Wombat.MamaBasicSubscription.NativeMethods.SubscriptionCallbacks.mCreate()'],['../structWombat_1_1MamaPublisher_1_1NativeMethods_1_1PublisherCallbacks.html#a37a53e2d09089ec2dc7b87edeafab943',1,'Wombat.MamaPublisher.NativeMethods.PublisherCallbacks.mCreate()']]],
+  ['mdestroy',['mDestroy',['../structWombat_1_1MamaBasicSubscription_1_1NativeMethods_1_1SubscriptionCallbacks.html#a4c4c930033f81590dae8ff387939a651',1,'Wombat.MamaBasicSubscription.NativeMethods.SubscriptionCallbacks.mDestroy()'],['../structWombat_1_1MamaPublisher_1_1NativeMethods_1_1PublisherCallbacks.html#a3d11193e6464dfa6fd6a77b594d9c31f',1,'Wombat.MamaPublisher.NativeMethods.PublisherCallbacks.mDestroy()']]],
+  ['merror',['mError',['../structWombat_1_1MamaBasicSubscription_1_1NativeMethods_1_1SubscriptionCallbacks.html#ab4a0a61a78d9518c7329c8f96d626177',1,'Wombat.MamaBasicSubscription.NativeMethods.SubscriptionCallbacks.mError()'],['../structWombat_1_1MamaPublisher_1_1NativeMethods_1_1PublisherCallbacks.html#a85dde25bda088b4c20b0c00b6dc14dc0',1,'Wombat.MamaPublisher.NativeMethods.PublisherCallbacks.mError()']]],
+  ['mgap',['mGap',['../structWombat_1_1MamaBasicSubscription_1_1NativeMethods_1_1SubscriptionCallbacks.html#a4479faa60f5901545dff21e849e12968',1,'Wombat::MamaBasicSubscription::NativeMethods::SubscriptionCallbacks']]],
+  ['mmessage',['mMessage',['../structWombat_1_1MamaBasicSubscription_1_1NativeMethods_1_1SubscriptionCallbacks.html#ae7afda2bbe9e42cb3c9d552e9edcabdc',1,'Wombat::MamaBasicSubscription::NativeMethods::SubscriptionCallbacks']]],
+  ['mquality',['mQuality',['../structWombat_1_1MamaBasicSubscription_1_1NativeMethods_1_1SubscriptionCallbacks.html#a31e2a2ae30587dbd482b5597716c69e4',1,'Wombat::MamaBasicSubscription::NativeMethods::SubscriptionCallbacks']]],
+  ['mqueue',['mQueue',['../classWombat_1_1MamaBasicSubscription.html#a89d125ca7fc59e546e0dde960a102ec5',1,'Wombat::MamaBasicSubscription']]],
+  ['mrecaprequest',['mRecapRequest',['../structWombat_1_1MamaBasicSubscription_1_1NativeMethods_1_1SubscriptionCallbacks.html#a45b84828039c0786f862f415759c8059',1,'Wombat::MamaBasicSubscription::NativeMethods::SubscriptionCallbacks']]],
+  ['mreserved',['mReserved',['../structWombat_1_1MamaBasicSubscription_1_1NativeMethods_1_1SubscriptionCallbacks.html#ac77b9ebdb8a3a6322680397e8fe71e05',1,'Wombat.MamaBasicSubscription.NativeMethods.SubscriptionCallbacks.mReserved()'],['../structWombat_1_1MamaPublisher_1_1NativeMethods_1_1PublisherCallbacks.html#a1fc72a9d90d42ada998f30acdabd62fc',1,'Wombat.MamaPublisher.NativeMethods.PublisherCallbacks.mReserved()']]],
+  ['msgnum',['MsgNum',['../classWombat_1_1MamaReservedFields.html#a77ed11c70d0112d81c003147487d5d4a',1,'Wombat::MamaReservedFields']]],
+  ['msgstatus',['MsgStatus',['../classWombat_1_1MamaReservedFields.html#a2044c42cfca169dec06659a1d13802bb',1,'Wombat::MamaReservedFields']]],
+  ['msgtotal',['MsgTotal',['../classWombat_1_1MamaReservedFields.html#addd3d629bd10f532dd461d843a058dab',1,'Wombat::MamaReservedFields']]],
+  ['msgtype',['MsgType',['../classWombat_1_1MamaReservedFields.html#a0baadfac3cc77b31ea64f26848cde2b1',1,'Wombat::MamaReservedFields']]],
+  ['msuccess',['mSuccess',['../structWombat_1_1MamaPublisher_1_1NativeMethods_1_1PublisherCallbacks.html#ae5142ca2996db15210f4a3c0cec7010c',1,'Wombat::MamaPublisher::NativeMethods::PublisherCallbacks']]],
+  ['mtransport',['mTransport',['../classWombat_1_1MamaBasicSubscription.html#a0e49fe81d4e1691e2ef46453c6e8dab1',1,'Wombat::MamaBasicSubscription']]]
+];

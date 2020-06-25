@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['trade_5fdir_5fminus',['TRADE_DIR_MINUS',['../namespaceWombat.html#ad2479765bb418204c8ccfd3785d2bdbeab0517280f1434647d71e66ee732e30b5',1,'Wombat']]],
+  ['trade_5fdir_5fna',['TRADE_DIR_NA',['../namespaceWombat.html#ad2479765bb418204c8ccfd3785d2bdbea66055d9bcb7cbfc14749db0275e397dd',1,'Wombat']]],
+  ['trade_5fdir_5fplus',['TRADE_DIR_PLUS',['../namespaceWombat.html#ad2479765bb418204c8ccfd3785d2bdbea80d6b3d5e922c65539c9a3eb99279a22',1,'Wombat']]],
+  ['trade_5fdir_5funknown',['TRADE_DIR_UNKNOWN',['../namespaceWombat.html#ad2479765bb418204c8ccfd3785d2bdbeac8f053d1729f9b5b23ec8b4567dbd6ab',1,'Wombat']]],
+  ['trade_5fdir_5fzero',['TRADE_DIR_ZERO',['../namespaceWombat.html#ad2479765bb418204c8ccfd3785d2bdbea4972b420933103bdc7b20dd3f3cdd7a3',1,'Wombat']]],
+  ['trade_5fdir_5fzero_5fminus',['TRADE_DIR_ZERO_MINUS',['../namespaceWombat.html#ad2479765bb418204c8ccfd3785d2bdbeaad5395221de07c8d9effa09e30e1a764',1,'Wombat']]],
+  ['trade_5fdir_5fzero_5fplus',['TRADE_DIR_ZERO_PLUS',['../namespaceWombat.html#ad2479765bb418204c8ccfd3785d2bdbeaca1b1edf7fd88e7963866dddb80fa360',1,'Wombat']]],
+  ['trade_5fexec_5fvenue_5foff_5fexchange',['TRADE_EXEC_VENUE_OFF_EXCHANGE',['../namespaceWombat.html#adaf4c098665070a9e45bf835bad3548aab42940d4ebb56c5f4e837ce3ddf8a1df',1,'Wombat']]],
+  ['trade_5fexec_5fvenue_5fon_5fexchange',['TRADE_EXEC_VENUE_ON_EXCHANGE',['../namespaceWombat.html#adaf4c098665070a9e45bf835bad3548aaed9fc97aa9fc7c1b84a39f05deb8a5d5',1,'Wombat']]],
+  ['trade_5fexec_5fvenue_5fon_5fexchange_5fdark_5fbook',['TRADE_EXEC_VENUE_ON_EXCHANGE_DARK_BOOK',['../namespaceWombat.html#adaf4c098665070a9e45bf835bad3548aac902e6e69c109e72f2330f5a58b6bba5',1,'Wombat']]],
+  ['trade_5fexec_5fvenue_5fon_5fexchange_5foff_5fbook',['TRADE_EXEC_VENUE_ON_EXCHANGE_OFF_BOOK',['../namespaceWombat.html#adaf4c098665070a9e45bf835bad3548aa31006c27488aee5ecea22a92ec3ff55e',1,'Wombat']]],
+  ['trade_5fexec_5fvenue_5fon_5fexchange_5fon_5fbook',['TRADE_EXEC_VENUE_ON_EXCHANGE_ON_BOOK',['../namespaceWombat.html#adaf4c098665070a9e45bf835bad3548aa10ce5f31521c981beb41bba908b30469',1,'Wombat']]],
+  ['trade_5fexec_5fvenue_5fsystem_5finternaliser',['TRADE_EXEC_VENUE_SYSTEM_INTERNALISER',['../namespaceWombat.html#adaf4c098665070a9e45bf835bad3548aa58385ff91e5a169a730d42071679e977',1,'Wombat']]],
+  ['trade_5fexec_5fvenue_5funknown',['TRADE_EXEC_VENUE_UNKNOWN',['../namespaceWombat.html#adaf4c098665070a9e45bf835bad3548aa37b45edd058459cba72e2a27a8683762',1,'Wombat']]],
+  ['trade_5fside_5fbuy',['TRADE_SIDE_BUY',['../namespaceWombat.html#ae22aa41efabe0fe38b2d72577790ad3eaca903e8301061e7177251d3b19559a0b',1,'Wombat']]],
+  ['trade_5fside_5fsell',['TRADE_SIDE_SELL',['../namespaceWombat.html#ae22aa41efabe0fe38b2d72577790ad3ea189f9ce71cfee2dca22b8978fb7825ac',1,'Wombat']]],
+  ['trade_5fside_5funknown',['TRADE_SIDE_UNKNOWN',['../namespaceWombat.html#ae22aa41efabe0fe38b2d72577790ad3ea46bd6ab942b0694d90a224a127ad28ea',1,'Wombat']]]
+];

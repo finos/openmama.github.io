@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['cancel_5ftime',['CANCEL_TIME',['../classWombat_1_1MamdaTradeFields.html#a6cc63b2bc55ca015c2324b77b159915b',1,'Wombat::MamdaTradeFields']]],
+  ['close_5fdate',['CLOSE_DATE',['../classWombat_1_1MamdaTradeFields.html#a6a81912bbfecdd02223dbbe8376f077c',1,'Wombat::MamdaTradeFields']]],
+  ['close_5fprice',['CLOSE_PRICE',['../classWombat_1_1MamdaTradeFields.html#a306b74a0112c0bb84e76e841638661e3',1,'Wombat::MamdaTradeFields']]],
+  ['conflate_5fcount',['CONFLATE_COUNT',['../classWombat_1_1MamdaQuoteFields.html#a9fb84ee21c207ef23fb38ca722289552',1,'Wombat.MamdaQuoteFields.CONFLATE_COUNT()'],['../classWombat_1_1MamdaTradeFields.html#af70dc9b3fa973d179b196aa5c8164125',1,'Wombat.MamdaTradeFields.CONFLATE_COUNT()']]],
+  ['contract_5fsymbol',['CONTRACT_SYMBOL',['../classWombat_1_1MamdaOptionFields.html#ab2c83c6ee3695ae04238db821fef8ab6',1,'Wombat::MamdaOptionFields']]],
+  ['corp_5fact_5ftype',['CORP_ACT_TYPE',['../classWombat_1_1MamdaFundamentalFields.html#a63a99a6de3161822dd83005496081efb',1,'Wombat::MamdaFundamentalFields']]],
+  ['corr_5fpart_5fid',['CORR_PART_ID',['../classWombat_1_1MamdaTradeFields.html#ae7439ded9c41d53590de87909cdd6901',1,'Wombat::MamdaTradeFields']]],
+  ['corr_5fprice',['CORR_PRICE',['../classWombat_1_1MamdaTradeFields.html#ab2c93c3e3ffb8cab81861c6f9837362b',1,'Wombat::MamdaTradeFields']]],
+  ['corr_5fsale_5fcondition',['CORR_SALE_CONDITION',['../classWombat_1_1MamdaTradeFields.html#ad7963db64fd10bcf54e958c0a3a160b7',1,'Wombat::MamdaTradeFields']]],
+  ['corr_5fsellers_5fsale_5fdays',['CORR_SELLERS_SALE_DAYS',['../classWombat_1_1MamdaTradeFields.html#acec12c0bb9e1aa2670d0893619e249f8',1,'Wombat::MamdaTradeFields']]],
+  ['corr_5fshort_5fsale_5fcircuit_5fbreaker',['CORR_SHORT_SALE_CIRCUIT_BREAKER',['../classWombat_1_1MamdaTradeFields.html#ac4d9f5c3801c220bb08edfba7c579ac7',1,'Wombat::MamdaTradeFields']]],
+  ['corr_5fsize',['CORR_SIZE',['../classWombat_1_1MamdaTradeFields.html#ade8534795a41cbd7d5316cc698ccc279',1,'Wombat::MamdaTradeFields']]],
+  ['corr_5fstop_5fstock_5find',['CORR_STOP_STOCK_IND',['../classWombat_1_1MamdaTradeFields.html#ab08a7a32089c450109c61d61668b23fa',1,'Wombat::MamdaTradeFields']]],
+  ['corr_5ftime',['CORR_TIME',['../classWombat_1_1MamdaTradeFields.html#a520a835fd9ffdf6da0cc6940f764d467',1,'Wombat::MamdaTradeFields']]],
+  ['corr_5ftrade_5fid',['CORR_TRADE_ID',['../classWombat_1_1MamdaTradeFields.html#a3849ec8cfc0d9116c4a935118ca874b6',1,'Wombat::MamdaTradeFields']]],
+  ['corr_5ftrade_5fqualifier',['CORR_TRADE_QUALIFIER',['../classWombat_1_1MamdaTradeFields.html#aa6dd292a5d1c90660baccca68a6f3e7a',1,'Wombat::MamdaTradeFields']]],
+  ['cross_5ftype',['CROSS_TYPE',['../classWombat_1_1MamdaOrderImbalanceFields.html#a90ea155da82f60a56429876b00c06c9b',1,'Wombat::MamdaOrderImbalanceFields']]],
+  ['currency_5fcode',['CURRENCY_CODE',['../classWombat_1_1MamdaTradeFields.html#a8a44640aa8292cd86a43e27c33946230',1,'Wombat::MamdaTradeFields']]]
+];

@@ -1,0 +1,16 @@
+var searchData=
+[
+  ['uncross_5ffirm',['UNCROSS_FIRM',['../classWombat_1_1MamdaUncrossPriceInd.html#a00483e2174264c40d04b290d5dfb9c59a7192dc2fd7189d3144a7709b76755d81',1,'Wombat::MamdaUncrossPriceInd']]],
+  ['uncross_5findicative',['UNCROSS_INDICATIVE',['../classWombat_1_1MamdaUncrossPriceInd.html#a00483e2174264c40d04b290d5dfb9c59ad524fd29f1307579d38b4d62315ebc33',1,'Wombat::MamdaUncrossPriceInd']]],
+  ['uncross_5finsufficient_5fvol',['UNCROSS_INSUFFICIENT_VOL',['../classWombat_1_1MamdaUncrossPriceInd.html#a00483e2174264c40d04b290d5dfb9c59a302eb96b391582ee0d0f451221d03eac',1,'Wombat::MamdaUncrossPriceInd']]],
+  ['uncross_5fnone',['UNCROSS_NONE',['../classWombat_1_1MamdaUncrossPriceInd.html#a00483e2174264c40d04b290d5dfb9c59a6839897fc5545b6b362acefdf4aa2f57',1,'Wombat::MamdaUncrossPriceInd']]],
+  ['uncross_5fprice',['UNCROSS_PRICE',['../classWombat_1_1MamdaAuctionFields.html#a7534f2be5e1b9cbc125014b7a3ab6ea8',1,'Wombat::MamdaAuctionFields']]],
+  ['uncross_5fprice_5find',['UNCROSS_PRICE_IND',['../classWombat_1_1MamdaAuctionFields.html#a2f956d6b2070af4caad43670c7a30839',1,'Wombat::MamdaAuctionFields']]],
+  ['uncross_5fvolume',['UNCROSS_VOLUME',['../classWombat_1_1MamdaAuctionFields.html#a1b5627e383ce9f4e3af4ea77768aa52f',1,'Wombat::MamdaAuctionFields']]],
+  ['underlying_5fsymbol',['UNDERLYING_SYMBOL',['../classWombat_1_1MamdaOptionFields.html#a4e998f89de74f3be0f074b40c125b1a9',1,'Wombat::MamdaOptionFields']]],
+  ['unknown',['UNKNOWN',['../classWombat_1_1MamdaOrderImbalanceType.html#a929e9fa1af09b9f8429beea73e748695',1,'Wombat.MamdaOrderImbalanceType.UNKNOWN()'],['../classWombat_1_1MamdaOptionContract.html#a30c00b0bd2ea5f0fb4af04dac2415448a88183b946cc5f0e8c96b2e66e1c74a7e',1,'Wombat.MamdaOptionContract.Unknown()'],['../classWombat_1_1MamdaOptionContract.html#ae1bc1933660d3319acb09db5e81c2709a88183b946cc5f0e8c96b2e66e1c74a7e',1,'Wombat.MamdaOptionContract.Unknown()'],['../classWombat_1_1MamdaOrderBookEntry.html#a136deabc442666219e3326c91e216cefa88183b946cc5f0e8c96b2e66e1c74a7e',1,'Wombat.MamdaOrderBookEntry.Unknown()'],['../classWombat_1_1MamdaOrderBookPriceLevel.html#a65df6ce372dd7609282e69320bc431f4a88183b946cc5f0e8c96b2e66e1c74a7e',1,'Wombat.MamdaOrderBookPriceLevel.Unknown()'],['../classWombat_1_1MamdaOrderBookPriceLevel.html#aa48b6dd66fbd80116f6969596ae09a19a88183b946cc5f0e8c96b2e66e1c74a7e',1,'Wombat.MamdaOrderBookPriceLevel.Unknown()'],['../namespaceWombat.html#a03282a2934fb14046b74f6cdfed9b103a88183b946cc5f0e8c96b2e66e1c74a7e',1,'Wombat.Unknown()']]],
+  ['update',['Update',['../classWombat_1_1MamdaOrderBookEntry.html#a136deabc442666219e3326c91e216cefa06933067aafd48425d67bcb01bba5cb6',1,'Wombat.MamdaOrderBookEntry.Update()'],['../classWombat_1_1MamdaOrderBookPriceLevel.html#a65df6ce372dd7609282e69320bc431f4a06933067aafd48425d67bcb01bba5cb6',1,'Wombat.MamdaOrderBookPriceLevel.Update()']]],
+  ['update_5fas_5ftrade',['UPDATE_AS_TRADE',['../classWombat_1_1MamdaTradeFields.html#aa74ba0988993af88754e05286a23140b',1,'Wombat::MamdaTradeFields']]],
+  ['updateentry',['updateEntry',['../classWombat_1_1MamdaOrderBookPriceLevel.html#a1b94746efd5dccbc9e70f0f4b4f0f4df',1,'Wombat::MamdaOrderBookPriceLevel']]],
+  ['updatelevel',['updateLevel',['../classWombat_1_1MamdaOrderBook.html#a32a5116e18dfce7f037a27e7786ceffb',1,'Wombat::MamdaOrderBook']]]
+];

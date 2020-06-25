@@ -1,0 +1,27 @@
+var manager_8h =
+[
+    [ "mamaConflationEnqueueCallback", "manager_8h.html#a1911415c774384992de46d9812824b5c", null ],
+    [ "mamaConflationManager_allocate", "manager_8h.html#a9caa7a61a836f1771571f56df7cc8648", null ],
+    [ "mamaConflationManager_create", "manager_8h.html#a96a170bfa6f235960bc6617c168dd3dd", null ],
+    [ "mamaConflationManager_destroy", "manager_8h.html#ab954f1cf93d174f9ea5df926e74aeb4f", null ],
+    [ "mamaConflationManager_start", "manager_8h.html#a1ca26733c71788b392c6f7ddfc2ea07f", null ],
+    [ "mamaConflationManager_end", "manager_8h.html#adbb1859ab892ce35e8d3962a875f2550", null ],
+    [ "mamaConflationManager_setEnqueueCallback", "manager_8h.html#a9d56e342fcc84970029c3946c5900c81", null ],
+    [ "mamaConflationManager_enqueue", "manager_8h.html#afa428c3318c30bc5a7c8bb485c70b8c6", null ],
+    [ "mamaConflationManager_dequeue", "manager_8h.html#a57de1869cb6a131f5a52b8c48dcf6245", null ],
+    [ "mamaConflationManager_poll", "manager_8h.html#af10e203c246f19f5cb5268ed51ffa4a0", null ],
+    [ "mamaConflationManager_publish", "manager_8h.html#ac66f96118ea6c1a015b78c054e6eb038", null ],
+    [ "mamaConflationManager_flush", "manager_8h.html#aeb5f06edf68c20b3d73924b5a33a73a8", null ],
+    [ "mamaConflationManager_currentMsg", "manager_8h.html#ae0101be8767177ef59c9842a5b2c826b", null ],
+    [ "mamaConflationManager_nextMsg", "manager_8h.html#a2c677e0cd91119e24b1ff46148705ab6", null ],
+    [ "mamaConflationManager_prevMsg", "manager_8h.html#a2f334a16df1e5b268bf36b4d35596d51", null ],
+    [ "mamaConflationManager_removeMsg", "manager_8h.html#abc454ebb294f1ee9219cd7ee1245ca17", null ],
+    [ "mamaConflationManager_insertBefore", "manager_8h.html#ab2932024704592b2de5647791863c97c", null ],
+    [ "mamaConflationManager_insertAfter", "manager_8h.html#ac84763f3a0f733ef589e0bb96515ee41", null ],
+    [ "mamaConflationManager_replaceMsg", "manager_8h.html#a85df1b0461aee17c193522c13909b89a", null ],
+    [ "mamaConflationManager_gotoTail", "manager_8h.html#aa14855962ddd77e358c7785f71b77e8a", null ],
+    [ "mamaConflationManager_gotoHead", "manager_8h.html#a0a587ced313b8b9c49a6b670b6e6f28f", null ],
+    [ "mamaConflationManager_installTransportConflationManager", "manager_8h.html#ac12a8fa4f4a56756d1f3889c47418142", null ],
+    [ "mamaConflationManager_installConnectionConflationManager", "manager_8h.html#a568ccb14c16273ccff83acfccf80aa06", null ],
+    [ "mamaConflationManager_uninstallConflationManager", "manager_8h.html#a9ee59cccb15491b32a54259bfecbdeb7", null ]
+];
