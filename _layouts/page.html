@@ -1,53 +1,22 @@
 {% include wrap-top.html %}
-
-	<!-- PARTNER STARTS -->
-	<div class="partner section-pad-xs">
+	{% include header-area.html %}
+	<div class="header-content">
 		<div class="container">
-			<div class="row justify-content-center text-center">
-				<div class="col-md-12">
-					<div class="partner-content">
-						<h4 class="sec-title-sm">
-							OpenMAMA is an open source project that provides a high performance middleware agnostic
-							messaging API that interfaces with a variety of message oriented middleware systems.
-						</h4>
-					</div>
-				</div> <!-- col -->
-			</div> <!-- row -->
-			<div class="row justify-content-center pt">
-				<div class="col-lg-6 text-center">
-					<div class="sec-heading">
-						<h2 class="sec-title-lg">Steering Committee</h2>
-					</div>
-				</div> <!-- col -->
-			</div> <!-- row -->
-			<div class="row justify-content-center text-center">
-				<div class="col-md-12">
-					<div class="partner-content">
-						<h4 class="sec-title-sm">
-							OpenMAMA is backed and governed by a steering committee of industry leaders including both
-							enterprise users and world class vendors.
-						</h4>
-					</div>
-				</div> <!-- col -->
-			</div> <!-- row -->
-			<div class="row justify-content-center text-center">
-				<div class="col-md-12">
-					<div class="partner-content">
-						<ul class="partner-list mb--x2">
-							<li><img src="images/logos/jpmorgan.png" alt="JP Morgan"></li>
-							<li><img src="images/logos/db.png" alt="Deutsche Bank"></li>
-							<li><img src="images/logos/vela.png" alt="Vela"></li>
-							<li><img src="images/logos/tick42.png" alt="Tick42"></li>
-							<li><img src="images/logos/arcontech.png" alt="Arcontech"></li>
-							<li><img src="images/logos/solace.png" alt="Solace"></li>
-						</ul>
-					</div>
-				</div> <!-- col -->
+			<div class="row">
+				<div>
+					{% if page.with_title %}
+					<h1>{{ page.title }}</h1>
+					{% endif %}
 
+					{% if page.toc %}
+					{% include toc.html html=content %}
+					{% endif %}
+
+					{{ content }}
+				</div>
 			</div> <!-- row -->
 		</div> <!-- container -->
 	</div>
-	<!-- PARTNER ENDS -->
 
 	{% include footer.html %}
 

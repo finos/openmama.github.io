@@ -1,0 +1,162 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+sidebar_entries:
+  - title: Introduction
+    output: web
+    folderitems:
+    - title: OpenMAMA Documentation Project
+      url: /documentation.html
+      output: web
+    - title: What is OpenMAMA?
+      url: /what_is_openmama.html
+      output: web
+    - title: What is OpenMAMDA?
+      url: /what_is_openmamda.html
+      output: web
+    - title: Supported Platforms
+      url: /openmama_supported_platforms.html
+      output: web
+    - title: FAQ
+      url: /openmama_faq.html
+      output: web
+    - title: Versioning
+      url: /openmama_versioning.html
+      output: web
+    - title: Contributing to Documentation
+      url: /openmama_contribute_documentation.html
+      output: web
+
+  - title: User Guides
+    output: web
+    folderitems:
+    - title: Running Example Apps
+      url: /openmama_quick_start_guide_running_openmama_apps.html
+      output: web
+    - title: Qpid Bridge
+      url: /openmama_qpid_bridge.html
+      output: web
+    - title: Raising Issues
+      url: /openmama_raising_issues.html
+      output: web
+    - title: Performance Testing
+      url: /openmama_performance_testing.html
+      output: web
+
+
+#    - title: Crash Course in Concepts
+#      url: /openmama.html
+#      output: web
+#      type: homepage
+#    - title: Basic Pub / Sub
+#      url: /openmama_introduction.html
+#      output: web
+#    - title: Request / Reply
+#      url: /openmama_introduction.html
+#      output: web
+#    - title: Market Data Pub / Sub
+#      url: /openmama_introduction.html
+#      output: web
+
+  - title: Developer Guides
+    output: web
+    folderitems:
+    - title: Complete Developer Guides
+      url: /openmama_developers_guide_legacy.html
+      output: web
+#    - title: Introduction to OpenMAMA
+#      url: /openmama_developers_guide_introduction.html
+#      output: web
+#    - title: Installing OpenMAMA
+#      url: /openmama_developers_guide_mama_cs.html
+#      output: web
+#    - title: Bridges in OpenMAMA
+#      url: /openmama_developers_guide_mamda.html
+#      output: web
+
+  - title: API Reference Docs
+    output: web
+    folderitems:
+    - title: MAMA C
+      url: /openmama_reference_documentation_mama_c.html
+      output: web
+    - title: MAMA C++
+      url: /openmama_reference_documentation_mama_cpp.html
+      output: web
+    - title: MAMA C#
+      url: /openmama_reference_documentation_mama_cs.html
+      output: web
+    - title: MAMA Java
+      url: /openmama_reference_documentation_mama_java.html
+      output: web
+    - title: MAMDA C++
+      url: /openmama_reference_documentation_mamda_cpp.html
+      output: web
+    - title: MAMDA C#
+      url: /openmama_reference_documentation_mamda_cs.html
+      output: web
+    - title: MAMDA Java
+      url: /openmama_reference_documentation_mamda_java.html
+      output: web
+
+  - title: Contributor Guides
+    output: web
+    folderitems:
+    - title: Building From Source
+      url: /openmama_build_instructions.html
+      output: web
+    - title: Bridge Building Documentation
+      url: /openmama_bridge.html
+      output: web
+    - title: Bridge Developer FAQ
+      url: /openmama_bridge_developer_faq.html
+      output: web
+    - title: Bridge Incorporation Guidelines
+      url: /openmama_bridge_incorporation_guidelines.html
+      output: web
+    - title: Coding Standards
+      url: /openmama_coding_standards.html
+      output: web
+    - title: Commit Guidelines
+      url: /openmama_commit_guidelines.html
+      output: web
+    - title: Development Process
+      url: /openmama_development_process.html
+      output: web
+    - title: Dynamic Bridge Loading
+      url: /openmama_dynamic_bridge_loading.html
+      output: web
+    - title: Feature Branch Process
+      url: /openmama_feature_branch_process.html
+      output: web
+    - title: Release Process
+      url: /openmama_release_process.html
+      output: web
+    - title: Submission Process
+      url: /openmama_submission_process.html
+      output: web
+    - title: Unit Testing
+      url: /openmama_unit_testing.html
+      output: web
+
+#  - title: Bridge Developer's Guide
+#    output: web
+#    folderitems:
+#    - title: Bridge Developer Documentation
+#      external_url: https://github.com/OpenMAMA/OpenMAMA/wiki/Bridge-Documentation
+#      output: web
+
+  - title: RFC Documents
+    output: web
+    folderitems:
+    - title: Open
+      url: /openmama_rfc_open.html
+      output: web
+    - title: Closed
+      url: /openmama_rfc_closed.html
+      output: web
+    - title: Process
+      url: /openmama_rfc_process.html
+      output: web
+    - title: Template
+      url: /openmama_rfc_template.html
+      output: web

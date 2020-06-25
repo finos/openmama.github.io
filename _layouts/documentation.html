@@ -1,0 +1,37 @@
+{% include wrap-top.html %}
+	{% include header-area.html %}
+	<div class="header-content">
+		<div class="container">
+			<div class="row">
+				<div class="sidebar col-md-3">
+					{% for section in site.data.openmama_documentation_sidebar.sidebar_entries %}
+						{% assign matches = section.folderitems | where_exp:"fi", "fi.url == page.url" %}
+						{% if matches.size > 0 %}
+							{% assign sidebar_class = "sidebar-visible" %}
+						{% else %}
+						    {% assign sidebar_class = "" %}
+						{% endif %}
+						{% assign section_id = section.title | replace: " ", "-" %}
+						<a class="sidebar-heading" onclick="document.getElementById('{{ section_id }}').classList.toggle('sidebar-visible')">{{ section.title }}</a>
+						<div id="{{section_id}}" class="sidebar-hidden {{ sidebar_class }}">
+							{% for entry in section.folderitems %}
+								{% if page.url == entry.url %}
+									<a class="active" href="{{ site.baseurl }}/{{ entry.url }}">{{ entry.title}}</a>
+								{% else %}
+									<a href="{{ site.baseurl }}/{{ entry.url }}">{{ entry.title}}</a>
+								{% endif %}
+							{% endfor %}
+						</div>
+					{% endfor %}
+				</div>
+				<div class="content col-md-9">
+					<h1>{{ page.title }}</h1>
+					{{ content }}
+				</div>
+			</div> <!-- row -->
+		</div> <!-- container -->
+	</div>
+
+	{% include footer.html %}
+
+{% include wrap-bottom.html %}

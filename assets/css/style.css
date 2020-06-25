@@ -86,7 +86,7 @@
       font-size: 14px;
       line-height: 1.875;
       font-weight: normal;
-      color: #6f7c8a;
+      color: #1b1f22;
       background-color: #F8FBFF;
       position: relative;
       min-width: 320px;
@@ -169,12 +169,17 @@
 
     ul,
     ol {
-      padding: 0;
+      /* padding: 0; */
     }
 
     ul li,
     ol li {
+      /* list-style: none; */
+    }
+
+    .barelist {
       list-style: none;
+      padding: 0;
     }
 
     .relative {
@@ -272,7 +277,7 @@
     }
 
     a:hover {
-      color: #fff;
+      color: #f4911e;
       text-decoration: none;
     }
 
@@ -3174,6 +3179,14 @@
       font-size: 1.125em;
     }
 
+    .footer-widget-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      padding: 5px;
+    }
+
     .footer-list {
       padding-left: 0;
       margin: 0;
@@ -4128,6 +4141,211 @@
       .overlay-bar-3 {
         top: 55%;
       }
+    }
+  
+    
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      position: static;
+      display: inline-block;
+      overflow: auto;
+    }
+
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+      background-color: rgba(61, 60, 62, 0.1);
+    }
+    
+    .sidebar a.active {
+      background-color: #f4911e;
+      color: white;
+    }
+
+    .sidebar a.sidebar-heading {
+      background-color: #2f3338;
+      color: white;
+      outline:none;
+      cursor:pointer;
+    }
+
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+
+    div.content {
+      padding: 1px 16px;
+      display: inline-block;
+      position: relative;
+    }
+
+    .sidebar-hidden {
+      display: none;
+    }
+
+    .sidebar-visible {
+      display: block !important;
+    }
+
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+
+    
+    table {
+      background-color: transparent;
+    }
+    caption {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      color: #777;
+      text-align: left;
+    }
+    th {
+      text-align: left;
+    }
+    table {
+      max-width: 90%;
+      margin-bottom: 20px;
+      border: 1px solid rgba(61, 60, 62, 0.1);
+    }
+
+    table > thead > tr > th,
+    table > tbody > tr > th,
+    table > tfoot > tr > th,
+    table > thead > tr > td,
+    table > tbody > tr > td,
+    table > tfoot > tr > td {
+      padding: 8px;
+      line-height: 1.42857143;
+      vertical-align: top;
+      border-top: 1px solid #ddd;
+    }
+    table > thead > tr > th {
+      vertical-align: bottom;
+      border-bottom: 2px solid #ddd;
+      text-transform: none;
+      background-color: #2f3338;
+      color: white;
+      text-align: left;
+    }
+    table > caption + thead > tr:first-child > th,
+    table > colgroup + thead > tr:first-child > th,
+    table > thead:first-child > tr:first-child > th,
+    table > caption + thead > tr:first-child > td,
+    table > colgroup + thead > tr:first-child > td,
+    table > thead:first-child > tr:first-child > td {
+      border-top: 0;
+    }
+    table > tbody + tbody {
+      b
+    }
+    table > tbody > tr:nth-of-type(odd) {
+      background-color: rgba(61, 60, 62, 0.1);
+    }
+
+    table col[class*="col-"] {
+      position: static;
+      display: table-column;
+      float: none;
+    }
+    table td[class*="col-"],
+    table th[class*="col-"] {
+      position: static;
+      display: table-cell;
+      float: none;
+    }
+
+
+    table td:first-child {
+      width: 150px;
+      /*font-weight:bold;*/
+    }
+
+    table.boldFirstColumn td:first-child {
+      font-weight: bold;
+    }
+
+    table tr td {
+      hyphens: auto;
+    }
+
+
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 0;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+    figure.highlight {
+      padding: 0;
+    }
+
+    div.tabcontent > figure, div.tabcontent > figure > pre {
+      margin: 0 0 0 0;
+    }
+
+    div.tabcontent > figure.highlight > pre {
+      padding-left: 30px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+
+    div.highlight > pre > code, figure.highlight > pre > code {
+      color: white;
+    }
+
+    div.highlight > pre.highlight {
+      padding: 15px;
     }
 
     /** END */

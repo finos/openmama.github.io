@@ -1,0 +1,20 @@
+os:
+  names:
+    - windows
+    - linux
+  headings:
+    - Windows
+    - Linux
+
+languages:
+  names:
+    - cpp
+    - c
+    - java
+    - csharp
+  headings:
+    - C++
+    - C
+    - Java
+    - C#
+
