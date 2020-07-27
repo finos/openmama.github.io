@@ -19,16 +19,4 @@ The current version of the quick start guide can be found [here](openmama_quick_
 
 ## Continuous Integration Environment
 
-The latest version of the continuous integration environment can be found at [ci.openmama.org](http://ci.openmama.org).
-
-## Other Resources
-
-This is a work in progress so much of the documentation for OpenMAMA as it stands today is still pretty fragmented. You can
-currently find documentation for OpenMAMA across several disparate sources:
-
-* [The official OpenMAMA webpage](http://www.openmama.org/content/quick-start-guide) containing several succinct tutorials and quick start guides
-* [The official OpenMAMA documentation](http://www.openmama.org/documentation) (reference and developer guide in PDF format)
-* [The github wiki page](https://github.com/OpenMAMA/OpenMAMA/wiki) (mainly focused at internal affairs and bridge development)
-
-This has proven to be confusing to newcomers to the project so we have created this project with the primary goal of consolidating all official technical
-documentation for OpenMAMA under one resource.
+The latest version of the continuous integration environment can be found at [ci.appveyor.com](https://ci.appveyor.com/project/fquinner/openmama).
