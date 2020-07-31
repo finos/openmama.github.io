@@ -9,7 +9,11 @@
 					{% endif %}
 
 					{% if page.toc %}
+					<a href="#" id="toc-container-show" onclick="document.getElementById('toc-container').style.display = 'block'; document.getElementById('toc-container-show').style.display = 'none'; ">Table of Contents >></a>
+					<div style="display: none;" id="toc-container">
 					{% include toc.html html=content %}
+					<a href="#" onclick="document.getElementById('toc-container').style.display = 'none'; document.getElementById('toc-container-show').style.display = 'block'; "><< Table of Contents</a>
+					</div>
 					{% endif %}
 
 					{{ content }}

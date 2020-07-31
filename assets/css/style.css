@@ -121,6 +121,7 @@
     .h4,
     .h5,
     .h6 {
+      clear: both;
       line-height: 1.33;
       font-weight: 600;
     }
@@ -148,12 +149,17 @@
 
     h4,
     .h4 {
-      font-size: 1.6em;
+      font-size: 1.4em;
+      color: #f4911e !important;
+      padding-top: 15px;
+      padding-bottom: 5px;
     }
 
     h5,
     .h5 {
       font-size: 1.33em;
+      padding-top: 10px;
+      padding-bottom: 5px;
     }
 
     h6,
@@ -1669,6 +1675,7 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 30px;
+      height: 100%;
     }
 
     .why-box .why-img {
@@ -4352,6 +4359,20 @@
 
     div.highlight > pre.highlight {
       padding: 15px;
+    }
+
+    img.boxed-left {
+      margin: 20px 20px 20px 0;
+      float: left;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: white;
+      border-color: black;
+      border-style: solid;
+    }
+
+    hr {
+      clear: both;
     }
 
     /** END */

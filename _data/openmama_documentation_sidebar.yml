@@ -4,8 +4,11 @@ sidebar_entries:
   - title: Introduction
     output: web
     folderitems:
-    - title: OpenMAMA Documentation Project
+    - title: Documentation Home
       url: /documentation.html
+      output: web
+    - title: Quick Start
+      url: /quickstart.html
       output: web
     - title: What is OpenMAMA?
       url: /what_is_openmama.html
