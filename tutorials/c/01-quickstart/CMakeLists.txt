@@ -8,5 +8,5 @@ endif()
 include_directories(${MAMA_ROOT}/include)
 link_directories(${MAMA_ROOT}/lib)
 
-add_executable(quickstart quickstart.cpp)
+add_executable(quickstart quickstart.c)
 target_link_libraries(quickstart mama wombatcommon)
