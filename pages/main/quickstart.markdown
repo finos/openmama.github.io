@@ -240,3 +240,12 @@ capturereplayc -dictionary /opt/openmama/data/dictionaries/data.dict -m qpid -S 
 Note that regardless of the language being used, the C capture replay tool may be used here since the protocols are the same.
 
 If you are using our demo environment, this service will already be running.
+
+### Running your Market Data Subscriber
+
+Now that your environment is up and running, you can begin consuming market data!
+
+    export WOMBAT_PATH=/opt/openmama/config
+    export LD_LIBRARY_PATH=/opt/openmama/lib
+    ./quickstart -m qpid -S OM -t sub -s DE000CM95AU4.EUR.XPAR \
+        -d /home/fquinn/SourceExternal/cascadium/OpenMAMA-testdata/dictionaries/data.dict
