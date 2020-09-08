@@ -4334,7 +4334,7 @@
     /* Style the tab content */
     .tabcontent {
       display: none;
-      padding: 0;
+      padding: 10px;
       border: 1px solid #ccc;
       border-top: none;
     }
@@ -4351,6 +4351,7 @@
       padding-left: 30px;
       padding-bottom: 10px;
       padding-top: 10px;
+      margin-bottom: 20px;
     }
 
     div.highlight > pre > code, figure.highlight > pre > code {

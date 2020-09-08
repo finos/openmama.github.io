@@ -19,7 +19,7 @@ sidebar_entries:
     - title: Supported Platforms
       url: /openmama_supported_platforms.html
       output: web
-    - title: FAQ
+    - title: Technical FAQ
       url: /openmama_faq.html
       output: web
     - title: Versioning
@@ -32,6 +32,15 @@ sidebar_entries:
   - title: User Guides
     output: web
     folderitems:
+    - title: Installing OpenMAMA
+      url: /openmama_installing.html
+      output: web
+    - title: Portable Demo Environment
+      url: /openmama_portable_demo_environment.html
+      output: web
+    - title: IDE Integration
+      url: /openmama_ide_integration.html
+      output: web
     - title: Running Example Apps
       url: /openmama_quick_start_guide_running_openmama_apps.html
       output: web
@@ -60,25 +69,12 @@ sidebar_entries:
 #      url: /openmama_introduction.html
 #      output: web
 
-  - title: Developer Guides
-    output: web
-    folderitems:
-    - title: Complete Developer Guides
-      url: /openmama_developers_guide_legacy.html
-      output: web
-#    - title: Introduction to OpenMAMA
-#      url: /openmama_developers_guide_introduction.html
-#      output: web
-#    - title: Installing OpenMAMA
-#      url: /openmama_developers_guide_mama_cs.html
-#      output: web
-#    - title: Bridges in OpenMAMA
-#      url: /openmama_developers_guide_mamda.html
-#      output: web
-
   - title: API Reference Docs
     output: web
     folderitems:
+    - title: Developer Guides
+      url: /openmama_developers_guide_legacy.html
+      output: web
     - title: MAMA C
       url: /openmama_reference_documentation_mama_c.html
       output: web
@@ -118,12 +114,6 @@ sidebar_entries:
       output: web
     - title: Coding Standards
       url: /openmama_coding_standards.html
-      output: web
-    - title: Commit Guidelines
-      url: /openmama_commit_guidelines.html
-      output: web
-    - title: Development Process
-      url: /openmama_development_process.html
       output: web
     - title: Dynamic Bridge Loading
       url: /openmama_dynamic_bridge_loading.html

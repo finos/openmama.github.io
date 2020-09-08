@@ -6,30 +6,47 @@
 		{% else %}
 		    {% assign tabtitle = tabname | capitalize %}
 		{% endif %}
-		<button class="tablinks tablinks-{{ include.id }}" onclick="openTab_{{ include.id }}(event, '{{tabname}}-{{ include.id }}')" id="defaultOpen-{{ include.id }}">{{tabtitle}}</button>
+		<button class="tablinks tablinks-{{ tabname }}" onclick="openTab(event, '{{tabname}}')" id="defaultOpen-{{ include.id }}">{{tabtitle}}</button>
 		{% assign i = i | plus:1 %}
 	{% endfor %}
   </div>
 
   {% for tabname in include.tabs %}
-  <div id='{{tabname}}-{{ include.id }}' class="tabcontent tabcontent-{{ include.id }}">
+  <div id='{{tabname}}-{{ include.id }}' class="tabcontent tabcontent-{{ tabname }}">
 	{{ include[tabname] }}
   </div>
   {% endfor %}
 
   <script>
-	function openTab_{{ include.id }}(evt, tabname) {
+	function openTab(evt, tabname) {
 		var i, tabcontent, tablinks;
-		tabcontent = document.getElementsByClassName("tabcontent-{{ include.id }}");
+		tabcontent = document.getElementsByClassName("tabcontent-" + tabname);
+		// Set no display output for everything
 		for (i = 0; i < tabcontent.length; i++) {
 		    tabcontent[i].style.display = "none";
 		}
-		tablinks = document.getElementsByClassName("tablinks-{{ include.id }}");
-		for (i = 0; i < tablinks.length; i++) {
-		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		console.log("Tabname = %s", tabname);
+
+		// Deactivate all buttons before activating the one we want
+		all_tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < all_tablinks.length; i++) {
+			if (all_tablinks[i].classList.contains("tablinks-" + tabname)) {
+				all_tablinks[i].classList.add("active");
+			} else {
+				all_tablinks[i].classList.remove("active");
+			}
 		}
-		document.getElementById(tabname).style.display = "block";
-		evt.currentTarget.className += " active";
+
+		all_tablinks = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < all_tablinks.length; i++) {
+			if (all_tablinks[i].classList.contains("tabcontent-" + tabname)) {
+				all_tablinks[i].style.display = "block";
+			} else {
+				all_tablinks[i].style.display = "none";
+			}
+		}
+
+		document.getElementById(tabname + "-{{ include.id }}").style.display = "block";
 	}
 	// Get the element with id="defaultOpen" and click on it
 	document.getElementById("defaultOpen-{{ include.id }}").click();

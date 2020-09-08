@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions
+title: Technical Frequently Asked Questions
 sidebar: openmama_sidebar
 permalink: openmama_faq.html
 folder: openmama
