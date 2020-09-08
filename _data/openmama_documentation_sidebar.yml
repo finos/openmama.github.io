@@ -100,6 +100,9 @@ sidebar_entries:
   - title: Contributor Guides
     output: web
     folderitems:
+    - title: Third Party Repository
+      url: /openmama_contribute_thirdparty.html
+      output: web
     - title: Building From Source
       url: /openmama_build_instructions.html
       output: web

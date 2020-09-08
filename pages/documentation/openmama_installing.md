@@ -20,10 +20,22 @@ you can use your package manager's upgrade mechanism to keep up to date):
 curl -1sLf https://dl.cloudsmith.io/public/openmama/openmama/cfg/setup/bash.deb.sh | sudo -E bash
 ```
 
+And if you want easy access to some third party plugins as well:
+
+```bash
+curl -1sLf https://dl.cloudsmith.io/public/openmama/openmama-thirdparty/cfg/setup/bash.deb.sh | sudo -E bash
+```
+
 #### Fedora / CentOS
 
 ```bash
 curl -1sLf https://dl.cloudsmith.io/public/openmama/openmama/cfg/setup/bash.rpm.sh | sudo -E bash
+```
+
+And if you want easy access to some third party plugins as well:
+
+```bash
+curl -1sLf https://dl.cloudsmith.io/public/openmama/openmama-thirdparty/cfg/setup/bash.rpm.sh | sudo -E bash
 ```
 
 #### Other Distros
