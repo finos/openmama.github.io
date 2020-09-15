@@ -19,9 +19,7 @@ The first step is to grab an [OpenMAMA downloads page](http://www.openmama.org/d
 | --------------- | ------ |---------------------------------------------------------------------------------------------------------------- |
 | RHEL 6/Centos 6 | x86_64 |[openmama-2.3.3-1.el6_.x86_64.rpm](http://www.openmama.org/sites/default/files/openmama-2.3.3-1.el6_.x86_64.rpm) |
 
-asdasd
-
-Note that if packages aren't available for your distro {{base}} you can [build and install OpenMAMA from source](Build Instructions)
+Note that if packages aren't available for your distro {{base}} you can [build and install OpenMAMA from source](openmama_build_instructions).
 
 Once you have an appropriate OpenMAMA RPM for your system, you will need to install it. Depending on your platform you will likely issue one of two commands. For systems which support ***yum*** the appropriate command will generally be:
 

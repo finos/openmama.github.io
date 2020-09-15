@@ -30,7 +30,7 @@ You will find a complete list of supported platforms [here](openmama_supported_p
 
 ### 1.2. Middlewares
 
-You will find a complete list of supported middlewares [here](http://www.openmama.org/what-is-openmama/supported-software).
+OpenMAMA supports Qpid by default, and many are provided by third parties. Please refer to the vendor for details.
 
 ### 1.3. API Language Implementations
 

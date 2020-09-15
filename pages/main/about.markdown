@@ -25,8 +25,8 @@ The short presentation below outlines the Governance structure of OpenMAMA:
 
 {% include governance-slides.html %}
 
-**[OpenMAMA Governance](http://www.slideshare.net/OpenMAMA/open-mama-governence-12590714 "OpenMAMA Governance")**
-from **[OpenMAMA](http://www.slideshare.net/OpenMAMA)**
+**[OpenMAMA Governance](https://www.slideshare.net/OpenMAMA/open-mama-governence-12590714 "OpenMAMA Governance")**
+from **[OpenMAMA](https://www.slideshare.net/OpenMAMA)**
 
 Joining the Steering Committee
 ------------------------------

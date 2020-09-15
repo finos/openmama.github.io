@@ -213,4 +213,4 @@ git clean -f
 ## Next Steps
 At this stage you should have a complete OpenMAMA build, installed in the location of your choice, including with a version of the Qpid Proton middleware bridge. 
 
-The next step will be to test the environment, before beginning development of your own applications and bridges. You may now want to check out the instructions for running OpenMAMA from the [Quick Start Guide](openmama_quick_start_guide_running_openmama_apps.md).
+The next step will be to test the environment, before beginning development of your own applications and bridges. You may now want to check out the instructions for running OpenMAMA from the [Quick Start Guide](openmama_quick_start_guide_running_openmama_apps).

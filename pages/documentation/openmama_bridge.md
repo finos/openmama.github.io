@@ -12,7 +12,7 @@ The OpenMAMA Bridge API usually requires simple wrappers for middleware that fol
 
 This document provides information to assist developer's who wish to write bridge to interface their middleware with the OpenMAMA API. Further relating to getting your bridge incorporated into the OpenMAMA release can be found [here](openmama_bridge_incorporation_guidelines.html).
 
-N.B. A [reference bridge]([http://www.openmama.org/openmama-reference-bridge) has been provided, details for which can be found [here](openmama_reference_bridge.html).
+N.B. A reference brige has been provided in qpid which can be found [here](https://github.com/OpenMAMA/OpenMAMA/tree/next/mama/c_cpp/src/c/bridge/qpid).
 
 
 ![Figure 1](images/bridge-documentation-1.jpg)

@@ -49,7 +49,7 @@ OpenMAMA Enterprise) which will allow you to create and run your own code within
 into the MAMA codebase.
 
 A mamaPlugin is essentially a shared object and you can use the template provided, see
-[Example 2](example-2-template-for-a-basic-mamaplugin), to create your own plugin. The naming convention of the plugin will be of the
+[Example 2](#example-2-template-for-a-basic-mamaplugin), to create your own plugin. The naming convention of the plugin will be of the
 form `mamaplugin<name>`, for example on Linux your plugin would be called:
 `libmamaplugintemplate.so`
 
