@@ -26,6 +26,19 @@ options available depending on which resources are available to you.
 To run an AWS instance of the demo environment, we recommend selecting an instance type which has at least
 2GB of RAM.
 
+Note all our images are based on the official CentOS images as hosted on [their website](https://www.centos.org/download/aws-images/)
+rather than the third party ones hosted on AWS, so they can be extended without licensing fears.
+
+AMIs are region specific, so you'll need to identify the appropriate region **in which you want to
+launch your instance** to get started:
+
+| Region      | Architecture           | AMI ID                 | Launch Instance Wizard
+| ----------- | ---------------------- | ---------------------- |-----------------------------
+| eu-west-2   | x86_64                 | ami-0b1cbf3fc035ad795  | [Launch New Instance](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-06cf02a98a61f9f5e)
+
+Alternatively you can search for it under **Community AMIs** by searching for OpenMAMA, the image
+is named the `OpenMAMA Portable Demo Environment (CentOS 8 x86_64)`. The default instance username is `centos`.
+
 ### Running with Vagrant
 
 We have a vagrant option available on the official
