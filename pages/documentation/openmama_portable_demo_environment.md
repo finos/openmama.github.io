@@ -40,6 +40,7 @@ ansible script on it.
 
 First of all install git and ansible if they aren't already installed:
 
+    sudo dnf install -y epel-release
     sudo dnf install -y git ansible
 
 Then grab the latest copy of the OpenMAMA code and run the ansible playbook we manage there.
