@@ -34,7 +34,9 @@ launch your instance** to get started:
 
 | Region      | Architecture           | AMI ID                 | Launch Instance Wizard
 | ----------- | ---------------------- | ---------------------- |-----------------------------
-| eu-west-2   | x86_64                 | ami-0b1cbf3fc035ad795  | [Launch New Instance](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-06cf02a98a61f9f5e)
+| eu-west-2   | x86_64                 | ami-0b1cbf3fc035ad795  | [Launch New Instance](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-0b1cbf3fc035ad795)
+| us-east-1   | x86_64                 | ami-0a03b5b0b1d8bd1e4  | [Launch New Instance](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-0a03b5b0b1d8bd1e4)
+| us-east-2   | x86_64                 | ami-04bca522bc2d4083e  | [Launch New Instance](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-04bca522bc2d4083e)
 
 Alternatively you can search for it under **Community AMIs** by searching for OpenMAMA, the image
 is named the `OpenMAMA Portable Demo Environment (CentOS 8 x86_64)`. The default instance username is `centos`.
