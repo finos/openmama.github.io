@@ -12,7 +12,7 @@ to a Market Data Publisher.
 
 ## Installing OpenMAMA
 
-Depending on your target environment, we have many options for [installing OpenMAMA](openmama_installing). The
+Depending on your target environment, we have many options for [installing OpenMAMA](openmama_installing){:target="_blank"}. The
 easiest one for this task would be to connect to a running instance of the [AWS AMI](openmama_portable_demo_environment#running-with-aws){:target="_blank"}
 or vagrant box since it already contains a running publisher you can subscribe to, but we'll also document how to run your
 own here.
