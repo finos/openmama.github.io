@@ -172,7 +172,7 @@ Tick42 also brings its expertise in real-time, mission-critical trading applicat
 
 ![Solace](images/logos/solace.png){: class="boxed-left"}
 
-Solace messaging middleware technology meets the diverse data movement needs of financial institutions including market data distribution, guaranteed messaging between back-office applications, WAN optimization and web/mobile streaming. With the ability to fan out millions of market data messages per second with very low, consistent latency in a footprint 10x smaller than traditional solutions, Solace is the ideal foundation for enterprise-scale OpenMAMA-based market data distribution systems. 
+Solace helps large enterprises become modern and real-time by giving them everything they need to make their business operations and customer interactions event-driven. With PubSub+, the market’s first and only event management platform, the company provides a comprehensive way to create, document, discover and stream events from where they are produced to where they need to be consumed – securely, reliably, quickly, and guaranteed. Enterprises use Solace’s advanced event broker technologies to modernize legacy applications, deploy modern microservices, and build an event mesh to support their hybrid cloud, multi-cloud and IoT architectures. Learn more at [solace.com](https://solace.com/).
 
 ### Arcontech
 
