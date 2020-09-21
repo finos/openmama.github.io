@@ -16,9 +16,9 @@
 						<div id="{{section_id}}" class="sidebar-hidden {{ sidebar_class }}">
 							{% for entry in section.folderitems %}
 								{% if page.url == entry.url %}
-									<a class="active" href="{{ site.baseurl }}/{{ entry.url }}">{{ entry.title}}</a>
+									<a class="active" href="{{ site.url }}/{{ entry.url }}">{{ entry.title}}</a>
 								{% else %}
-									<a href="{{ site.baseurl }}/{{ entry.url }}">{{ entry.title}}</a>
+									<a href="{{ site.url }}/{{ entry.url }}">{{ entry.title}}</a>
 								{% endif %}
 							{% endfor %}
 						</div>

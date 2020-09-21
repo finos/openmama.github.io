@@ -137,7 +137,7 @@ Downloads: [OpenMAMA Brand Artwork](assets/files/openmama_brand_artwork.zip)
 Terms of Service
 ----------------
 
-By using the [OpenMAMA.org]({{ site.baseurl }}) website you are agreeing to the following terms and conditions:
+By using the [OpenMAMA.org]({{ site.url }}) website you are agreeing to the following terms and conditions:
 
 Basic Overview
 --------------
@@ -249,7 +249,7 @@ The OpenMAMA website guidelines are in place to clearly differentiate official O
 
 -   Do not represent your site as an "official" OpenMAMA website.
 -   You must have the following disclaimer on every page (in the footer is fine):
-    -   *"OpenMAMA and all related marks and logos are registered trademarks of The Linux Foundation. This website is not, in any way, endorsed by the [OpenMAMA Project]({{ site.baseurl }}) or [The Linux Foundation.](http://linuxfoundation.org/)"*
+    -   *"OpenMAMA and all related marks and logos are registered trademarks of The Linux Foundation. This website is not, in any way, endorsed by the [OpenMAMA Project]({{ site.url }}) or [The Linux Foundation.](http://linuxfoundation.org/)"*
 -   You must use official icons if using the OpenMAMA logo.
 -   You must not modify the OpenMAMA logo. It has a very specific meaning and purpose related to compliance.
 -   Before registering a domain name that includes the text "OpenMAMA", you must request permission by emailing <trademarks@linuxfoundation.org>.
