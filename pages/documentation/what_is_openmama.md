@@ -25,7 +25,7 @@ OpenMAMA:
 
 {% include openmama-slides.html %}
 
-**[OpenMAMA Overview](http://www.slideshare.net/OpenMAMA/openmama-overview "OpenMAMA Overview") **from **[OpenMAMA](http://www.slideshare.net/OpenMAMA)**
+**[OpenMAMA Overview](https://www.slideshare.net/OpenMAMA/openmama-overview "OpenMAMA Overview") **from **[OpenMAMA](https://www.slideshare.net/OpenMAMA)**
 
 You can download the presentation by clicking here
 
