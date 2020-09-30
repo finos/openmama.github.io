@@ -1,0 +1,2032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://openmama.org/</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://openmama.org/index.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://openmama.org/support.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://openmama.org/faq.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://openmama.org/documentation.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://openmama.org/about.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://openmama.org/quickstart.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://openmama.org/linux_foundation.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://openmama.org/contact.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_submission_process.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://openmama.org/legal_and_branding.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_submission_process</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/contact</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/about</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/support</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/what_is_openmama.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/what_is_openmamda.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_supported_platforms.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_faq.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_versioning.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_contribute_documentation.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_installing.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_portable_demo_environment.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_ide_integration.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_quick_start_guide_running_openmama_apps.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_qpid_bridge.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_raising_issues.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_performance_testing.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_developers_guide_legacy.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_reference_documentation_mama_c.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_reference_documentation_mama_cpp.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_reference_documentation_mama_cs.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_reference_documentation_mama_java.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_reference_documentation_mamda_cpp.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_reference_documentation_mamda_cs.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_reference_documentation_mamda_java.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_contribute_thirdparty.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_build_instructions.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_bridge.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_bridge_developer_faq.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_bridge_incorporation_guidelines.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_coding_standards.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_dynamic_bridge_loading.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_feature_branch_process.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_release_process.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_unit_testing.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_rfc_open.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_rfc_closed.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_rfc_process.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_rfc_template.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/quickstart</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_installing</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_contribute_documentation</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_portable_demo_environment</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_ide_integration</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_build_instructions</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/assets/files/OpenMAMA%20Developer%27s%20Guide%20C.pdf</loc>
+  <lastmod>2020-09-30T13:28:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/assets/files/OpenMAMA%20Developers%20Guide%20C%2B%2B.pdf</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/assets/files//OpenMAMA%20Developers%20Guide%20C-Sharp.pdf</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/assets/files//OpenMAMA%20Developers%20Guide%20JNI.pdf</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/assets/files/OpenMAMDA%20Developers%20Guide.pdf</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/c/</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/c/index.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/index.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cs/</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cs/index.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/java/</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/java/index.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mamda/cpp/</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mamda/cpp/index.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mamda/cs/</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mamda/cs/index.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mamda/java/</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mamda/java/index.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_quick_start_guide_running_openmama_apps</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_rfc_source_discovery.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_rfc_extended_datetime.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_rfc_publisher_events.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/openmama_rfc_deferred_entitlements_mama_plugin.html</loc>
+  <lastmod>2020-09-30T13:28:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/namespaceWombat.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1Mama.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaBasicSubscription.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaBasicSubscriptionCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaBasicWildCardSubscription.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaBasicWildCardSubscriptionCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaBridgeCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaBridgeFtMember.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaConnection.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDateTime.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTimeZone.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDictionary.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDictionaryCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDispatcher.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDQPublisher.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDQPublisherManager.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDQPublisherManagerCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaEntitlementCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCache.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheField.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldBase.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldBasic.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldDateTime.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldDateTimeVector.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldPrice.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldPriceVector.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldString.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldStringVector.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldVector.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldVectorBasic.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheRecord.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldDescriptor.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFtMember.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFtMemberCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaInbox.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaInboxCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaIo.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaIoCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaLogFile.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaLogFileCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaMsg.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaMsgField.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaMsgFieldIterator.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaMsgIterator.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaMsgQual.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaMulticastFtMember.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaPrice.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaPublisher.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaPublisherCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaPublishTopic.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaQueue.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaQueueEnqueueCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaQueueEventCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaQueueGroup.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaQueueMonitorCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaReservedFields.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSendCompleteCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaServerConnection.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSource.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceDerivative.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceGroup.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceGroupManager.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceManager.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceStateChangeCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaStartCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaStat.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaStatsCollector.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaStatus.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSubscription.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSubscriptionCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSubscriptionIteratorCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolList.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolListFile.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolListIteratorHandler.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolListMember.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolListMembershipHandler.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolListResortHandler.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolMap.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolMapFile.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolSource.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolSourceCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolStoreSaveCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTimer.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTimerCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTransport.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTransportCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTransportMap.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTransportTopicEventCallback.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1Type.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classmama__size__t.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1Mama-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/mamacpp_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaBasicSubscription-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaBasicSubscription_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaBasicSubscriptionCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaBasicSubscriptionCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaBasicWildCardSubscription-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaBasicWildCardSubscription_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaBasicWildCardSubscriptionCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaBasicWildCardSubscriptionCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaBridgeCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaBridgeCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaBridgeFtMember-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaFt_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaConnection-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaConnection_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDateTime-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDateTime_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDateTime_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTimeZone-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaTimeZone_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDictionary-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDictionary_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDictionaryCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDictionaryCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDispatcher-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDispatcher_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDQPublisher-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDQPublisher_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDQPublisherManager-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDQPublisherManager_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaDQPublisherManagerCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDQPublisherManagerCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaEntitlementCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCache-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaFieldCache_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCache_1_1const__iterator.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCache_1_1iterator.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCache_1_1MamaFieldCacheIterator.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheField-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaFieldCacheField_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldBase-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldBasic-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaFieldCacheFieldTypes_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldDateTime-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldDateTimeVector-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldPrice-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldPriceVector-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldString-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldStringVector-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldVector-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheFieldVectorBasic-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCacheRecord-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaFieldCacheRecord_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldDescriptor-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaFieldDescriptor_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFtMember-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFtMemberCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaInbox-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaInbox_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaInboxCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaInboxCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaIo-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaIo_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaIoCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaIoCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaLogFile-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaLogFile_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaLogFileCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaMsg-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaMsg_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaMsgField-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaMsgField_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaMsgFieldIterator-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaMsgFieldIterator_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaMsgIterator-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaMsgQual-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaMsgQual_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaMulticastFtMember-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaPrice-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaPrice_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaPublisher-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaPublisher_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaPublisherCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaPublisherCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaPublishTopic-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaQueue-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaQueue_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaQueueEnqueueCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaQueueEnqueueCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaQueueEventCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaQueueEventCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaQueueGroup-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaQueueGroup_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaQueueMonitorCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaQueueMonitorCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaReservedFields-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaReservedFields_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSendCompleteCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSendCompleteCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaServerConnection-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaServerConnection_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSource-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSource_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceManager_1_1iterator.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceDerivative-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSourceDerivative_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceGroup-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSourceGroup_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceGroup_1_1iterator.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceGroupManager-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSourceGroupManager_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceGroupManager_1_1iterator.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceManager-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSourceManager_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceStateChangeCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSourceStateChangeCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaStartCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaStat-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaStat_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaStatsCollector-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaStatsCollector_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaStatus-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaStatus_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSubscription-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSubscription_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSubscriptionCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSubscriptionCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSubscriptionIteratorCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolList-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolList_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolListFile-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolListFile_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolListIteratorHandler-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolListHandlerTypes_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolListMember-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolListMember_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolListMembershipHandler-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolListResortHandler-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolMap-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolMap_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolMapFile-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolMapFile_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolSource-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolSource_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolSourceCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolSourceCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSymbolStoreSaveCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolStoreSaveCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTimer-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaTimer_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTimerCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaTimerCallback_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTransport-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaTransport_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTransportCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTransportMap-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaTransportMap_8h_source.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaTransportTopicEventCallback-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/mamacpp_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaBridgeCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaMsg_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaQueueGroup_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaBasicSubscription_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaBasicSubscriptionCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaBasicWildCardSubscription_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaBasicWildCardSubscriptionCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSubscription_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSubscriptionCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaTransport_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaPublisher_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaPublisherCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaInboxCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaInbox_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaQueue_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaQueueEnqueueCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaQueueMonitorCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaQueueEventCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDispatcher_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaTimerCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaTimer_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaIoCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaIo_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDictionaryCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDictionary_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaFieldDescriptor_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaPrice_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaMsgFieldIterator_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaMsgField_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaStatus_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolMap_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolMapFile_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaLogFile_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolSourceCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolSource_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaMsgQual_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSendCompleteCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSource_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSourceManager_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSourceGroup_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSourceGroupManager_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaStatsCollector_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/dir_68267d1309a1af8e8297ef4c3efbcdba.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/dir_dfdbda394c3f7a3aa55229f33a559c41.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/dir_00db19b2b79fdf52c3386f22138fb2aa.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaFt_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaConnection_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/dir_905d4fc19fedd8d7b414071da7278756.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaTimeZone_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDQPublisher_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDQPublisherManager_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaDQPublisherManagerCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaFieldCache_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaFieldCacheField_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/dir_3ca53c91b9e919f99ab55ae875923994.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCache_1_1const__iterator-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCache_1_1iterator-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaFieldCache_1_1MamaFieldCacheIterator-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaFieldCacheFieldTypes_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaFieldCacheRecord_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaReservedFields_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaServerConnection_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceManager_1_1iterator-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSourceDerivative_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSourceStateChangeCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceGroup_1_1iterator-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/classWombat_1_1MamaSourceGroupManager_1_1iterator-members.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaStat_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolList_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolListMember_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolListHandlerTypes_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolListFile_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaSymbolStoreSaveCallback_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://openmama.org/reference/mama/cpp/MamaTransportMap_8h.html</loc>
+  <lastmod>2020-09-30T13:28:45+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+
+
+</urlset>
