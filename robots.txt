@@ -1,0 +1,3 @@
+Sitemap: https://www.openmama.org/sitemap.xml
+User-agent:*
+Disallow:
