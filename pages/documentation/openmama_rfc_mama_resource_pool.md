@@ -47,63 +47,44 @@ free to new prospects. Core approaches may include:
 
 ## Summaries of Design Approaches Considered
 
-There are two main approaches that are possible to accomplish this sort of thing. One is the "classic"
-way which involves writing a whole bunch of APIs which abstract but at the cost of adding complexity.
-The odds are that this is what is being used in most places at the moment. We even have an open source
+There are two main approaches that are possible to accomplish this sort of thing.
+
+The first (recommended) is arguably a more modern approach to design the interface "developer first" and think of what (in an
+ideal world) the API would do for the developer, then craft an interface to satisfy that approach.
+
+The other is the the "classic" approach which involves several wrapper APIs which abstract away from the
+interface but at the cost of adding complexity.
+This approach is most commonplace in environments as seen in the wild today. We even have an open source
 one to reference here in the MAMA Managed Environment.
 
-The other more modern approach is to design the interface "developer first" and think of what (in an
-ideal world) the API would do for you, then write an interface to satisfy that approach.
 
-### Adopting MAMA Managed Environment (MME)
 
-[This project or something similar to it](https://github.com/nyfix/MME).
+### MAMA Resource Pool (recommended)
 
-This is something that many users will have adopted - a series of APIs to try and help reuse code across
-different projects. This sort of project goes by many names. I have seen MamaManager more
-often than not but no matter what it is called, the principle is always the same - abstract
-OpenMAMA to only the interfaces which your application uses, and the threading models which your
-applications find convenient.
-
-#### Pros of Choice X Description
-
-* Abstracts underlying MAMA objects
-* Has production miles
-
-#### Cons of Choice X Description
-
-* If you go on for long enough, you'll end up re-writing an abstraction layer above almost all of OpenMAMA
-* May help with DRY in projects which use it but beyond that doesn't add much convenience
-* Not much of an improvement in terms of complexity (in fact it adds an additional layer)
-* No C++ / Java / C# Bindings
-
-### MAMA Resource Pool
-
-This is the original approach outlined by Frank on the mailing list. The idea is to reduce an OpenMAMA subscribing application to something which looks more like this:
+This is the original approach outlined by Frank on the mailing list. The idea is to reduce an OpenMAMA subscribing application to something which looks more like this when using C:
 
 ```c
-// Set up the event handlers for OpenMAMA
+// Use a new "resource pool" to manage lifecycles of all pool-created resources,
+// allocating queues, defaults etc from configuration
+mamaResourcePool resourcePool;
+mamaResourcePool_create(&resourcePool, "pool_name");
+
+// Set up the event handlers for subscription
 mamaMsgCallbacks callbacks;
 memset(&callbacks, 0, sizeof(callbacks));
 callbacks.onMsg = subscriptionOnMsg;
 callbacks.onCreate = subscriptionOnCreate;
 callbacks.onError = subscriptionOnError;
 
-// Use a new "resource pool"
-mamaResourcePool resourcePool;
-const char* poolName = "pool_name";
+// Actually... subscribe to something via something convenient like a URI (Additional API)
 const void* closure = NULL;
-
-// Create the resource pool, allocating queues, defaults etc from configuration
-mamaResourcePool_create(&resourcePool, poolName);
-
-// Actually... subscribe to something via something convenient like a URI 
-mamaResourcePool_createSubscriptionFromUri(&subscription,
+mamaResourcePool_createSubscriptionFromUri(resourcePool,
+                                           &subscription,
                                            "bridge://transport/source/topic",
                                            &callbacks,
                                            closure);
 
-// Block
+// Block and begin receiving callbacks
 mama_start();
 ```
 
@@ -120,9 +101,29 @@ MamaSubscription subscription = mamaResourcePool.createSubscription(
 );
 ```
 
+The idea is to use configuration such as below to manage things like the number of queues to use,
+how do load balance etc:
+
+```properties
+# The number of threads / queues to use in the pool’s queue group
+mama.resource_pool.<pool name>.queues = 2
+
+# Any preferred regex for assigning URIs to threads on creation
+mama.resource_pool.<pool_name>.queue_0.regex = ^.*[/]b*[0-9A-M].*$
+mama.resource_pool.<pool_name>.queue_1.regex = ^.*[/]b*[N-Z].*$
+
+# Name of OpenMAMA queue thread to create in the queue group (to work
+# alongside mama.thread_affinity (will be <thread_prefix>_N where N is
+# the queue index).
+mama.resource_pool.<pool_name>.thread_name_prefix = <pool_name>
+
+# List of bridges to load (by default will try to load all available)
+mama.resource_pool.<pool_name>.bridges = <bridge X> <bridge Y>
+```
+
 So in this case, the mamaResourcePool will:
 
-* Create queues for subscriptions (which could be configurable based on the poolName).
+* Create queues for subscriptions (which could be configurable based on the pool name).
 * Load all middleware bridges found on the PATH / LD_LIBRARY_PATH etc.
 * Call mama_open() (if not already open).
 * Create and manage internal stores of all managed subscriptions, transports, sources etc.
@@ -137,35 +138,104 @@ Then when a resource is created inside:
 * Be convenient and usable, but still flexible (it would return existing OpenMAMA objects so they can be manipulated).
 * Take the heavy lifting and thread safety pain away from the application developer.
 
-The suggestion is to start the API small, then let it grow organically. So start with:
 
-| **Method `mamaResourcePool_*`** | **Function** |
-| `mama_status create( mamaResourcePool* pool const char* poolName )` | This will allocate a mamaResourcePool and all requisite dependencies according to the currently loaded configuration. |
-| `mama_status destroy( mamaResourcePool )` | This will destroy the mamaResourcePool and all associated subscriptions inside. |
-| `mama_status createSubscriptionFromUri( mamaResourcePool pool, mamaSubscription* sub, const char* uri )` | Accepts a subscription to populate and a URI, will create it and then return it. Additional query parameters may then be parsed to provide additional functionality (e.g. to return a subscription in a deactivated state). |
-| `mama_status destroySubscription( mamaResourcePool pool, mamaSubscription sub )` | Destroys the provided MAMA Subscription and removes it from the MAMA Resource Pool. This operation will be thread safe. |
-| `mama_status getSubscriptionFromUri( mamaResourcePool pool, mamaSubscription* sub, const char* uri )` | Return the MAMA Subscription object from the cache for the provided URI. |
+This is only one potential interface though. The technical working group have discussed several
+different potential APIs including many which would have required the provision of both a MAMA Transport
+and a MAMA Bridge at various points which adds complexity in both the application and the interface.
 
-And have the following sort of configuration options:
+As a result of this discussion and the increasingly complex API that it was veering towards,
+it was agreed that using the same transport name across multiple
+MAMA Bridges should be considered bad practice, and allowing mamaResourcePool (which is primarily aimed at new
+adopters) to be hindered because of this particular use case was considered too restrictive and inflexible. So with that
+in mind, mamaResourcePool and assocated APIs mandate that the **same transport name cannot be
+used for multiple middlewares**.
 
+In the same spirit, the same could be said for sources. Allowing multiple sources to appear across
+multiple transports reduced flexibility in the API, so with that in mind it was agreed that the
+**same source may not be used on multiple transports when using the MAMA resource pool**.
+This allows us to open up API calls that don't require passing bridges or transports around
+everywhere since they can be managed by the mamaResourcePool instead, for example:
+
+```c
+
+// This one will use the transport, source and topic to subscribe... with the mama resource pool
+// finding / creating the transports and sources requested
+mamaResourcePool_createSubscriptionFromComponents(resourcePool,
+                                                  &subscription,
+                                                  "transportname",
+                                                  "sourcename",
+                                                  "topicname",
+                                                  &callbacks,
+                                                  closure);
+
+// This one will imply using the mama resource pool's default transport
+mamaResourcePool_createSubscriptionFromTopicWithSource(resourcePool,
+                                                       &subscription,
+                                                       "sourcename",
+                                                       "topicname",
+                                                       &callbacks,
+                                                       closure);
+
+// This one will imply using the mama resource pool's default transport, and that transport's
+// default source (or the pool's default source if provided)
+mamaResourcePool_createSubscriptionFromTopic(resourcePool,
+                                             &subscription,
+                                             "topicname",
+                                             &callbacks,
+                                             closure);
 ```
-// The number of threads / queues to use in the pool’s queue group
-mama.resource_pool.<pool name>.queues = 2
 
-// Any preferred regex for assigning URIs to threads on creation
-mama.resource_pool.<pool_name>.queue_0.regex = ^.*[/]b*[0-9A-M].*$
-mama.resource_pool.<pool_name>.queue_1.regex = ^.*[/]b*[N-Z].*$
+Which would then depend on configuration such as this to define the default source / transport for the
+resource pool:
 
-// Name of OpenMAMA queue thread to create in the queue group (to work
-// alongside mama.thread_affinity (will be <thread_prefix>_N where N is
-// the queue index).
-mama.resource_pool.<pool_name>.thread_name_prefix = <pool_name>
+```properties
+# Configure a default transport for this resource pool
+mama.resource_pool.<pool name>.default_transport = <transport>
 
-// List of bridges to load (by default will try to load all available)
-mama.resource_pool.<pool_name>.bridges = qpid zmq
+# Default source may be provided by either the resource pool, or the transport itself
+mama.resource_pool.<pool name>.default_source = <source_name>
+
+# New source level configuration to define the transport and bridge
+mama.source.<source_name>.transport = <transport>
+mama.source.<source_name>.bridge = <bridge>
+
+# Default source may also be specified at a transport level
+mama.transport.bridge.<transport>.default_source = <source_name>
 ```
 
-#### Pros of Choice X Description
+This means that application developers don't need to go through the motions of URI construction
+to build everything they need for a transport and instead they can defer that boilerplate to
+configuration instead.
+
+An added benefit of adopting this approach means that an API such as the following may safely
+be used to generate "pick lists" of available transports without fear of conflict or overlap
+since transport names are now configured-application-instance-unique:
+
+```c
+// Optionally gather all available transports defined in mama.properties for use in pick lists
+char* transports[8];
+mama_getAvailableTransportNames(resourcePool, transports, 8);
+```
+
+Which would then be all you would need to use a mamaResourcePool to create and initialize that transport (no
+need to throw mamaBridge instances around):
+
+```c
+// Gather just the transport for further metadata to be used in pick lists should need arise
+mamaTransport transport;
+mamaResourcePool_createTransportFromName(resourcePool,
+                                         &transport);
+```
+
+Or indeed simply let the mamaResourcePool just-in-time initialize that transport when the first subscription
+using it is instantiated.
+
+##### Publishing
+
+Note this covers the subscribing side of the mamaResourcePool for now. Further discussions need to be had around
+the potential implementation of a **publish** side equivalent (should it be deemed beneficial).
+
+#### Pros of this approach
 
 * Starts with a "developer first" mentality
 * Will make it very easy to get up and running with OpenMAMA
@@ -175,48 +245,43 @@ mama.resource_pool.<pool_name>.bridges = qpid zmq
 * User doesn't need to get bogged down with OpenMAMA semantics
 * URIs can be extended with query parameters to extend functionality beyond the bare URI
 
-#### Cons of Choice X Description
+#### Cons of this approach
 
 * Needs probing to see if it's suitable for enterprise as well as simple applications
 * May prove tricky to be fully thread safe for all operations without sacrificing performance
-* String parsing isn't particularly efficient. Other options may be preferred.
 
-## Recommended Design Approach
+### MAMA Managed Environment or similar (classic)
 
-TBC
+[This project or something similar to it](https://github.com/nyfix/MME).
 
-### Component X
+This is something that many users will have adopted - a series of APIs to try and help reuse code across
+different projects or build a layer on top of it. In various implementations though, the principle is always the same - abstract
+OpenMAMA to only the interfaces which your application uses, and the threading models which your
+applications find convenient.
 
-TBC
+#### Pros of MME (or similar approach)
 
-#### Interface Changes
+* Abstracts underlying MAMA objects
+* Has production miles
 
-TBC
+#### Cons of MME (or similar approach)
 
-#### Internal Data Structure Changes
-
-TBC
-
-#### Unit Testing Required
-
-TBC
-
-#### Integration Testing Required
-
-TBC
+* If you go on for long enough, you'll end up re-writing an abstraction layer above almost all of OpenMAMA
+* May help with DRY in projects which use it but beyond that doesn't add much convenience
+* Not much of an improvement in terms of complexity (in fact it adds an additional layer)
+* No C++ / Java / C# Bindings
 
 ## Impact of Resulting Changes
 
-Refer to [this](https://github.com/OpenMAMA/OpenMAMA/wiki/OpenMAMA-Versioning) when considering this section.
-
 ### Impact to Application Users
 
-If application interface is changed, document it here and justify the impact is worth the improvement.
+These changes would be backwards compatible with existing applications.
 
 ### Impact to Bridge Developers
 
-If the bridge interface is changed, document it here and justify the impact is worth the improvement.
+These changes would be backwards compatible with existing bridges with no code changes required.
 
 ### Impact to Internal API Components
 
-If any internal interface is changed, document it here and justify the impact is worth the improvement.
+We do not anticipate any internal API components will require any backwards incompatible changes,
+though this may be subject to change further down the implementation.
