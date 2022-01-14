@@ -17,4 +17,5 @@ toc: false
 
 | RFC Title | Proposer  | Raised | Agreed | Merged | Released | Discussed | Doc      | Changes |
 | --------- | --------- | ------ | ------ | ------ | -------- | --------- | -------- | ------- |
+| MAMA Resource Pool | [Frank Quinn](https://github.com/fquinner) | 2022-01-04 | TBC | TBC | TBC  | TBC | [View](openmama_rfc_mama_resource_pool.html) | TBC |
 | Source Discovery | [Gavin Ridgway](https://github.com/gridgway-arcontech) | 2017-09-13 | TBC | TBC | TBC  | [Archive](https://lists.openmama.org/pipermail/openmama-dev/2017/002087.html) | [View](openmama_rfc_source_discovery.html) | TBC |
