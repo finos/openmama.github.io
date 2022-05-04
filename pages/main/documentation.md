@@ -9,7 +9,7 @@ toc: false
 
 Welcome to the home of all OpenMAMA related technical Documentation.
 
-Here you will find all sorts of documentation relating to the project, including an overview of our [Technical FAQ](openmama_faq.html), documentation on how to develop a middleware [bridge](openmama_bridge.html), as well as instructions for [building](openmama_build_instructions.html) OpenMAMA. 
+Here you will find all sorts of documentation relating to the project, including an overview of our documentation on how to develop a middleware [bridge](openmama_bridge.html), as well as instructions for [building](openmama_build_instructions.html) OpenMAMA. 
 
 ## Quick start
 

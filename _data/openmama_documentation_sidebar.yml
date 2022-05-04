@@ -13,9 +13,6 @@ sidebar_entries:
     - title: Supported Platforms
       url: /openmama_supported_platforms.html
       output: web
-    - title: Technical FAQ
-      url: /openmama_faq.html
-      output: web
     - title: Versioning
       url: /openmama_versioning.html
       output: web
