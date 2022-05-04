@@ -5,7 +5,7 @@
 			<div class="row">
 				<div class="sidebar col-md-3">
 					{% for section in site.data.openmama_documentation_sidebar.sidebar_entries %}
-						{% assign matches = section.folderitems | where_exp:"entry", "entry.url == page.url or entry.url == page.sidebar_url" %}
+						{% assign matches = section.folderitems | where_exp:"entry", "entry.url == page.url" %}
 						{% if matches.size > 0 %}
 							{% assign sidebar_class = "sidebar-visible" %}
 						{% else %}
