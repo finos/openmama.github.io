@@ -5,18 +5,18 @@
 			<div class="row">
 				<div class="sidebar col-md-3">
 					{% for section in site.data.openmama_documentation_sidebar.sidebar_entries %}
-						{% assign matches = section.folderitems | where_exp:"entry", "entry.url == page.url" %}
-						{% if matches.size > 0 %}
-							{% assign sidebar_class = "sidebar-visible" %}
-						{% else %}
-						    {% assign sidebar_class = "" %}
-						{% endif %}
 						{% assign section_id = section.title | replace: " ", "-" %}
 						<a class="sidebar-heading" onclick="document.getElementById('{{ section_id }}').classList.toggle('sidebar-visible')">{{ section.title }}</a>
 						<div id="{{section_id}}" class="sidebar-hidden {{ sidebar_class }}">
 							{% for entry in section.folderitems %}
 								{% if page.url == entry.url or page.sidebar_url == entry.url %}
 									<a class="active" href="{{ site.url }}{{ entry.url }}">{{ entry.title}}</a>
+									<script>
+										var section = document.getElementById('{{ section_id }}');
+										if (!section.classList.contains('sidebar-visible')) {
+											section.classList.add('sidebar-visible')
+										}
+									</script>
 								{% else %}
 									<a href="{{ site.url }}{{ entry.url }}">{{ entry.title}}</a>
 								{% endif %}
