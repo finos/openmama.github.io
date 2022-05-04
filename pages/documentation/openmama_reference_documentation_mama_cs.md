@@ -1,1 +1,0 @@
-{% include_relative openmama_reference_documentation_mama_java_parsed/index_classes.md %}
