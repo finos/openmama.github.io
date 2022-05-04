@@ -1,5 +1,0 @@
-var searchData=
-[
-  ['find',['find',['../interfaceWombat_1_1ISourceManager.html#ab71d42c505c9f93f67b3de135a3161c5',1,'Wombat.ISourceManager.find()'],['../classWombat_1_1MamaSource.html#ad5aaa84938c738577d1dd0f53d61b326',1,'Wombat.MamaSource.find()'],['../classWombat_1_1MamaSourceGroup.html#a2aa5de69746f96e1151e9a6d11b8ab2e',1,'Wombat.MamaSourceGroup.find()'],['../classWombat_1_1MamaSourceGroupManager.html#adafdacf28b4c29a2d95385690fc3c0a0',1,'Wombat.MamaSourceGroupManager.find()'],['../classWombat_1_1MamaSourceManager.html#a489f29ab3500d745b7433df315099406',1,'Wombat.MamaSourceManager.find()']]],
-  ['findorcreate',['findOrCreate',['../interfaceWombat_1_1ISourceManager.html#a52453b9e791f3b75625794c041d8fb21',1,'Wombat.ISourceManager.findOrCreate()'],['../classWombat_1_1MamaSource.html#a8791be0ea6fd5ff99df3b6884d757a2e',1,'Wombat.MamaSource.findOrCreate()'],['../classWombat_1_1MamaSourceGroupManager.html#a3b0e6eddb5805eb7dbe1d0baab78cd2f',1,'Wombat.MamaSourceGroupManager.findOrCreate()'],['../classWombat_1_1MamaSourceManager.html#a0757fdf68d2e2cfdc2eb6db2b3e66dca',1,'Wombat.MamaSourceManager.findOrCreate()']]]
-];

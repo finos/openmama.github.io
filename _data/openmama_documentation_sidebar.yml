@@ -7,14 +7,8 @@ sidebar_entries:
     - title: Documentation Home
       url: /documentation.html
       output: web
-    - title: Quick Start
-      url: /quickstart.html
-      output: web
     - title: What is OpenMAMA?
       url: /what_is_openmama.html
-      output: web
-    - title: What is OpenMAMDA?
-      url: /what_is_openmamda.html
       output: web
     - title: Supported Platforms
       url: /openmama_supported_platforms.html
@@ -25,15 +19,31 @@ sidebar_entries:
     - title: Versioning
       url: /openmama_versioning.html
       output: web
-    - title: Contributing to Documentation
-      url: /openmama_contribute_documentation.html
+
+  - title: Tutorials
+    output: web
+    folderitems:
+    - title: 1. Quick Start
+      url: /quickstart.html
       output: web
+    # - title: 2. Finding Data Providers
+    #   url: /openmama_finding_data_providers.html
+    #   output: web
 
   - title: User Guides
     output: web
     folderitems:
     - title: Installing OpenMAMA
       url: /openmama_installing.html
+      output: web
+    - title: OpenMAMA Developer's Guide
+      url: /openmama_developer_guide.html
+      output: web
+    - title: OpenMAMDA Developer's Guide
+      url: /openmamda_developer_guide.html
+      output: web
+    - title: API Reference Docs
+      url: /openmama_api_reference_docs.html
       output: web
     - title: Portable Demo Environment
       url: /openmama_portable_demo_environment.html
@@ -69,37 +79,12 @@ sidebar_entries:
 #      url: /openmama_introduction.html
 #      output: web
 
-  - title: API Reference Docs
-    output: web
-    folderitems:
-    - title: Developer Guides
-      url: /openmama_developers_guide_legacy.html
-      output: web
-    - title: MAMA C
-      url: /openmama_reference_documentation_mama_c.html
-      output: web
-    - title: MAMA C++
-      url: /openmama_reference_documentation_mama_cpp.html
-      output: web
-    - title: MAMA C#
-      url: /openmama_reference_documentation_mama_cs.html
-      output: web
-    - title: MAMA Java
-      url: /openmama_reference_documentation_mama_java.html
-      output: web
-    - title: MAMDA C++
-      url: /openmama_reference_documentation_mamda_cpp.html
-      output: web
-    - title: MAMDA C#
-      url: /openmama_reference_documentation_mamda_cs.html
-      output: web
-    - title: MAMDA Java
-      url: /openmama_reference_documentation_mamda_java.html
-      output: web
-
   - title: Contributor Guides
     output: web
     folderitems:
+    - title: Contributing to Documentation
+      url: /openmama_contribute_documentation.html
+      output: web
     - title: Third Party Repository
       url: /openmama_contribute_thirdparty.html
       output: web

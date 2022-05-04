@@ -5,7 +5,7 @@
 			<div class="row">
 				<div class="sidebar col-md-3">
 					{% for section in site.data.openmama_documentation_sidebar.sidebar_entries %}
-						{% assign matches = section.folderitems | where_exp:"fi", "fi.url == page.url" %}
+						{% assign matches = section.folderitems | where_exp:"entry", "entry.url == page.url or entry.url == page.sidebar_url" %}
 						{% if matches.size > 0 %}
 							{% assign sidebar_class = "sidebar-visible" %}
 						{% else %}
@@ -15,7 +15,7 @@
 						<a class="sidebar-heading" onclick="document.getElementById('{{ section_id }}').classList.toggle('sidebar-visible')">{{ section.title }}</a>
 						<div id="{{section_id}}" class="sidebar-hidden {{ sidebar_class }}">
 							{% for entry in section.folderitems %}
-								{% if page.url == entry.url %}
+								{% if page.url == entry.url or page.sidebar_url == entry.url %}
 									<a class="active" href="{{ site.url }}{{ entry.url }}">{{ entry.title}}</a>
 								{% else %}
 									<a href="{{ site.url }}{{ entry.url }}">{{ entry.title}}</a>
@@ -25,7 +25,20 @@
 					{% endfor %}
 				</div>
 				<div class="content col-md-9">
+					{% if page.with_title %}
 					<h1>{{ page.title }}</h1>
+					{% endif %}
+					{% if page.with_doxylinks %}
+						<a class="btn-menu menu-btn-1 btn-custom" href="index_classes.html">Classes</a>
+						<a class="btn-menu menu-btn-1 btn-custom" href="index_files.html">Files</a>
+					{% endif %}
+					{% if page.toc %}
+					<a href="#" id="toc-container-show" onclick="document.getElementById('toc-container').style.display = 'block'; document.getElementById('toc-container-show').style.display = 'none'; ">Table of Contents >></a>
+					<div style="display: none;" id="toc-container">
+					{% include toc.html html=content %}
+					<a href="#" onclick="document.getElementById('toc-container').style.display = 'none'; document.getElementById('toc-container-show').style.display = 'block'; "><< Table of Contents</a>
+					</div>
+					{% endif %}
 					{{ content }}
 				</div>
 			</div> <!-- row -->

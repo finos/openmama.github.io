@@ -1,0 +1,107 @@
+---
+title: com::wombat::mama::testtools::load::MamaChurnTest::SubscriptionCallback
+sidebar: openmama_sidebar
+folder: openmama
+toc: false
+layout: documentation
+with_title: false
+sidebar_url: /openmama_api_reference_docs.html
+with_doxylinks: true
+---
+
+# com::wombat::mama::testtools::load::MamaChurnTest::SubscriptionCallback
+
+
+
+
+
+Inherits from [com.wombat.mama.MamaSubscriptionCallback](interfacecom_1_1wombat_1_1mama_1_1MamaSubscriptionCallback.html)
+
+## Public Functions
+
+|                | Name           |
+| -------------- | -------------- |
+| void | **[onMsg](classcom_1_1wombat_1_1mama_1_1testtools_1_1load_1_1MamaChurnTest_1_1SubscriptionCallback.html#function-onmsg)**(final [MamaSubscription](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html) subscription, final [MamaMsg](classcom_1_1wombat_1_1mama_1_1MamaMsg.html) msg) |
+| void | **[onCreate](classcom_1_1wombat_1_1mama_1_1testtools_1_1load_1_1MamaChurnTest_1_1SubscriptionCallback.html#function-oncreate)**([MamaSubscription](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html) subscription) |
+| void | **[onError](classcom_1_1wombat_1_1mama_1_1testtools_1_1load_1_1MamaChurnTest_1_1SubscriptionCallback.html#function-onerror)**([MamaSubscription](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html) subscription, short mamaStatus, int tibrvStatus, String subject, Exception e) |
+| void | **[onQuality](classcom_1_1wombat_1_1mama_1_1testtools_1_1load_1_1MamaChurnTest_1_1SubscriptionCallback.html#function-onquality)**([MamaSubscription](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html) subscription, short quality, short cause, final Object opaque) |
+| void | **[onGap](classcom_1_1wombat_1_1mama_1_1testtools_1_1load_1_1MamaChurnTest_1_1SubscriptionCallback.html#function-ongap)**([MamaSubscription](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html) subscription) |
+| void | **[onRecapRequest](classcom_1_1wombat_1_1mama_1_1testtools_1_1load_1_1MamaChurnTest_1_1SubscriptionCallback.html#function-onrecaprequest)**([MamaSubscription](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html) subscription) |
+| void | **[onDestroy](classcom_1_1wombat_1_1mama_1_1testtools_1_1load_1_1MamaChurnTest_1_1SubscriptionCallback.html#function-ondestroy)**([MamaSubscription](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html) subscription) |
+
+## Public Functions Documentation
+
+### function onMsg
+
+```java
+inline void onMsg(
+    final MamaSubscription subscription,
+    final MamaMsg msg
+)
+```
+
+
+### function onCreate
+
+```java
+inline void onCreate(
+    MamaSubscription subscription
+)
+```
+
+
+### function onError
+
+```java
+inline void onError(
+    MamaSubscription subscription,
+    short mamaStatus,
+    int tibrvStatus,
+    String subject,
+    Exception e
+)
+```
+
+
+### function onQuality
+
+```java
+inline void onQuality(
+    MamaSubscription subscription,
+    short quality,
+    short cause,
+    final Object opaque
+)
+```
+
+
+### function onGap
+
+```java
+inline void onGap(
+    MamaSubscription subscription
+)
+```
+
+
+### function onRecapRequest
+
+```java
+inline void onRecapRequest(
+    MamaSubscription subscription
+)
+```
+
+
+### function onDestroy
+
+```java
+inline void onDestroy(
+    MamaSubscription subscription
+)
+```
+
+
+-------------------------------
+
+Updated on 2022-05-04 at 07:54:08 +0100

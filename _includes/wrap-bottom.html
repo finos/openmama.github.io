@@ -1,6 +1,18 @@
 	<!-- JavaScript (include all script here) -->
 	<script src="{{ site.url }}/assets/js/jquery.bundle.js?ver=100"></script>
 	<script src="{{ site.url }}/assets/js/script.js?ver=100"></script>
+	<script src="//cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
+	<script id="rendered-js">
+		// Must reference the table inside the div, not the div itself,
+		// as the div is not a table and you'll get an error from jQuery.
+		//
+		// If you had an HTML table and not a markdown one, you could setup <table id="my-table"> and reference with $("#my-table").
+		$(document).ready(function () {
+		  $("#sampleTable").DataTable();
+		  $("#sampleTable1").DataTable();
+		});
+		//# sourceURL=pen.js
+	</script>
 </body>
 
 </html>
