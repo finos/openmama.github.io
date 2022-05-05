@@ -905,6 +905,11 @@
     }
 
     @media all and (min-width: 992px) {
+
+      html {
+        scroll-padding-top: 80px;
+      }
+
       .navbar-brand {
         height: 70px;
       }
@@ -4365,7 +4370,7 @@
       color: white;
     }
 
-    div.highlight > pre.highlight {
+    div.highlight > pre, figure.highlight > pre  {
       padding: 15px;
     }
 

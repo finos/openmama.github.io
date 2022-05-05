@@ -1,4 +1,4 @@
-  <div class="tab code-tab">
+  <div id="code-tab-{{ include.id }}" class="tab code-tab">
 	{% assign i = 0 %}
 	{% for tabname in include.tabs %}
 		{% if include.headings[i] %}
@@ -6,7 +6,7 @@
 		{% else %}
 		    {% assign tabtitle = tabname | capitalize %}
 		{% endif %}
-		<button class="tablinks tablinks-{{ tabname }}" onclick="openTab(event, '{{tabname}}')" id="defaultOpen-{{ include.id }}">{{tabtitle}}</button>
+		<button class="tablinks tablinks-{{ tabname }}" onclick="openTab{{include.id | replace: '-', '_'}}(event, '{{tabname}}');" id="defaultOpen-{{ include.id }}-{{tabname}}">{{tabtitle}}</button>
 		{% assign i = i | plus:1 %}
 	{% endfor %}
   </div>
@@ -18,16 +18,15 @@
   {% endfor %}
 
   <script>
-	function openTab(evt, tabname) {
+	function openTab{{include.id | replace: '-', '_'}}(evt, tabname) {
 		var i, tabcontent, tablinks;
 		tabcontent = document.getElementsByClassName("tabcontent-" + tabname);
 		// Set no display output for everything
 		for (i = 0; i < tabcontent.length; i++) {
 		    tabcontent[i].style.display = "none";
 		}
-		console.log("Tabname = %s", tabname);
 
-		// Deactivate all buttons before activating the one we want
+		// Activate the tabs that we need to activate
 		all_tablinks = document.getElementsByClassName("tablinks");
 		for (i = 0; i < all_tablinks.length; i++) {
 			if (all_tablinks[i].classList.contains("tablinks-" + tabname)) {
@@ -46,8 +45,11 @@
 			}
 		}
 
-		document.getElementById(tabname + "-{{ include.id }}").style.display = "block";
+		// document.getElementById(tabname + "-{{ include.id }}").style.display = "block";
+		if (evt) {
+		    window.location.href = '#code-tab-{{ include.id }}';
+		}
 	}
-	// Get the element with id="defaultOpen" and click on it
-	document.getElementById("defaultOpen-{{ include.id }}").click();
+	// Get the first tab in the tab list and select that one
+	openTab{{include.id | replace: '-', '_'}}(null, "{{include.tabs[0]}}");
   </script>

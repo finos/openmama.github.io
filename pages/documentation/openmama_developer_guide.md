@@ -326,26 +326,73 @@ bridge are not available, then the load will fail. A path to the bridge librarie
 
 To load bridges in:
 
-```
+{% capture snippet_c %}
+{% highlight c %}
+mamaBridge bridge = NULL; 
+bridge = mama_loadBridge (&bridge, "qpid"); 
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 mamaBridge bridge = NULL; 
 bridge = Mama::loadBridge ("qpid"); 
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+Mama.loadBridge("qpid");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+Mama.loadBridge("qpid");
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-load-bridge" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 
 ### Loading Bridge Libraries at Runtime from a Specified Location 
 
 OpenMAMA also allows the user to load the bridge libraries from a specified path. If no path is cited, 
 loadBridge functionality defaults to using the system's library search paths. The 
-specified path must use the appropriate path separator for the OS i.e. "/" for Unix systems, "\" for 
+specified path must use the appropriate path separator for the OS i.e. "`/`" for Unix systems, "`\`" for 
 Windows systems. 
 
 To load in bridge libraries at runtime with path:
 
-```
-mamaBridge bridge = NULL; 
-bridge = Mama::loadBridge ("qpid", "/opt/openmama/lib"); 
-```
+{% capture snippet_c %}
+{% highlight c %}
+mamaBridge bridge = NULL;
+mama_loadBridgeWithPath (&bridge, "qpid", "/opt/openmama/lib");
+{% endhighlight %}
+{% endcapture %}
 
+{% capture snippet_cpp %}
+{% highlight cpp %}
+mamaBridge bridge = NULL;
+bridge = Mama::loadBridge ("qpid", "/opt/openmama/lib");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+MamaBridge bridge = null;
+bridge = Mama.loadBridge("qpid", @"C:\openmama\lib");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+MamaBridge bridge = null;
+bridge = Mama.loadBridge("qpid", "/opt/openmama/lib");
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-load-bridge-with-path" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 ## Payload Bridges
 
@@ -362,10 +409,35 @@ Payload bridge libraries can be dynamically loaded at runtime in the same way as
 
 To load payload bridge libraries at runtime:
 
-```
+{% capture snippet_c %}
+{% highlight c %}
 mamaPayloadBridge payload = NULL;
-payload = Mama::loadPayloadBridge ("avis");
-```
+mama_loadPayloadBridge (&payload, "qpidmsg");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+mamaPayloadBridge payload = NULL;
+payload = Mama::loadPayloadBridge ("qpidmsg");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+MamaPayloadBridge payload = null;
+payload = Mama.loadPayloadBridge("qpidmsg");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+MamaPayloadBridge payload = null;
+payload = Mama.loadPayloadBridge("qpidmsg");
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-load-payload-bridge" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 
 ### Default Payloads 
@@ -379,9 +451,31 @@ overridden programmatically.
 
 To set the default payload:
 
-```
+{% capture snippet_c %}
+{% highlight c %}
 mama_setDefaultPayloadBridge (‘Q’); 
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+// Not currently supported in the C++ API
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+// Not currently supported in the C# API
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+// Not currently supported in the Java API
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-set-default-payload-bridge" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 
 ### Using Payload 
@@ -390,22 +484,95 @@ The default payload is used when no payload bridge is explicitly stated.
 There are three options available for specifying payload creation: 
 
 **Using the default**
-```
+
+{% capture snippet_c %}
+{% highlight c %}
 mamaMsg* msg = NULL; 
 mamaMsg_create(&msg); 
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+MamaMsg msg = new MamaMsg();
+msg->create();
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+MamaMsg msg = new MamaMsg();
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+MamaMsg msg = new MamaMsg();
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-new-mamamsg" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
+
 
 **Using the payload ID**
-```
+
+{% capture snippet_c %}
+{% highlight c %}
 mamaMsg* msg = NULL; 
-mamaMag_createForPayload(&msg, ‘Q’); 
-```
+mamaMsg_createForPayload(&msg, ‘Q’); 
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+MamaMsg msg = new MamaMsg();
+msg->createForPayload(‘Q’); 
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+MamaMsg msg = new MamaMsg('Q');
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+MamaMsg msg = new MamaMsg('Q');
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-new-mamamsg-with-payload" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 **Using the bridge structure**
-```
+
+{% capture snippet_c %}
+{% highlight c %}
 mamaMsg* msg = NULL; 
-mamaMag_createForPayloadBridge(&msg, payload); 
-```
+mamaMsg_createForPayloadBridge(&msg, payloadBridge); 
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+MamaMsg msg = new MamaMsg();
+msg->createForPayloadBridge(payloadBridge); 
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+MamaMsg msg = new MamaMsg(payloadBridge);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+MamaMsg msg = new MamaMsg(payloadBridge);
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-create-for-payload-bridge" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 
 # Properties 
@@ -439,9 +606,31 @@ Properties are always specified as strings in all API versions.
 
 **Setting properties at runtime**
 
-```
-mama_setProperty ("mama.avis.transport.avis_tport.url", "elvin://127.0.0.1:5555");
-```
+{% capture snippet_c %}
+{% highlight c %}
+mama_setProperty ("mama.payload.default", "qpidmsg");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+Mama::setProperty("mama.payload.default", "qpidmsg");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+Mama.setProperty("mama.payload.default", "qpidmsg");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+Mama.setProperty("mama.payload.default", "qpidmsg");
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-set-bridge-property" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 Regardless of the mechanism used to specify the properties, or the specific language implementation 
 used, the properties must always have the same format. An example of a `mama.properties` file is 
@@ -472,11 +661,40 @@ with the name default.
 The following example code illustrates how to create a transport object using the identifier "avis_tport" to 
 locate relevant properties from the list specified to the API upon initialization. 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
+mamaTransport transport;
+mamaTransport_allocate (&transport);
+// Set runtime properties before "creating" transport here ...
+mamaTransport_create (transport, "transport_name", bridge);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 MamaTransport* transport = new MamaTransport(); 
-//set runtime properties
-transport->create ("avis_tport", bridge);
-```
+// Set runtime properties before "creating" transport here ...
+transport->create ("transport_name", bridge);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+MamaTransport transport = new MamaTransport();
+// Set runtime properties before "creating" transport here ...
+transport.create ("transport_name", bridge);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+MamaTransport transport = new MamaTransport();
+// Set runtime properties before "creating" transport here ...
+transport.create ("transport_name", bridge);
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-create-transport" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 ## Setting Transport Properties 
 
@@ -494,10 +712,10 @@ where:
 
 The property name and property value can be separated by either a space (`' '`) or an equals sign (`'='`). 
 
-As an example for avis:
+As an example for qpid:
 
 ```
-mama.avis.transport.avis_sub.url=elvin://localhost:7777
+mama.qpid.transport.pub.incoming_url=amqp://~127.0.0.1:7777
 ```
 
 
@@ -511,22 +729,64 @@ for recap requests. Subscription requests are throttled on the default throttle 
 throttle. 
 
 The throttles are created and can be configured on a per transport basis. The values for the throttle rates 
-can be changed at runtime via the transport's outbound throttle functions, e.g.:
+can be changed at runtime via the transport's outbound throttle functions. A callback can also be supplied
+to register for any transport level events that occur. This is dependent 
+on the underlying messaging middleware being used, as not all provide this type of information. E.g:
 
-```
+{% capture snippet_c %}
+{% highlight c %}
 /* Change the value of the default throttle to 1000 msg/sec */ 
-transport.setOutboundThrottle (1000.0, MAMA_THROTTLE_DEFAULT); 
+mamaTransport_setOutboundThrottle (transport, MAMA_THROTTLE_DEFAULT, 1000.0); 
 
 /* Change the value of the recap throttle to 500 msg/sec */ 
-transport.setOutboundThrottle (500.0, MAMA_THROTTLE_RECAP);
-```
+mamaTransport_setOutboundThrottle (transport, MAMA_THROTTLE_RECAP, 500.0);
 
-A callback can also be supplied to register for any transport level events that occur. This is dependent 
-on the underlying messaging middleware being used, as not all provide this type of information:
+/* Set an optional transport level callback */ 
+mamaTransport_setTransportCallback (transport, callback);
+{% endhighlight %}
+{% endcapture %}
 
-```
-MamaTransport.setTransportCallback (callback);
-```
+{% capture snippet_cpp %}
+{% highlight cpp %}
+/* Change the value of the default throttle to 1000 msg/sec */ 
+transport->setOutboundThrottle (1000.0, MAMA_THROTTLE_DEFAULT); 
+
+/* Change the value of the recap throttle to 500 msg/sec */ 
+transport->setOutboundThrottle (500.0, MAMA_THROTTLE_RECAP);
+
+/* Set an optional transport level callback */ 
+transport->setTransportCallback (callback);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+/* Change the value of the default throttle to 1000 msg/sec */ 
+transport.setOutboundThrottle (MamaTransport.MamaThrottleInstance.MAMA_THROTTLE_DEFAULT, 1000.0); 
+
+/* Change the value of the recap throttle to 500 msg/sec */ 
+transport.setOutboundThrottle (MamaTransport.MamaThrottleInstance.MAMA_THROTTLE_RECAP, 500.0);
+
+/* Set an optional transport level callback */ 
+transport.setTransportCallback (new ListenerTransportCallback());
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+/* Change the value of the default throttle to 1000 msg/sec */ 
+transport.setOutboundThrottle (MamaThrottleInstance.DEFAULT_THROTTLE, 1000.0); 
+
+/* Change the value of the recap throttle to 500 msg/sec */ 
+transport.setOutboundThrottle (MamaThrottleInstance.RECAP_THROTTLE, 500.0);
+
+/* Set an optional transport level callback */ 
+transport.addTransportListener(new MamaTransportListener());
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-set-throttles" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
+
 
 ## Load Balancing Transports
 
@@ -545,9 +805,11 @@ Two types of load balancing scheme are possible:
 * *Subscription Load Balancing*: In this case, a client may select one of the channels for each symbol 
   it is registering an interest in. Different symbols may then use different channels. 
 
-### Properties for Load Balancing 
+### Properties for Load Balancing (Vendor Specific)
 
-A number of properties may be used for load balancing: 
+Note that API calls are only available for the C API.
+
+A number of properties may be used for load balancing:
 
 `lb<n>, lb_scheme, lb_shared_object`
 
@@ -575,18 +837,18 @@ With client load balancing, a transport is selected at random and used for all s
 callback, such as the following, to override this random selection and instead make the selection from a 
 shared object (dynamic link library) or directly in code: 
 
-```
+{% highlight c %}
 void mamaTransportLbInitialCB (int numTransports, int* transportIndex);
-```
+{% endhighlight %}
 
 This must pass back an index (0 <= transportIndex < numTransports). In code, this callback is set with 
 the following function: 
 
-```
+{% highlight c %}
 mama_status 
 mamaTransport_setLbInitialCallback (mamaTransport            transport,
                                     mamaTransportLbInitialCB callback);
-```
+{% endhighlight %}
 
 **Subscription Load Balancing**
 
@@ -596,23 +858,23 @@ initialization and round-robin selection may be overridden by using the mamaTran
 callback described above to choose the initial transport, and by creating a mamaTransportLbCB callback 
 to make the selection in a shared object, dynamic link library, or directly in code, as follows: 
 
-```
+{% highlight c %}
 void mamaTransportLbCB (int         curTransportIndex, 
                         int         numTransports, 
                         const char* source, 
                         const char* symbol, 
                         int*        nextTransportIndex);
-```
+{% endhighlight %}
 
 This must pass back an index (0 <= transportIndex < numTransports). The source and symbol name are 
 passed to assist the decision process, for example, splitting the subscriptions alphabetically. In code, 
 this callback is set with the function: 
 
-```
+{% highlight c %}
 mama_status 
 mamaTransport_setLbCallback (mamaTransport     transport,
                              mamaTransportLbCB callback);
-```
+{% endhighlight %}
 
 **Summary of Properties**
 
@@ -628,15 +890,286 @@ mama.wmw.transport.sub.lb_scheme = round_robin
 * `library`: This will allow the use of a shared object (dynamic link library) with loadBalanceInitial 
   and loadBalance entry points to override default behaviour.
 ```
-mama.wmw.transport.sub.lb_scheme = librarymama.wmw.transport.sub.lb_shared_object = alpha.so
+mama.wmw.transport.sub.lb_scheme = library
+mama.wmw.transport.sub.lb_shared_object = alpha.so
 ```
 
 **Restrictions on Load Balancing**
 
-Load balancing is currently only currently available under the NYSE Technologies Data Fabric. In the event that 
-one of the transports within a load-balanced group is down, the subscriptions will not automatically fail 
+In the event that one of the transports within a load-balanced group is down, the subscriptions will not automatically fail 
 over to another transport within the group. 
 
+Load balancing is currently only currently available with selected middlewares. Please refer to your bridge
+provider's documentation / support for details.
+
+
+# Resource Pool (Work In Progress)
+
+The OpenMAMA resource pool is a convenience layer around OpenMAMA core which allows the caller to
+create subscriptions, subscribe to messages and build applications without having to get involved in the
+nitty gritty of OpenMAMA object lifecycles.
+
+Primary goals are to:
+
+* Provide a new more convenient interface for managing subscriptions, reducing any barriers
+  to entry for new users
+* Increase accessibility of the OpenMAMA API for new users
+* Provide a convenient and well tuned interface “out of the box” where tuning options
+  can be configured rather than coded
+* Provide a small interface which would be easy to port to other languages
+
+We should always bear in mind that part of the goal here isn't just to make OpenMAMA accessible
+for new users; it's also to help market data vendors distribute their data more easily and risk
+free to new prospects. Core approaches may include:
+
+* Using existing OpenMAMA objects as the currency of the interfaces provided here (e.g. `_getSubscription`
+  may return a `mamaSubscription` type).
+* Abstracting common performance tunings away from code and into configuration (e.g. thread pinning, 
+  subscription distribution to queues etc).
+
+The idea is to reduce an OpenMAMA subscribing application to something which looks more like this:
+
+{% capture snippet_c %}
+{% highlight c %}
+// Use a new "resource pool" to manage lifecycles of all pool-created resources,
+// allocating queues, defaults etc from configuration
+mamaResourcePool resourcePool;
+mamaResourcePool_create(&resourcePool, "pool_name");
+
+// Set up the event handlers for subscription
+mamaMsgCallbacks callbacks;
+memset(&callbacks, 0, sizeof(callbacks));
+callbacks.onMsg = subscriptionOnMsg;
+callbacks.onCreate = subscriptionOnCreate;
+callbacks.onError = subscriptionOnError;
+
+// Actually... subscribe to something via something convenient like a URI (Additional API)
+const void* closure = NULL;
+mamaResourcePool_createSubscriptionFromUri(resourcePool,
+                                           &subscription,
+                                           "bridge://transport/source/topic",
+                                           &callbacks,
+                                           closure);
+
+// Block and begin receiving callbacks
+mama_start();
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+// TODO: Not yet implemented
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+// TODO: Not yet implemented
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+// TODO: Not yet implemented
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-mamaresourcepool-app" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
+
+The idea is to use configuration such as below to manage things like the number of queues to use,
+how do load balance etc:
+
+```properties
+# The number of threads / queues to use in the pool’s queue group
+mama.resource_pool.<pool name>.queues = 2
+
+# Any preferred regex for assigning URIs to threads on creation
+mama.resource_pool.<pool_name>.queue_0.regex = ^.*[/]b*[0-9A-M].*$
+mama.resource_pool.<pool_name>.queue_1.regex = ^.*[/]b*[N-Z].*$
+
+# Name of OpenMAMA queue thread to create in the queue group (to work
+# alongside mama.thread_affinity (will be <thread_prefix>_N where N is
+# the queue index).
+mama.resource_pool.<pool_name>.thread_name_prefix = <pool_name>
+
+# List of bridges to load (by default will try to load all available)
+mama.resource_pool.<pool_name>.bridges = <bridge X> <bridge Y>
+```
+
+So in this case, the mamaResourcePool will:
+
+* Create queues for subscriptions (which could be configurable based on the pool name).
+* Load all middleware bridges found on the PATH / LD_LIBRARY_PATH etc.
+* Call mama_open() (if not already open).
+* Create and manage internal stores of all managed subscriptions, transports, sources etc.
+
+Then when a resource is created inside:
+
+* Find / create transport bridge.
+* Find / create transport.
+* Find / create source.
+* Find / create subscription (e.g. multiple callbacks for same subscription).
+* Find / create anything which is required to acquire the requested resource.
+* Be convenient and usable, but still flexible (it would return existing OpenMAMA objects so they can be manipulated).
+* Take the heavy lifting and thread safety pain away from the application developer.
+
+
+For a complete reference to the convenience functions available, please refer to the OpenMAMA reference guide for details.
+
+*There are some mandatory conventions which need to be adhered to in order to fully take advantage of resource pools:*
+
+* **Transport names should be unique, even cross-bridges**. Sharing the same transport name across multiple bridges
+  should be considered bad practice, and allowing mamaResourcePool to be hindered because of this particular
+  use case was considered too restrictive and inflexible. So with that in mind, mamaResourcePool and
+  assocated APIs mandate that the **same transport name cannot be used for multiple middlewares**.
+
+* **Source names should be unique, even cross transports**. Allowing multiple sources to appear across
+  multiple transports reduced flexibility in the API, so with that in mind it was agreed that the
+  **same source may not be used on multiple transports when using the MAMA resource pool**.
+
+This allows us to open up API calls that don't require passing bridges or transports around
+everywhere since they can be managed by the mamaResourcePool instead, for example:
+
+{% capture snippet_c %}
+{% highlight c %}
+// This one will use the transport, source and topic to subscribe... with the mama resource pool
+// finding / creating the transports and sources requested
+mamaResourcePool_createSubscriptionFromComponents (resourcePool,
+                                                   &subscription,
+                                                   "transportname",
+                                                   "sourcename",
+                                                   "topicname",
+                                                   &callbacks,
+                                                   closure);
+
+// This one will imply using the mama resource pool's default transport
+mamaResourcePool_createSubscriptionFromTopicWithSource (resourcePool,
+                                                        &subscription,
+                                                        "sourcename",
+                                                        "topicname",
+                                                        &callbacks,
+                                                        closure);
+
+// This one will imply using the mama resource pool's default transport, and that transport's
+// default source (or the pool's default source if provided)
+mamaResourcePool_createSubscriptionFromTopic (resourcePool,
+                                              &subscription,
+                                              "topicname",
+                                              &callbacks,
+                                              closure);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+// TODO: Not yet implemented
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+// TODO: Not yet implemented
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+// TODO: Not yet implemented
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-mamaresourcepool-functions" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
+
+Which would then depend on configuration such as this to define the default source / transport for the
+resource pool:
+
+```properties
+# Configure a default transport for this resource pool
+mama.resource_pool.<pool name>.default_transport = <transport>
+
+# Default source may be provided by either the resource pool, or the transport itself
+mama.resource_pool.<pool name>.default_source = <source_name>
+
+# New source level configuration to define the transport and bridge
+mama.source.<source_name>.transport = <transport>
+mama.source.<source_name>.bridge = <bridge>
+
+# Default source may also be specified at a transport level
+mama.transport.bridge.<transport>.default_source = <source_name>
+```
+
+This means that application developers don't need to go through the motions of URI construction
+to build everything they need for a transport and instead they can defer that boilerplate to
+configuration instead.
+
+An added benefit of adopting this approach means that an API such as the following may safely
+be used to generate "pick lists" of available transports without fear of conflict or overlap
+since transport names are now configured-application-instance-unique:
+
+{% capture snippet_c %}
+{% highlight c %}
+// Optionally gather all available transports defined in mama.properties for use in pick lists
+char transportsFound[5][MAMA_MAX_TRANSPORT_LEN];
+size_t found;
+mama_getAvailableTransportNames (transportsFound, 5, &found);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+// TODO: Not yet implemented
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+// TODO: Not yet implemented
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+// TODO: Not yet implemented
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-mrp-get-available-transport-names" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
+
+Which would then be all you would need to use a mamaResourcePool to create and initialize that transport (no
+need to throw mamaBridge instances around):
+
+{% capture snippet_c %}
+{% highlight c %}
+// Gather just the transport for further metadata to be used in pick lists should need arise
+mamaTransport transport;
+mamaResourcePool_createTransportFromName (resourcePool,
+                                          &transport
+                                          "transport_name");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-mrp-create-transport-from-name" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
+
+Or indeed simply let the mamaResourcePool just-in-time initialize that transport when the first subscription
+using it is instantiated.
 
 # Events and Queues 
 
@@ -679,10 +1212,33 @@ responsibility of the application code to dispatch events from these queues in a
 
 ## Accessing the Internal Event Queue 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
+mamaQueue queue;
+mama_getDefaultEventQueue (bridge, &queue)
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 MamaQueue* queue = NULL;
 queue = Mama::getDefaultEventQueue (bridge);
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+MamaQueue queue = Mama.getDefaultEventQueue (bridge);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+MamaQueue queue = Mama.getDefaultQueue (bridge);
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-get-default-event-queue" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 ## Creating Queues 
 
@@ -690,10 +1246,34 @@ For multi-threaded dispatching and for more control over the de-queuing of event
 create your own queues from which events can be manually dispatched, as illustrated in the following 
 example. 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
+mamaQueue queue;
+mamaQueue_create (&queue, bridge);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 MamaQueue* queue = new MamaQueue;
 queue->create (bridge);
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+MamaQueue queue = MamaQueue (bridge);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+MamaQueue queue = MamaQueue (bridge);
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-create-mama-queue" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
+
 
 ## Destroying Queues 
 An OpenMAMA queue can only be destroyed if all the objects using it have been destroyed first (such 
@@ -711,52 +1291,201 @@ is only decremented when that object is fully destroyed.
 An OpenMAMA queue can be destroyed using the queue's destroy function shown in the 
 following example. If there are any open objects on the queue then an error code is returned. 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
 /* Attempt to destroy the queue. */ 
 mama_status status = mamaQueue_destroy(queue); 
 if(status == MAMA_STATUS_QUEUE_OPEN_OBJECTS) 
 { 
-    printf("Can't destroy queue as there are open objects.\n"); 
+    printf ("Can't destroy queue as there are open objects.\n"); 
 }
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+/* Attempt to destroy the queue. */
+try {
+    mama_status status = queue->destroy (); 
+} catch (MamaStatus e) {
+    printf ("Can't destroy queue: %s\n", e.toString ()); 
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+/* Attempt to destroy the queue. */ 
+try {
+    queue.destroy ();
+} catch (MamaException e) {
+    Console.WriteLine ("Can't destroy queue: {0}\n", e.Message );
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+/* Attempt to destroy the queue. */ 
+try {
+    queue.destroy ();
+} catch (MamaException e) {
+    System.out.println (e);
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-destroy-queue" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 If the objects using the queue have had their ‘destroy’ functions called but have not been fully destroyed, 
 then the `destroyWait` function can be used. This blocks and processes messages 
 from the queue until all objects have been fully destroyed:
 
-```
+{% capture snippet_c %}
+{% highlight c %}
 /* Block until all objects have been destroyed. */ 
-mamaQueue_destroyWait(queue); 
-```
+mama_status status = mamaQueue_destroyWait (queue); 
+if(status == MAMA_STATUS_QUEUE_OPEN_OBJECTS) 
+{ 
+    printf ("Can't destroy queue as there are open objects.\n"); 
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+/* Block until all objects have been destroyed. */ 
+try {
+    mama_status status = queue->destroyWait (); 
+} catch (MamaStatus e) {
+    printf ("Can't destroy queue: %s\n", e.toString()); 
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+/* Block until all objects have been destroyed. */ 
+try {
+    queue.destroyWait ();
+} catch (MamaException e) {
+    Console.WriteLine ("Can't destroy queue: {0}\n", e.Message );
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+/* Block until all objects have been destroyed. */ 
+try {
+    queue.destroyWait ();
+} catch (MamaException e) {
+    System.out.println (e);
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-destroy-queue-with-wait" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 The `destroyTimedWait` function behaves in the same manner as
 `destroyWait` but only blocks for the supplied timer period. Once this period elapses a
 timeout error is returned if all open objects have not been destroyed.
 
-```
+{% capture snippet_c %}
+{% highlight c %}
 /* Process messages for 6 seconds. */ 
-mama_status status == mamaQueue_destroyTimedWait(queue, 6000); 
+mama_status status == mamaQueue_destroyTimedWait (queue, 6000); 
 if(status == MAMA_STATUS_TIMEOUT) 
 { 
-    printf("Timed out waiting for queue to be destroyed.\n"); 
+    printf ("Timed out waiting for queue to be destroyed.\n"); 
 }
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+/* Block until all objects have been destroyed. */ 
+try {
+    mama_status status = queue->destroyTimedWait (6000); 
+} catch (MamaStatus e) {
+    printf ("Can't destroy queue: %s\n", e.toString()); 
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+/* Block until all objects have been destroyed. */ 
+try {
+    queue.destroyTimedWait (6000);
+} catch (MamaException e) {
+    Console.WriteLine ("Can't destroy queue: {0}\n", e.Message );
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+/* Block until all objects have been destroyed. */ 
+try {
+    queue.destroyTimedWait (6000);
+} catch (MamaException e) {
+    System.out.println (e);
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-destroy-queue-timed-wait" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 Additionally, the `canDestroy` function indicates if all objects using the queue have 
 been destroyed: 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
 /* Check if queue can be destroyed. */ 
-mama_status status == mamaQueue_canDestroy(queue); 
+mama_status status == mamaQueue_canDestroy (queue); 
 if(status == MAMA_STATUS_QUEUE_OPEN_OBJECTS) 
 { 
-    printf("Queue cannot be destroyed as it is still in use.\n"); 
+    printf ("Queue cannot be destroyed as it is still in use.\n"); 
 }
 else if(status == MAMA_STATUS_OK) 
 {
-    printf(“Queue can be safely destroyed.\n”); 
+    printf (“Queue can be safely destroyed.\n”); 
 }
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+/* Check if queue can be destroyed (no C++ API) */ 
+mama_status status == mamaQueue_canDestroy (queue); 
+if(status == MAMA_STATUS_QUEUE_OPEN_OBJECTS) 
+{ 
+    printf ("Queue cannot be destroyed as it is still in use.\n"); 
+}
+else if(status == MAMA_STATUS_OK) 
+{
+    printf (“Queue can be safely destroyed.\n”); 
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+/* Check if queue can be destroyed */ 
+if (!queue.canDestroy())
+    Console.WriteLine ("Can't destroy queue\n");
+}
+{% endhighlight %}
+{% endcapture %}
+{% capture snippet_java %}
+{% highlight java %}
+// No Java API for this
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-queue-can-destroy" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
+
 
 ### Destroying the Default Queue
 
@@ -777,28 +1506,6 @@ mama.defaultqueue.timeout = 5000
 Ideally, applications will not attempt to destroy the queue until all the objects using it have been 
 destroyed first. OpenMAMA can provide notification that an object has been fully destroyed by invoking
 a call-back function. The method of registration depends on the language being used. 
-
-The following example code snippet shows how to register for the callback.
-
-```
-class TimerCallbackEx : public MamaTimerCallbackEx 
-{ 
-    virtual void onDestroy(MamaTimer *timer) 
-    { 
-        cout << “Timer has been destroyed.” << endl; 
-    }
-
-    virtual void onTimer(MamaTimer* timer) 
-    {
-        cout << "The timer has ticked." << endl; 
-    }
-}
-
-// Create a 2 second timer 
-MamaTimer timer; 
-TimerCallbackEx timerCallbackEx; 
-timer.create(queue, timerCallbackEx, 2);
-```
 
 ### Debugging Queue Destroy
 
@@ -905,7 +1612,34 @@ and debugging the application.
 If a monitoring feature is not available on a particular middleware an error will be returned, or an
 exception thrown. 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
+
+static void MAMACALLTYPE
+highWaterMarkCallback (mamaQueue     queue,
+                       size_t        size,
+                       void*         closure)
+{
+    // Process the high watermark exceeded event 
+}
+
+static void MAMACALLTYPE
+lowWaterMarkCallback  (mamaQueue     queue,
+                       size_t        size,
+                       void*         closure)
+{
+    // Process the low watermark event 
+}
+
+mamaQueueMonitorCallbacks queueCallbacks;
+queueCallbacks.onQueueHighWatermarkExceeded = highWaterMarkCallback;
+queueCallbacks.onQueueLowWatermark  = lowWaterMarkCallback;
+mamaQueue_setQueueMonitorCallbacks (queue, &queueCallbacks, "Closure");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 //Callback class for receiving queue monitor events 
 class QueueMonitorCallback : public MamaQueueMonitorCallback 
 {
@@ -914,22 +1648,63 @@ public:
     virtual ~QueueMonitorCallback () {} 
     virtual void onHighWatermarkExceeded (MamaQueue* queue, size_t size, void* closure)
     { 
-        //Process the high watermark exceeded event 
+        // Process the high watermark exceeded event
     }
     virtual void onLowWatermark (MamaQueue* queue, size_t size, void *closure) 
     { 
-        //Process the low watermark event 
+        // Process the low watermark event 
     }
 } 
 ... 
 
-MamaQueue* queue = new MamaQueue; 
-queue->create (bridge); 
-queue->setQueueName ("MyEventQueue"); 
-queue->setQueueMonitorCallback (new QueueMonitorCallback (), "Closure); 
+queue->setQueueMonitorCallback (new QueueMonitorCallback (), "Closure"); 
 queue->setHighWatermark (10000); 
 queue->setLowWatermark (900);
-```
+{% endhighlight %}
+{% endcapture %}
+{% capture snippet_csharp %}
+{% highlight csharp %}
+//Callback class for receiving queue monitor events 
+internal class ListenerQueueCallback : MamaQueueMonitorCallback
+{
+    public void HighWatermarkExceeded(MamaQueue mamaQueue, int size, object closure)
+    {
+        // Process the high watermark exceeded event
+    }
+
+    public void LowWatermark(MamaQueue mamaQueue, int size, object closure)
+    {
+        // Process the low watermark event
+    }
+}
+... 
+
+queue.setQueueMonitorCallback (new ListenerQueueCallback (), "Closure"); 
+queue.setHighWatermark (10000); 
+queue.setLowWatermark (900);
+{% endhighlight %}
+{% endcapture %}
+{% capture snippet_java %}
+{% highlight java %}
+queue.setQueueMonitorCallback (new MamaQueueMonitorCallback ()
+{
+    public void onHighWatermarkExceeded (MamaQueue queue,
+                                         long      size)
+    {
+        // Process the high watermark exceeded event
+    }
+
+    public void onLowWatermark (MamaQueue queue,
+                                long      size)
+    {
+        // Process the low watermark event
+    }
+});
+
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-watermark" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 
 ### Event queue size 
@@ -1271,7 +2046,92 @@ Subscriptions require that a transport, source and symbol are specified upon cre
 Subscriptions must be destroyed from within the subscriptions' own callbacks or from other event 
 callbacks on the same queue as the subscription callbacks are being dispatched. 
 
-```
+
+{% capture snippet_c %}
+{% highlight c %}
+static void subscriptonOnMsg (mamaSubscription subscription,
+                              mamaMsg msg,
+                              void* closure,
+                              void* itemClosure)
+{
+    // Process the message
+}
+
+static void subscriptionOnError (mamaSubscription subscription,
+                                 mamaStatus status,
+                                 void* platformError,
+                                 const char* subject,
+                                 void* closure)
+{
+    // Handle error condition
+}
+
+static void subscriptionOnCreate (mamaSubscription subscription,
+                                  void* closure)
+{
+    // The subscription has been created
+}
+
+static void subscriptionOnQuality (mamaSubscription subsc,
+                                   mamaQuality quality,
+                                   const char* symbol,
+                                   void* closure)
+{
+    // Handle change in data quality update
+}
+
+static void subscriptionOnRecapRequest (mamaSubscription subsc,
+                                        void* closure)
+{
+    // A recap has been sent for the subscription
+}
+
+static void subscriptionOnGap (mamaSubscription subsc,
+                               void* closure)
+{
+    // A gap has been detected for this subscription
+}
+
+...
+
+mamaMsgCallbacks callbacks;
+callbacks.onCreate = subscriptionOnCreate;
+callbacks.onError = subscriptionOnError;
+callbacks.onQuality = subscriptionOnQuality;
+callbacks.onMsg = subscriptonOnMsg;
+callbacks.onGap = subscriptonOnGap;
+callbacks.onRecapRequest = subscriptonOnRecapRequest;
+...
+/*Create the source for the data - contains symbolnamespace and trasport*/
+mamaSource subscriptionSource = NULL;
+
+mamaSource_create (&subscriptionSource)
+mamaSource_setId (subscriptionSource, "SourceForSubscription");
+mamaSource_setTransport (subscriptionSource, transport);
+mamaSource_setSymbolNamespace (subscriptionSource, "NASDAQ");
+
+...
+
+mamaSubscription subscription = NULL;
+mamaSubscription_allocate (&subscription);
+
+// ... Set mamaSubscription properties
+
+mamaSubscription_create (subscription,
+                         queue,
+                         &callbacks,
+                         subscriptionSource,
+                         "symbol",
+                         "My Closure");
+....
+//Destroy the subscription
+mamaSubscription_destroy (subscription);
+mamaSubscription_deallocate (subscription);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 class DisplayCallback : public MamaSubscriptionCallback 
 {
 public:
@@ -1313,9 +2173,9 @@ public:
 .... 
 
 DisplayCallback* callback = new DisplayCallback; 
-MamaSubscription* subscription = new MamaSubscirption (); 
+MamaSubscription* subscription = new MamaSubscription (); 
 
-.... //set MamaSubscription properties if required 
+// ... Set MamaSubscription properties if required 
 
 // Create the source for the data -contains symbolnamespace and trasport
 MamaSource* source = new MamaSource ("SourceId", transport, "NASDAQ");
@@ -1329,7 +2189,125 @@ subscription->create (queue,
 ....
 // Destroy the subscriptionsubscription->destroy ();
 delete subscription; 
-```
+{% endhighlight %}
+{% endcapture %}
+{% capture snippet_csharp %}
+{% highlight csharp %}
+class DisplayCallback : MamaSubscriptionCallback
+{
+    public DisplayCallback () {}
+    public void onCreate (MamaSubscription subscription)
+    {
+        // The subscription has been created
+    }
+    public void onError (MamaSubscription subscription,
+                         MamaStatus.mamaStatus status,
+                         String subject)
+    {
+        // An error has occurred during subscription processing
+    }
+    public void onQuality (MamaSubscription subscription,
+                           mamaQuality quality)
+    {
+        // A data quality event has occurred.
+    }
+    public void onMsg (MamaSubscription subscription,
+                       MamaMsg msg)
+    {
+        // Process the message
+    }
+    public void onRecapRequest (MamaSubscription subscription)
+    {
+        // A recap request has been sent for this subscription
+    }
+    public void onGap (MamaSubscription subscription)
+    {
+        // A gap has been detected for this subscription
+    }
+    public void onDestroy (MamaSubscription subscription)
+    {
+        // The dubscription has been destroyed
+    }
+}
+
+DisplayCallback callback = new DisplayCallback ();
+MamaSubscription subscription = new MamaSubscription ();
+
+//... Set MamaSubscription properties
+
+MamaSource source = new MamaSource ("SourceId", transport, "NASDAQ");
+subscription.create (queue,
+                     callback,
+                     source,
+                     "MSFT",
+                     "My Closure");
+....
+
+//Destroy the subscription
+subscription.destroy ();
+{% endhighlight %}
+{% endcapture %}
+{% capture snippet_java %}
+{% highlight java %}
+class DisplayCallback implements MamaSubscriptionCallback
+{
+    public DisplayCallback () {}
+    public void onCreate (MamaSubscription subscription)
+    {
+        // The subscription has been created
+    }
+    public void onError (MamaSubscription subscription,
+                         short wombatStatus,
+                         int platformError,
+                         String subject,
+                         Exception e)
+    {
+        // An error has occurred during subscription processing
+    }
+    public void onQuality (MamaSubscription subscription,
+                           short quality)
+    {
+        // A data quality event has occurred.
+    }
+    public void onMsg (MamaSubscription subscription,
+                       MamaMsg msg)
+    {
+        // Process the message
+    }
+    public void onRecapRequest (MamaSubscription subscription)
+    {
+        // A recap request has been sent for this subscription
+    }
+    public void onGap (MamaSubscription subscription)
+    {
+        // A gap has been detected for this subscription
+    }
+    public void onDestroy (MamaSubscription subscription)
+    {
+        // The dubscription has been destroyed
+    }
+}
+
+DisplayCallback callback = new DisplayCallback ();
+MamaSubscription subscription = new MamaSubscription ();
+
+//set MamaSubscription properties
+
+MamaSource source = new MamaSource ("SourceId", transport, "NASDAQ");
+
+subscription.create (queue,
+                     callback,
+                     source,
+                     "MSFT",
+                     "My Closure");
+....
+
+//Destroy the subscription
+subscription.destroy ();
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-create-subscription" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 *Note In the above example the call to `create()` is the equivalent of calling `setup()` followed by `activate()` on a subscription.*
 
@@ -1530,7 +2508,47 @@ request is a specialized form of subscription.
 
 ## Creating the Data Dictionary (from platform)
 
-```
+{% capture snippet_c %}
+{% highlight c %}
+static void dictOnTimeout (mamaDictionary dictionary,
+                           void* closure)
+{
+    // Could not get dictionary. The timeout interval of 60 seconds has elapsed.
+}
+
+static void dictOnError (mamaDictionary dictionary,
+                         const char* errMsg,
+                         void* closure)
+{
+    // An error was encountered fetching the dictionary.
+}
+
+static void dictOnComplete (mamaDictionary dictionary,
+                            void* closure)
+{
+    // The dictionary has been successfully fetched.
+}
+
+....
+
+mamaDictionary dict = NULL;
+
+mamaDictionaryCallbackSet callbacks;
+callbacks.onComplete = dictOnComplete;
+callbacks.onTimeout = dictOnTimeout;
+callbacks.onError = dictOnError;
+
+mama_createDictionary (&dict,
+                       callbacks,
+                       transport,
+                       queue,
+                       "WOMBAT",
+                       closure);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 class DictionaryCallback : public MamaDictionaryCallback 
 {
 public:
@@ -1559,7 +2577,96 @@ dict->create (transport,
               queue,
               &callback, 
               "WOMBAT"); 
-```
+
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+class DictionaryCallback : public MamaDictionaryCallback
+{
+    virtual void onTimeout (void)
+    {
+        // Could not get dictionary. The timeout interval of 60 seconds has elapsed.
+    }
+    virtual void onError (const char* errMsg)
+    {
+        // An error was encountered fetching the dictionary.
+    }
+    virtual void onComplete (void)
+    {
+        // The dictionary has been successfully fetched.
+    }
+}
+
+....
+
+DictionaryCallback callback;
+MamaDictionary* dict = new MamaDictionary ();
+
+dict.create (queue,
+             callback,
+             "WOMBAT",
+             3,
+             10.0);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+boolean dictionaryComplete = false;
+...
+class DictionaryCallback implements MamaDictionaryCallback
+{
+    public synchronized void onTimeout ()
+    {
+        // Timedout fetching dictionary
+        notifyAll ();
+    }
+
+    public synchronized void onError (final String errMsg)
+    {
+        // An error was encountered fetching the dictionary.
+        notifyAll ();
+    }
+
+    public synchronized void onComplete ()
+    {
+        dictionaryComplete = true;
+        notifyAll ();
+        // The dictionary has been successfully fetched.
+    }
+}
+
+...
+
+DictionaryCallback callback = new MamaDictionaryCallback ();
+MamaDictionary dictionary = null;
+
+synchronized (callback)
+{
+    MamaSubscription subscription = new MamaSubscription ();
+
+    dictionary = subscription.createDictionarySubscription (
+                        callback,
+                        transport,
+                        "WOMBAT");
+    callback.wait (30000);
+
+    if (!dictionaryComplete)
+    {
+        System.err.println ("Could not retrieve dictionary");
+        System.exit (1);
+    }
+}
+
+....
+
+// Dictionary retrieval has been successful. Process subscriptions etc.
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-create-dictionary-from-subscription" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 The dictionary request has successfully completed and the mamaDictionary is available for use once the 
 `onComplete()` callback function/method has been invoked. 
@@ -1618,10 +2725,38 @@ file. The message can then be later reconstructed from the bytes in the file
 and from this message the dictionary can be recreated. Memory for the new dictionary is allocated 
 through the dictionary's `create` function. 
 
-```
+**Deserializing the data dictionary**
+{% capture snippet_c %}
+{% highlight c %}
+mamaDictionary dictionary = NULL;
+mamaDictionary_create (&dictionary);
+mamaDictionary_buildDictionaryFromMesage (dictionary, message);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 MamaDictionary* dictionary = new MamaDictionary;
 dictionary->buildDictionaryFromMessage (message); 
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+MamaDictionary dictionary = new MamaDictionary();
+dictionary.buildDictionaryFromMessage (message); 
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+MamaDictionary dictionary = new MamaDictionary();
+dictionary.buildDictionaryFromMessage (message); 
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-build-dictionary-from-message" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
+
 
 
 # Messages 
@@ -1671,11 +2806,35 @@ combination. This is an important distinction as the name is only used
 to search for fields when a field with the specified FID is not found.*
 
 **Message creation**
-```
+{% capture snippet_c %}
+{% highlight c %}
+mamaMsg msg = NULL;
+mamaMsg_create (&msg);
+mamaMsg_createForPayload (&msg, MAMA_PAYLOAD_QPID);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 MamaMsg msg;
 msg.create ();
 msg.createForPayload (MAMA_PAYLOAD_QPID);
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+MamaMsg msg = new MamaMsg (MamaPayloadType.MAMA_PAYLOAD_QPID);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+MamaMsg msg = new MamaMsg (MamaPayloadType.MAMA_PAYLOAD_QPID);
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-new-mamamsg-with-payload" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 Fields can be added to messages using the individually typed mutator functions available. When adding 
 fields to messages both the field name and the FID can be specified. 
@@ -1693,8 +2852,26 @@ efficient than strong typed access, in the same way as when obtaining stringifie
 message. 
 
 **Field iteration**
+{% capture snippet_c %}
+{% highlight c %}
+static void msgOnField (const mamaMsg msg,
+                        const mamaMsgField field,
+                        void* closure)
+{
+    // Process the data in the mamaMsgField.
+}
 
-```
+....
+
+mamaMsg_iterateFields (msg,
+                       msgOnField,
+                       dictionary,
+                       "My Closure");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 class MsgIteratorCallback : public MamaMsgFieldIterator 
 {
 public:
@@ -1714,7 +2891,50 @@ MsgIteratorCallback callback;
 msg->iterateFields (callback,
                     dictionary,
                     "My Closure");
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+class MsgIteratorCallback : MamaMsgFieldIterator
+{
+    public void onField (MamaMsg msg,
+                         MamaMsgField field,
+                         object closure)
+    {
+        // Process the data in the MamaMsgField
+    }
+}
+
+....
+
+msg.iterateFields (new MsgIteratorCallback (),
+                   dictionary,
+                   "My Closure");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+class MsgIteratorCallback extends MamaMsgFieldIterator
+{
+    public void onField (MamaMsg msg,
+                         MamaMsgField field,
+                         MamaDictionary dict,
+                         Object closure)
+    {
+        // Process the data in the MamaMsgField
+    }
+}
+....
+msg.iterateFields (new MsgIteratorCallback (),
+                   dictionary,
+                   "My Closure");
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-iterate-fields-with-callback" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
+
 There is also a separate iterator implementation as an alternative to the callback method. Using this the 
 iterator points to a particular MamaMsgField object, and can be incremented to the next field by the 
 user. A NULL is returned after the last field has been returned. It is possible to reset the iterator to the 
@@ -1722,15 +2942,65 @@ start of the message at any time.
 
 **Field iteration without callback**
 
-```
-MamaMsgIterator iterator (myMamaListen->getMamaDictionary ()); 
-msg.begin(msgIterator);
-while (*msgIterator != NULL) 
-{ 
-    displayMsgField (msg, *msgIterator); 
-    ++msgIterator; 
+{% capture snippet_c %}
+{% highlight c %}
+mamaMsgIterator iterator;
+mamaMsgField field;
+
+mamaMsgIterator_create (gDictionary, &iterator);
+if (mamaMsgIterator_associate(msg, iterator) != MAMA_STATUS_OK)
+{
+    // Failed to associate iterator with message
 }
-```
+else
+{
+    mamaMsgIterator_begin(iterator);
+    while ((field = mamaMsgIterator_next(iterator)) != NULL)
+    {
+        // Process the data in the MamaMsgField
+    }
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+MamaMsgIterator iterator (myMamaListen->getMamaDictionary ());
+msg.begin(iterator);
+while (*iterator != NULL)
+{
+    // Process the data in the MamaMsgField
+    ++iterator;
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+MamaMsgIterator iterator = new MamaMsgIterator (myMamaListen->getMamaDictionary ());
+MamaMsgField field = null;
+
+msg.begin (ref msgIterator);
+
+while ((field = iterator.getField ()) != null)
+{
+    // Process the data in the MamaMsgField
+    iterator++;
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+for (Iterator iterator = msg.iterator(dictionary); iterator.hasNext();)
+{
+    MamaMsgField field = (MamaMsgField) iterator.next();
+    // Process the data in the MamaMsgField
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-iterate-fields-without-callback" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 Each message can only have one iterator associated with it, though the same iterator can be used for 
 more than one message. 
@@ -1795,15 +3065,53 @@ the provided byte buffer and constructs the message accordingly.
 *Note The buffer returned is not a copy and therefore should not be altered 
 once obtained. To do so can corrupt the message.*
 
-```
+**Using a byte buffer**
+
+{% capture snippet_c %}
+{% highlight c %}
+const char* buffer = NULL;
+mama_size_t bufferSize = 0;
+mamaMsg newMessage = NULL;
+mamaMsg_getByteBuffer (msg,(const void**)&buffer,&bufferSize);
+//write the buffer to file...
+//read the buffer from file...
+mamaMsg_createFromByteBuffer (&newMessage,(const void*)buffer,bufferSize);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 const char* buffer = NULL; 
 mama_size_t bufferSize = 0; 
 MamaMsg newMessage = new MamaMsg; 
 msg.getByteBuffer (&buffer,&bufferSize) 
 //write the buffer to file... 
 //read the buffer from file... 
-msg.createFromBuffer(buffer, bufferSize);
-```
+msg.createFromBuffer (buffer, bufferSize);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+byte[] buffer = null;
+int size = 0;
+msg.getByteBuffer (ref buffer, ref size);
+// write the buffer to file...
+// read the buffer from file...
+msg.createFromBuffer (buffer, size);
+{% endhighlight %}
+{% endcapture %}
+byte[] buffer = mSecondMessage.getByteBuffer();
+{% capture snippet_java %}
+{% highlight java %}
+byte[] buffer = mSecondMessage.getByteBuffer();
+// write the buffer to file...
+// read the buffer from file...
+mMessage.createFromByteBuffer (buffer);
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-serializing-mama-msg" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 Obtain your MamaFieldDescriptor based on the field name from the data dictionary on application 
 startup. Cache the MamaFieldDescriptors and use them for field access later on, removing the need to 
@@ -2001,10 +3309,40 @@ subscribing application must create a basic subscription for.
 
 
 **MamaPublisher**
-```
+{% capture snippet_c %}
+{% highlight c %}
+mamaPublisher publisher = null;
+mamaPublisher_create (&publisher,
+                      transport,
+                      "MY_PUB_TOPIC",
+                      NULL, /* Not needed for basic publishers */
+                      NULL  /* Not needed for basic publishers */
+);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 MamaPublisher publisher = new MamaPublisher; 
 publisher->create (transport, "MY_PUB_TOPIC");
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+MamaPublisher publisher = new MamaPublisher ();
+publisher.create (transport, "MY_PUB_TOPIC");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+MamaPublisher publisher = new MamaPublisher ();
+publisher.create (transport, "MY_PUB_TOPIC");
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-create-publisher" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 Sending a message from a publisher is straightforward: use the `send()` method, passing in the 
 MamaMsg object to be sent. A message published in this fashion is sent from OpenMAMA 
@@ -2012,9 +3350,31 @@ immediately. However, depending on the middleware configuration, there may be a 
 actually sent. The message is normally sent from the thread calling `send()`, but there are some 
 exceptions to this depending on middleware configuration. 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
+mamaPublisher_send (publisher, msg);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 publisher->send (msg);
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+publisher.send (msg);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+publisher.send (msg);
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-send-using-publisher" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 If there is a need to control the publish rate of messages, use `sendWithThrottle()`. This places the 
 message or action on the internal throttle queue to be sent at some time in the future. The throttle rate of 
@@ -2025,7 +3385,26 @@ fashion. Throttling is enabled if the throttle value is greater than "0". Thrott
 threads and the request will be sent from there. Setting the throttle rate to "0" will disable throttling and 
 the request will be sent from the thread creating the subscription. 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
+static void MAMACALLTYPE sendCompleteCb (mamaPublisher publisher,
+                                         mamaMsg       msg,
+                                         mama_status   status,
+                                         void*         closure)
+{
+      // Check the status of the call. 
+      // Destroy the message or reuse. 
+}
+
+mamaPublisher_sendWithThrottle (publisher,
+                                msg,
+                                sendCompleteCb,
+                                NULL /*No need to use closure*/);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 class SendComplete : public MamaSendCompleteCallback 
 { 
 public:
@@ -2040,10 +3419,49 @@ public:
 }
 
 MamaSendCompleteCallback* cb = new MamaSendCompleteCallback; 
+{% endhighlight %}
+{% endcapture %}
 
+{% capture snippet_csharp %}
+{% highlight csharp %}
+class SendComplete : MamaSendCompleteCallback
+{
+    public void onSendComplete (MamaPublisher publisher,
+                                MamaMsg msg,
+                                MamaStatus.mamaStatus status,
+                                object closure)
+    {
+        // Check the status of the call.
+        // Destroy the message or reuse.
+    }
+}
+MamaSendCompleteCallback cb = new MamaSendCompleteCallback ();
+publisher.sendWithThrottle (msg, cb, closure);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
 //To throttle sending of message
 publisher->sendWithThrottle (msg, cb, closure);
-```
+
+class SendComplete : MamaSendCompleteCallback
+{
+    public void onSendComplete (MamaPublisher publisher,
+                                MamaMsg msg,
+                                MamaStatus.mamaStatus status,
+                                object closure)
+    {
+        // Check the status of the call.
+        // Destroy the message or reuse.
+    }
+}
+MamaSendCompleteCallback cb = new MamaSendCompleteCallback ();
+publisher.sendWithThrottle (msg, cb, closure);
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-send-with-throttle" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 ### Request/Response
 
@@ -2076,7 +3494,8 @@ Creating a publisher manager requires a transport, a queue, a symbol namespace, 
 callbacks and an optional root. The root is an identifier specific to the platform. The default is `_MD`, 
 which is what the client applications subscribe to. For publishing a dictionary the default is `_MDDD`. 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
 mamaDQPublisherManager_allocate(&pubManager); 
 mamaDQPublisherManager_create (pubManager,
                                transport, 
@@ -2085,27 +3504,129 @@ mamaDQPublisherManager_create (pubManager,
                                sourcename, 
                                root, 
                                NULL);
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+auto pubManager = new MamaDQPublisherManager();
+pubManager->create (transport,
+                    queue,
+                    callbacks,
+                    sourcename);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+// Not currently supported on C#
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+MamaDQPublisherManager pubManager = new MamaDQPublisherManager();
+pubManager.create (transport, 
+                   queue,
+                   callbacks,
+                   sourcename);
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-create-dq-publisher-manager" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 Upon creation, the publisher manager creates a subscription to listen for requests on the given 
 namespace. When a new request is received by the publisher manager it calls an onNewRequest 
 callback. The callback supplies the symbol from the request as well as the type and request type. The 
 message, containing the IP address of the requesting client machine, is also supplied. 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
+static void MAMACALLTYPE
 onNewRequestCb (mamaDQPublisherManager pubManager, 
                 const char*            symbol, 
                 short                  subType, 
                 short                  msgType,
-                mamaMsg                msg);
-```
+                mamaMsg                msg)
+{
+    // Handle the new request
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+class SubscriptionHandler : public MamaDQPublisherManagerCallback
+{
+    ...
+    void onNewRequest (MamaDQPublisherManager* publisherManager,
+                       const char*             symbol,
+                       short                   subType,
+                       short                   msgType,
+                       MamaMsg&                msg)
+    {
+        // Handle the new request
+    }
+    ...
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+// Not currently supported on C#
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+private static class SubscriptionHandler extends MamaDQPublisherManagerCallback
+{
+    ...
+    public void onNewRequest (MamaDQPublisherManager publisherManager,
+                              String symbol,
+                              short subType,
+                              short msgType,
+                              MamaMsg msg)
+    {
+        // Handle the new request
+    }
+    ...
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-dq-handle-new-request" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 When the request has been received, and if the publishing application can supply data for the requested 
 symbol, then the publishing application should create a publisher and add it to the manager. 
 
-```
-mamaDQPublisherManager_createPublisher (pubManager, symbol, closureData, &symbolPub);
-```
+{% capture snippet_c %}
+{% highlight c %}
+mamaDQPublisher dqPublisher;
+mamaDQPublisherManager_createPublisher (pubManager, symbol, closureData, &dqPublisher);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+pubManager->createPublisher (symbol, closureData);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+// Not currently supported on C#
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+pubManager.createPublisher(symbol, closureData);
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-create-dq-publisher" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 If the symbol should not be published, then the request should be ignored and the subscription will 
 timeout on the client side. 
@@ -2123,19 +3644,69 @@ msgstatus, also present in every message, is set to whatever the status on the p
 of send. Default status is `MAMA_STATUS_OK`, but this can be changed to `STALE` or `MAYBE_STALE` 
 as required.
 
-```
+{% capture snippet_c %}
+{% highlight c %}
 mamaDQPublisherManager_setStatus (pubManager, status); 
-mamaDQPublisherManager_setSenderId (pubManager,senderid); 
+mamaDQPublisherManager_setSenderId (pubManager, senderid); 
 mamaDQPublisherManager_setSeqNum (pubManager, num);
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+pubManager->setStatus (status); 
+pubManager->setSenderId (senderid); 
+pubManager->setSeqNum (num); 
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+// Not currently supported on C#
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+pubManager.setStatus (status); 
+pubManager.setSenderId (senderid); 
+pubManager.setSeqNum (num); 
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-set-dq-fields" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 The first message published in response to a new request should be of type INITIAL or RECAP. This is a 
 full image of the caching structure and is sent using the send reply method. 
 
-```
-mamaMsg_updateU8(initialMsg, NULL, MamaFieldMsgType.mFid, MAMA_MSG_TYPE_INITIAL); 
+{% capture snippet_c %}
+{% highlight c %}
+mamaMsg_updateU8 (initialMsg, NULL, MamaFieldMsgType.mFid, MAMA_MSG_TYPE_INITIAL); 
 mamaDQPublisher_sendReply(symbolPub, msg, initialMsg);
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+initialMsg->updateU8 (NULL, MamaFieldMsgType.mFid, MAMA_MSG_TYPE_INITIAL); 
+symbolPub->sendReply (msg, initialMsg);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+// Not currently supported on C#
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+initialMsg.updateU8 (NULL, MamaFieldMsgType.mFid, MAMA_MSG_TYPE_INITIAL); 
+symbolPub.sendReply (msg, initialMsg);
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-send-dq-reply" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 Once the first message is sent, the client application listens for updates published from that publisher. 
 The recommended approach is for updates to be applied to the cache then the delta to be sent. 
@@ -2145,13 +3716,63 @@ made, the OnRequest callback is called. As well as the parameters in the OnNewRe
 are also given pointers to the publisher currently publishing this symbol and the closure structure for that 
 symbol. 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
+static void MAMACALLTYPE
 onRequestCb (mamaDQPublisherManager pubManager, 
              mamaPublishTopic*      publishTopicInfo, 
              short                  subType, 
              short                  msgType,
              mamaMsg                msg)
-```
+{
+    // Handle the request
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+class SubscriptionHandler : public MamaDQPublisherManagerCallback
+{
+    ...
+    void onRequest (MamaDQPublisherManager*  publisherManager,
+                    const MamaPublishTopic&  publishTopicInfo,
+                    short                    subType,
+                    short                    msgType,
+                    MamaMsg&                 msg)
+    {
+        // Handle the request
+    }
+    ...
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+// Not currently supported on C#
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+private static class SubscriptionHandler extends MamaDQPublisherManagerCallback
+{
+    ...
+    public void onRequest (MamaDQPublisherManager                  publisherManager,
+                           MamaDQPublisherManager.MamaPublishTopic mamaPublishTopic,
+                           short                                   subType,
+                           short                                   msgType,
+                           MamaMsg                                 msg)
+    {
+        // Handle the request
+    }
+    ...
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-handle-request" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 If the publishing application wishes to publish to that client, then it must first send an initial. However, as 
 the cache is being used to publish updates, it is important to make sure that you get a full image in a 
@@ -2171,13 +3792,63 @@ To be in accordance with the normal publishing rules within the platform, publis
 publish one hour after the last request or refresh. Refresh messages are sent by client applications 
 approximately every 55 minutes, and the onRefresh callback will be fired. 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
+static void MAMACALLTYPE
 onRefreshCb (mamaDQPublisherManager pubManager, 
              mamaPublishTopic*      publishTopicInfo, 
              short                  subType, 
              short                  msgType,
              mamaMsg                msg)
-```
+{
+    // Handle the event
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+class SubscriptionHandler : public MamaDQPublisherManagerCallback
+{
+    ...
+    void onRefresh (MamaDQPublisherManager*  publisherManager,
+                    const MamaPublishTopic&  publishTopicInfo,
+                    short                    subType,
+                    short                    msgType,
+                    MamaMsg&                 msg)
+    {
+        // Handle the event
+    }
+    ...
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+// Not currently supported on C#
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+private static class SubscriptionHandler extends MamaDQPublisherManagerCallback
+{
+    ...
+    public void onRefresh (MamaDQPublisherManager                  publisherManager,
+                           MamaDQPublisherManager.MamaPublishTopic mamaPublishTopic,
+                           short                                   subType,
+                           short                                   msgType,
+                           MamaMsg                                 msg)
+    {
+        // Handle the event
+    }
+    ...
+}
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-handle-refresh" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 There is an acknowledgement sent to all clients for that symbol that refreshing has occurred, which is 
 handled internally. The publishing application should record when the last refresh or request for a symbol 
@@ -2249,7 +3920,25 @@ queue and dispatch queue are not actively dispatching.
 The following example show the creation of a recurring timer which fires every 500 milliseconds. In each 
 case the actionCallback function/object receives a callback once the interval has elapsed. 
 
-```
+{% capture snippet_c %}
+{% highlight c %}
+static void actionCallback (mamaTimer timer,
+                            void*     closure)
+{
+    myClosureType* myClosure = (myClosureType*)closure;
+    // Perform recurring task.
+}
+
+mamaTimer_create (&timer,
+                  queue,
+                  actionCallback,
+                  0.5,
+                  myClosure);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
 class TimerCallback : public MamaTimerCallback 
 {
 public:
@@ -2260,16 +3949,60 @@ public:
         MyClosureType* myClosure = dynamic_cast<MyClosureType*>(timer->getClosure () 
         // Perform recurring task. 
     }
-} 
-.... 
-
-MamaTimer* timer = new MamaTimer; 
-TimerCallback* timerCallback = new TimerCallback; 
+}
+....
+MamaTimer* timer = new MamaTimer;
+TimerCallback* timerCallback = new TimerCallback;
 timer->create (queue,
-               timerCallback, 
-               0.5, 
+               timerCallback,
+               0.5,
                closure);
-```
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_csharp %}
+{% highlight csharp %}
+class TimerCallback : MamaTimerCallback
+{
+    private object myContextData = null;
+    public TimerCallback (object contextData)
+    {
+        myContextData = contextData;
+    }
+    public void onTimer (MamaTimer timer, object closure)
+    {
+        //perform recurring task
+    }
+}
+....
+MamaTimer timer = new MamaTimer ();
+TimerCallback timerCallback = new TimerCallback();
+timer.create (queue, timerCallback, 0.5);
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_java %}
+{% highlight java %}
+class TimerCallback implements MamaTimerCallback
+{
+    private Object myContextData = null;
+    public TimerCallback (Object contextData)
+    {
+        myContextData = contextData;
+    }
+    public void onTimer (MamaTimer timer)
+    {
+        //perform recurring task
+    }
+}
+....
+MamaTimer timer = new MamaTimer ();
+TimerCallback timerCallback = new TimerCallback ();
+timer.create (queue, timerCallback, 0.5);
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-timer" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 
 ## IO 
@@ -2294,31 +4027,79 @@ Not all underlying messaging middlewares support all of the event types provided
 API. In the case of a particular event type not being supported, the call to `create()` fails with 
 a return code of `MAMA_STATUS_UNSUPPORTED_IO_TYPE`. 
 
-```
-class IoCallback : public MamaIoCallback 
-    { 
-    virtual void onIo (MamaIo* io, mamaIoType ioType) 
-    { 
-        // The inboundFileDescriptor is now available for reading. 
+{% capture snippet_c %}
+{% highlight c %}
+static void ioCallback (mamaIo io,
+                        mamaIoType ioType,
+                        void* closure)
+{
+    // The inboundFileDescriptor is now available for reading.
+}
+mamaIo readHandler = NULL;
+
+// File descriptor for socket we want to read from
+int inboundFileDescriptor = 0;
+....
+// Get the file descriptor for an inbound accept on a socket
+....
+mamaIo_create (&readHandler,
+               queue,
+               inboundFileDescriptor,
+               ioCallback,
+               MAMA_IO_READ,
+               "My Closure");
+{% endhighlight %}
+{% endcapture %}
+
+{% capture snippet_cpp %}
+{% highlight cpp %}
+class IoCallback : public MamaIoCallback
+{
+    virtual void onIo (MamaIo* io, mamaIoType ioType)
+    {
+        // The inboundFileDescriptor is now available for reading.
     }
 }
-
-MamaIo     mamaIo                = new MamaIo; 
-IoCallback ioCallback            = new IoCallback;
-// File descriptor for socket we want to read from 
-int        inboundFileDescriptor = 0;
-
+MamaIo mamaIo = new MamaIo;
+IoCallback ioCallback = new IoCallback;
+int inboundFileDescriptor = 0;//File descriptor for socket we want to read from
 ....
-    // Get the file descriptor for an inbound accept on a socket 
-.... 
+// Get the file descriptor for an inbound accept on a socket
+....
+mamaIo->create (queue, ioCallback, inboundFileDescriptor, MAMA_IO_READ, "My Closure");
+{% endhighlight %}
+{% endcapture %}
 
-mamaIo->create (queue,
-                ioCallback, 
-                inboundFileDescriptor,
-                MAMA_IO_READ, 
-                "My Closure");
-```
+{% capture snippet_csharp %}
+{% highlight csharp %}
+class IoCallback : MamaIoCallback
+{
+    public void onIo (MamaIo io, mamaIoType ioType)
+    {
+        // The inboundFileDescriptor is now available for reading.
+    }
+}
+MamaIo mamaIo = new MamaIo ();
+IoCallback ioCallback = new IoCallback ();
+int inboundFileDescriptor = 0;//File descriptor for socket we want to read from
+....
+//Get the file descriptor for an inbound accept on a socket
+....
+mamaIo.create (queue,
+               ioCallback,
+               inboundFileDescriptor,
+               mamaIoType.MAMA_IO_READ,
+               "My Closure");
+{% endhighlight %}
+{% endcapture %}
 
+{% capture snippet_java %}
+{% highlight java %}
+// This API is not supported on Java
+{% endhighlight %}
+{% endcapture %}
+
+{% include tabbed-panel.html id="snippet-io" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
 
 ## User Events
 

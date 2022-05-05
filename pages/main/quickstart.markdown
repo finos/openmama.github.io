@@ -36,7 +36,7 @@ To continue, you'll need to install:
 ## Setting up an OpenMAMA project
 
 We have a number of ready-made OpenMAMA projects ready for you to grab from the
-[OpenMAMA repository tutorials folder here](https://github.com/fquinner/OpenMAMA/tree/feature/demo-environment/tutorials).
+[OpenMAMA repository tutorials folder here](https://github.com/finos/OpenMAMA/tree/feature/demo-environment/tutorials).
 You can download these with:
 
 ```
@@ -306,19 +306,19 @@ Go ahead and open up the code in your favourite text editor and have a look thro
 running... if you're not at a developer box at the moment, the code is detailed below:
 
 {% capture project_example_csharp %}
-<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffquinner%2FOpenMAMA%2Fblob%2Ffeature%2Fdemo-environment%2Ftutorials%2Fcsharp%2F01-quickstart%2FProgram.cs&style=github&showBorder=on&showLineNumbers=off&showFileMeta=on"></script>
+<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffinos%2FOpenMAMA%2Fblob%2Fmaster%2Ftutorials%2Fcsharp%2F01-quickstart%2FProgram.cs&style=github&showBorder=on&showLineNumbers=off&showFileMeta=on"></script>
 {% endcapture %}
 
 {% capture project_example_java %}
-<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffquinner%2FOpenMAMA%2Fblob%2Ffeature%2Fdemo-environment%2Ftutorials%2Fjava%2F01-quickstart%2Fsrc%2Fmain%2Fjava%2Fquickstart%2FApp.java&style=github&showBorder=on&showLineNumbers=off&showFileMeta=on"></script>
+<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffinos%2FOpenMAMA%2Fblob%2Fmaster%2Ftutorials%2Fjava%2F01-quickstart%2Fsrc%2Fmain%2Fjava%2Fquickstart%2FApp.java&style=github&showBorder=on&showLineNumbers=off&showFileMeta=on"></script>
 {% endcapture %}
 
 {% capture project_example_c %}
-<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffquinner%2FOpenMAMA%2Fblob%2Ffeature%2Fdemo-environment%2Ftutorials%2Fc%2F01-quickstart%2Fquickstart.c&style=github&showBorder=on&showLineNumbers=off&showFileMeta=on"></script>
+<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffinos%2FOpenMAMA%2Fblob%2Fmaster%2Ftutorials%2Fc%2F01-quickstart%2Fquickstart.c&style=github&showBorder=on&showLineNumbers=off&showFileMeta=on"></script>
 {% endcapture %}
 
 {% capture project_example_cpp %}
-<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffquinner%2FOpenMAMA%2Fblob%2Ffeature%2Fdemo-environment%2Ftutorials%2Fcpp%2F01-quickstart%2Fquickstart.cpp&style=github&showBorder=on&showLineNumbers=off&showFileMeta=on"></script>
+<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffinos%2FOpenMAMA%2Fblob%2Fmaster%2Ftutorials%2Fcpp%2F01-quickstart%2Fquickstart.cpp&style=github&showBorder=on&showLineNumbers=off&showFileMeta=on"></script>
 {% endcapture %}
 
 {% include tabbed-panel.html
