@@ -26,19 +26,20 @@ mamaResourcePool_create (&pool, "default");
 
 {% capture snippet_cpp %}
 {% highlight cpp %}
-// TODO: Not yet implemented
+// You can optionally use a smart pointer to automatically destroy the instance
+std::unique_ptr<MamaResourcePool> pool (new MamaResourcePool("default"));
 {% endhighlight %}
 {% endcapture %}
 
 {% capture snippet_csharp %}
 {% highlight csharp %}
-// TODO: Not yet implemented
+MamaResourcePool pool = new MamaResourcePool("default");
 {% endhighlight %}
 {% endcapture %}
 
 {% capture snippet_java %}
 {% highlight java %}
-// TODO: Not yet implemented
+MamaResourcePool pool = new MamaResourcePool("default");
 {% endhighlight %}
 {% endcapture %}
 
@@ -92,19 +93,122 @@ callbacks.onMsg = subscriptionOnMsg;
 
 {% capture snippet_cpp %}
 {% highlight cpp %}
-// TODO: Not yet implemented
+class SubscriptionEventHandler : public MamaSubscriptionCallback
+{
+    void onMsg (MamaSubscription* subscription, MamaMsg& msg) override {
+        auto dictionary = (MamaDictionary*)subscription->getClosure();
+        std::cout << msg.toJsonString (dictionary) << std::endl;
+    }
+};
 {% endhighlight %}
 {% endcapture %}
 
 {% capture snippet_csharp %}
 {% highlight csharp %}
-// TODO: Not yet implemented
+internal class SubscriptionEventHandler : MamaSubscriptionCallback
+{
+    public MamaDictionary mDictionary;
+    private static int mMsgReceived = 0;
+
+    public void onMsg(MamaSubscription subscription, MamaMsg msg)
+    {
+        Console.WriteLine(msg.ToJsonString(mDictionary));
+        if (++mMsgReceived == 10) {
+                Mama.stopAll();
+        }
+    }
+
+    public void onError(MamaSubscription subscription, MamaStatus.mamaStatus status, string subject)
+    {
+        Console.WriteLine("An error occurred creating subscription for " + subject + ": " + status.ToString());
+    }
+
+    public void onCreate(MamaSubscription subscription)
+    {
+        // You may add your own event handling logic here
+    }
+
+    public void onQuality(MamaSubscription subscription, mamaQuality quality, string symbol)
+    {
+        // You may add your own event handling logic here
+    }
+
+    public void onDestroy(MamaSubscription subscription)
+    {
+        // You may add your own event handling logic here
+    }
+
+    public void onGap(MamaSubscription subscription)
+    {
+        // You may add your own event handling logic here
+    }
+    public void onRecapRequest(MamaSubscription subscription)
+    {
+        // You may add your own event handling logic here
+    }
+}
+
+SubscriptionEventHandler eventHandler = new SubscriptionEventHandler();
 {% endhighlight %}
 {% endcapture %}
 
 {% capture snippet_java %}
 {% highlight java %}
-// TODO: Not yet implemented
+class SubscriptionEventHandler implements MamaSubscriptionCallback
+{
+    public MamaDictionary mDictionary;
+
+    private static int mMsgReceived = 0;
+
+    @Override
+    public void onMsg (final MamaSubscription subscription,
+                       final MamaMsg msg) {
+        MamaDictionary dictionary = (MamaDictionary) subscription.getClosure();
+        System.out.println(msg.toJsonString(dictionary));
+    }
+
+    @Override
+    public void onError (MamaSubscription subscription,
+                         short status,
+                         int platformError,
+                         String subject,
+                         Exception exception) {
+        System.err.println("An error occurred creating subscription for " + subject + ": " + MamaStatus.stringForStatus (status));
+    }
+
+    @Override
+    public void onCreate (MamaSubscription subscription) {
+        // You may add your own event handling logic here
+    }
+
+    @Override
+    public void onQuality (MamaSubscription subscription,
+                           short quality,
+                           short cause,
+                           final Object platformInfo) {
+        // You may add your own event handling logic here
+    }
+
+    @Override
+    public void onDestroy (MamaSubscription subscription)
+    {
+        // You may add your own event handling logic here
+    }
+
+    @Override
+    public void onGap (MamaSubscription subscription)
+    {
+        // You may add your own event handling logic here
+    }
+
+    @Override
+    public void onRecapRequest (MamaSubscription subscription)
+    {
+        // You may add your own event handling logic here
+    }
+};
+
+SubscriptionEventHandler eventHandler = new SubscriptionEventHandler();
 {% endhighlight %}
 {% endcapture %}
 
@@ -117,7 +221,7 @@ Next you can create your subscription using any of the mamaResourcePool calls as
 * Your publisher is up and available
 * The bridge that you require is configured in the MAMA Resource pool's `bridges` property
 
-All you need to do is call one of the `creatSubscription` calls:
+All you need to do is call one of the `createSubscription` calls:
 
 {% capture snippet_c %}
 {% highlight c %}
@@ -138,19 +242,43 @@ mamaResourcePool_createSubscriptionFromComponents (
 
 {% capture snippet_cpp %}
 {% highlight cpp %}
-// TODO: Not yet implemented
+const char* transportName = "sub";
+const char* sourceName = "OM";
+const char* symbolName = "DE000CM95AU4.EUR.XPAR";
+auto subscription = pool->createSubscriptionFromComponents (
+                transportName,
+                sourceName,
+                symbolName,
+                &eventHandler,
+                dictionary);
 {% endhighlight %}
 {% endcapture %}
 
 {% capture snippet_csharp %}
 {% highlight csharp %}
-// TODO: Not yet implemented
+string transportName = "sub";
+string sourceName = "OM";
+string symbolName = "DE000CM95AU4.EUR.XPAR";
+MamaSubscription subscription = pool.createSubscriptionFromComponents (
+        transportName,
+        sourceName,
+        symbolName,
+        eventHandler,
+        dictionary);
 {% endhighlight %}
 {% endcapture %}
 
 {% capture snippet_java %}
 {% highlight java %}
-// TODO: Not yet implemented
+String transportName = "sub";
+String sourceName = "OM";
+String symbolName = "DE000CM95AU4.EUR.XPAR";
+MamaSubscription subscription = pool.createSubscriptionFromComponents (
+                    transportName,
+                    sourceName,
+                    symbolName,
+                    eventHandler,
+                    dictionary);
 {% endhighlight %}
 {% endcapture %}
 
@@ -170,19 +298,31 @@ mamaSubscription_activate (subscription);
 
 {% capture snippet_cpp %}
 {% highlight cpp %}
-// TODO: Not yet implemented
+// Set further MAMA Subscription properties
+subscription->setRequiresInitial (requiresInitial);
+
+// Activate the subscription
+subscription->activate();
 {% endhighlight %}
 {% endcapture %}
 
 {% capture snippet_csharp %}
 {% highlight csharp %}
-// TODO: Not yet implemented
+// Set further MAMA Subscription properties
+subscription.setRequiresInitial (requiresInitial);
+
+// Activate the subscription
+subscription.activate();
 {% endhighlight %}
 {% endcapture %}
 
 {% capture snippet_java %}
 {% highlight java %}
-// TODO: Not yet implemented
+// Set further MAMA Subscription properties
+subscription.setRequiresInitial (requiresInitial);
+
+// Activate the subscription
+subscription.activate();
 {% endhighlight %}
 {% endcapture %}
 
@@ -205,19 +345,22 @@ mamaResourcePool_destroy (pool);
 
 {% capture snippet_cpp %}
 {% highlight cpp %}
-// TODO: Not yet implemented
+// Call object's destructor or alternatively with smart pointers simply leave scope
+delete pool;
 {% endhighlight %}
 {% endcapture %}
 
 {% capture snippet_csharp %}
 {% highlight csharp %}
-// TODO: Not yet implemented
+// Let GC clean up, or call destroy
+pool.destroy();
 {% endhighlight %}
 {% endcapture %}
 
 {% capture snippet_java %}
 {% highlight java %}
-// TODO: Not yet implemented
+// Let GC clean up, or call destroy
+pool.destroy();
 {% endhighlight %}
 {% endcapture %}
 
@@ -240,11 +383,11 @@ For complete functioning example code, please see:
 {% endcapture %}
 
 {% capture snippet_csharp %}
-<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffquinner%2FOpenMAMA%2Fblob%2Ffeature%2Fmama-resource-pool%2F%2Fcsharp%2F02-resourcepool%2FProgram.cs&style=github&showBorder=on&showLineNumbers=off&showFileMeta=on"></script>
+<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffquinner%2FOpenMAMA%2Fblob%2Ffeature%2Fmama-resource-pool%2Ftutorials%2F%2Fcsharp%2F02-resourcepool%2FProgram.cs&style=github&showBorder=on&showLineNumbers=off&showFileMeta=on"></script>
 {% endcapture %}
 
 {% capture snippet_java %}
-<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffquinner%2FOpenMAMA%2Fblob%2Ffeature%2Fmama-resource-pool%2F%2Fjava%2F02-resourcepool%2Fsrc%2Fmain%2Fjava%2Fresourcepool%2FApp.java&style=github&showBorder=on&showLineNumbers=off&showFileMeta=on"></script>
+<script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Ffquinner%2FOpenMAMA%2Fblob%2Ffeature%2Fmama-resource-pool%2Ftutorials%2F%2Fjava%2F02-resourcepool%2Fsrc%2Fmain%2Fjava%2Fquickstart%2FApp.java&style=github&showBorder=on&showLineNumbers=off&showFileMeta=on"></script>
 {% endcapture %}
 
 {% include tabbed-panel.html id="snippet-tut-2-example" tabs=site.data.tabpanels.languages.names headings=site.data.tabpanels.languages.headings csharp=snippet_csharp java=snippet_java c=snippet_c cpp=snippet_cpp %}
