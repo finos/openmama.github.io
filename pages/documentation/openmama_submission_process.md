@@ -5,7 +5,7 @@ permalink: openmama_submission_process.html
 folder: openmama
 toc: false
 ---
-Going forward, the preferred method for submitting code to OpenMAMA will be through GitHub's *pull request* feature.
+All OpenMAMA code submissions **must** be made through GitHub's **Pull Request** feature.
 
 For anyone not familiar with this workflow, a great tutorial example can be seen [here](http://yangsu.github.io/pull-request-tutorial/). 
 
@@ -15,14 +15,25 @@ For anyone not familiar with this workflow, a great tutorial example can be seen
 * On your own fork create a feature branch for your changes branching ***from the 'next' branch***. This is important to isolate your changes making the review and acceptance process easier to maintain.
 * Commit as many times as you want to your feature branch. 
 * Build and test your changes. 
- * The **[unit tests](openmama_unit_testing.html) should run cleanly** at least. 
- * Basic pub/sub tests should be run also (see the **[Quick Start Guide](openmama_quick_start_guide_running_openmama_apps.html)** for examples of what to run).
+  * The existing **[unit tests](openmama_unit_testing.html) should run cleanly** at least.
+  * New tests should be added where appropriate to cover the new changes.
+  * Basic pub/sub tests should be run also (see the **[Quick Start Guide](openmama_quick_start_guide_running_openmama_apps.html)** for examples of what to run).
 * You may need to keep your local copy of OpenMAMA up to date with that latest changes. See the GitHub FAQ on [Syncing a fork](https://help.github.com/articles/syncing-a-fork/) for details.
 * Once you're happy with your changes *and have tested them* open a pull request against the **OpenMAMA/next** branch.
-* Once the pull request is sent **don't develop any further changes on your feature branch!**
- * Any further commits pushed to your fork's branch will automatically be included in the pull request.
- * Pull request branch can be used for corrections/amendments necessary as a result of code review before acceptance into OpenMAMA.
- * Pull requests seen to contain multiple unrelated changes may be rejected or required to be split up into different pull requests (with their own branches).
+* Once the pull request is submitted **don't develop any unrelated changes on your feature branch!**
+  * Any further commits pushed to your fork's branch will automatically be included in the pull request.
+  * Pull request branch can be used for corrections/amendments necessary as a result of code review before acceptance into OpenMAMA.
+  * Pull requests seen to contain multiple unrelated changes may be rejected or required to be split up into different pull requests (with their own branches).
+
+## New Functionality Testing
+
+If there is some significant new functionality incoming, it is mandatory that this change comes bundled
+along with suitable new unit test coverage.
+
+These tests **must** be runnable via the OpenMAMA's project CI environment across all supported platforms.
+
+If further changes are required for CI to work with these new changes across all platforms, those changes
+are expected to be made as part of the pull request being raised.
 
 ## Commit Messages
 

@@ -24,7 +24,7 @@ Don't worry there are no databases etc. involved so setup is fairly straightforw
 ### Fork the reposotory
 
 First things first you're recommended to fork the repository on github. If you don't already have a github
-account, you'll need to create one, then navigate to [https://github.com/OpenMAMA/openmama.github.io](https://github.com/OpenMAMA/openmama.github.io)
+account, you'll need to create one, then navigate to [https://github.com/finos/openmama.github.io](https://github.com/finos/openmama.github.io)
 and press the `Fork` button to fork your own copy of the repo. This will give you your own independent copy of the repository which you
 can do what you like with. You are also recommended to run `git checkout -b descriptive-branch-name-for-your-changes` to ensure any
 changes that you contribute back are done from an isolated feature branch.
@@ -35,12 +35,7 @@ Locally, clone the repository *from your fork*. (`git clone https://github.com/y
 
 ### Install Jekyll and run the Site Locally
 
-To view the OpenMAMA website locally, you can simply [install jekyll](https://jekyllrb.com/docs/installation/), then run:
-
-    bundle exec jekyll serve
-
-from the root directory of your git clone. Any changes you make should update your local hosted version of the site (default is `localhost:4000`
-and any changes you make should update the site in real time).
+For instructions on how to run the site locally, please refer to [the main website repository's documentation](https://github.com/finos/openmama.github.io).
 
 ### Commit your changes
 
@@ -48,6 +43,6 @@ Once you are happy, perform the usual git add / commit / push to push your chang
 
 ### Create pull request
 
-Once you're happy, navigate to [https://github.com/OpenMAMA/openmama.org](https://github.com/OpenMAMA/openmama.org)
+Once you're happy, navigate to [https://github.com/finos/openmama.github.io](https://github.com/finos/openmama.github.io)
 and you should be presented with an invitation to create a pull request which will lead you to a form which you can fill in
 detailing the nature of the change. Once this pull request is approved and merged, it will automatically update the live site!

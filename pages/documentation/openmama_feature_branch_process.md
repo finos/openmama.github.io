@@ -1,5 +1,5 @@
 ---
-title: Feature Branch Process
+title: Long Lived Feature Branches
 sidebar: openmama_sidebar
 permalink: openmama_feature_branch_process.html
 folder: openmama

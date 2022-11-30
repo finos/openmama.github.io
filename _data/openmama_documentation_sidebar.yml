@@ -23,7 +23,10 @@ sidebar_entries:
     - title: 1. Quick Start
       url: /quickstart.html
       output: web
-    # - title: 2. Finding Data Providers
+    - title: 2. Using MAMA Resource Pool
+      url: /tutorial_mama_resource_pool.html
+      output: web
+    # - title: 3. Finding Data Providers
     #   url: /openmama_finding_data_providers.html
     #   output: web
 
@@ -59,6 +62,9 @@ sidebar_entries:
       output: web
     - title: Performance Testing
       url: /openmama_performance_testing.html
+      output: web
+    - title: Vulnerability Reporting
+      url: /openmama_vulnerability_reporting.html
       output: web
 
 
@@ -103,7 +109,7 @@ sidebar_entries:
     - title: Dynamic Bridge Loading
       url: /openmama_dynamic_bridge_loading.html
       output: web
-    - title: Feature Branch Process
+    - title: Long Lived Feature Branches
       url: /openmama_feature_branch_process.html
       output: web
     - title: Release Process
