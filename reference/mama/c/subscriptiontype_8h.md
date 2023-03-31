@@ -24,7 +24,7 @@ with_doxylinks: true
 
 |                | Name           |
 | -------------- | -------------- |
-| const MAMAExpDLL char * | **[MamaSubscTypeStr](subscriptiontype_8h.html#function-mamasubsctypestr)**(mamaSubscriptionType subtype) |
+| MAMAExpDLL const char * | **[MamaSubscTypeStr](subscriptiontype_8h.html#function-mamasubsctypestr)**(mamaSubscriptionType subtype) |
 
 ## Types Documentation
 
@@ -64,7 +64,7 @@ Enumeration to describe the type of subscription made
 ### function MamaSubscTypeStr
 
 ```cpp
-const MAMAExpDLL char * MamaSubscTypeStr(
+MAMAExpDLL const char * MamaSubscTypeStr(
     mamaSubscriptionType subtype
 )
 ```
@@ -133,4 +133,4 @@ MAMAExpDLL extern const char* MamaSubscTypeStr (mamaSubscriptionType subtype);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:17 +0100

@@ -26,8 +26,8 @@ with_doxylinks: true
 
 |                | Name           |
 | -------------- | -------------- |
-| const MAMAExpDLL char * | **[mamaStatsLogger_eventToString](statslogger_8h.html#function-mamastatslogger-eventtostring)**(mamaSlEvent event) |
-| const MAMAExpDLL char * | **[mamaStatsLogger_subFailReasonToString](statslogger_8h.html#function-mamastatslogger-subfailreasontostring)**(mamaSlSubFailReason subFailReason) |
+| MAMAExpDLL const char * | **[mamaStatsLogger_eventToString](statslogger_8h.html#function-mamastatslogger-eventtostring)**(mamaSlEvent event) |
+| MAMAExpDLL const char * | **[mamaStatsLogger_subFailReasonToString](statslogger_8h.html#function-mamastatslogger-subfailreasontostring)**(mamaSlSubFailReason subFailReason) |
 | MAMAExpDLL mama_status | **[mamaStatsLogger_allocate](statslogger_8h.html#function-mamastatslogger-allocate)**(mamaStatsLogger * logger) |
 | MAMAExpDLL mama_status | **[mamaStatsLogger_create](statslogger_8h.html#function-mamastatslogger-create)**(mamaStatsLogger logger, mamaQueue queue, mamaTransport tport) |
 | MAMAExpDLL mama_status | **[mamaStatsLogger_createForStats](statslogger_8h.html#function-mamastatslogger-createforstats)**(mamaStatsLogger logger, mamaQueue queue, mamaTransport tport, const char * topic) |
@@ -122,7 +122,7 @@ The reasons for a subscription to fail
 ### function mamaStatsLogger_eventToString
 
 ```cpp
-const MAMAExpDLL char * mamaStatsLogger_eventToString(
+MAMAExpDLL const char * mamaStatsLogger_eventToString(
     mamaSlEvent event
 )
 ```
@@ -139,7 +139,7 @@ Convert a mamaSlEvent value to a string. Do no attempt to free the string result
 ### function mamaStatsLogger_subFailReasonToString
 
 ```cpp
-const MAMAExpDLL char * mamaStatsLogger_subFailReasonToString(
+MAMAExpDLL const char * mamaStatsLogger_subFailReasonToString(
     mamaSlSubFailReason subFailReason
 )
 ```
@@ -820,4 +820,4 @@ mamaStatsLogger_incMsgCount (mamaStatsLogger statsLogger);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

@@ -367,6 +367,24 @@ namespace Wombat
             return ret;
         }
 
+        public MamaQueue getQueueByIndex(int index)
+        {
+            // Returns
+            MamaQueue ret = null;
+
+            lock(this)
+            {
+                // Only continue if the array of threads is valid
+                if (mQueueThreads != null)
+                {
+                    // Get the queue at this index and increment.
+                    ret = mQueueThreads[index % mQueueThreads.Length].Queue;
+                }
+            }
+
+            return ret;
+        }
+
         #endregion
     }
 
@@ -377,4 +395,4 @@ namespace Wombat
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:34 +0100

@@ -418,7 +418,7 @@ inline void updateEntryPosition(
 
 **Parameters**: 
 
-  * **entry** An instance of `[MamdaOrderBookEntry](classcom_1_1wombat_1_1mamda_1_1orderbook_1_1MamdaOrderBookEntry.html)` with the new details for the entry in the level. 
+  * **entryId** An instance of `[MamdaOrderBookEntry](classcom_1_1wombat_1_1mamda_1_1orderbook_1_1MamdaOrderBookEntry.html)` with the new details for the entry in the level. 
   * **entryPosition** Position of the Entry within the Price Level.
 
 
@@ -757,7 +757,7 @@ inline long getEntryPositionInPriceLevel(
 
 **Parameters**: 
 
-  * **EntryId** The position of the order book entry. 
+  * **entryId** The position of the order book entry. 
 
 
 **Return**: The position of the Entry in the Price Level. Indexed from 1. 
@@ -924,4 +924,4 @@ MARKET order
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:13 +0100
+Updated on 2023-03-31 at 15:30:39 +0100

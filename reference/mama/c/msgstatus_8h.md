@@ -25,8 +25,8 @@ with_doxylinks: true
 |                | Name           |
 | -------------- | -------------- |
 | MAMAExpDLL mamaMsgStatus | **[mamaMsgStatus_statusForMsg](msgstatus_8h.html#function-mamamsgstatus-statusformsg)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaMsgStatus_stringForMsg](msgstatus_8h.html#function-mamamsgstatus-stringformsg)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaMsgStatus_stringForStatus](msgstatus_8h.html#function-mamamsgstatus-stringforstatus)**(mamaMsgStatus type) |
+| MAMAExpDLL const char * | **[mamaMsgStatus_stringForMsg](msgstatus_8h.html#function-mamamsgstatus-stringformsg)**(const mamaMsg msg) |
+| MAMAExpDLL const char * | **[mamaMsgStatus_stringForStatus](msgstatus_8h.html#function-mamamsgstatus-stringforstatus)**(mamaMsgStatus type) |
 
 ## Types Documentation
 
@@ -92,7 +92,7 @@ Extract the status from the supplied message.
 ### function mamaMsgStatus_stringForMsg
 
 ```cpp
-const MAMAExpDLL char * mamaMsgStatus_stringForMsg(
+MAMAExpDLL const char * mamaMsgStatus_stringForMsg(
     const mamaMsg msg
 )
 ```
@@ -106,7 +106,7 @@ Return the status as a string given a message.
 ### function mamaMsgStatus_stringForStatus
 
 ```cpp
-const MAMAExpDLL char * mamaMsgStatus_stringForStatus(
+MAMAExpDLL const char * mamaMsgStatus_stringForStatus(
     mamaMsgStatus type
 )
 ```
@@ -214,4 +214,4 @@ mamaMsgStatus_stringForStatus (mamaMsgStatus type);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

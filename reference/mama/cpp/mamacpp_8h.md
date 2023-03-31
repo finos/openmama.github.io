@@ -58,8 +58,10 @@ with_doxylinks: true
 #ifndef MAMA_CPP_H__
 #define MAMA_CPP_H__
 
-#include <stdio.h>
+#include <cstdio>
 #include <cstring>
+#include <string>
+#include <map>
 
 #include <mama/mama.h>
 #include <mama/MamaBridgeCallback.h>
@@ -175,11 +177,17 @@ public:
 
     static const char * getProperty (const char* name);
 
+    static void loadDefaultProperties (void);
+
+    static std::map<std::string, std::string> getProperties ();
+
     static void close ();
 
     static unsigned int closeCount ();
 
     static void start (mamaBridge bridgeImpl);
+
+    static void startAll (bool isBlocking = true);
 
     static void startBackground (mamaBridge bridgeImpl,
                                  MamaStartCallback* callback);
@@ -242,4 +250,4 @@ private:
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:26 +0100

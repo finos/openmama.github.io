@@ -24,7 +24,7 @@ with_doxylinks: true
 |                | Name           |
 | -------------- | -------------- |
 | MAMAIgnoreDeprecatedOpen | **[MAMATypeDeprecated](msg_8h.html#function-mamatypedeprecated)**(mamaPayloadType , "mamaPayloadType has been deprecated, use dynamic loading instead!" ) |
-| MAMAIgnoreDeprecatedClose MAMAIgnoreDeprecatedOpen const MAMAExpDLL char * | **[mamaPayload_convertToString](msg_8h.html#function-mamapayload-converttostring)**(mamaPayloadType payloadType) |
+| MAMAIgnoreDeprecatedClose MAMAIgnoreDeprecatedOpen MAMAExpDLL const char * | **[mamaPayload_convertToString](msg_8h.html#function-mamapayload-converttostring)**(mamaPayloadType payloadType) |
 | MAMAIgnoreDeprecatedClose MAMAExpDLL mama_status | **[mamaMsg_create](msg_8h.html#function-mamamsg-create)**(mamaMsg * msg) |
 | MAMAIgnoreDeprecatedOpen | **[MAMAExpDeprecatedDLL](msg_8h.html#function-mamaexpdeprecateddll)**("mamaMsg_createForPayload has been deprecated, use dynamic loading instead!" ) |
 | MAMAIgnoreDeprecatedClose MAMAExpDLL mama_status | **[mamaMsg_createForPayloadBridge](msg_8h.html#function-mamamsg-createforpayloadbridge)**(mamaMsg * msg, mamaPayloadBridge payloadBridge) |
@@ -145,16 +145,16 @@ with_doxylinks: true
 | MAMAExpDLL mama_status | **[mamaMsg_getVectorPrice](msg_8h.html#function-mamamsg-getvectorprice)**(const mamaMsg msg, const char * name, mama_fid_t fid, const mamaPrice ** result, mama_size_t * resultLen) |
 | MAMAExpDLL mama_status | **[mamaMsg_getVectorMsg](msg_8h.html#function-mamamsg-getvectormsg)**(const mamaMsg msg, const char * name, mama_fid_t fid, const mamaMsg ** result, mama_size_t * resultLen) |
 | MAMAExpDLL mama_status | **[mamaMsg_getNumFields](msg_8h.html#function-mamamsg-getnumfields)**(const mamaMsg msg, mama_size_t * numFields) |
-| const MAMAExpDLL char * | **[mamaMsg_toString](msg_8h.html#function-mamamsg-tostring)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaMsg_toNormalizedString](msg_8h.html#function-mamamsg-tonormalizedstring)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaMsg_toJsonString](msg_8h.html#function-mamamsg-tojsonstring)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaMsg_toJsonStringWithDictionary](msg_8h.html#function-mamamsg-tojsonstringwithdictionary)**(const mamaMsg msg, const mamaDictionary dictionary) |
+| MAMAExpDLL const char * | **[mamaMsg_toString](msg_8h.html#function-mamamsg-tostring)**(const mamaMsg msg) |
+| MAMAExpDLL const char * | **[mamaMsg_toNormalizedString](msg_8h.html#function-mamamsg-tonormalizedstring)**(const mamaMsg msg) |
+| MAMAExpDLL const char * | **[mamaMsg_toJsonString](msg_8h.html#function-mamamsg-tojsonstring)**(const mamaMsg msg) |
+| MAMAExpDLL const char * | **[mamaMsg_toJsonStringWithDictionary](msg_8h.html#function-mamamsg-tojsonstringwithdictionary)**(const mamaMsg msg, const mamaDictionary dictionary) |
 | MAMAIgnoreDeprecatedOpen | **[MAMAExpDeprecatedDLL](msg_8h.html#function-mamaexpdeprecateddll)**("mamaMsg_freeString has been deprecated - memory now managed by bridge" ) const |
 | MAMAIgnoreDeprecatedClose MAMAExpDLL mama_status | **[mamaMsg_getEntitleCode](msg_8h.html#function-mamamsg-getentitlecode)**(const mamaMsg msg, mama_i32_t * code) |
 | MAMAExpDLL mama_status | **[mamaMsg_getSeqNum](msg_8h.html#function-mamamsg-getseqnum)**(const mamaMsg msg, mama_seqnum_t * seqNum) |
 | MAMAExpDLL mamaMsgType | **[mamaMsgType_typeForMsg](msg_8h.html#function-mamamsgtype-typeformsg)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaMsgType_stringForMsg](msg_8h.html#function-mamamsgtype-stringformsg)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaMsgType_stringForType](msg_8h.html#function-mamamsgtype-stringfortype)**(const mamaMsgType type) |
+| MAMAExpDLL const char * | **[mamaMsgType_stringForMsg](msg_8h.html#function-mamamsgtype-stringformsg)**(const mamaMsg msg) |
+| MAMAExpDLL const char * | **[mamaMsgType_stringForType](msg_8h.html#function-mamamsgtype-stringfortype)**(const mamaMsgType type) |
 | MAMAExpDLL mama_status | **[mamaMsg_getFieldAsString](msg_8h.html#function-mamamsg-getfieldasstring)**(const mamaMsg msg, const char * fieldName, mama_fid_t fid, char * buf, mama_size_t length) |
 | MAMAExpDLL mama_status | **[mamaMsg_iterateFields](msg_8h.html#function-mamamsg-iteratefields)**(const mamaMsg msg, mamaMsgIteratorCb callback, const mamaDictionary dict, void * closure) |
 | MAMAExpDLL mama_status | **[mamaMsg_getPlatformError](msg_8h.html#function-mamamsg-getplatformerror)**(const mamaMsg msg, void ** error) |
@@ -234,7 +234,7 @@ Enum to reference the available MAMA message payloads.
 ### function mamaPayload_convertToString
 
 ```cpp
-MAMAIgnoreDeprecatedClose MAMAIgnoreDeprecatedOpen const MAMAExpDLL char * mamaPayload_convertToString(
+MAMAIgnoreDeprecatedClose MAMAIgnoreDeprecatedOpen MAMAExpDLL const char * mamaPayload_convertToString(
     mamaPayloadType payloadType
 )
 ```
@@ -3053,7 +3053,7 @@ Returns the total number of fields in the message. Sub-messages count as a singl
 ### function mamaMsg_toString
 
 ```cpp
-const MAMAExpDLL char * mamaMsg_toString(
+MAMAExpDLL const char * mamaMsg_toString(
     const mamaMsg msg
 )
 ```
@@ -3072,7 +3072,7 @@ Return a const char * representation the message. Memory is owned by the underly
 ### function mamaMsg_toNormalizedString
 
 ```cpp
-const MAMAExpDLL char * mamaMsg_toNormalizedString(
+MAMAExpDLL const char * mamaMsg_toNormalizedString(
     const mamaMsg msg
 )
 ```
@@ -3091,7 +3091,7 @@ Return a const char * representation the message. Memory is owned by the mamaMsg
 ### function mamaMsg_toJsonString
 
 ```cpp
-const MAMAExpDLL char * mamaMsg_toJsonString(
+MAMAExpDLL const char * mamaMsg_toJsonString(
     const mamaMsg msg
 )
 ```
@@ -3110,7 +3110,7 @@ Return a const char * representation the message in JSON format. Memory is owned
 ### function mamaMsg_toJsonStringWithDictionary
 
 ```cpp
-const MAMAExpDLL char * mamaMsg_toJsonStringWithDictionary(
+MAMAExpDLL const char * mamaMsg_toJsonStringWithDictionary(
     const mamaMsg msg,
     const mamaDictionary dictionary
 )
@@ -3206,7 +3206,7 @@ Extract the type from the supplied message.
 ### function mamaMsgType_stringForMsg
 
 ```cpp
-const MAMAExpDLL char * mamaMsgType_stringForMsg(
+MAMAExpDLL const char * mamaMsgType_stringForMsg(
     const mamaMsg msg
 )
 ```
@@ -3225,7 +3225,7 @@ Return the type name.
 ### function mamaMsgType_stringForType
 
 ```cpp
-const MAMAExpDLL char * mamaMsgType_stringForType(
+MAMAExpDLL const char * mamaMsgType_stringForType(
     const mamaMsgType type
 )
 ```
@@ -4895,4 +4895,4 @@ mamaMsgIterator_destroy (mamaMsgIterator iterator);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

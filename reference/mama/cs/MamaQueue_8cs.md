@@ -102,6 +102,12 @@ namespace Wombat
             CheckResultCode(code);
         }
 
+        public void setQueueName(string queueName)
+        {
+            int code = NativeMethods.mamaQueue_setQueueName(nativeHandle, queueName);
+            CheckResultCode(code);
+        }
+
         public int getLowWatermark()
         {
             int result = 0;
@@ -539,6 +545,9 @@ namespace Wombat
             public static extern int mamaQueue_setLowWatermark (IntPtr nativeHandle,
                 int lowWatermark);
             [DllImport(Mama.DllName, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int mamaQueue_setQueueName(IntPtr nativeHandle,
+                string name);
+            [DllImport(Mama.DllName, CallingConvention = CallingConvention.Cdecl)]
             public static extern int mamaQueue_getLowWatermark (IntPtr nativeHandle,
                 ref int lowWatermark);
             [DllImport(Mama.DllName, CallingConvention = CallingConvention.Cdecl)]
@@ -592,4 +601,4 @@ namespace Wombat
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:34 +0100

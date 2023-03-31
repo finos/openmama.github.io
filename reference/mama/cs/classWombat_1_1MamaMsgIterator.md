@@ -14,7 +14,7 @@ with_doxylinks: true
 
 
 
-Class for iterating through the fields in a [MamaMsg](classWombat_1_1MamaMsg.html)
+Class for iterating through the fields in a [MamaMsg]()
 
 Inherits from [Wombat.MamaWrapper](classWombat_1_1MamaWrapper.html), IDisposable
 
@@ -121,4 +121,4 @@ Implements the destruction of the underlying peer object [MamaWrapper.DestroyNat
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:32 +0100

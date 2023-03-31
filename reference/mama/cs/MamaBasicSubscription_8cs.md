@@ -53,7 +53,7 @@ with_doxylinks: true
  * 02110-1301 USA
  */
 
-﻿
+ 
 using System;
 using System.Runtime.InteropServices;
 
@@ -226,19 +226,19 @@ namespace Wombat
         /* ************************************************************** */
         #region Protected Delegates
 
-        protected delegate void OnSubscriptionCreateDelegate(IntPtr nativeHandle, IntPtr closure);
+        public delegate void OnSubscriptionCreateDelegate(IntPtr nativeHandle, IntPtr closure);
 
-        protected delegate void OnSubscriptionDestroyDelegate(IntPtr nativeHandle, IntPtr closure);
+        public delegate void OnSubscriptionDestroyDelegate(IntPtr nativeHandle, IntPtr closure);
 
-        protected delegate void OnSubscriptionErrorDelegate(IntPtr nativeHandle, int status, IntPtr platformError, string subject, IntPtr closure);
+        public delegate void OnSubscriptionErrorDelegate(IntPtr nativeHandle, int status, IntPtr platformError, string subject, IntPtr closure);
 
-        protected delegate void OnSubscriptionGapDelegate(IntPtr nativeHandle, IntPtr closure);
+        public delegate void OnSubscriptionGapDelegate(IntPtr nativeHandle, IntPtr closure);
 
-        protected delegate void OnSubscriptionMessageDelegate(IntPtr nativeHandle, IntPtr msg, IntPtr closure, IntPtr itemClosure);
+        public delegate void OnSubscriptionMessageDelegate(IntPtr nativeHandle, IntPtr msg, IntPtr closure, IntPtr itemClosure);
 
-        protected delegate void OnSubscriptionQualityDelegate(IntPtr nativeHandle, int quality, string symbol, short cause, string platforminfo, IntPtr closure);
+        public delegate void OnSubscriptionQualityDelegate(IntPtr nativeHandle, int quality, string symbol, short cause, string platforminfo, IntPtr closure);
 
-        protected delegate void OnSubscriptionRecapRequestDelegate(IntPtr nativeHandle, IntPtr closure);
+        public delegate void OnSubscriptionRecapRequestDelegate(IntPtr nativeHandle, IntPtr closure);
 
         #endregion
 
@@ -496,4 +496,4 @@ namespace Wombat
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:33 +0100

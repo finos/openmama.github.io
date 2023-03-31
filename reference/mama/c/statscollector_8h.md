@@ -33,7 +33,7 @@ with_doxylinks: true
 | MAMAExpDLL int | **[mamaStatsCollector_getPublish](statscollector_8h.html#function-mamastatscollector-getpublish)**(mamaStatsCollector statsCollector) |
 | MAMAExpDLL mama_status | **[mamaStatsCollector_setLog](statscollector_8h.html#function-mamastatscollector-setlog)**(mamaStatsCollector statsCollector, int log) |
 | MAMAExpDLL int | **[mamaStatsCollector_getLog](statscollector_8h.html#function-mamastatscollector-getlog)**(mamaStatsCollector statsCollector) |
-| const MAMAExpDLL char * | **[mamaStatsCollectorType_stringForType](statscollector_8h.html#function-mamastatscollectortype-stringfortype)**(mamaStatsCollectorType type) |
+| MAMAExpDLL const char * | **[mamaStatsCollectorType_stringForType](statscollector_8h.html#function-mamastatscollectortype-stringfortype)**(mamaStatsCollectorType type) |
 
 ## Types Documentation
 
@@ -228,7 +228,7 @@ Get whether or not stats are being logged for this stats collector.
 ### function mamaStatsCollectorType_stringForType
 
 ```cpp
-const MAMAExpDLL char * mamaStatsCollectorType_stringForType(
+MAMAExpDLL const char * mamaStatsCollectorType_stringForType(
     mamaStatsCollectorType type
 )
 ```
@@ -335,4 +335,4 @@ mamaStatsCollectorType_stringForType (mamaStatsCollectorType type);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

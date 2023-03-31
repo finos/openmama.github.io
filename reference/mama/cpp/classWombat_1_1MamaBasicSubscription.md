@@ -27,6 +27,7 @@ Inherited by [Wombat::MamaBasicWildCardSubscription](classWombat_1_1MamaBasicWil
 | virtual | **[~MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html#function-~mamabasicsubscription)**() |
 | | **[MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html#function-mamabasicsubscription)**(void ) |
 | virtual void | **[createBasic](classWombat_1_1MamaBasicSubscription.html#function-createbasic)**([MamaTransport](classWombat_1_1MamaTransport.html) * transport, [MamaQueue](classWombat_1_1MamaQueue.html) * queue, [MamaBasicSubscriptionCallback](classWombat_1_1MamaBasicSubscriptionCallback.html) * callback, const char * topic, void * closure =NULL) |
+| virtual void | **[createBasic](classWombat_1_1MamaBasicSubscription.html#function-createbasic)**([MamaTransport](classWombat_1_1MamaTransport.html) * transport, [MamaQueue](classWombat_1_1MamaQueue.html) * queue, [MamaSubscriptionCallback](classWombat_1_1MamaSubscriptionCallback.html) * callback, const char * topic, void * closure =NULL) |
 | virtual void | **[destroy](classWombat_1_1MamaBasicSubscription.html#function-destroy)**() |
 | virtual void | **[destroyEx](classWombat_1_1MamaBasicSubscription.html#function-destroyex)**() |
 | virtual bool | **[isActive](classWombat_1_1MamaBasicSubscription.html#function-isactive)**(void ) const |
@@ -104,12 +105,37 @@ virtual void createBasic(
 
   * **transport** The transport to use. Must be a basic transport. 
   * **queue** The queue. 
-  * **callback** The mamaMsgCallbacks structure containing the three callback methods.
+  * **callback** [MamaBasicSubscriptionCallback](classWombat_1_1MamaBasicSubscriptionCallback.html) class instance containing the three callback methods.
   * **topic** The topic. 
   * **closure** The caller supplied closure. 
 
 
 Create a basic subscription without market data semantics.
+
+
+### function createBasic
+
+```cpp
+virtual void createBasic(
+    MamaTransport * transport,
+    MamaQueue * queue,
+    MamaSubscriptionCallback * callback,
+    const char * topic,
+    void * closure =NULL
+)
+```
+
+
+**Parameters**: 
+
+  * **transport** The transport to use. Must be a basic transport. 
+  * **queue** The queue. 
+  * **callback** [MamaSubscriptionCallback](classWombat_1_1MamaSubscriptionCallback.html) class instance containing the three callback methods.
+  * **topic** The topic. 
+  * **closure** The caller supplied closure. 
+
+
+Create a basic subscription without market data semantics using MAMA callback structure
 
 
 ### function destroy
@@ -330,4 +356,4 @@ MamaTransport * mTransport;
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:25 +0100

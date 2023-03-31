@@ -29,6 +29,7 @@ Inherits from IDisposable
 | void | **[start](classWombat_1_1MamaQueueGroup.html#function-start)**()<br>Start dispatching on all queues.  |
 | void | **[stop](classWombat_1_1MamaQueueGroup.html#function-stop)**()<br>Stop dispatching on all queues.  |
 | [MamaQueue](classWombat_1_1MamaQueue.html) | **[getNextQueue](classWombat_1_1MamaQueueGroup.html#function-getnextqueue)**()<br>This function will return the next queue since it was called last or the first queue in the group if this is the first time that it has been called. Note that when all queues have been returned it will go back to the start of the array.  |
+| [MamaQueue](classWombat_1_1MamaQueue.html) | **[getQueueByIndex](classWombat_1_1MamaQueueGroup.html#function-getqueuebyindex)**(int index)<br>This function will return the queue in this queue group at the given index specifically.  |
 
 ## Public Functions Documentation
 
@@ -97,6 +98,16 @@ MamaQueue getNextQueue()
 
 This function will return the next queue since it was called last or the first queue in the group if this is the first time that it has been called. Note that when all queues have been returned it will go back to the start of the array. 
 
+### function getQueueByIndex
+
+```csharp
+MamaQueue getQueueByIndex(
+    int index
+)
+```
+
+This function will return the queue in this queue group at the given index specifically. 
+
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:32 +0100

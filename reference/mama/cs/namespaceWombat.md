@@ -22,13 +22,14 @@ with_doxylinks: true
 | class | **[Wombat::MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html)** <br>The basic subscription supports publish / subscribe. This class can be disposed or the deallocate function called to reduce time during finalization. Note that the deallocate function will attempt to destroy the subscription if this has not already been done whereas dispose will only de-allocate the memory.  |
 | interface | **[Wombat::MamaBasicSubscriptionCallback](interfaceWombat_1_1MamaBasicSubscriptionCallback.html)** <br>This interface should be implemented by clients wish to create a MAMA Basic subscription, it contains callback functions that will be invoked whenever specific events occur.  |
 | class | **[Wombat::MamaBridge](classWombat_1_1MamaBridge.html)**  |
-| class | **[Wombat::MamaBridgeFtMember](classWombat_1_1MamaBridgeFtMember.html)** <br>A member of a MAMA fault tolerance bridge group  |
 | class | **[Wombat::MamaClientProfile](classWombat_1_1MamaClientProfile.html)** <br>A class containing various information about the MAMA client  |
 | class | **[Wombat::MamaDictionary](classWombat_1_1MamaDictionary.html)** <br>Maps field identifiers (FIDs) to human-readable strings  |
 | interface | **[Wombat::MamaDictionaryCallback](interfaceWombat_1_1MamaDictionaryCallback.html)** <br>Collection of callbacks associated with MamaDictionaries  |
 | class | **[Wombat::MamaException](classWombat_1_1MamaException.html)** <br>Provides a MAMA API-specific exception which captures the status code of the last MAMA API call and a textual description of the error.  |
 | class | **[Wombat::MamaFieldDescriptor](classWombat_1_1MamaFieldDescriptor.html)** <br>A class that describes a field in a [MamaMsg]() |
 | class | **[Wombat::MamaFtMember](classWombat_1_1MamaFtMember.html)** <br>A member of a MAMA fault tolerance group  |
+| class | **[Wombat::MamaMulticastFtMember](classWombat_1_1MamaMulticastFtMember.html)** <br>A member of a MAMA fault tolerance multicast group  |
+| class | **[Wombat::MamaBridgeFtMember](classWombat_1_1MamaBridgeFtMember.html)** <br>A member of a MAMA fault tolerance bridge group  |
 | interface | **[Wombat::MamaFtMemberCallback](interfaceWombat_1_1MamaFtMemberCallback.html)** <br>Callback interface to receive notifications regarding Fault Tolerance events  |
 | class | **[Wombat::MamaInbox](classWombat_1_1MamaInbox.html)** <br>A class for processing point-to-point messaging  |
 | interface | **[Wombat::MamaInboxCallback](interfaceWombat_1_1MamaInboxCallback.html)** <br>Provides an object-oriented callback interface for a [MamaInbox](classWombat_1_1MamaInbox.html) response to a p2p message being received or when an error is encountered during p2p messaging  |
@@ -36,11 +37,10 @@ with_doxylinks: true
 | interface | **[Wombat::MamaIoCallback](interfaceWombat_1_1MamaIoCallback.html)** <br>Callback interface invoked by the MamIo handler.  |
 | interface | **[Wombat::MamaLogFileCallback](interfaceWombat_1_1MamaLogFileCallback.html)** <br>Callbacks associated with logging  |
 | interface | **[Wombat::MamaLogFileCallback2](interfaceWombat_1_1MamaLogFileCallback2.html)** <br>Callbacks associated with logging  |
+| class | **[Wombat::MamaMsgIterator](classWombat_1_1MamaMsgIterator.html)** <br>Class for iterating through the fields in a [MamaMsg]() |
 | class | **[Wombat::MamaMsg](classWombat_1_1MamaMsg.html)** <br>Class which encapsulates the messages used in the MAMA infrastructure  |
 | class | **[Wombat::MamaMsgField](classWombat_1_1MamaMsgField.html)** <br>Class that represents a field in a [MamaMsg](classWombat_1_1MamaMsg.html) |
 | interface | **[Wombat::MamaMsgFieldIterator](interfaceWombat_1_1MamaMsgFieldIterator.html)** <br>Callbacks for iterating through the fields of a message  |
-| class | **[Wombat::MamaMsgIterator](classWombat_1_1MamaMsgIterator.html)** <br>Class for iterating through the fields in a [MamaMsg](classWombat_1_1MamaMsg.html) |
-| class | **[Wombat::MamaMulticastFtMember](classWombat_1_1MamaMulticastFtMember.html)** <br>A member of a MAMA fault tolerance multicast group  |
 | class | **[Wombat::MamaPayloadBridge](classWombat_1_1MamaPayloadBridge.html)**  |
 | class | **[Wombat::MamaPrice](classWombat_1_1MamaPrice.html)** <br>A class for manipulating monetary prices  |
 | class | **[Wombat::MamaPublisher](classWombat_1_1MamaPublisher.html)** <br>The [MamaPublisher]() class publishes messages to basic or market data subscriptions depending on the underlying transport  |
@@ -50,7 +50,9 @@ with_doxylinks: true
 | interface | **[Wombat::MamaQueueEventCallback](interfaceWombat_1_1MamaQueueEventCallback.html)** <br>Callbacks associated with MamaQueues  |
 | class | **[Wombat::MamaQueueGroup](classWombat_1_1MamaQueueGroup.html)** <br>A class for distributing events across multiple queues in a round robin fashion.  |
 | interface | **[Wombat::MamaQueueMonitorCallback](interfaceWombat_1_1MamaQueueMonitorCallback.html)**  |
+| class | **[Wombat::MamaRegexChannelFilter](classWombat_1_1MamaRegexChannelFilter.html)** <br>A [MamaResourcePool]() is a convenience wrapper to allow easy subscription and management of OpenMAMA related resources  |
 | class | **[Wombat::MamaReservedFields](classWombat_1_1MamaReservedFields.html)** <br>Maintains a cache of common field descriptors.  |
+| class | **[Wombat::MamaResourcePool](classWombat_1_1MamaResourcePool.html)** <br>A [MamaResourcePool]() is a convenience wrapper to allow easy subscription and management of OpenMAMA related resources  |
 | interface | **[Wombat::MamaSendCompleteCallback](interfaceWombat_1_1MamaSendCompleteCallback.html)** <br>Provides an object-oriented callback interface for [MamaPublisher](classWombat_1_1MamaPublisher.html)'s sendWithThrottle and sendFromInboxWithThrottle methods  |
 | class | **[Wombat::MamaSource](classWombat_1_1MamaSource.html)** <br>A [MamaSource]() maintains information about a data source, including the quality of the data coming from that source  |
 | class | **[Wombat::MamaSourceGroup](classWombat_1_1MamaSourceGroup.html)** <br>A [MamaSourceGroup]() monitors a set of [MamaSource](classWombat_1_1MamaSource.html)s that presumably provide a duplicate set of data.  |
@@ -452,4 +454,4 @@ The enumeration describes the state of the subsubscription at any time. The stat
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:32 +0100

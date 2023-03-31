@@ -35,9 +35,12 @@ with_doxylinks: true
 | void | **[registerEntitlementCallbacks](classWombat_1_1Mama.html#function-registerentitlementcallbacks)**([MamaEntitlementCallback](classWombat_1_1MamaEntitlementCallback.html) * callback) |
 | void | **[setProperty](classWombat_1_1Mama.html#function-setproperty)**(const char * name, const char * value) |
 | const char * | **[getProperty](classWombat_1_1Mama.html#function-getproperty)**(const char * name) |
+| void | **[loadDefaultProperties](classWombat_1_1Mama.html#function-loaddefaultproperties)**(void ) |
+| std::map< std::string, std::string > | **[getProperties](classWombat_1_1Mama.html#function-getproperties)**() |
 | void | **[close](classWombat_1_1Mama.html#function-close)**() |
 | unsigned int | **[closeCount](classWombat_1_1Mama.html#function-closecount)**() |
 | void | **[start](classWombat_1_1Mama.html#function-start)**(mamaBridge bridgeImpl) |
+| void | **[startAll](classWombat_1_1Mama.html#function-startall)**(bool isBlocking =true) |
 | void | **[startBackground](classWombat_1_1Mama.html#function-startbackground)**(mamaBridge bridgeImpl, [MamaStartCallback](classWombat_1_1MamaStartCallback.html) * callback) |
 | void | **[stop](classWombat_1_1Mama.html#function-stop)**(mamaBridge bridgeImpl) |
 | void | **[stopAll](classWombat_1_1Mama.html#function-stopall)**(void ) |
@@ -337,6 +340,30 @@ Retrieve a specific property from the API.
 If the property has not been set, a NULL value will be returned.
 
 
+### function loadDefaultProperties
+
+```cpp
+static void loadDefaultProperties(
+    void 
+)
+```
+
+
+Load in default mama.properties from the default WOMBAT_PATH directory. 
+
+
+### function getProperties
+
+```cpp
+static std::map< std::string, std::string > getProperties()
+```
+
+
+**Return**: A key value map of all configuration properties 
+
+Retrieve all configuration properties from the API.
+
+
 ### function close
 
 ```cpp
@@ -384,6 +411,25 @@ Start processing messages on the internal queue. This starts [Mama](classWombat_
 [Mama::start( )](classWombat_1_1Mama.html#function-start) blocks until an invocation of [Mama::stop()](classWombat_1_1Mama.html#function-stop) occurs.
 
 MAMA employs a reference count to track multiple calls to [Mama::start()](classWombat_1_1Mama.html#function-start) and [Mama::stop()](classWombat_1_1Mama.html#function-stop). The count is incremented every time [Mama::start()](classWombat_1_1Mama.html#function-start) is called and decremented when [Mama::stop()](classWombat_1_1Mama.html#function-stop) is called. The first [Mama::start()](classWombat_1_1Mama.html#function-start) call does not unblock until the count reaches zero.
+
+This function is thread safe.
+
+
+### function startAll
+
+```cpp
+static void startAll(
+    bool isBlocking =true
+)
+```
+
+
+**Parameters**: 
+
+  * **isBlocking** Whether to start blocking or run in background 
+
+
+Calls [Mama::start](classWombat_1_1Mama.html#function-start) for all currently loaded middleware bridges
 
 This function is thread safe.
 
@@ -743,4 +789,4 @@ It removes the statsCollector from the statsGenerator list
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:25 +0100

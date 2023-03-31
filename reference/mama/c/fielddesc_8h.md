@@ -24,14 +24,14 @@ with_doxylinks: true
 
 |                | Name           |
 | -------------- | -------------- |
-| const MAMAExpDLL char * | **[mamaFieldTypeToString](fielddesc_8h.html#function-mamafieldtypetostring)**(mamaFieldType type) |
+| MAMAExpDLL const char * | **[mamaFieldTypeToString](fielddesc_8h.html#function-mamafieldtypetostring)**(mamaFieldType type) |
 | MAMAExpDLL mamaFieldType | **[stringToMamaFieldType](fielddesc_8h.html#function-stringtomamafieldtype)**(const char * str) |
 | MAMAExpDLL mama_status | **[mamaFieldDescriptor_create](fielddesc_8h.html#function-mamafielddescriptor-create)**(mamaFieldDescriptor * descriptor, mama_fid_t fid, mamaFieldType type, const char * name) |
 | MAMAExpDLL mama_status | **[mamaFieldDescriptor_destroy](fielddesc_8h.html#function-mamafielddescriptor-destroy)**(mamaFieldDescriptor descriptor) |
 | MAMAExpDLL mama_fid_t | **[mamaFieldDescriptor_getFid](fielddesc_8h.html#function-mamafielddescriptor-getfid)**(const mamaFieldDescriptor descriptor) |
 | MAMAExpDLL mamaFieldType | **[mamaFieldDescriptor_getType](fielddesc_8h.html#function-mamafielddescriptor-gettype)**(const mamaFieldDescriptor descriptor) |
-| const MAMAExpDLL char * | **[mamaFieldDescriptor_getName](fielddesc_8h.html#function-mamafielddescriptor-getname)**(const mamaFieldDescriptor descriptor) |
-| const MAMAExpDLL char * | **[mamaFieldDescriptor_getTypeName](fielddesc_8h.html#function-mamafielddescriptor-gettypename)**(const mamaFieldDescriptor descriptor) |
+| MAMAExpDLL const char * | **[mamaFieldDescriptor_getName](fielddesc_8h.html#function-mamafielddescriptor-getname)**(const mamaFieldDescriptor descriptor) |
+| MAMAExpDLL const char * | **[mamaFieldDescriptor_getTypeName](fielddesc_8h.html#function-mamafielddescriptor-gettypename)**(const mamaFieldDescriptor descriptor) |
 | MAMAExpDLL mama_status | **[mamaFieldDescriptor_setClosure](fielddesc_8h.html#function-mamafielddescriptor-setclosure)**(mamaFieldDescriptor descriptor, void * closure) |
 | MAMAExpDLL mama_status | **[mamaFieldDescriptor_getClosure](fielddesc_8h.html#function-mamafielddescriptor-getclosure)**(mamaFieldDescriptor descriptor, void ** closure) |
 
@@ -100,7 +100,7 @@ The mamaFieldDescriptor class represents a field in a mamaMsg.
 ### function mamaFieldTypeToString
 
 ```cpp
-const MAMAExpDLL char * mamaFieldTypeToString(
+MAMAExpDLL const char * mamaFieldTypeToString(
     mamaFieldType type
 )
 ```
@@ -215,7 +215,7 @@ Return the data type.
 ### function mamaFieldDescriptor_getName
 
 ```cpp
-const MAMAExpDLL char * mamaFieldDescriptor_getName(
+MAMAExpDLL const char * mamaFieldDescriptor_getName(
     const mamaFieldDescriptor descriptor
 )
 ```
@@ -234,7 +234,7 @@ Return the human readable name of the field.
 ### function mamaFieldDescriptor_getTypeName
 
 ```cpp
-const MAMAExpDLL char * mamaFieldDescriptor_getTypeName(
+MAMAExpDLL const char * mamaFieldDescriptor_getTypeName(
     const mamaFieldDescriptor descriptor
 )
 ```
@@ -452,4 +452,4 @@ mamaFieldDescriptor_getClosure(
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

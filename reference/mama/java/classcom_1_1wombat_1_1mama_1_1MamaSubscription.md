@@ -27,6 +27,7 @@ with_doxylinks: true
 | Object | **[getClosure](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html#function-getclosure)**() |
 | long | **[getPointerVal](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html#function-getpointerval)**() |
 | [MamaSource](classcom_1_1wombat_1_1mama_1_1MamaSource.html) | **[getSource](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html#function-getsource)**() |
+| [MamaQueue](classcom_1_1wombat_1_1mama_1_1MamaQueue.html) | **[getQueue](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html#function-getqueue)**() |
 | [MamaSubscriptionState](classcom_1_1wombat_1_1mama_1_1MamaSubscriptionState.html) | **[getState](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html#function-getstate)**() |
 | void | **[setupSubscription](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html#function-setupsubscription)**([MamaSubscriptionCallback](interfacecom_1_1wombat_1_1mama_1_1MamaSubscriptionCallback.html) callback, [MamaQueue](classcom_1_1wombat_1_1mama_1_1MamaQueue.html) queue, [MamaSource](classcom_1_1wombat_1_1mama_1_1MamaSource.html) source, String symbol, Object closure) |
 | void | **[setAppDataType](classcom_1_1wombat_1_1mama_1_1MamaSubscription.html#function-setappdatatype)**([MamaMdDataType](classcom_1_1wombat_1_1mama_1_1MamaMdDataType.html) type) |
@@ -218,6 +219,18 @@ inline MamaSource getSource()
 **Return**: The [MamaSource](classcom_1_1wombat_1_1mama_1_1MamaSource.html) object. 
 
 Return the source associated with the subscription.
+
+
+### function getQueue
+
+```java
+inline MamaQueue getQueue()
+```
+
+
+**Return**: The [MamaQueue](classcom_1_1wombat_1_1mama_1_1MamaQueue.html) object 
+
+Return the queue used for this subscription
 
 
 ### function getState
@@ -607,4 +620,4 @@ static final double DEFAULT_TIMEOUT = 10.0;
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:08 +0100
+Updated on 2023-03-31 at 15:29:44 +0100

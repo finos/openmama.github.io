@@ -23,7 +23,7 @@ with_doxylinks: true
 
 |                | Name           |
 | -------------- | -------------- |
-| const MAMAExpDLL char * | **[mamaStatus_stringForStatus](status_8h.html#function-mamastatus-stringforstatus)**(mama_status status) |
+| MAMAExpDLL const char * | **[mamaStatus_stringForStatus](status_8h.html#function-mamastatus-stringforstatus)**(mama_status status) |
 
 ## Defines
 
@@ -120,7 +120,7 @@ with_doxylinks: true
 ### function mamaStatus_stringForStatus
 
 ```cpp
-const MAMAExpDLL char * mamaStatus_stringForStatus(
+MAMAExpDLL const char * mamaStatus_stringForStatus(
     mama_status status
 )
 ```
@@ -438,4 +438,4 @@ mamaStatus_stringForStatus (mama_status status);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:17 +0100

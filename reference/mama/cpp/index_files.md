@@ -46,7 +46,9 @@ with_doxylinks: true
     * **file [mama/MamaQueueEventCallback.h](MamaQueueEventCallback_8h.html#file-mamaqueueeventcallback.h)** 
     * **file [mama/MamaQueueGroup.h](MamaQueueGroup_8h.html#file-mamaqueuegroup.h)** 
     * **file [mama/MamaQueueMonitorCallback.h](MamaQueueMonitorCallback_8h.html#file-mamaqueuemonitorcallback.h)** 
+    * **file [mama/MamaRegexChannelFilter.h](MamaRegexChannelFilter_8h.html#file-mamaregexchannelfilter.h)** 
     * **file [mama/MamaReservedFields.h](MamaReservedFields_8h.html#file-mamareservedfields.h)** 
+    * **file [mama/MamaResourcePool.h](MamaResourcePool_8h.html#file-mamaresourcepool.h)** 
     * **file [mama/MamaSendCompleteCallback.h](MamaSendCompleteCallback_8h.html#file-mamasendcompletecallback.h)** 
     * **file [mama/MamaSource.h](MamaSource_8h.html#file-mamasource.h)** 
     * **file [mama/MamaSourceDerivative.h](MamaSourceDerivative_8h.html#file-mamasourcederivative.h)** 
@@ -87,4 +89,4 @@ with_doxylinks: true
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:27 +0100

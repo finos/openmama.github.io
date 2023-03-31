@@ -18,7 +18,7 @@ with_doxylinks: true
 
 `#include <MamdaDataException.h>`
 
-Inherits from invalid_argument
+Inherits from std::invalid_argument
 
 ## Public Functions
 
@@ -51,4 +51,4 @@ Constructs a new exception with the specified detail message.
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:09 +0100
+Updated on 2023-03-31 at 15:29:57 +0100

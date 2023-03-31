@@ -21,8 +21,8 @@ A class that represents the underlying for an option chain. Instances of this ob
 |                | Name           |
 | -------------- | -------------- |
 | | **[MamdaOptionUnderlying](classWombat_1_1MamdaOptionUnderlying.html#function-mamdaoptionunderlying)**()<br>Constructor from expiration date, strike price, and put/call indicator.  |
-| void | **[addTradeHandler](classWombat_1_1MamdaOptionUnderlying.html#function-addtradehandler)**([MamdaTradeHandler](interfaceWombat_1_1MamdaTradeHandler.html) handler)<br>Add a [MamdaTradeHandler]() for handling trade updates to this underlying.  |
-| void | **[addQuoteHandler](classWombat_1_1MamdaOptionUnderlying.html#function-addquotehandler)**([MamdaQuoteHandler](interfaceWombat_1_1MamdaQuoteHandler.html) handler)<br>Add a [MamdaQuoteHandler]() for handling quote updates to this underlying.  |
+| void | **[addTradeHandler](classWombat_1_1MamdaOptionUnderlying.html#function-addtradehandler)**([MamdaTradeHandler](interfaceWombat_1_1MamdaTradeHandler.html) handler)<br>Add a [MamdaTradeHandler](interfaceWombat_1_1MamdaTradeHandler.html) for handling trade updates to this underlying.  |
+| void | **[addQuoteHandler](classWombat_1_1MamdaOptionUnderlying.html#function-addquotehandler)**([MamdaQuoteHandler](interfaceWombat_1_1MamdaQuoteHandler.html) handler)<br>Add a [MamdaQuoteHandler](interfaceWombat_1_1MamdaQuoteHandler.html) for handling quote updates to this underlying.  |
 | void | **[setCustomObject](classWombat_1_1MamdaOptionUnderlying.html#function-setcustomobject)**(object obj)<br>Add a custom object to this option underlying. Such an object might contain customer data for the underlying.  |
 | object | **[getCustomObject](classWombat_1_1MamdaOptionUnderlying.html#function-getcustomobject)**()<br>Return the custom object.  |
 | [MamdaTradeRecap](interfaceWombat_1_1MamdaTradeRecap.html) | **[getTradeInfo](classWombat_1_1MamdaOptionUnderlying.html#function-gettradeinfo)**()<br>Return the current trade fields.  |
@@ -56,7 +56,7 @@ void addTradeHandler(
 )
 ```
 
-Add a [MamdaTradeHandler]() for handling trade updates to this underlying. 
+Add a [MamdaTradeHandler](interfaceWombat_1_1MamdaTradeHandler.html) for handling trade updates to this underlying. 
 
 **Parameters**: 
 
@@ -71,7 +71,7 @@ void addQuoteHandler(
 )
 ```
 
-Add a [MamdaQuoteHandler]() for handling quote updates to this underlying. 
+Add a [MamdaQuoteHandler](interfaceWombat_1_1MamdaQuoteHandler.html) for handling quote updates to this underlying. 
 
 **Parameters**: 
 
@@ -125,4 +125,4 @@ Return the current quote fields.
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:11 +0100
+Updated on 2023-03-31 at 15:30:16 +0100

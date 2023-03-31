@@ -42,7 +42,7 @@ with_doxylinks: true
 | MAMAExpDLL mama_status | **[mamaSource_getDisplayId](source_8h.html#function-mamasource-getdisplayid)**(const mamaSource source, const char ** id) |
 | MAMAExpDLL mama_status | **[mamaSource_getQuality](source_8h.html#function-mamasource-getquality)**(const mamaSource source, mamaQuality * quality) |
 | MAMAExpDLL mama_status | **[mamaSource_getState](source_8h.html#function-mamasource-getstate)**(const mamaSource source, mamaSourceState * state) |
-| const MAMAExpDLL char * | **[mamaSource_getStateAsString](source_8h.html#function-mamasource-getstateasstring)**(const mamaSource source) |
+| MAMAExpDLL const char * | **[mamaSource_getStateAsString](source_8h.html#function-mamasource-getstateasstring)**(const mamaSource source) |
 | MAMAExpDLL mama_status | **[mamaSource_getParent](source_8h.html#function-mamasource-getparent)**(const mamaSource source, mamaSource * parent) |
 | MAMAExpDLL mama_status | **[mamaSource_getSymbolNamespace](source_8h.html#function-mamasource-getsymbolnamespace)**(const mamaSource source, const char ** symbolNamespace) |
 | MAMAExpDLL mama_status | **[mamaSource_getTransportName](source_8h.html#function-mamasource-gettransportname)**(const mamaSource source, const char ** transportName) |
@@ -414,7 +414,7 @@ Get the state of a mamaSource object.
 ### function mamaSource_getStateAsString
 
 ```cpp
-const MAMAExpDLL char * mamaSource_getStateAsString(
+MAMAExpDLL const char * mamaSource_getStateAsString(
     const mamaSource source
 )
 ```
@@ -715,4 +715,4 @@ mamaSource_getSubSourceManager (const mamaSource   source,
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

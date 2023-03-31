@@ -43,6 +43,7 @@ Inherits from [Wombat::MamaBasicSubscription](classWombat_1_1MamaBasicSubscripti
 | virtual | **[~MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html#function-~mamabasicsubscription)**() |
 | | **[MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html#function-mamabasicsubscription)**(void ) |
 | virtual void | **[createBasic](classWombat_1_1MamaBasicSubscription.html#function-createbasic)**([MamaTransport](classWombat_1_1MamaTransport.html) * transport, [MamaQueue](classWombat_1_1MamaQueue.html) * queue, [MamaBasicSubscriptionCallback](classWombat_1_1MamaBasicSubscriptionCallback.html) * callback, const char * topic, void * closure =NULL) |
+| virtual void | **[createBasic](classWombat_1_1MamaBasicSubscription.html#function-createbasic)**([MamaTransport](classWombat_1_1MamaTransport.html) * transport, [MamaQueue](classWombat_1_1MamaQueue.html) * queue, [MamaSubscriptionCallback](classWombat_1_1MamaSubscriptionCallback.html) * callback, const char * topic, void * closure =NULL) |
 | virtual void | **[destroy](classWombat_1_1MamaBasicSubscription.html#function-destroy)**() |
 | virtual void | **[destroyEx](classWombat_1_1MamaBasicSubscription.html#function-destroyex)**() |
 | virtual bool | **[isActive](classWombat_1_1MamaBasicSubscription.html#function-isactive)**(void ) const |
@@ -218,4 +219,4 @@ Return the `[MamaSubscriptionCallback](classWombat_1_1MamaSubscriptionCallback.h
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:25 +0100

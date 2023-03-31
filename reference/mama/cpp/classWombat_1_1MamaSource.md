@@ -67,6 +67,12 @@ Inherited by [Wombat::MamaSourceDerivative](classWombat_1_1MamaSourceDerivative.
 | -------------- | -------------- |
 | class | **[iterator](classWombat_1_1MamaSourceManager_1_1iterator.html)**  |
 
+**Public Types inherited from [Wombat::MamaSourceManager](classWombat_1_1MamaSourceManager.html)**
+
+|                | Name           |
+| -------------- | -------------- |
+| typedef const [iterator](classWombat_1_1MamaSourceManager_1_1iterator.html) | **[const_iterator](classWombat_1_1MamaSourceManager.html#typedef-const-iterator)**  |
+
 **Public Functions inherited from [Wombat::MamaSourceManager](classWombat_1_1MamaSourceManager.html)**
 
 |                | Name           |
@@ -81,15 +87,9 @@ Inherited by [Wombat::MamaSourceDerivative](classWombat_1_1MamaSourceDerivative.
 | virtual void | **[add](classWombat_1_1MamaSourceManager.html#function-add)**(const char * sourceName, [MamaSource](classWombat_1_1MamaSource.html) * source) |
 | mama_size_t | **[size](classWombat_1_1MamaSourceManager.html#function-size)**() const |
 | [iterator](classWombat_1_1MamaSourceManager_1_1iterator.html) | **[begin](classWombat_1_1MamaSourceManager.html#function-begin)**() |
-| const_iterator | **[begin](classWombat_1_1MamaSourceManager.html#function-begin)**() const |
+| [const_iterator](classWombat_1_1MamaSourceManager_1_1iterator.html) | **[begin](classWombat_1_1MamaSourceManager.html#function-begin)**() const |
 | [iterator](classWombat_1_1MamaSourceManager_1_1iterator.html) | **[end](classWombat_1_1MamaSourceManager.html#function-end)**() |
-| const_iterator | **[end](classWombat_1_1MamaSourceManager.html#function-end)**() const |
-
-**Public Attributes inherited from [Wombat::MamaSourceManager](classWombat_1_1MamaSourceManager.html)**
-
-|                | Name           |
-| -------------- | -------------- |
-| const typedef [iterator](classWombat_1_1MamaSourceManager_1_1iterator.html) | **[const_iterator](classWombat_1_1MamaSourceManager.html#variable-const-iterator)**  |
+| [const_iterator](classWombat_1_1MamaSourceManager_1_1iterator.html) | **[end](classWombat_1_1MamaSourceManager.html#function-end)**() const |
 
 
 ## Detailed Description
@@ -396,4 +396,4 @@ Iterate through all subscriptions and call the MamaSubscriptionIterator's onSubs
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:25 +0100

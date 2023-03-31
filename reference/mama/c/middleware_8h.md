@@ -25,7 +25,7 @@ with_doxylinks: true
 |                | Name           |
 | -------------- | -------------- |
 | MAMAExpDLL mamaMiddleware | **[mamaMiddleware_convertFromString](middleware_8h.html#function-mamamiddleware-convertfromstring)**(const char * str) |
-| const MAMAExpDLL char * | **[mamaMiddleware_convertToString](middleware_8h.html#function-mamamiddleware-converttostring)**(mamaMiddleware middleware) |
+| MAMAExpDLL const char * | **[mamaMiddleware_convertToString](middleware_8h.html#function-mamamiddleware-converttostring)**(mamaMiddleware middleware) |
 
 ## Types Documentation
 
@@ -94,7 +94,7 @@ Convert a string to a mamaMiddleware value.
 ### function mamaMiddleware_convertToString
 
 ```cpp
-const MAMAExpDLL char * mamaMiddleware_convertToString(
+MAMAExpDLL const char * mamaMiddleware_convertToString(
     mamaMiddleware middleware
 )
 ```
@@ -187,4 +187,4 @@ mamaMiddleware_convertToString (mamaMiddleware middleware);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

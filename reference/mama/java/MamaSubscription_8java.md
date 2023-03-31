@@ -96,6 +96,8 @@ public class MamaSubscription
     /* The type of the subscription. */
     private MamaSubscriptionType mySubType = MamaSubscriptionType.NORMAL;
 
+    private MamaQueue mQueue = null;
+
     /* ************************************************** */
     /* Construction and Finalization. */
     /* ************************************************** */
@@ -141,6 +143,9 @@ public class MamaSubscription
         // Save the closure as well
         myClosure = closure;
 
+        // Save the queue
+        mQueue = queue;
+
         // Create the native subscription
         createNativeSubscription(
             callback,
@@ -155,6 +160,9 @@ public class MamaSubscription
         MamaQueue               queue,
         MamaSource              source)
     {
+        // Save the queue
+        mQueue = queue;
+
         // Simply call the overload
         return createDictionarySubscription (
                 callback,
@@ -173,6 +181,9 @@ public class MamaSubscription
     {
         // Save the source to prevent additional context switches into C
         mySource = source;
+
+        // Save the queue
+        mQueue = queue;
 
         // Create the native dictionary subscription
         return createNativeDictionarySubscription(callback, queue, source, timeout, retries);
@@ -195,6 +206,9 @@ public class MamaSubscription
 
         // Save the closure
         myClosure = closure;
+
+        // Save the queue
+        mQueue = queue;
 
         // Create the native subscription
         createNativeSubscription(
@@ -220,6 +234,10 @@ public class MamaSubscription
         return mySource;
     }
 
+    public MamaQueue getQueue () {
+        return mQueue;
+    }
+
     public MamaSubscriptionState getState()
     {
         // Get the native value
@@ -241,6 +259,9 @@ public class MamaSubscription
 
         // Save the closure
         myClosure = closure;
+
+        // Save the queue
+        mQueue = queue;
 
         // Create the native subscription
         setupNativeSubscription(
@@ -383,4 +404,4 @@ public class MamaSubscription
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:09 +0100
+Updated on 2023-03-31 at 15:29:46 +0100

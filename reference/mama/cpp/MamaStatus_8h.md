@@ -55,7 +55,8 @@ with_doxylinks: true
 #ifndef MAMA_STATUS_CPP_H__
 #define MAMA_STATUS_CPP_H__
 
-#include "mama/mamacpp.h"
+#include <mama/status.h>
+#include <exception>
 
 namespace Wombat 
 {
@@ -148,4 +149,4 @@ namespace Wombat
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:26 +0100

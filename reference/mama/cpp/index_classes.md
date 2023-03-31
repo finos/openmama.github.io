@@ -71,7 +71,9 @@ with_doxylinks: true
     * **class [MamaQueueEventCallback](classWombat_1_1MamaQueueEventCallback.html)** 
     * **class [MamaQueueGroup](classWombat_1_1MamaQueueGroup.html)** 
     * **class [MamaQueueMonitorCallback](classWombat_1_1MamaQueueMonitorCallback.html)** 
+    * **class [MamaRegexChannelFilter](classWombat_1_1MamaRegexChannelFilter.html)** 
     * **class [MamaReservedFields](classWombat_1_1MamaReservedFields.html)** 
+    * **class [MamaResourcePool](classWombat_1_1MamaResourcePool.html)** 
     * **class [MamaSendCompleteCallback](classWombat_1_1MamaSendCompleteCallback.html)** 
     * **class [MamaServerConnection](classWombat_1_1MamaServerConnection.html)** 
     * **class [MamaSource](classWombat_1_1MamaSource.html)** 
@@ -114,4 +116,4 @@ with_doxylinks: true
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:27 +0100

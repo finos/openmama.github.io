@@ -25,8 +25,8 @@ with_doxylinks: true
 |                | Name           |
 | -------------- | -------------- |
 | MAMAExpDLL mamaMsgType | **[mamaMsgType_typeForMsg](msgtype_8h.html#function-mamamsgtype-typeformsg)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaMsgType_stringForMsg](msgtype_8h.html#function-mamamsgtype-stringformsg)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaMsgType_stringForType](msgtype_8h.html#function-mamamsgtype-stringfortype)**(mamaMsgType type) |
+| MAMAExpDLL const char * | **[mamaMsgType_stringForMsg](msgtype_8h.html#function-mamamsgtype-stringformsg)**(const mamaMsg msg) |
+| MAMAExpDLL const char * | **[mamaMsgType_stringForType](msgtype_8h.html#function-mamamsgtype-stringfortype)**(mamaMsgType type) |
 
 ## Types Documentation
 
@@ -104,7 +104,7 @@ Extract the type from the message
 ### function mamaMsgType_stringForMsg
 
 ```cpp
-const MAMAExpDLL char * mamaMsgType_stringForMsg(
+MAMAExpDLL const char * mamaMsgType_stringForMsg(
     const mamaMsg msg
 )
 ```
@@ -121,7 +121,7 @@ Extract the type as a string from a message.
 ### function mamaMsgType_stringForType
 
 ```cpp
-const MAMAExpDLL char * mamaMsgType_stringForType(
+MAMAExpDLL const char * mamaMsgType_stringForType(
     mamaMsgType type
 )
 ```
@@ -272,4 +272,4 @@ mamaMsgType_stringForType (mamaMsgType type);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

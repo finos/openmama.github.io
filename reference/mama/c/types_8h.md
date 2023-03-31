@@ -78,6 +78,9 @@ with_doxylinks: true
 | typedef struct mamaStatsCollectorImpl_ * | **[mamaStatsCollector](types_8h.html#typedef-mamastatscollector)**  |
 | typedef struct mamaStatsGeneratorImpl_ * | **[mamaStatsGenerator](types_8h.html#typedef-mamastatsgenerator)**  |
 | typedef struct mamaMsgReplyImpl_ * | **[mamaMsgReply](types_8h.html#typedef-mamamsgreply)**  |
+| typedef struct mamaResourcePoolImpl_ * | **[mamaResourcePool](types_8h.html#typedef-mamaresourcepool)**  |
+| typedef struct mamaQueueGroupImpl_ * | **[mamaQueueGroup](types_8h.html#typedef-mamaqueuegroup)**  |
+| typedef struct mamaRegexChannelFilter_ * | **[mamaRegexChannelFilter](types_8h.html#typedef-mamaregexchannelfilter)**  |
 | typedef struct [mamaVersion](structmamaVersion.html) | **[mamaVersion](types_8h.html#typedef-mamaversion)**  |
 
 ## Defines
@@ -85,6 +88,8 @@ with_doxylinks: true
 |                | Name           |
 | -------------- | -------------- |
 |  | **[MAMA_QUANTITY_EPSILON](types_8h.html#define-mama-quantity-epsilon)**  |
+|  | **[MAMA_BOOL_TRUE](types_8h.html#define-mama-bool-true)**  |
+|  | **[MAMA_BOOL_FALSE](types_8h.html#define-mama-bool-false)**  |
 |  | **[mama_isQuantityNone](types_8h.html#define-mama-isquantitynone)**(q)  |
 |  | **[mama_isQuantityEqual](types_8h.html#define-mama-isquantityequal)**(lhs, rhs)  |
 
@@ -489,6 +494,27 @@ typedef struct mamaMsgReplyImpl_* mamaMsgReply;
 ```
 
 
+### typedef mamaResourcePool
+
+```cpp
+typedef struct mamaResourcePoolImpl_* mamaResourcePool;
+```
+
+
+### typedef mamaQueueGroup
+
+```cpp
+typedef struct mamaQueueGroupImpl_* mamaQueueGroup;
+```
+
+
+### typedef mamaRegexChannelFilter
+
+```cpp
+typedef struct mamaRegexChannelFilter_* mamaRegexChannelFilter;
+```
+
+
 ### typedef mamaVersion
 
 ```cpp
@@ -508,13 +534,27 @@ typedef struct mamaVersion mamaVersion;
 ```
 
 
+### define MAMA_BOOL_TRUE
+
+```cpp
+#define MAMA_BOOL_TRUE 1
+```
+
+
+### define MAMA_BOOL_FALSE
+
+```cpp
+#define MAMA_BOOL_FALSE 0
+```
+
+
 ### define mama_isQuantityNone
 
 ```cpp
 #define mama_isQuantityNone(
     q
 )
-((q) < MAMA_QUANTITY_EPSILON)
+        ((q) < MAMA_QUANTITY_EPSILON)
 ```
 
 
@@ -589,6 +629,9 @@ typedef uint32_t        mama_seqnum_t;
 
 #define MAMA_QUANTITY_EPSILON   ((mama_f64_t)0.00000000001)
 
+#define MAMA_BOOL_TRUE 1
+#define MAMA_BOOL_FALSE 0
+
 #define mama_isQuantityNone(q)                      \
         ((q) < MAMA_QUANTITY_EPSILON)
 
@@ -650,6 +693,9 @@ typedef struct mamaStatImpl_*                   mamaStat;
 typedef struct mamaStatsCollectorImpl_*         mamaStatsCollector;
 typedef struct mamaStatsGeneratorImpl_*         mamaStatsGenerator;
 typedef struct mamaMsgReplyImpl_*               mamaMsgReply;
+typedef struct mamaResourcePoolImpl_*           mamaResourcePool;
+typedef struct mamaQueueGroupImpl_*             mamaQueueGroup;
+typedef struct mamaRegexChannelFilter_*         mamaRegexChannelFilter;
 
 typedef struct mamaVersion {
     int     mMajor;
@@ -668,4 +714,4 @@ typedef struct mamaVersion {
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:17 +0100

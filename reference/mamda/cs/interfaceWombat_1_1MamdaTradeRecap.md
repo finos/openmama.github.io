@@ -149,7 +149,7 @@ Monetary value of an individual share of the security at the time of the trade.
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getLastPrice](classWombat_1_1MamdaTradeListener.html#function-getlastprice), [Wombat::MamdaConcreteTradeRecap::getLastPrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlastprice)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getLastPrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlastprice), [Wombat::MamdaTradeListener::getLastPrice](classWombat_1_1MamdaTradeListener.html#function-getlastprice)
 
 
 ### function getLastPriceFieldState
@@ -175,7 +175,7 @@ Number of shares traded in a single transaction for an individual security.
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getLastVolume](classWombat_1_1MamdaTradeListener.html#function-getlastvolume), [Wombat::MamdaConcreteTradeRecap::getLastVolume](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlastvolume)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getLastVolume](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlastvolume), [Wombat::MamdaTradeListener::getLastVolume](classWombat_1_1MamdaTradeListener.html#function-getlastvolume)
 
 
 ### function getLastVolumeFieldState
@@ -201,7 +201,7 @@ Trade participant ID. This is typically an exchange ID, sometimes a market maker
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getLastPartId](classWombat_1_1MamdaTradeListener.html#function-getlastpartid), [Wombat::MamdaConcreteTradeRecap::getLastPartId](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlastpartid)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getLastPartId](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlastpartid), [Wombat::MamdaTradeListener::getLastPartId](classWombat_1_1MamdaTradeListener.html#function-getlastpartid)
 
 
 ### function getLastPartIdFieldState
@@ -227,7 +227,7 @@ Time corresponding to the last trade, as reported by the feed The exact time of 
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getLastTime](classWombat_1_1MamdaTradeListener.html#function-getlasttime), [Wombat::MamdaConcreteTradeRecap::getLastTime](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlasttime)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getLastTime](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlasttime), [Wombat::MamdaTradeListener::getLastTime](classWombat_1_1MamdaTradeListener.html#function-getlasttime)
 
 
 ### function getLastTimeFieldState
@@ -253,7 +253,7 @@ Monetary value of an individual share of the security at the time of the last ir
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getIrregPrice](classWombat_1_1MamdaTradeListener.html#function-getirregprice), [Wombat::MamdaConcreteTradeRecap::getIrregPrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getirregprice)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getIrregPrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getirregprice), [Wombat::MamdaTradeListener::getIrregPrice](classWombat_1_1MamdaTradeListener.html#function-getirregprice)
 
 
 ### function getIrregPriceFieldState
@@ -279,7 +279,7 @@ Number of shares traded in a single transaction for an individual security.
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getIrregVolume](classWombat_1_1MamdaTradeListener.html#function-getirregvolume), [Wombat::MamdaConcreteTradeRecap::getIrregVolume](classWombat_1_1MamdaConcreteTradeRecap.html#function-getirregvolume)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getIrregVolume](classWombat_1_1MamdaConcreteTradeRecap.html#function-getirregvolume), [Wombat::MamdaTradeListener::getIrregVolume](classWombat_1_1MamdaTradeListener.html#function-getirregvolume)
 
 
 ### function getIrregVolumeFieldState
@@ -305,7 +305,7 @@ Trade participant ID for the last irregular trade. This is typically an exchange
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getIrregPartId](classWombat_1_1MamdaTradeListener.html#function-getirregpartid), [Wombat::MamdaConcreteTradeRecap::getIrregPartId](classWombat_1_1MamdaConcreteTradeRecap.html#function-getirregpartid)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getIrregPartId](classWombat_1_1MamdaConcreteTradeRecap.html#function-getirregpartid), [Wombat::MamdaTradeListener::getIrregPartId](classWombat_1_1MamdaTradeListener.html#function-getirregpartid)
 
 
 ### function getIrregPartIdFieldState
@@ -331,7 +331,7 @@ Time corresponding to the last irregular trade, as reported by the feed The exac
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getIrregTime](classWombat_1_1MamdaTradeListener.html#function-getirregtime), [Wombat::MamdaConcreteTradeRecap::getIrregTime](classWombat_1_1MamdaConcreteTradeRecap.html#function-getirregtime)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getIrregTime](classWombat_1_1MamdaConcreteTradeRecap.html#function-getirregtime), [Wombat::MamdaTradeListener::getIrregTime](classWombat_1_1MamdaTradeListener.html#function-getirregtime)
 
 
 ### function getIrregTimeFieldState
@@ -354,7 +354,7 @@ DateTime getTradeDate()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getTradeDate](classWombat_1_1MamdaTradeListener.html#function-gettradedate), [Wombat::MamdaConcreteTradeRecap::getTradeDate](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradedate)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getTradeDate](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradedate), [Wombat::MamdaTradeListener::getTradeDate](classWombat_1_1MamdaTradeListener.html#function-gettradedate)
 
 
 ### function getTradeDateFieldState
@@ -380,7 +380,7 @@ The number of trades today.
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getTradeCount](classWombat_1_1MamdaTradeListener.html#function-gettradecount), [Wombat::MamdaConcreteTradeRecap::getTradeCount](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradecount)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getTradeCount](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradecount), [Wombat::MamdaTradeListener::getTradeCount](classWombat_1_1MamdaTradeListener.html#function-gettradecount)
 
 
 ### function getTradeCountFieldState
@@ -484,7 +484,7 @@ Get the change in price compared with the previous closing price
 
 **Return**: Change in price compared with the previous closing price (i.e. previous closing price - trade price).
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getNetChange](classWombat_1_1MamdaTradeListener.html#function-getnetchange), [Wombat::MamdaConcreteTradeRecap::getNetChange](classWombat_1_1MamdaConcreteTradeRecap.html#function-getnetchange)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getNetChange](classWombat_1_1MamdaConcreteTradeRecap.html#function-getnetchange), [Wombat::MamdaTradeListener::getNetChange](classWombat_1_1MamdaTradeListener.html#function-getnetchange)
 
 
 ### function getNetChangeFieldState
@@ -510,7 +510,7 @@ Change in price as a percentage.
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getPctChange](classWombat_1_1MamdaTradeListener.html#function-getpctchange), [Wombat::MamdaConcreteTradeRecap::getPctChange](classWombat_1_1MamdaConcreteTradeRecap.html#function-getpctchange)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getPctChange](classWombat_1_1MamdaConcreteTradeRecap.html#function-getpctchange), [Wombat::MamdaTradeListener::getPctChange](classWombat_1_1MamdaTradeListener.html#function-getpctchange)
 
 
 ### function getPctChangeFieldState
@@ -536,7 +536,7 @@ Trade tick direction. 0 : No direction is currently known/available.
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getTradeDirection](classWombat_1_1MamdaTradeListener.html#function-gettradedirection), [Wombat::MamdaConcreteTradeRecap::getTradeDirection](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradedirection)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getTradeDirection](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradedirection), [Wombat::MamdaTradeListener::getTradeDirection](classWombat_1_1MamdaTradeListener.html#function-gettradedirection)
 
 
 
@@ -555,7 +555,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getTradeDirectionFieldState](classWombat_1_1MamdaTradeListener.html#function-gettradedirectionfieldstate), [Wombat::MamdaConcreteTradeRecap::getTradeDirectionFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradedirectionfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getTradeDirectionFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradedirectionfieldstate), [Wombat::MamdaTradeListener::getTradeDirectionFieldState](classWombat_1_1MamdaTradeListener.html#function-gettradedirectionfieldstate)
 
 
 ### function getSide
@@ -568,7 +568,7 @@ Returns the Aggressor side or TradeSide
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getSide](classWombat_1_1MamdaTradeListener.html#function-getside), [Wombat::MamdaConcreteTradeRecap::getSide](classWombat_1_1MamdaConcreteTradeRecap.html#function-getside)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getSide](classWombat_1_1MamdaConcreteTradeRecap.html#function-getside), [Wombat::MamdaTradeListener::getSide](classWombat_1_1MamdaTradeListener.html#function-getside)
 
 
 AggressorSide: 0 : No AggressorSide is currently known/available. 1 or B : Buy 2 or S : Sell
@@ -586,7 +586,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getSideFieldState](classWombat_1_1MamdaTradeListener.html#function-getsidefieldstate), [Wombat::MamdaConcreteTradeRecap::getSideFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-getsidefieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getSideFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-getsidefieldstate), [Wombat::MamdaTradeListener::getSideFieldState](classWombat_1_1MamdaTradeListener.html#function-getsidefieldstate)
 
 
 ### function getOpenPrice
@@ -599,7 +599,7 @@ The price of the first qualifying trade in the security during the current tradi
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getOpenPrice](classWombat_1_1MamdaTradeListener.html#function-getopenprice), [Wombat::MamdaConcreteTradeRecap::getOpenPrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getopenprice)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getOpenPrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getopenprice), [Wombat::MamdaTradeListener::getOpenPrice](classWombat_1_1MamdaTradeListener.html#function-getopenprice)
 
 
 ### function getOpenPriceFieldState
@@ -625,7 +625,7 @@ Highest price paid for security during the trading day.
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getHighPrice](classWombat_1_1MamdaTradeListener.html#function-gethighprice), [Wombat::MamdaConcreteTradeRecap::getHighPrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-gethighprice)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getHighPrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-gethighprice), [Wombat::MamdaTradeListener::getHighPrice](classWombat_1_1MamdaTradeListener.html#function-gethighprice)
 
 
 ### function getHighPriceFieldState
@@ -651,7 +651,7 @@ Lowest price paid for security during the trading day.
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getLowPrice](classWombat_1_1MamdaTradeListener.html#function-getlowprice), [Wombat::MamdaConcreteTradeRecap::getLowPrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlowprice)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getLowPrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlowprice), [Wombat::MamdaTradeListener::getLowPrice](classWombat_1_1MamdaTradeListener.html#function-getlowprice)
 
 
 ### function getLowPriceFieldState
@@ -703,7 +703,7 @@ The last qualifying trade price on the previous trading day. This field may be c
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getPrevClosePrice](classWombat_1_1MamdaTradeListener.html#function-getprevcloseprice), [Wombat::MamdaConcreteTradeRecap::getPrevClosePrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getprevcloseprice)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getPrevClosePrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getprevcloseprice), [Wombat::MamdaTradeListener::getPrevClosePrice](classWombat_1_1MamdaTradeListener.html#function-getprevcloseprice)
 
 
 ### function getPrevClosePriceFieldState
@@ -729,7 +729,7 @@ Date corresponding to PrevClosePrice. [getPrevClosePrice()](interfaceWombat_1_1M
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getPrevCloseDate](classWombat_1_1MamdaTradeListener.html#function-getprevclosedate), [Wombat::MamdaConcreteTradeRecap::getPrevCloseDate](classWombat_1_1MamdaConcreteTradeRecap.html#function-getprevclosedate)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getPrevCloseDate](classWombat_1_1MamdaConcreteTradeRecap.html#function-getprevclosedate), [Wombat::MamdaTradeListener::getPrevCloseDate](classWombat_1_1MamdaTradeListener.html#function-getprevclosedate)
 
 
 ### function getPrevCloseDateFieldState
@@ -755,7 +755,7 @@ The previous close price adjusted by corporate actions, such as dividends and st
 
 **Return**: The adjusted previous closing price.
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getAdjPrevClose](classWombat_1_1MamdaTradeListener.html#function-getadjprevclose), [Wombat::MamdaConcreteTradeRecap::getAdjPrevClose](classWombat_1_1MamdaConcreteTradeRecap.html#function-getadjprevclose)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getAdjPrevClose](classWombat_1_1MamdaConcreteTradeRecap.html#function-getadjprevclose), [Wombat::MamdaTradeListener::getAdjPrevClose](classWombat_1_1MamdaTradeListener.html#function-getadjprevclose)
 
 
 ### function getAdjPrevCloseFieldState
@@ -833,7 +833,7 @@ Volume-weighted average price of a security at the time it is disseminated. Equi
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getVwap](classWombat_1_1MamdaTradeListener.html#function-getvwap), [Wombat::MamdaConcreteTradeRecap::getVwap](classWombat_1_1MamdaConcreteTradeRecap.html#function-getvwap)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getVwap](classWombat_1_1MamdaConcreteTradeRecap.html#function-getvwap), [Wombat::MamdaTradeListener::getVwap](classWombat_1_1MamdaTradeListener.html#function-getvwap)
 
 
 ### function getVwapFieldState
@@ -846,7 +846,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getVwapFieldState](classWombat_1_1MamdaTradeListener.html#function-getvwapfieldstate), [Wombat::MamdaConcreteTradeRecap::getVwapFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-getvwapfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getVwapFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-getvwapfieldstate), [Wombat::MamdaTradeListener::getVwapFieldState](classWombat_1_1MamdaTradeListener.html#function-getvwapfieldstate)
 
 
 ### function getOffExVwap
@@ -859,7 +859,7 @@ Volume-weighted average off exchange price of a security at the time it is disse
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getOffExVwap](classWombat_1_1MamdaTradeListener.html#function-getoffexvwap), [Wombat::MamdaConcreteTradeRecap::getOffExVwap](classWombat_1_1MamdaConcreteTradeRecap.html#function-getoffexvwap)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getOffExVwap](classWombat_1_1MamdaConcreteTradeRecap.html#function-getoffexvwap), [Wombat::MamdaTradeListener::getOffExVwap](classWombat_1_1MamdaTradeListener.html#function-getoffexvwap)
 
 
 ### function getOffExVwapFieldState
@@ -872,7 +872,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getOffExVwapFieldState](classWombat_1_1MamdaTradeListener.html#function-getoffexvwapfieldstate), [Wombat::MamdaConcreteTradeRecap::getOffExVwapFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-getoffexvwapfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getOffExVwapFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-getoffexvwapfieldstate), [Wombat::MamdaTradeListener::getOffExVwapFieldState](classWombat_1_1MamdaTradeListener.html#function-getoffexvwapfieldstate)
 
 
 ### function getOnExVwap
@@ -885,7 +885,7 @@ Volume-weighted average on exchange price of a security at the time it is dissem
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getOnExVwap](classWombat_1_1MamdaTradeListener.html#function-getonexvwap), [Wombat::MamdaConcreteTradeRecap::getOnExVwap](classWombat_1_1MamdaConcreteTradeRecap.html#function-getonexvwap)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getOnExVwap](classWombat_1_1MamdaConcreteTradeRecap.html#function-getonexvwap), [Wombat::MamdaTradeListener::getOnExVwap](classWombat_1_1MamdaTradeListener.html#function-getonexvwap)
 
 
 ### function getOnExVwapFieldState
@@ -898,7 +898,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getOnExVwapFieldState](classWombat_1_1MamdaTradeListener.html#function-getonexvwapfieldstate), [Wombat::MamdaConcreteTradeRecap::getOnExVwapFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-getonexvwapfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getOnExVwapFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-getonexvwapfieldstate), [Wombat::MamdaTradeListener::getOnExVwapFieldState](classWombat_1_1MamdaTradeListener.html#function-getonexvwapfieldstate)
 
 
 ### function getTotalValue
@@ -911,7 +911,7 @@ Total value of all shares traded in a security at the time it is disseminated. C
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getTotalValue](classWombat_1_1MamdaTradeListener.html#function-gettotalvalue), [Wombat::MamdaConcreteTradeRecap::getTotalValue](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettotalvalue)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getTotalValue](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettotalvalue), [Wombat::MamdaTradeListener::getTotalValue](classWombat_1_1MamdaTradeListener.html#function-gettotalvalue)
 
 
 ### function getTotalValueFieldState
@@ -937,7 +937,7 @@ Total value of all shares traded off exchange in a security at the time it is di
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getOffExTotalValue](classWombat_1_1MamdaTradeListener.html#function-getoffextotalvalue), [Wombat::MamdaConcreteTradeRecap::getOffExTotalValue](classWombat_1_1MamdaConcreteTradeRecap.html#function-getoffextotalvalue)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getOffExTotalValue](classWombat_1_1MamdaConcreteTradeRecap.html#function-getoffextotalvalue), [Wombat::MamdaTradeListener::getOffExTotalValue](classWombat_1_1MamdaTradeListener.html#function-getoffextotalvalue)
 
 
 ### function getOffExTotalValueFieldState
@@ -963,7 +963,7 @@ Total value of all shares traded on exchange in a security at the time it is dis
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getOnExTotalValue](classWombat_1_1MamdaTradeListener.html#function-getonextotalvalue), [Wombat::MamdaConcreteTradeRecap::getOnExTotalValue](classWombat_1_1MamdaConcreteTradeRecap.html#function-getonextotalvalue)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getOnExTotalValue](classWombat_1_1MamdaConcreteTradeRecap.html#function-getonextotalvalue), [Wombat::MamdaTradeListener::getOnExTotalValue](classWombat_1_1MamdaTradeListener.html#function-getonextotalvalue)
 
 
 ### function getOnExTotalValueFieldState
@@ -989,7 +989,7 @@ Standard deviation of last trade price of a security at the time it is dissemina
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getStdDev](classWombat_1_1MamdaTradeListener.html#function-getstddev), [Wombat::MamdaConcreteTradeRecap::getStdDev](classWombat_1_1MamdaConcreteTradeRecap.html#function-getstddev)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getStdDev](classWombat_1_1MamdaConcreteTradeRecap.html#function-getstddev), [Wombat::MamdaTradeListener::getStdDev](classWombat_1_1MamdaTradeListener.html#function-getstddev)
 
 
 ### function getStdDevFieldState
@@ -1012,7 +1012,7 @@ double getStdDevSum()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getStdDevSum](classWombat_1_1MamdaTradeListener.html#function-getstddevsum), [Wombat::MamdaConcreteTradeRecap::getStdDevSum](classWombat_1_1MamdaConcreteTradeRecap.html#function-getstddevsum)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getStdDevSum](classWombat_1_1MamdaConcreteTradeRecap.html#function-getstddevsum), [Wombat::MamdaTradeListener::getStdDevSum](classWombat_1_1MamdaTradeListener.html#function-getstddevsum)
 
 
 ### function getStdDevSumFieldState
@@ -1035,7 +1035,7 @@ double getStdDevSumSquares()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getStdDevSumSquares](classWombat_1_1MamdaTradeListener.html#function-getstddevsumsquares), [Wombat::MamdaConcreteTradeRecap::getStdDevSumSquares](classWombat_1_1MamdaConcreteTradeRecap.html#function-getstddevsumsquares)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getStdDevSumSquares](classWombat_1_1MamdaConcreteTradeRecap.html#function-getstddevsumsquares), [Wombat::MamdaTradeListener::getStdDevSumSquares](classWombat_1_1MamdaTradeListener.html#function-getstddevsumsquares)
 
 
 ### function getStdDevSumSquaresFieldState
@@ -1061,7 +1061,7 @@ Get the order id, if available.
 
 **Return**: The trade message unique order id number (if available).
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getOrderId](classWombat_1_1MamdaTradeListener.html#function-getorderid), [Wombat::MamdaConcreteTradeRecap::getOrderId](classWombat_1_1MamdaConcreteTradeRecap.html#function-getorderid)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getOrderId](classWombat_1_1MamdaConcreteTradeRecap.html#function-getorderid), [Wombat::MamdaTradeListener::getOrderId](classWombat_1_1MamdaTradeListener.html#function-getorderid)
 
 
 ### function getOrderIdFieldState
@@ -1087,7 +1087,7 @@ Future's / Options settlement price.
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getSettlePrice](classWombat_1_1MamdaTradeListener.html#function-getsettleprice), [Wombat::MamdaConcreteTradeRecap::getSettlePrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getsettleprice)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getSettlePrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getsettleprice), [Wombat::MamdaTradeListener::getSettlePrice](classWombat_1_1MamdaTradeListener.html#function-getsettleprice)
 
 
 ### function getSettlePriceFieldState
@@ -1113,7 +1113,7 @@ Date corresponding to SettlePrice. [getSettlePrice()](interfaceWombat_1_1MamdaTr
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getSettleDate](classWombat_1_1MamdaTradeListener.html#function-getsettledate), [Wombat::MamdaConcreteTradeRecap::getSettleDate](classWombat_1_1MamdaConcreteTradeRecap.html#function-getsettledate)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getSettleDate](classWombat_1_1MamdaConcreteTradeRecap.html#function-getsettledate), [Wombat::MamdaTradeListener::getSettleDate](classWombat_1_1MamdaTradeListener.html#function-getsettledate)
 
 
 ### function getSettleDateFieldState
@@ -1139,7 +1139,7 @@ Trade execution venue. Unknown OnExchange OnExchangeOffBook OffExchange
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getTradeExecVenue](classWombat_1_1MamdaTradeListener.html#function-gettradeexecvenue), [Wombat::MamdaConcreteTradeRecap::getTradeExecVenue](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradeexecvenue)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getTradeExecVenue](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradeexecvenue), [Wombat::MamdaTradeListener::getTradeExecVenue](classWombat_1_1MamdaTradeListener.html#function-gettradeexecvenue)
 
 
 ### function getTradeExecVenueFieldState
@@ -1152,7 +1152,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getTradeExecVenueFieldState](classWombat_1_1MamdaTradeListener.html#function-gettradeexecvenuefieldstate), [Wombat::MamdaConcreteTradeRecap::getTradeExecVenueFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradeexecvenuefieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getTradeExecVenueFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradeexecvenuefieldstate), [Wombat::MamdaTradeListener::getTradeExecVenueFieldState](classWombat_1_1MamdaTradeListener.html#function-gettradeexecvenuefieldstate)
 
 
 ### function getOffExchangeTradePrice
@@ -1165,7 +1165,7 @@ Monetary value of an individual off exchange share of the security at the time o
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getOffExchangeTradePrice](classWombat_1_1MamdaTradeListener.html#function-getoffexchangetradeprice), [Wombat::MamdaConcreteTradeRecap::getOffExchangeTradePrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getoffexchangetradeprice)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getOffExchangeTradePrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getoffexchangetradeprice), [Wombat::MamdaTradeListener::getOffExchangeTradePrice](classWombat_1_1MamdaTradeListener.html#function-getoffexchangetradeprice)
 
 
 ### function getOffExchangeTradePriceFieldState
@@ -1178,7 +1178,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getOffExchangeTradePriceFieldState](classWombat_1_1MamdaTradeListener.html#function-getoffexchangetradepricefieldstate), [Wombat::MamdaConcreteTradeRecap::getOffExchangeTradePriceFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-getoffexchangetradepricefieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getOffExchangeTradePriceFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-getoffexchangetradepricefieldstate), [Wombat::MamdaTradeListener::getOffExchangeTradePriceFieldState](classWombat_1_1MamdaTradeListener.html#function-getoffexchangetradepricefieldstate)
 
 
 ### function getOnExchangeTradePrice
@@ -1191,7 +1191,7 @@ Monetary value of an individual off exchange share of the security at the time o
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getOnExchangeTradePrice](classWombat_1_1MamdaTradeListener.html#function-getonexchangetradeprice), [Wombat::MamdaConcreteTradeRecap::getOnExchangeTradePrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getonexchangetradeprice)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getOnExchangeTradePrice](classWombat_1_1MamdaConcreteTradeRecap.html#function-getonexchangetradeprice), [Wombat::MamdaTradeListener::getOnExchangeTradePrice](classWombat_1_1MamdaTradeListener.html#function-getonexchangetradeprice)
 
 
 ### function getOnExchangeTradePriceFieldState
@@ -1204,7 +1204,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getOnExchangeTradePriceFieldState](classWombat_1_1MamdaTradeListener.html#function-getonexchangetradepricefieldstate), [Wombat::MamdaConcreteTradeRecap::getOnExchangeTradePriceFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-getonexchangetradepricefieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getOnExchangeTradePriceFieldState](classWombat_1_1MamdaConcreteTradeRecap.html#function-getonexchangetradepricefieldstate), [Wombat::MamdaTradeListener::getOnExchangeTradePriceFieldState](classWombat_1_1MamdaTradeListener.html#function-getonexchangetradepricefieldstate)
 
 
 ### function getTradeUnits
@@ -1214,7 +1214,7 @@ string getTradeUnits()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getTradeUnits](classWombat_1_1MamdaTradeListener.html#function-gettradeunits), [Wombat::MamdaConcreteTradeRecap::getTradeUnits](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradeunits)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getTradeUnits](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettradeunits), [Wombat::MamdaTradeListener::getTradeUnits](classWombat_1_1MamdaTradeListener.html#function-gettradeunits)
 
 
 ### function getTradeUnitsFieldState
@@ -1237,7 +1237,7 @@ long getLastSeqNum()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getLastSeqNum](classWombat_1_1MamdaTradeListener.html#function-getlastseqnum), [Wombat::MamdaConcreteTradeRecap::getLastSeqNum](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlastseqnum)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getLastSeqNum](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlastseqnum), [Wombat::MamdaTradeListener::getLastSeqNum](classWombat_1_1MamdaTradeListener.html#function-getlastseqnum)
 
 
 ### function getLastSeqNumFieldState
@@ -1260,7 +1260,7 @@ long getHighSeqNum()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getHighSeqNum](classWombat_1_1MamdaTradeListener.html#function-gethighseqnum), [Wombat::MamdaConcreteTradeRecap::getHighSeqNum](classWombat_1_1MamdaConcreteTradeRecap.html#function-gethighseqnum)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getHighSeqNum](classWombat_1_1MamdaConcreteTradeRecap.html#function-gethighseqnum), [Wombat::MamdaTradeListener::getHighSeqNum](classWombat_1_1MamdaTradeListener.html#function-gethighseqnum)
 
 
 ### function getHighSeqNumFieldState
@@ -1283,7 +1283,7 @@ long getLowSeqNum()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getLowSeqNum](classWombat_1_1MamdaTradeListener.html#function-getlowseqnum), [Wombat::MamdaConcreteTradeRecap::getLowSeqNum](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlowseqnum)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getLowSeqNum](classWombat_1_1MamdaConcreteTradeRecap.html#function-getlowseqnum), [Wombat::MamdaTradeListener::getLowSeqNum](classWombat_1_1MamdaTradeListener.html#function-getlowseqnum)
 
 
 ### function getLowSeqNumFieldState
@@ -1306,7 +1306,7 @@ long getTotalVolumeSeqNum()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getTotalVolumeSeqNum](classWombat_1_1MamdaTradeListener.html#function-gettotalvolumeseqnum), [Wombat::MamdaConcreteTradeRecap::getTotalVolumeSeqNum](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettotalvolumeseqnum)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getTotalVolumeSeqNum](classWombat_1_1MamdaConcreteTradeRecap.html#function-gettotalvolumeseqnum), [Wombat::MamdaTradeListener::getTotalVolumeSeqNum](classWombat_1_1MamdaTradeListener.html#function-gettotalvolumeseqnum)
 
 
 ### function getTotalVolumeSeqNumFieldState
@@ -1329,7 +1329,7 @@ string getCurrencyCode()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getCurrencyCode](classWombat_1_1MamdaTradeListener.html#function-getcurrencycode), [Wombat::MamdaConcreteTradeRecap::getCurrencyCode](classWombat_1_1MamdaConcreteTradeRecap.html#function-getcurrencycode)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getCurrencyCode](classWombat_1_1MamdaConcreteTradeRecap.html#function-getcurrencycode), [Wombat::MamdaTradeListener::getCurrencyCode](classWombat_1_1MamdaTradeListener.html#function-getcurrencycode)
 
 
 ### function getCurrencyCodeFieldState
@@ -1355,7 +1355,7 @@ Returns the ShortSaleCircuitBreaker
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaTradeListener::getShortSaleCircuitBreaker](classWombat_1_1MamdaTradeListener.html#function-getshortsalecircuitbreaker), [Wombat::MamdaConcreteTradeRecap::getShortSaleCircuitBreaker](classWombat_1_1MamdaConcreteTradeRecap.html#function-getshortsalecircuitbreaker)
+**Reimplemented by**: [Wombat::MamdaConcreteTradeRecap::getShortSaleCircuitBreaker](classWombat_1_1MamdaConcreteTradeRecap.html#function-getshortsalecircuitbreaker), [Wombat::MamdaTradeListener::getShortSaleCircuitBreaker](classWombat_1_1MamdaTradeListener.html#function-getshortsalecircuitbreaker)
 
 
 ### function getShortSaleCircuitBreakerFieldState
@@ -1373,4 +1373,4 @@ Returns the FieldState, always MODIFIED
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:11 +0100
+Updated on 2023-03-31 at 15:30:16 +0100

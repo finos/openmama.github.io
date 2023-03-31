@@ -43,7 +43,7 @@ int size()
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::HashMap::size](classWombat_1_1Containers_1_1HashMap.html#function-size), [Wombat::Containers::TreeMap::size](classWombat_1_1Containers_1_1TreeMap.html#function-size), [Wombat::Containers::RedBlackTree::size](classWombat_1_1Containers_1_1RedBlackTree.html#function-size)
+**Reimplemented by**: [Wombat::Containers::HashMap::size](classWombat_1_1Containers_1_1HashMap.html#function-size), [Wombat::Containers::RedBlackTree::size](classWombat_1_1Containers_1_1RedBlackTree.html#function-size), [Wombat::Containers::TreeMap::size](classWombat_1_1Containers_1_1TreeMap.html#function-size)
 
 
 ### function isEmpty
@@ -53,7 +53,7 @@ bool isEmpty()
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::HashMap::isEmpty](classWombat_1_1Containers_1_1HashMap.html#function-isempty), [Wombat::Containers::TreeMap::isEmpty](classWombat_1_1Containers_1_1TreeMap.html#function-isempty), [Wombat::Containers::RedBlackTree::isEmpty](classWombat_1_1Containers_1_1RedBlackTree.html#function-isempty)
+**Reimplemented by**: [Wombat::Containers::HashMap::isEmpty](classWombat_1_1Containers_1_1HashMap.html#function-isempty), [Wombat::Containers::RedBlackTree::isEmpty](classWombat_1_1Containers_1_1RedBlackTree.html#function-isempty), [Wombat::Containers::TreeMap::isEmpty](classWombat_1_1Containers_1_1TreeMap.html#function-isempty)
 
 
 ### function containsKey
@@ -65,7 +65,7 @@ bool containsKey(
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::HashMap::containsKey](classWombat_1_1Containers_1_1HashMap.html#function-containskey), [Wombat::Containers::TreeMap::containsKey](classWombat_1_1Containers_1_1TreeMap.html#function-containskey), [Wombat::Containers::RedBlackTree::containsKey](classWombat_1_1Containers_1_1RedBlackTree.html#function-containskey)
+**Reimplemented by**: [Wombat::Containers::HashMap::containsKey](classWombat_1_1Containers_1_1HashMap.html#function-containskey), [Wombat::Containers::RedBlackTree::containsKey](classWombat_1_1Containers_1_1RedBlackTree.html#function-containskey), [Wombat::Containers::TreeMap::containsKey](classWombat_1_1Containers_1_1TreeMap.html#function-containskey)
 
 
 ### function containsValue
@@ -77,7 +77,7 @@ bool containsValue(
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::HashMap::containsValue](classWombat_1_1Containers_1_1HashMap.html#function-containsvalue), [Wombat::Containers::TreeMap::containsValue](classWombat_1_1Containers_1_1TreeMap.html#function-containsvalue), [Wombat::Containers::RedBlackTree::containsValue](classWombat_1_1Containers_1_1RedBlackTree.html#function-containsvalue)
+**Reimplemented by**: [Wombat::Containers::HashMap::containsValue](classWombat_1_1Containers_1_1HashMap.html#function-containsvalue), [Wombat::Containers::RedBlackTree::containsValue](classWombat_1_1Containers_1_1RedBlackTree.html#function-containsvalue), [Wombat::Containers::TreeMap::containsValue](classWombat_1_1Containers_1_1TreeMap.html#function-containsvalue)
 
 
 ### function valueOf
@@ -89,7 +89,7 @@ object valueOf(
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::HashMap::valueOf](classWombat_1_1Containers_1_1HashMap.html#function-valueof), [Wombat::Containers::TreeMap::valueOf](classWombat_1_1Containers_1_1TreeMap.html#function-valueof), [Wombat::Containers::RedBlackTree::valueOf](classWombat_1_1Containers_1_1RedBlackTree.html#function-valueof)
+**Reimplemented by**: [Wombat::Containers::HashMap::valueOf](classWombat_1_1Containers_1_1HashMap.html#function-valueof), [Wombat::Containers::RedBlackTree::valueOf](classWombat_1_1Containers_1_1RedBlackTree.html#function-valueof), [Wombat::Containers::TreeMap::valueOf](classWombat_1_1Containers_1_1TreeMap.html#function-valueof)
 
 
 ### function put
@@ -102,7 +102,7 @@ object put(
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::HashMap::put](classWombat_1_1Containers_1_1HashMap.html#function-put), [Wombat::Containers::TreeMap::put](classWombat_1_1Containers_1_1TreeMap.html#function-put), [Wombat::Containers::RedBlackTree::put](classWombat_1_1Containers_1_1RedBlackTree.html#function-put)
+**Reimplemented by**: [Wombat::Containers::HashMap::put](classWombat_1_1Containers_1_1HashMap.html#function-put), [Wombat::Containers::RedBlackTree::put](classWombat_1_1Containers_1_1RedBlackTree.html#function-put), [Wombat::Containers::TreeMap::put](classWombat_1_1Containers_1_1TreeMap.html#function-put)
 
 
 ### function remove
@@ -114,7 +114,7 @@ object remove(
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::HashMap::remove](classWombat_1_1Containers_1_1HashMap.html#function-remove), [Wombat::Containers::TreeMap::remove](classWombat_1_1Containers_1_1TreeMap.html#function-remove), [Wombat::Containers::RedBlackTree::remove](classWombat_1_1Containers_1_1RedBlackTree.html#function-remove)
+**Reimplemented by**: [Wombat::Containers::HashMap::remove](classWombat_1_1Containers_1_1HashMap.html#function-remove), [Wombat::Containers::RedBlackTree::remove](classWombat_1_1Containers_1_1RedBlackTree.html#function-remove), [Wombat::Containers::TreeMap::remove](classWombat_1_1Containers_1_1TreeMap.html#function-remove)
 
 
 ### function putAll
@@ -126,7 +126,7 @@ void putAll(
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::HashMap::putAll](classWombat_1_1Containers_1_1HashMap.html#function-putall), [Wombat::Containers::TreeMap::putAll](classWombat_1_1Containers_1_1TreeMap.html#function-putall), [Wombat::Containers::RedBlackTree::putAll](classWombat_1_1Containers_1_1RedBlackTree.html#function-putall)
+**Reimplemented by**: [Wombat::Containers::HashMap::putAll](classWombat_1_1Containers_1_1HashMap.html#function-putall), [Wombat::Containers::RedBlackTree::putAll](classWombat_1_1Containers_1_1RedBlackTree.html#function-putall), [Wombat::Containers::TreeMap::putAll](classWombat_1_1Containers_1_1TreeMap.html#function-putall)
 
 
 ### function clear
@@ -136,7 +136,7 @@ void clear()
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::HashMap::clear](classWombat_1_1Containers_1_1HashMap.html#function-clear), [Wombat::Containers::TreeMap::clear](classWombat_1_1Containers_1_1TreeMap.html#function-clear), [Wombat::Containers::RedBlackTree::clear](classWombat_1_1Containers_1_1RedBlackTree.html#function-clear)
+**Reimplemented by**: [Wombat::Containers::HashMap::clear](classWombat_1_1Containers_1_1HashMap.html#function-clear), [Wombat::Containers::RedBlackTree::clear](classWombat_1_1Containers_1_1RedBlackTree.html#function-clear), [Wombat::Containers::TreeMap::clear](classWombat_1_1Containers_1_1TreeMap.html#function-clear)
 
 
 ### function keySet
@@ -146,7 +146,7 @@ Set keySet()
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::HashMap::keySet](classWombat_1_1Containers_1_1HashMap.html#function-keyset), [Wombat::Containers::TreeMap::keySet](classWombat_1_1Containers_1_1TreeMap.html#function-keyset), [Wombat::Containers::RedBlackTree::keySet](classWombat_1_1Containers_1_1RedBlackTree.html#function-keyset)
+**Reimplemented by**: [Wombat::Containers::HashMap::keySet](classWombat_1_1Containers_1_1HashMap.html#function-keyset), [Wombat::Containers::RedBlackTree::keySet](classWombat_1_1Containers_1_1RedBlackTree.html#function-keyset), [Wombat::Containers::TreeMap::keySet](classWombat_1_1Containers_1_1TreeMap.html#function-keyset)
 
 
 ### function values
@@ -156,7 +156,7 @@ Collection values()
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::HashMap::values](classWombat_1_1Containers_1_1HashMap.html#function-values), [Wombat::Containers::TreeMap::values](classWombat_1_1Containers_1_1TreeMap.html#function-values), [Wombat::Containers::RedBlackTree::values](classWombat_1_1Containers_1_1RedBlackTree.html#function-values)
+**Reimplemented by**: [Wombat::Containers::HashMap::values](classWombat_1_1Containers_1_1HashMap.html#function-values), [Wombat::Containers::RedBlackTree::values](classWombat_1_1Containers_1_1RedBlackTree.html#function-values), [Wombat::Containers::TreeMap::values](classWombat_1_1Containers_1_1TreeMap.html#function-values)
 
 
 ### function entrySet
@@ -166,9 +166,9 @@ Set entrySet()
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::HashMap::entrySet](classWombat_1_1Containers_1_1HashMap.html#function-entryset), [Wombat::Containers::TreeMap::entrySet](classWombat_1_1Containers_1_1TreeMap.html#function-entryset), [Wombat::Containers::RedBlackTree::entrySet](classWombat_1_1Containers_1_1RedBlackTree.html#function-entryset)
+**Reimplemented by**: [Wombat::Containers::HashMap::entrySet](classWombat_1_1Containers_1_1HashMap.html#function-entryset), [Wombat::Containers::RedBlackTree::entrySet](classWombat_1_1Containers_1_1RedBlackTree.html#function-entryset), [Wombat::Containers::TreeMap::entrySet](classWombat_1_1Containers_1_1TreeMap.html#function-entryset)
 
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:11 +0100
+Updated on 2023-03-31 at 15:30:17 +0100

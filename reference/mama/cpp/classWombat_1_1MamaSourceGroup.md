@@ -24,6 +24,12 @@ with_doxylinks: true
 | -------------- | -------------- |
 | class | **[iterator](classWombat_1_1MamaSourceGroup_1_1iterator.html)**  |
 
+## Public Types
+
+|                | Name           |
+| -------------- | -------------- |
+| typedef const [iterator](classWombat_1_1MamaSourceGroup_1_1iterator.html) | **[const_iterator](classWombat_1_1MamaSourceGroup.html#typedef-const-iterator)**  |
+
 ## Public Functions
 
 |                | Name           |
@@ -42,15 +48,9 @@ with_doxylinks: true
 | void | **[unregisterStateChangeCallback](classWombat_1_1MamaSourceGroup.html#function-unregisterstatechangecallback)**([MamaSourceStateChangeCallback](classWombat_1_1MamaSourceStateChangeCallback.html) & cb) |
 | bool | **[reevaluate](classWombat_1_1MamaSourceGroup.html#function-reevaluate)**() |
 | [iterator](classWombat_1_1MamaSourceGroup_1_1iterator.html) | **[begin](classWombat_1_1MamaSourceGroup.html#function-begin)**() |
-| const_iterator | **[begin](classWombat_1_1MamaSourceGroup.html#function-begin)**() const |
+| [const_iterator](classWombat_1_1MamaSourceGroup_1_1iterator.html) | **[begin](classWombat_1_1MamaSourceGroup.html#function-begin)**() const |
 | [iterator](classWombat_1_1MamaSourceGroup_1_1iterator.html) | **[end](classWombat_1_1MamaSourceGroup.html#function-end)**() |
-| const_iterator | **[end](classWombat_1_1MamaSourceGroup.html#function-end)**() const |
-
-## Public Attributes
-
-|                | Name           |
-| -------------- | -------------- |
-| const typedef [iterator](classWombat_1_1MamaSourceGroup_1_1iterator.html) | **[const_iterator](classWombat_1_1MamaSourceGroup.html#variable-const-iterator)**  |
+| [const_iterator](classWombat_1_1MamaSourceGroup_1_1iterator.html) | **[end](classWombat_1_1MamaSourceGroup.html#function-end)**() const |
 
 ## Detailed Description
 
@@ -60,6 +60,15 @@ class Wombat::MamaSourceGroup;
 
 
 A MAMA source group monitors a set of MAMA sources that presumably provide a duplicate set of data. Each member of the group is given a priority and the member with the highest priority is given the mamaSourceState, MAMA_SOURCE_STATE_OK; the other members of the group are given the state, MAMA_SOURCE_STATE_OFF. 
+
+## Public Types Documentation
+
+### typedef const_iterator
+
+```cpp
+typedef const iterator Wombat::MamaSourceGroup::const_iterator;
+```
+
 
 ## Public Functions Documentation
 
@@ -223,15 +232,6 @@ const_iterator end() const
 ```
 
 
-## Public Attributes Documentation
-
-### variable const_iterator
-
-```cpp
-const typedef iterator const_iterator;
-```
-
-
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:25 +0100

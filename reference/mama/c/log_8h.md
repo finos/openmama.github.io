@@ -55,9 +55,9 @@ with_doxylinks: true
 | MAMAExpDLL mama_status | **[mama_setAppendToLogFile](log_8h.html#function-mama-setappendtologfile)**(int append)<br>Set append to existing log file.  |
 | MAMAExpDLL int | **[mama_loggingToFile](log_8h.html#function-mama-loggingtofile)**(void )<br>Return status of loggingToFile.  |
 | MAMAExpDLL mama_status | **[mama_setLogSizeCb](log_8h.html#function-mama-setlogsizecb)**(logSizeCbType logCallbacks)<br>Set a callback for when the max log size is reached.  |
-| const MAMAExpDLL char * | **[mama_logLevelToString](log_8h.html#function-mama-logleveltostring)**(MamaLogLevel level)<br>Return string version of log level.  |
+| MAMAExpDLL const char * | **[mama_logLevelToString](log_8h.html#function-mama-logleveltostring)**(MamaLogLevel level)<br>Return string version of log level.  |
 | MAMAExpDLL int | **[mama_tryStringToLogLevel](log_8h.html#function-mama-trystringtologlevel)**(const char * s, MamaLogLevel * level)<br>Try to convert string to log level.  |
-| const MAMAExpDLL char * | **[mama_logPolicyToString](log_8h.html#function-mama-logpolicytostring)**(mamaLogFilePolicy level)<br>Return string version of log policy.  |
+| MAMAExpDLL const char * | **[mama_logPolicyToString](log_8h.html#function-mama-logpolicytostring)**(mamaLogFilePolicy level)<br>Return string version of log policy.  |
 | MAMAExpDLL int | **[mama_tryStringToLogPolicy](log_8h.html#function-mama-trystringtologpolicy)**(const char * s, mamaLogFilePolicy * policy)<br>Try to convert string to log policy.  |
 | MAMAExpDLL int | **[mama_logIncrementVerbosity](log_8h.html#function-mama-logincrementverbosity)**(MamaLogLevel * level)<br>Increase by one log level the verbosity of a MamaLogLevel variable.  |
 | MAMAExpDLL int | **[mama_logDecrementVerbosity](log_8h.html#function-mama-logdecrementverbosity)**(MamaLogLevel * level)<br>Decrease by one log level the verbosity of a MamaLogLevel variable.  |
@@ -641,7 +641,7 @@ This can be used to override the default action which is to wrap the file and co
 ### function mama_logLevelToString
 
 ```cpp
-const MAMAExpDLL char * mama_logLevelToString(
+MAMAExpDLL const char * mama_logLevelToString(
     MamaLogLevel level
 )
 ```
@@ -676,7 +676,7 @@ Return non-zero for success, zero for failure. The string comparison is case ins
 ### function mama_logPolicyToString
 
 ```cpp
-const MAMAExpDLL char * mama_logPolicyToString(
+MAMAExpDLL const char * mama_logPolicyToString(
     mamaLogFilePolicy level
 )
 ```
@@ -1041,4 +1041,4 @@ extern "C" */
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

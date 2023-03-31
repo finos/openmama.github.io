@@ -29,4 +29,4 @@ class Wombat::MamaCallbackWrapper;
 This class wraps a native callback function allowing the managed callback object, the closure and the delegate to be maintained while the code operates inside the native environment. Without this the managed object will be garbage collected resulting in a crash whenever the callback is eventually made from the native layer. 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:32 +0100

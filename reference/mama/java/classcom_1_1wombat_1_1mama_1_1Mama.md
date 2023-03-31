@@ -26,8 +26,11 @@ with_doxylinks: true
 | native void | **[open](classcom_1_1wombat_1_1mama_1_1Mama.html#function-open)**() |
 | native void | **[open](classcom_1_1wombat_1_1mama_1_1Mama.html#function-open)**(String path, String filename) |
 | native void | **[start](classcom_1_1wombat_1_1mama_1_1Mama.html#function-start)**([MamaBridge](classcom_1_1wombat_1_1mama_1_1MamaBridge.html) bridge) |
+| native void | **[startAll](classcom_1_1wombat_1_1mama_1_1Mama.html#function-startall)**(boolean isBlocking) |
+| void | **[startAll](classcom_1_1wombat_1_1mama_1_1Mama.html#function-startall)**() |
 | native void | **[startBackground](classcom_1_1wombat_1_1mama_1_1Mama.html#function-startbackground)**([MamaBridge](classcom_1_1wombat_1_1mama_1_1MamaBridge.html) bridge, [MamaStartBackgroundCallback](interfacecom_1_1wombat_1_1mama_1_1MamaStartBackgroundCallback.html) callback) |
 | native void | **[stop](classcom_1_1wombat_1_1mama_1_1Mama.html#function-stop)**([MamaBridge](classcom_1_1wombat_1_1mama_1_1MamaBridge.html) bridge) |
+| native void | **[stopAll](classcom_1_1wombat_1_1mama_1_1Mama.html#function-stopall)**() |
 | native void | **[close](classcom_1_1wombat_1_1mama_1_1Mama.html#function-close)**() |
 | void | **[enableLogging](classcom_1_1wombat_1_1mama_1_1Mama.html#function-enablelogging)**(Level level) |
 | void | **[setLogCallback](classcom_1_1wombat_1_1mama_1_1Mama.html#function-setlogcallback)**([MamaLogFileCallback2](interfacecom_1_1wombat_1_1mama_1_1MamaLogFileCallback2.html) callback) |
@@ -39,6 +42,9 @@ with_doxylinks: true
 | void | **[setLogLevel](classcom_1_1wombat_1_1mama_1_1Mama.html#function-setloglevel)**(Level level) |
 | void | **[setLogFilePolicy](classcom_1_1wombat_1_1mama_1_1Mama.html#function-setlogfilepolicy)**([MamaLogFilePolicy](classcom_1_1wombat_1_1mama_1_1MamaLogFilePolicy.html) policy) |
 | native String | **[getProperty](classcom_1_1wombat_1_1mama_1_1Mama.html#function-getproperty)**(String name) |
+| native void | **[loadDefaultProperties](classcom_1_1wombat_1_1mama_1_1Mama.html#function-loaddefaultproperties)**() |
+| String | **[getProperty](classcom_1_1wombat_1_1mama_1_1Mama.html#function-getproperty)**(String name, String defaultValue) |
+| Map< String, String > | **[getProperties](classcom_1_1wombat_1_1mama_1_1Mama.html#function-getproperties)**() |
 | native void | **[setProperty](classcom_1_1wombat_1_1mama_1_1Mama.html#function-setproperty)**(String name, String value) |
 | native void | **[setLogSize](classcom_1_1wombat_1_1mama_1_1Mama.html#function-setlogsize)**(long size) |
 | native void | **[setNumLogFiles](classcom_1_1wombat_1_1mama_1_1Mama.html#function-setnumlogfiles)**(int numFiles) |
@@ -165,6 +171,37 @@ MAMA employs a reference count to track multiple calls to [Mama.start()](classco
 This function is thread safe.
 
 
+### function startAll
+
+```java
+static native void startAll(
+    boolean isBlocking
+)
+```
+
+
+**Parameters**: 
+
+  * **isBlocking** Whether to start blocking or run in background 
+
+
+Calls [Mama::start](classcom_1_1wombat_1_1mama_1_1Mama.html#function-start) for all currently loaded middleware bridges
+
+This function is thread safe.
+
+
+### function startAll
+
+```java
+static inline void startAll()
+```
+
+
+Calls [Mama::start](classcom_1_1wombat_1_1mama_1_1Mama.html#function-start) for all currently loaded middleware bridges and blocks.
+
+This function is thread safe. 
+
+
 ### function startBackground
 
 ```java
@@ -203,6 +240,16 @@ Stop dispatching on the default event queue for the specified bridge.
 MAMA employs a reference count to track multiple calls to [Mama.start()](classcom_1_1wombat_1_1mama_1_1Mama.html#function-start) and [Mama.stop()](classcom_1_1wombat_1_1mama_1_1Mama.html#function-stop). The count is incremented every time [Mama.start()](classcom_1_1wombat_1_1mama_1_1Mama.html#function-start) is called and decremented when [Mama.stop()](classcom_1_1wombat_1_1mama_1_1Mama.html#function-stop) is called. The first [Mama.start()](classcom_1_1wombat_1_1mama_1_1Mama.html#function-start) call does not unblock until the count reaches zero.
 
 This function is thread safe.
+
+
+### function stopAll
+
+```java
+static native void stopAll()
+```
+
+
+Stop dispatching on the default event queue for all bridges. 
 
 
 ### function close
@@ -306,6 +353,63 @@ static native String getProperty(
     String name
 )
 ```
+
+
+**Parameters**: 
+
+  * **name** The name of the property to retrieve.
+
+
+**Return**: the value of the property or NULL if unset. 
+
+Retrieve a specific property from the API.
+
+If the property has not been set, a NULL value will be returned.
+
+
+### function loadDefaultProperties
+
+```java
+static native void loadDefaultProperties()
+```
+
+
+Load in default mama.properties from the default WOMBAT_PATH directory. 
+
+
+### function getProperty
+
+```java
+static inline String getProperty(
+    String name,
+    String defaultValue
+)
+```
+
+
+**Parameters**: 
+
+  * **name** The name of the property to retrieve. 
+  * **defaultValue** The value to return if this property does not exist.
+
+
+**Return**: the value of the property or NULL if unset. 
+
+Retrieve a specific property from the API.
+
+If the property has not been set, the default value will be returned.
+
+
+### function getProperties
+
+```java
+static inline Map< String, String > getProperties()
+```
+
+
+**Return**: A map of all currently configured properties 
+
+Retrieve a list of all configured properties in key -> value format 
 
 
 ### function setProperty
@@ -486,4 +590,4 @@ static inline String getLastErrorText()
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:08 +0100
+Updated on 2023-03-31 at 15:29:42 +0100

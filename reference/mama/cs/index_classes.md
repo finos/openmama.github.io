@@ -24,6 +24,7 @@ with_doxylinks: true
 * **namespace [System::Runtime::InteropServices](namespaceSystem_1_1Runtime_1_1InteropServices.html)** 
 * **namespace [System::Runtime::Serialization](namespaceSystem_1_1Runtime_1_1Serialization.html)** 
 * **namespace [System::Text](namespaceSystem_1_1Text.html)** 
+* **namespace [System::Text::RegularExpressions](namespaceSystem_1_1Text_1_1RegularExpressions.html)** 
 * **namespace [System::Threading](namespaceSystem_1_1Threading.html)** 
 * **namespace [Wombat](namespaceWombat.html)** 
     * **interface [ISourceManager](interfaceWombat_1_1ISourceManager.html)** <br>A container of [MamaSource]() objects. Because each [MamaSource]() can contain sub-sources (and so on), [MamaSource]() is also a source manager and implements this interface. 
@@ -69,7 +70,7 @@ with_doxylinks: true
     * **class [MamaMsgField](classWombat_1_1MamaMsgField.html)** <br>Class that represents a field in a [MamaMsg](classWombat_1_1MamaMsg.html)
         * **struct [NativeMethods](structWombat_1_1MamaMsgField_1_1NativeMethods.html)** 
     * **interface [MamaMsgFieldIterator](interfaceWombat_1_1MamaMsgFieldIterator.html)** <br>Callbacks for iterating through the fields of a message 
-    * **class [MamaMsgIterator](classWombat_1_1MamaMsgIterator.html)** <br>Class for iterating through the fields in a [MamaMsg](classWombat_1_1MamaMsg.html)
+    * **class [MamaMsgIterator](classWombat_1_1MamaMsgIterator.html)** <br>Class for iterating through the fields in a [MamaMsg]()
         * **struct [NativeMethods](structWombat_1_1MamaMsgIterator_1_1NativeMethods.html)** 
     * **class [MamaMulticastFtMember](classWombat_1_1MamaMulticastFtMember.html)** <br>A member of a MAMA fault tolerance multicast group 
     * **class [MamaPayloadBridge](classWombat_1_1MamaPayloadBridge.html)** 
@@ -91,7 +92,15 @@ with_doxylinks: true
     * **class [MamaQueueGroup](classWombat_1_1MamaQueueGroup.html)** <br>A class for distributing events across multiple queues in a round robin fashion. 
         * **class [MamaQueueThread](classWombat_1_1MamaQueueGroup_1_1MamaQueueThread.html)** <br>This class provides a MAMA queue as well as a thread to process it. 
     * **interface [MamaQueueMonitorCallback](interfaceWombat_1_1MamaQueueMonitorCallback.html)** 
+    * **class [MamaRegexChannelFilter](classWombat_1_1MamaRegexChannelFilter.html)** <br>A [MamaResourcePool]() is a convenience wrapper to allow easy subscription and management of OpenMAMA related resources 
     * **class [MamaReservedFields](classWombat_1_1MamaReservedFields.html)** <br>Maintains a cache of common field descriptors. 
+    * **class [MamaResourcePool](classWombat_1_1MamaResourcePool.html)** <br>A [MamaResourcePool]() is a convenience wrapper to allow easy subscription and management of OpenMAMA related resources 
+        * **class [DestroySubscriptionHandler](classWombat_1_1MamaResourcePool_1_1DestroySubscriptionHandler.html)** 
+        * **class [MamaResourcePoolBridgeImpl](classWombat_1_1MamaResourcePool_1_1MamaResourcePoolBridgeImpl.html)** 
+        * **class [MamaResourcePoolOptionsImpl](classWombat_1_1MamaResourcePool_1_1MamaResourcePoolOptionsImpl.html)** 
+        * **class [MamaResourcePoolSourceImpl](classWombat_1_1MamaResourcePool_1_1MamaResourcePoolSourceImpl.html)** 
+        * **class [MamaResourcePoolSubscriptionImpl](classWombat_1_1MamaResourcePool_1_1MamaResourcePoolSubscriptionImpl.html)** 
+        * **class [MamaResourcePoolTransportImpl](classWombat_1_1MamaResourcePool_1_1MamaResourcePoolTransportImpl.html)** 
     * **interface [MamaSendCompleteCallback](interfaceWombat_1_1MamaSendCompleteCallback.html)** <br>Provides an object-oriented callback interface for [MamaPublisher](classWombat_1_1MamaPublisher.html)'s sendWithThrottle and sendFromInboxWithThrottle methods 
     * **class [MamaSource](classWombat_1_1MamaSource.html)** <br>A [MamaSource]() maintains information about a data source, including the quality of the data coming from that source 
         * **struct [NativeMethods](structWombat_1_1MamaSource_1_1NativeMethods.html)** 
@@ -137,4 +146,4 @@ with_doxylinks: true
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:34 +0100

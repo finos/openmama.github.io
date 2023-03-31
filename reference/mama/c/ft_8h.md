@@ -42,7 +42,7 @@ with_doxylinks: true
 | MAMAExpDLL mama_status | **[mamaFtMember_getClosure](ft_8h.html#function-mamaftmember-getclosure)**(const mamaFtMember member, void ** result)<br>Get the closure argument (provided in the mamaFtMember_setup() function) of the MAMA FT member.  |
 | MAMAExpDLL mama_status | **[mamaFtMember_setWeight](ft_8h.html#function-mamaftmember-setweight)**(mamaFtMember member, mama_u32_t value)<br>Set the fault tolerance weight of the MAMA FT member. The FT weight can be changed dynamically, if desired. The member with the highest weight will become the active member.  |
 | MAMAExpDLL mama_status | **[mamaFtMember_setInstanceId](ft_8h.html#function-mamaftmember-setinstanceid)**(mamaFtMember member, const char * id)<br>Set the instance ID of the MAMA FT member. The instance ID is used to uniquely identify members of a fault tolerant group.  |
-| const MAMAExpDLL char * | **[mamaFtStateToString](ft_8h.html#function-mamaftstatetostring)**(mamaFtState state)<br>Convert a fault tolerant state to a string.  |
+| MAMAExpDLL const char * | **[mamaFtStateToString](ft_8h.html#function-mamaftstatetostring)**(mamaFtState state)<br>Convert a fault tolerant state to a string.  |
 
 ## Types Documentation
 
@@ -393,7 +393,7 @@ Most applications should allow the MAMA API to automatically set the instance ID
 ### function mamaFtStateToString
 
 ```cpp
-const MAMAExpDLL char * mamaFtStateToString(
+MAMAExpDLL const char * mamaFtStateToString(
     mamaFtState state
 )
 ```
@@ -569,4 +569,4 @@ mamaFtStateToString (mamaFtState state);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

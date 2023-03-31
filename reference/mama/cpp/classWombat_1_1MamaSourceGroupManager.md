@@ -24,6 +24,12 @@ with_doxylinks: true
 | -------------- | -------------- |
 | class | **[iterator](classWombat_1_1MamaSourceGroupManager_1_1iterator.html)**  |
 
+## Public Types
+
+|                | Name           |
+| -------------- | -------------- |
+| typedef const [iterator](classWombat_1_1MamaSourceGroupManager_1_1iterator.html) | **[const_iterator](classWombat_1_1MamaSourceGroupManager.html#typedef-const-iterator)**  |
+
 ## Public Functions
 
 |                | Name           |
@@ -36,15 +42,9 @@ with_doxylinks: true
 | const [MamaSourceGroup](classWombat_1_1MamaSourceGroup.html) * | **[find](classWombat_1_1MamaSourceGroupManager.html#function-find)**(const char * groupName) const |
 | mama_size_t | **[size](classWombat_1_1MamaSourceGroupManager.html#function-size)**() const |
 | [iterator](classWombat_1_1MamaSourceGroupManager_1_1iterator.html) | **[begin](classWombat_1_1MamaSourceGroupManager.html#function-begin)**() |
-| const_iterator | **[begin](classWombat_1_1MamaSourceGroupManager.html#function-begin)**() const |
+| [const_iterator](classWombat_1_1MamaSourceGroupManager_1_1iterator.html) | **[begin](classWombat_1_1MamaSourceGroupManager.html#function-begin)**() const |
 | [iterator](classWombat_1_1MamaSourceGroupManager_1_1iterator.html) | **[end](classWombat_1_1MamaSourceGroupManager.html#function-end)**() |
-| const_iterator | **[end](classWombat_1_1MamaSourceGroupManager.html#function-end)**() const |
-
-## Public Attributes
-
-|                | Name           |
-| -------------- | -------------- |
-| const typedef [iterator](classWombat_1_1MamaSourceGroupManager_1_1iterator.html) | **[const_iterator](classWombat_1_1MamaSourceGroupManager.html#variable-const-iterator)**  |
+| [const_iterator](classWombat_1_1MamaSourceGroupManager_1_1iterator.html) | **[end](classWombat_1_1MamaSourceGroupManager.html#function-end)**() const |
 
 ## Detailed Description
 
@@ -54,6 +54,15 @@ class Wombat::MamaSourceGroupManager;
 
 
 A MAMA source group manager monitors a set of MAMA source groups. 
+
+## Public Types Documentation
+
+### typedef const_iterator
+
+```cpp
+typedef const iterator Wombat::MamaSourceGroupManager::const_iterator;
+```
+
 
 ## Public Functions Documentation
 
@@ -142,15 +151,6 @@ const_iterator end() const
 ```
 
 
-## Public Attributes Documentation
-
-### variable const_iterator
-
-```cpp
-const typedef iterator const_iterator;
-```
-
-
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:25 +0100

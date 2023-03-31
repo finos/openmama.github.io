@@ -55,22 +55,31 @@ with_doxylinks: true
 #ifndef MAMA_SUBSCRIPTION_CALLBACK_CPP_H__
 #define MAMA_SUBSCRIPTION_CALLBACK_CPP_H__
 
+#include "mama/MamaStatus.h"
 #include "mama/mamacpp.h"
 
 namespace Wombat 
 {
     class MamaSubscription;
+    class MamaBasicSubscription;
     class MAMACPPExpDLL MamaSubscriptionCallback
     {
     public:
         virtual ~MamaSubscriptionCallback () 
         {};
 
-        virtual void onCreate (MamaSubscription*  subscription) = 0;
+        virtual void onCreate (MamaSubscription*  subscription)
+        {};
 
         virtual void onError (MamaSubscription*  subscription,
                               const MamaStatus&  status,
-                              const char*        symbol) = 0;
+                              const char*        symbol)
+        {
+            mama_log (MAMA_LOG_LEVEL_ERROR,
+                      "Found error %s while trying to subscribe to '%s'",
+                      status.toString(),
+                      symbol != nullptr ? symbol : "(null)");
+        };
 
         virtual void onGap (MamaSubscription*  subscription) 
         {};
@@ -89,7 +98,8 @@ namespace Wombat
                                 mamaQuality        quality,
                                 const char*        symbol,
                                 short              cause,
-                                const void*        platformInfo) = 0;
+                                const void*        platformInfo)
+        {};
        
         /* By default forward to MamaSubscription callback */
         virtual void onCreate (MamaBasicSubscription*  subscription)
@@ -118,4 +128,4 @@ namespace Wombat
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:26 +0100

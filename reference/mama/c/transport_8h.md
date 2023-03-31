@@ -30,8 +30,8 @@ with_doxylinks: true
 
 |                | Name           |
 | -------------- | -------------- |
-| const MAMAExpDLL char * | **[mamaTransportTopicEvent_toString](transport_8h.html#function-mamatransporttopicevent-tostring)**(mamaTransportTopicEvent event) |
-| const MAMAExpDLL char * | **[mamaTransportEvent_toString](transport_8h.html#function-mamatransportevent-tostring)**(mamaTransportEvent event) |
+| MAMAExpDLL const char * | **[mamaTransportTopicEvent_toString](transport_8h.html#function-mamatransporttopicevent-tostring)**(mamaTransportTopicEvent event) |
+| MAMAExpDLL const char * | **[mamaTransportEvent_toString](transport_8h.html#function-mamatransportevent-tostring)**(mamaTransportEvent event) |
 | MAMAExpDLL mama_status | **[mamaTransport_setTransportCallback](transport_8h.html#function-mamatransport-settransportcallback)**(mamaTransport transport, mamaTransportCB callback, void * closure) |
 | MAMAExpDLL mama_status | **[mamaTransport_setTransportTopicCallback](transport_8h.html#function-mamatransport-settransporttopiccallback)**(mamaTransport transport, mamaTransportTopicCB callback, void * closure) |
 | MAMAExpDLL mama_status | **[mamaTransport_setTransportCallbackQueue](transport_8h.html#function-mamatransport-settransportcallbackqueue)**(mamaTransport transport, mamaQueue queue) |
@@ -41,7 +41,7 @@ with_doxylinks: true
 | MAMAExpDLL mama_status | **[mamaTransport_create](transport_8h.html#function-mamatransport-create)**(mamaTransport transport, const char * name, mamaBridge bridgeImpl) |
 | MAMAExpDLL mama_status | **[mamaTransport_setName](transport_8h.html#function-mamatransport-setname)**(mamaTransport transport, const char * name) |
 | MAMAExpDLL mama_status | **[mamaTransport_getName](transport_8h.html#function-mamatransport-getname)**(mamaTransport transport, const char ** result) |
-| const MAMAExpDLL char * | **[mamaTransport_getMiddleware](transport_8h.html#function-mamatransport-getmiddleware)**(mamaTransport transport) |
+| MAMAExpDLL const char * | **[mamaTransport_getMiddleware](transport_8h.html#function-mamatransport-getmiddleware)**(mamaTransport transport) |
 | MAMAExpDLL mama_status | **[mamaTransport_getOutboundThrottle](transport_8h.html#function-mamatransport-getoutboundthrottle)**(mamaTransport transport, mamaThrottleInstance instance, double * result) |
 | MAMAExpDLL void | **[mamaTransport_disableRefresh](transport_8h.html#function-mamatransport-disablerefresh)**(mamaTransport transport, uint8_t disable) |
 | MAMAExpDLL mama_status | **[mamaTransport_setOutboundThrottle](transport_8h.html#function-mamatransport-setoutboundthrottle)**(mamaTransport transport, mamaThrottleInstance instance, double outboundThrottle) |
@@ -222,7 +222,7 @@ typedef void(* mamaTransportLbCB) (int curTransportIndex, int numTransports, con
 ### function mamaTransportTopicEvent_toString
 
 ```cpp
-const MAMAExpDLL char * mamaTransportTopicEvent_toString(
+MAMAExpDLL const char * mamaTransportTopicEvent_toString(
     mamaTransportTopicEvent event
 )
 ```
@@ -234,7 +234,7 @@ Return a text description of the transport topic event.
 ### function mamaTransportEvent_toString
 
 ```cpp
-const MAMAExpDLL char * mamaTransportEvent_toString(
+MAMAExpDLL const char * mamaTransportEvent_toString(
     mamaTransportEvent event
 )
 ```
@@ -394,7 +394,7 @@ Get the transport name. This the name that was passed to the mamaTransport_creat
 ### function mamaTransport_getMiddleware
 
 ```cpp
-const MAMAExpDLL char * mamaTransport_getMiddleware(
+MAMAExpDLL const char * mamaTransport_getMiddleware(
     mamaTransport transport
 )
 ```
@@ -1208,4 +1208,4 @@ mamaTransport_setClosure (mamaTransport transport,
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:17 +0100

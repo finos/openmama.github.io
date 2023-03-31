@@ -98,7 +98,7 @@ Get the bid price.
 
 **Return**: Bid price. The highest price that the representative party/group is willing to pay to buy the security. For most feeds, this size is represented in round lots.
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getBidPrice](classWombat_1_1MamdaQuoteListener.html#function-getbidprice), [Wombat::MamdaConcreteQuoteRecap::getBidPrice](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidprice)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getBidPrice](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidprice), [Wombat::MamdaQuoteListener::getBidPrice](classWombat_1_1MamdaQuoteListener.html#function-getbidprice)
 
 
 ### function getBidPriceFieldState
@@ -124,7 +124,7 @@ Get the bid size.
 
 **Return**: Total share size available for the current bid price.
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getBidSize](classWombat_1_1MamdaQuoteListener.html#function-getbidsize), [Wombat::MamdaConcreteQuoteRecap::getBidSize](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidsize)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getBidSize](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidsize), [Wombat::MamdaQuoteListener::getBidSize](classWombat_1_1MamdaQuoteListener.html#function-getbidsize)
 
 
 ### function getBidSizeFieldState
@@ -150,7 +150,7 @@ Get the bid participant identifier.
 
 **Return**: The identifier of the market participant (e.g. exchange or market maker) contributing the bid price field.
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getBidPartId](classWombat_1_1MamdaQuoteListener.html#function-getbidpartid), [Wombat::MamdaConcreteQuoteRecap::getBidPartId](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidpartid)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getBidPartId](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidpartid), [Wombat::MamdaQuoteListener::getBidPartId](classWombat_1_1MamdaQuoteListener.html#function-getbidpartid)
 
 
 ### function getBidPartIdFieldState
@@ -176,7 +176,7 @@ Get the ask price.
 
 **Return**: Ask price. The lowest price that the representative party/group is willing to take to sell the security. For most feeds, this size is represented in round lots.
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getAskPrice](classWombat_1_1MamdaQuoteListener.html#function-getaskprice), [Wombat::MamdaConcreteQuoteRecap::getAskPrice](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskprice)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getAskPrice](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskprice), [Wombat::MamdaQuoteListener::getAskPrice](classWombat_1_1MamdaQuoteListener.html#function-getaskprice)
 
 
 ### function getAskPriceFieldState
@@ -202,7 +202,7 @@ Get the ask size.
 
 **Return**: Total share size available for the current ask price.
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getAskSize](classWombat_1_1MamdaQuoteListener.html#function-getasksize), [Wombat::MamdaConcreteQuoteRecap::getAskSize](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getasksize)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getAskSize](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getasksize), [Wombat::MamdaQuoteListener::getAskSize](classWombat_1_1MamdaQuoteListener.html#function-getasksize)
 
 
 
@@ -233,7 +233,7 @@ Get the ask participant identifier.
 
 **Return**: The identifier of the market participant (e.g. exchange or market maker) contributing the ask price field.
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getAskPartId](classWombat_1_1MamdaQuoteListener.html#function-getaskpartid), [Wombat::MamdaConcreteQuoteRecap::getAskPartId](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskpartid)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getAskPartId](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskpartid), [Wombat::MamdaQuoteListener::getAskPartId](classWombat_1_1MamdaQuoteListener.html#function-getaskpartid)
 
 
 ### function getAskPartIdFieldState
@@ -246,7 +246,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getAskPartIdFieldState](classWombat_1_1MamdaQuoteListener.html#function-getaskpartidfieldstate), [Wombat::MamdaConcreteQuoteRecap::getAskPartIdFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskpartidfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getAskPartIdFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskpartidfieldstate), [Wombat::MamdaQuoteListener::getAskPartIdFieldState](classWombat_1_1MamdaQuoteListener.html#function-getaskpartidfieldstate)
 
 
 ### function getQuoteMidPrice
@@ -259,7 +259,7 @@ Get the quote mid price.
 
 **Return**: The mid price of the current quote. Usually, this is the average of the bid and ask prices, but some exchanges provide this field explicitly.
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getQuoteMidPrice](classWombat_1_1MamdaQuoteListener.html#function-getquotemidprice), [Wombat::MamdaConcreteQuoteRecap::getQuoteMidPrice](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotemidprice)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getQuoteMidPrice](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotemidprice), [Wombat::MamdaQuoteListener::getQuoteMidPrice](classWombat_1_1MamdaQuoteListener.html#function-getquotemidprice)
 
 
 ### function getQuoteCount
@@ -272,7 +272,7 @@ Get the quote count.
 
 **Return**: The number of quotes generated for this security during the current trading session.
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getQuoteCount](classWombat_1_1MamdaQuoteListener.html#function-getquotecount), [Wombat::MamdaConcreteQuoteRecap::getQuoteCount](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotecount)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getQuoteCount](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotecount), [Wombat::MamdaQuoteListener::getQuoteCount](classWombat_1_1MamdaQuoteListener.html#function-getquotecount)
 
 
 ### function getQuoteCountFieldState
@@ -285,7 +285,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getQuoteCountFieldState](classWombat_1_1MamdaQuoteListener.html#function-getquotecountfieldstate), [Wombat::MamdaConcreteQuoteRecap::getQuoteCountFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotecountfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getQuoteCountFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotecountfieldstate), [Wombat::MamdaQuoteListener::getQuoteCountFieldState](classWombat_1_1MamdaQuoteListener.html#function-getquotecountfieldstate)
 
 
 ### function getQuoteQual
@@ -298,7 +298,7 @@ Get the normalized quote qualifier.
 
 **Return**: A normalized set of qualifiers for the last quote for the security. This field may contain multiple string values, separated by the colon(:) character. [MamdaQuoteUpdate.getQuoteQual](interfaceWombat_1_1MamdaQuoteUpdate.html#function-getquotequal)
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getQuoteQual](classWombat_1_1MamdaQuoteListener.html#function-getquotequal), [Wombat::MamdaConcreteQuoteRecap::getQuoteQual](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotequal)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getQuoteQual](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotequal), [Wombat::MamdaQuoteListener::getQuoteQual](classWombat_1_1MamdaQuoteListener.html#function-getquotequal)
 
 
 ### function getQuoteQualFieldState
@@ -311,7 +311,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getQuoteQualFieldState](classWombat_1_1MamdaQuoteListener.html#function-getquotequalfieldstate), [Wombat::MamdaConcreteQuoteRecap::getQuoteQualFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotequalfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getQuoteQualFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotequalfieldstate), [Wombat::MamdaQuoteListener::getQuoteQualFieldState](classWombat_1_1MamdaQuoteListener.html#function-getquotequalfieldstate)
 
 
 ### function getQuoteQualNative
@@ -324,7 +324,7 @@ string getQuoteQualNative()
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getQuoteQualNative](classWombat_1_1MamdaQuoteListener.html#function-getquotequalnative), [Wombat::MamdaConcreteQuoteRecap::getQuoteQualNative](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotequalnative)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getQuoteQualNative](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotequalnative), [Wombat::MamdaQuoteListener::getQuoteQualNative](classWombat_1_1MamdaQuoteListener.html#function-getquotequalnative)
 
 
 ### function getQuoteQualNativeFieldState
@@ -337,7 +337,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getQuoteQualNativeFieldState](classWombat_1_1MamdaQuoteListener.html#function-getquotequalnativefieldstate), [Wombat::MamdaConcreteQuoteRecap::getQuoteQualNativeFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotequalnativefieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getQuoteQualNativeFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotequalnativefieldstate), [Wombat::MamdaQuoteListener::getQuoteQualNativeFieldState](classWombat_1_1MamdaQuoteListener.html#function-getquotequalnativefieldstate)
 
 
 ### function getShortSaleCircuitBreaker
@@ -350,7 +350,7 @@ char getShortSaleCircuitBreaker()
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getShortSaleCircuitBreaker](classWombat_1_1MamdaQuoteListener.html#function-getshortsalecircuitbreaker), [Wombat::MamdaConcreteQuoteRecap::getShortSaleCircuitBreaker](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getshortsalecircuitbreaker)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getShortSaleCircuitBreaker](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getshortsalecircuitbreaker), [Wombat::MamdaQuoteListener::getShortSaleCircuitBreaker](classWombat_1_1MamdaQuoteListener.html#function-getshortsalecircuitbreaker)
 
 
 ### function getShortSaleCircuitBreakerFieldState
@@ -363,7 +363,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getShortSaleCircuitBreakerFieldState](classWombat_1_1MamdaQuoteListener.html#function-getshortsalecircuitbreakerfieldstate), [Wombat::MamdaConcreteQuoteRecap::getShortSaleCircuitBreakerFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getshortsalecircuitbreakerfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getShortSaleCircuitBreakerFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getshortsalecircuitbreakerfieldstate), [Wombat::MamdaQuoteListener::getShortSaleCircuitBreakerFieldState](classWombat_1_1MamdaQuoteListener.html#function-getshortsalecircuitbreakerfieldstate)
 
 
 ### function getShortSaleBidTick
@@ -376,7 +376,7 @@ char getShortSaleBidTick()
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getShortSaleBidTick](classWombat_1_1MamdaQuoteListener.html#function-getshortsalebidtick), [Wombat::MamdaConcreteQuoteRecap::getShortSaleBidTick](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getshortsalebidtick)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getShortSaleBidTick](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getshortsalebidtick), [Wombat::MamdaQuoteListener::getShortSaleBidTick](classWombat_1_1MamdaQuoteListener.html#function-getshortsalebidtick)
 
 
 ### function getShortSaleBidTickFieldState
@@ -389,7 +389,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getShortSaleBidTickFieldState](classWombat_1_1MamdaQuoteListener.html#function-getshortsalebidtickfieldstate), [Wombat::MamdaConcreteQuoteRecap::getShortSaleBidTickFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getshortsalebidtickfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getShortSaleBidTickFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getshortsalebidtickfieldstate), [Wombat::MamdaQuoteListener::getShortSaleBidTickFieldState](classWombat_1_1MamdaQuoteListener.html#function-getshortsalebidtickfieldstate)
 
 
 ### function getAskTime
@@ -399,7 +399,7 @@ DateTime getAskTime()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getAskTime](classWombat_1_1MamdaQuoteListener.html#function-getasktime), [Wombat::MamdaConcreteQuoteRecap::getAskTime](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getasktime)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getAskTime](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getasktime), [Wombat::MamdaQuoteListener::getAskTime](classWombat_1_1MamdaQuoteListener.html#function-getasktime)
 
 
 ### function getBidTime
@@ -409,7 +409,7 @@ DateTime getBidTime()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getBidTime](classWombat_1_1MamdaQuoteListener.html#function-getbidtime), [Wombat::MamdaConcreteQuoteRecap::getBidTime](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidtime)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getBidTime](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidtime), [Wombat::MamdaQuoteListener::getBidTime](classWombat_1_1MamdaQuoteListener.html#function-getbidtime)
 
 
 ### function getQuoteDate
@@ -419,7 +419,7 @@ DateTime getQuoteDate()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getQuoteDate](classWombat_1_1MamdaQuoteListener.html#function-getquotedate), [Wombat::MamdaConcreteQuoteRecap::getQuoteDate](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotedate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getQuoteDate](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotedate), [Wombat::MamdaQuoteListener::getQuoteDate](classWombat_1_1MamdaQuoteListener.html#function-getquotedate)
 
 
 ### function getAskIndicator
@@ -429,7 +429,7 @@ string getAskIndicator()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getAskIndicator](classWombat_1_1MamdaQuoteListener.html#function-getaskindicator), [Wombat::MamdaConcreteQuoteRecap::getAskIndicator](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskindicator)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getAskIndicator](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskindicator), [Wombat::MamdaQuoteListener::getAskIndicator](classWombat_1_1MamdaQuoteListener.html#function-getaskindicator)
 
 
 ### function getBidIndicator
@@ -439,7 +439,7 @@ string getBidIndicator()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getBidIndicator](classWombat_1_1MamdaQuoteListener.html#function-getbidindicator), [Wombat::MamdaConcreteQuoteRecap::getBidIndicator](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidindicator)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getBidIndicator](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidindicator), [Wombat::MamdaQuoteListener::getBidIndicator](classWombat_1_1MamdaQuoteListener.html#function-getbidindicator)
 
 
 ### function getAskUpdateCount
@@ -449,7 +449,7 @@ long getAskUpdateCount()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getAskUpdateCount](classWombat_1_1MamdaQuoteListener.html#function-getaskupdatecount), [Wombat::MamdaConcreteQuoteRecap::getAskUpdateCount](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskupdatecount)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getAskUpdateCount](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskupdatecount), [Wombat::MamdaQuoteListener::getAskUpdateCount](classWombat_1_1MamdaQuoteListener.html#function-getaskupdatecount)
 
 
 ### function getBidUpdateCount
@@ -459,7 +459,7 @@ long getBidUpdateCount()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getBidUpdateCount](classWombat_1_1MamdaQuoteListener.html#function-getbidupdatecount), [Wombat::MamdaConcreteQuoteRecap::getBidUpdateCount](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidupdatecount)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getBidUpdateCount](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidupdatecount), [Wombat::MamdaQuoteListener::getBidUpdateCount](classWombat_1_1MamdaQuoteListener.html#function-getbidupdatecount)
 
 
 ### function getAskYield
@@ -469,7 +469,7 @@ double getAskYield()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getAskYield](classWombat_1_1MamdaQuoteListener.html#function-getaskyield), [Wombat::MamdaConcreteQuoteRecap::getAskYield](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskyield)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getAskYield](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskyield), [Wombat::MamdaQuoteListener::getAskYield](classWombat_1_1MamdaQuoteListener.html#function-getaskyield)
 
 
 ### function getBidYield
@@ -479,7 +479,7 @@ double getBidYield()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getBidYield](classWombat_1_1MamdaQuoteListener.html#function-getbidyield), [Wombat::MamdaConcreteQuoteRecap::getBidYield](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidyield)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getBidYield](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidyield), [Wombat::MamdaQuoteListener::getBidYield](classWombat_1_1MamdaQuoteListener.html#function-getbidyield)
 
 
 ### function getAskTimeFieldState
@@ -489,7 +489,7 @@ MamdaFieldState getAskTimeFieldState()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getAskTimeFieldState](classWombat_1_1MamdaQuoteListener.html#function-getasktimefieldstate), [Wombat::MamdaConcreteQuoteRecap::getAskTimeFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getasktimefieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getAskTimeFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getasktimefieldstate), [Wombat::MamdaQuoteListener::getAskTimeFieldState](classWombat_1_1MamdaQuoteListener.html#function-getasktimefieldstate)
 
 
 ### function getBidTimeFieldState
@@ -499,7 +499,7 @@ MamdaFieldState getBidTimeFieldState()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getBidTimeFieldState](classWombat_1_1MamdaQuoteListener.html#function-getbidtimefieldstate), [Wombat::MamdaConcreteQuoteRecap::getBidTimeFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidtimefieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getBidTimeFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidtimefieldstate), [Wombat::MamdaQuoteListener::getBidTimeFieldState](classWombat_1_1MamdaQuoteListener.html#function-getbidtimefieldstate)
 
 
 ### function getQuoteDateFieldState
@@ -509,7 +509,7 @@ MamdaFieldState getQuoteDateFieldState()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getQuoteDateFieldState](classWombat_1_1MamdaQuoteListener.html#function-getquotedatefieldstate), [Wombat::MamdaConcreteQuoteRecap::getQuoteDateFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotedatefieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getQuoteDateFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getquotedatefieldstate), [Wombat::MamdaQuoteListener::getQuoteDateFieldState](classWombat_1_1MamdaQuoteListener.html#function-getquotedatefieldstate)
 
 
 ### function getAskIndicatorFieldState
@@ -519,7 +519,7 @@ MamdaFieldState getAskIndicatorFieldState()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getAskIndicatorFieldState](classWombat_1_1MamdaQuoteListener.html#function-getaskindicatorfieldstate), [Wombat::MamdaConcreteQuoteRecap::getAskIndicatorFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskindicatorfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getAskIndicatorFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskindicatorfieldstate), [Wombat::MamdaQuoteListener::getAskIndicatorFieldState](classWombat_1_1MamdaQuoteListener.html#function-getaskindicatorfieldstate)
 
 
 ### function getBidIndicatorFieldState
@@ -529,7 +529,7 @@ MamdaFieldState getBidIndicatorFieldState()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getBidIndicatorFieldState](classWombat_1_1MamdaQuoteListener.html#function-getbidindicatorfieldstate), [Wombat::MamdaConcreteQuoteRecap::getBidIndicatorFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidindicatorfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getBidIndicatorFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidindicatorfieldstate), [Wombat::MamdaQuoteListener::getBidIndicatorFieldState](classWombat_1_1MamdaQuoteListener.html#function-getbidindicatorfieldstate)
 
 
 ### function getAskUpdateCountFieldState
@@ -539,7 +539,7 @@ MamdaFieldState getAskUpdateCountFieldState()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getAskUpdateCountFieldState](classWombat_1_1MamdaQuoteListener.html#function-getaskupdatecountfieldstate), [Wombat::MamdaConcreteQuoteRecap::getAskUpdateCountFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskupdatecountfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getAskUpdateCountFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskupdatecountfieldstate), [Wombat::MamdaQuoteListener::getAskUpdateCountFieldState](classWombat_1_1MamdaQuoteListener.html#function-getaskupdatecountfieldstate)
 
 
 ### function getBidUpdateCountFieldState
@@ -549,7 +549,7 @@ MamdaFieldState getBidUpdateCountFieldState()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getBidUpdateCountFieldState](classWombat_1_1MamdaQuoteListener.html#function-getbidupdatecountfieldstate), [Wombat::MamdaConcreteQuoteRecap::getBidUpdateCountFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidupdatecountfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getBidUpdateCountFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidupdatecountfieldstate), [Wombat::MamdaQuoteListener::getBidUpdateCountFieldState](classWombat_1_1MamdaQuoteListener.html#function-getbidupdatecountfieldstate)
 
 
 ### function getAskYieldFieldState
@@ -559,7 +559,7 @@ MamdaFieldState getAskYieldFieldState()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getAskYieldFieldState](classWombat_1_1MamdaQuoteListener.html#function-getaskyieldfieldstate), [Wombat::MamdaConcreteQuoteRecap::getAskYieldFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskyieldfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getAskYieldFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getaskyieldfieldstate), [Wombat::MamdaQuoteListener::getAskYieldFieldState](classWombat_1_1MamdaQuoteListener.html#function-getaskyieldfieldstate)
 
 
 ### function getBidYieldFieldState
@@ -569,9 +569,9 @@ MamdaFieldState getBidYieldFieldState()
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaQuoteListener::getBidYieldFieldState](classWombat_1_1MamdaQuoteListener.html#function-getbidyieldfieldstate), [Wombat::MamdaConcreteQuoteRecap::getBidYieldFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidyieldfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteQuoteRecap::getBidYieldFieldState](classWombat_1_1MamdaConcreteQuoteRecap.html#function-getbidyieldfieldstate), [Wombat::MamdaQuoteListener::getBidYieldFieldState](classWombat_1_1MamdaQuoteListener.html#function-getbidyieldfieldstate)
 
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:11 +0100
+Updated on 2023-03-31 at 15:30:14 +0100

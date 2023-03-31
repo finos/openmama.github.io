@@ -97,9 +97,10 @@ with_doxylinks: true
     * **class [MamdaTradePossiblyDuplicate](classWombat_1_1MamdaTradePossiblyDuplicate.html)** 
     * **class [MamdaTradeRecap](classWombat_1_1MamdaTradeRecap.html)** 
     * **class [MamdaTradeReport](classWombat_1_1MamdaTradeReport.html)** 
+* **namespace [std](namespacestd.html)** 
 
 
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:09 +0100
+Updated on 2023-03-31 at 15:30:00 +0100

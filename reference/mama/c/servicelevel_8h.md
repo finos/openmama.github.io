@@ -25,8 +25,8 @@ with_doxylinks: true
 |                | Name           |
 | -------------- | -------------- |
 | MAMAExpDLL mamaServiceLevel | **[mamaServiceLevel_getFromMsg](servicelevel_8h.html#function-mamaservicelevel-getfrommsg)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaServiceLevel_getFromMsgAsString](servicelevel_8h.html#function-mamaservicelevel-getfrommsgasstring)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaServiceLevel_toString](servicelevel_8h.html#function-mamaservicelevel-tostring)**(mamaServiceLevel type) |
+| MAMAExpDLL const char * | **[mamaServiceLevel_getFromMsgAsString](servicelevel_8h.html#function-mamaservicelevel-getfrommsgasstring)**(const mamaMsg msg) |
+| MAMAExpDLL const char * | **[mamaServiceLevel_toString](servicelevel_8h.html#function-mamaservicelevel-tostring)**(mamaServiceLevel type) |
 
 ## Types Documentation
 
@@ -81,7 +81,7 @@ Extract the subscription service level from a message.
 ### function mamaServiceLevel_getFromMsgAsString
 
 ```cpp
-const MAMAExpDLL char * mamaServiceLevel_getFromMsgAsString(
+MAMAExpDLL const char * mamaServiceLevel_getFromMsgAsString(
     const mamaMsg msg
 )
 ```
@@ -98,7 +98,7 @@ Extract the subscription service level as a string from a message.
 ### function mamaServiceLevel_toString
 
 ```cpp
-const MAMAExpDLL char * mamaServiceLevel_toString(
+MAMAExpDLL const char * mamaServiceLevel_toString(
     mamaServiceLevel type
 )
 ```
@@ -188,4 +188,4 @@ mamaServiceLevel_toString (mamaServiceLevel type);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

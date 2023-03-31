@@ -29,50 +29,50 @@ with_doxylinks: true
 
 |                | Name           |
 | -------------- | -------------- |
-| const MAMAExpDLL long | **[WOMBAT_MAX_RESERVED_FID](reservedfields_8h.html#variable-wombat-max-reserved-fid)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldMsgType](reservedfields_8h.html#variable-mamafieldmsgtype)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldMsgStatus](reservedfields_8h.html#variable-mamafieldmsgstatus)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldFieldIndex](reservedfields_8h.html#variable-mamafieldfieldindex)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscMsgTypeOld](reservedfields_8h.html#variable-mamafieldsubscmsgtypeold)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSubjectOld](reservedfields_8h.html#variable-mamafieldsubscsubjectold)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldMsgNum](reservedfields_8h.html#variable-mamafieldmsgnum)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldMsgTotal](reservedfields_8h.html#variable-mamafieldmsgtotal)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldTibrvResult](reservedfields_8h.html#variable-mamafieldtibrvresult)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSeqNum](reservedfields_8h.html#variable-mamafieldseqnum)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldFeedName](reservedfields_8h.html#variable-mamafieldfeedname)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldFeedHost](reservedfields_8h.html#variable-mamafieldfeedhost)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldFeedGroup](reservedfields_8h.html#variable-mamafieldfeedgroup)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSyncPattern](reservedfields_8h.html#variable-mamafieldsyncpattern)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldItemSeqNum](reservedfields_8h.html#variable-mamafielditemseqnum)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSendTime](reservedfields_8h.html#variable-mamafieldsendtime)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldAppDataType](reservedfields_8h.html#variable-mamafieldappdatatype)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldAppMsgType](reservedfields_8h.html#variable-mamafieldappmsgtype)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSenderId](reservedfields_8h.html#variable-mamafieldsenderid)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldMsgQual](reservedfields_8h.html#variable-mamafieldmsgqual)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldConflateCount](reservedfields_8h.html#variable-mamafieldconflatecount)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldConflateQuoteCount](reservedfields_8h.html#variable-mamafieldconflatequotecount)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldConflateTradeCount](reservedfields_8h.html#variable-mamafieldconflatetradecount)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldRvDaemon](reservedfields_8h.html#variable-mamafieldrvdaemon)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldRvNetwork](reservedfields_8h.html#variable-mamafieldrvnetwork)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldRvService](reservedfields_8h.html#variable-mamafieldrvservice)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldElvinSource](reservedfields_8h.html#variable-mamafieldelvinsource)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldElvinSourceOld](reservedfields_8h.html#variable-mamafieldelvinsourceold)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscriptionType](reservedfields_8h.html#variable-mamafieldsubscriptiontype)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscMsgType](reservedfields_8h.html#variable-mamafieldsubscmsgtype)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSourceHost](reservedfields_8h.html#variable-mamafieldsubscsourcehost)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSourceApp](reservedfields_8h.html#variable-mamafieldsubscsourceapp)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSourceUser](reservedfields_8h.html#variable-mamafieldsubscsourceuser)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldServiceLevel](reservedfields_8h.html#variable-mamafieldservicelevel)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSourceIp](reservedfields_8h.html#variable-mamafieldsubscsourceip)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSourceAppClass](reservedfields_8h.html#variable-mamafieldsubscsourceappclass)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldInterfaceVersion](reservedfields_8h.html#variable-mamafieldinterfaceversion)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldUpdateTopic](reservedfields_8h.html#variable-mamafieldupdatetopic)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSymbol](reservedfields_8h.html#variable-mamafieldsubscsymbol)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldTportName](reservedfields_8h.html#variable-mamafieldtportname)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscNamespace](reservedfields_8h.html#variable-mamafieldsubscnamespace)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSymbolList](reservedfields_8h.html#variable-mamafieldsymbollist)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldTemplate](reservedfields_8h.html#variable-mamafieldtemplate)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldTemplateLen](reservedfields_8h.html#variable-mamafieldtemplatelen)**  |
+| MAMAExpDLL const long | **[WOMBAT_MAX_RESERVED_FID](reservedfields_8h.html#variable-wombat-max-reserved-fid)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldMsgType](reservedfields_8h.html#variable-mamafieldmsgtype)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldMsgStatus](reservedfields_8h.html#variable-mamafieldmsgstatus)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldFieldIndex](reservedfields_8h.html#variable-mamafieldfieldindex)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscMsgTypeOld](reservedfields_8h.html#variable-mamafieldsubscmsgtypeold)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSubjectOld](reservedfields_8h.html#variable-mamafieldsubscsubjectold)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldMsgNum](reservedfields_8h.html#variable-mamafieldmsgnum)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldMsgTotal](reservedfields_8h.html#variable-mamafieldmsgtotal)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldTibrvResult](reservedfields_8h.html#variable-mamafieldtibrvresult)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSeqNum](reservedfields_8h.html#variable-mamafieldseqnum)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldFeedName](reservedfields_8h.html#variable-mamafieldfeedname)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldFeedHost](reservedfields_8h.html#variable-mamafieldfeedhost)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldFeedGroup](reservedfields_8h.html#variable-mamafieldfeedgroup)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSyncPattern](reservedfields_8h.html#variable-mamafieldsyncpattern)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldItemSeqNum](reservedfields_8h.html#variable-mamafielditemseqnum)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSendTime](reservedfields_8h.html#variable-mamafieldsendtime)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldAppDataType](reservedfields_8h.html#variable-mamafieldappdatatype)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldAppMsgType](reservedfields_8h.html#variable-mamafieldappmsgtype)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSenderId](reservedfields_8h.html#variable-mamafieldsenderid)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldMsgQual](reservedfields_8h.html#variable-mamafieldmsgqual)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldConflateCount](reservedfields_8h.html#variable-mamafieldconflatecount)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldConflateQuoteCount](reservedfields_8h.html#variable-mamafieldconflatequotecount)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldConflateTradeCount](reservedfields_8h.html#variable-mamafieldconflatetradecount)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldRvDaemon](reservedfields_8h.html#variable-mamafieldrvdaemon)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldRvNetwork](reservedfields_8h.html#variable-mamafieldrvnetwork)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldRvService](reservedfields_8h.html#variable-mamafieldrvservice)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldElvinSource](reservedfields_8h.html#variable-mamafieldelvinsource)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldElvinSourceOld](reservedfields_8h.html#variable-mamafieldelvinsourceold)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscriptionType](reservedfields_8h.html#variable-mamafieldsubscriptiontype)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscMsgType](reservedfields_8h.html#variable-mamafieldsubscmsgtype)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSourceHost](reservedfields_8h.html#variable-mamafieldsubscsourcehost)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSourceApp](reservedfields_8h.html#variable-mamafieldsubscsourceapp)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSourceUser](reservedfields_8h.html#variable-mamafieldsubscsourceuser)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldServiceLevel](reservedfields_8h.html#variable-mamafieldservicelevel)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSourceIp](reservedfields_8h.html#variable-mamafieldsubscsourceip)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSourceAppClass](reservedfields_8h.html#variable-mamafieldsubscsourceappclass)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldInterfaceVersion](reservedfields_8h.html#variable-mamafieldinterfaceversion)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldUpdateTopic](reservedfields_8h.html#variable-mamafieldupdatetopic)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscSymbol](reservedfields_8h.html#variable-mamafieldsubscsymbol)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldTportName](reservedfields_8h.html#variable-mamafieldtportname)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSubscNamespace](reservedfields_8h.html#variable-mamafieldsubscnamespace)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldSymbolList](reservedfields_8h.html#variable-mamafieldsymbollist)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldTemplate](reservedfields_8h.html#variable-mamafieldtemplate)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaFieldTemplateLen](reservedfields_8h.html#variable-mamafieldtemplatelen)**  |
 | MAMAExpDLL mamaFieldDescriptor | **[MamaReservedFieldMsgType](reservedfields_8h.html#variable-mamareservedfieldmsgtype)**  |
 | MAMAExpDLL mamaFieldDescriptor | **[MamaReservedFieldMsgStatus](reservedfields_8h.html#variable-mamareservedfieldmsgstatus)**  |
 | MAMAExpDLL mamaFieldDescriptor | **[MamaReservedFieldFieldIndex](reservedfields_8h.html#variable-mamareservedfieldfieldindex)**  |
@@ -108,308 +108,308 @@ typedef struct MamaReservedField_ MamaReservedField;
 ### variable WOMBAT_MAX_RESERVED_FID
 
 ```cpp
-const MAMAExpDLL long WOMBAT_MAX_RESERVED_FID;
+MAMAExpDLL const long WOMBAT_MAX_RESERVED_FID;
 ```
 
 
 ### variable MamaFieldMsgType
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldMsgType;
+MAMAExpDLL const MamaReservedField MamaFieldMsgType;
 ```
 
 
 ### variable MamaFieldMsgStatus
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldMsgStatus;
+MAMAExpDLL const MamaReservedField MamaFieldMsgStatus;
 ```
 
 
 ### variable MamaFieldFieldIndex
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldFieldIndex;
+MAMAExpDLL const MamaReservedField MamaFieldFieldIndex;
 ```
 
 
 ### variable MamaFieldSubscMsgTypeOld
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSubscMsgTypeOld;
+MAMAExpDLL const MamaReservedField MamaFieldSubscMsgTypeOld;
 ```
 
 
 ### variable MamaFieldSubscSubjectOld
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSubscSubjectOld;
+MAMAExpDLL const MamaReservedField MamaFieldSubscSubjectOld;
 ```
 
 
 ### variable MamaFieldMsgNum
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldMsgNum;
+MAMAExpDLL const MamaReservedField MamaFieldMsgNum;
 ```
 
 
 ### variable MamaFieldMsgTotal
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldMsgTotal;
+MAMAExpDLL const MamaReservedField MamaFieldMsgTotal;
 ```
 
 
 ### variable MamaFieldTibrvResult
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldTibrvResult;
+MAMAExpDLL const MamaReservedField MamaFieldTibrvResult;
 ```
 
 
 ### variable MamaFieldSeqNum
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSeqNum;
+MAMAExpDLL const MamaReservedField MamaFieldSeqNum;
 ```
 
 
 ### variable MamaFieldFeedName
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldFeedName;
+MAMAExpDLL const MamaReservedField MamaFieldFeedName;
 ```
 
 
 ### variable MamaFieldFeedHost
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldFeedHost;
+MAMAExpDLL const MamaReservedField MamaFieldFeedHost;
 ```
 
 
 ### variable MamaFieldFeedGroup
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldFeedGroup;
+MAMAExpDLL const MamaReservedField MamaFieldFeedGroup;
 ```
 
 
 ### variable MamaFieldSyncPattern
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSyncPattern;
+MAMAExpDLL const MamaReservedField MamaFieldSyncPattern;
 ```
 
 
 ### variable MamaFieldItemSeqNum
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldItemSeqNum;
+MAMAExpDLL const MamaReservedField MamaFieldItemSeqNum;
 ```
 
 
 ### variable MamaFieldSendTime
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSendTime;
+MAMAExpDLL const MamaReservedField MamaFieldSendTime;
 ```
 
 
 ### variable MamaFieldAppDataType
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldAppDataType;
+MAMAExpDLL const MamaReservedField MamaFieldAppDataType;
 ```
 
 
 ### variable MamaFieldAppMsgType
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldAppMsgType;
+MAMAExpDLL const MamaReservedField MamaFieldAppMsgType;
 ```
 
 
 ### variable MamaFieldSenderId
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSenderId;
+MAMAExpDLL const MamaReservedField MamaFieldSenderId;
 ```
 
 
 ### variable MamaFieldMsgQual
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldMsgQual;
+MAMAExpDLL const MamaReservedField MamaFieldMsgQual;
 ```
 
 
 ### variable MamaFieldConflateCount
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldConflateCount;
+MAMAExpDLL const MamaReservedField MamaFieldConflateCount;
 ```
 
 
 ### variable MamaFieldConflateQuoteCount
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldConflateQuoteCount;
+MAMAExpDLL const MamaReservedField MamaFieldConflateQuoteCount;
 ```
 
 
 ### variable MamaFieldConflateTradeCount
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldConflateTradeCount;
+MAMAExpDLL const MamaReservedField MamaFieldConflateTradeCount;
 ```
 
 
 ### variable MamaFieldRvDaemon
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldRvDaemon;
+MAMAExpDLL const MamaReservedField MamaFieldRvDaemon;
 ```
 
 
 ### variable MamaFieldRvNetwork
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldRvNetwork;
+MAMAExpDLL const MamaReservedField MamaFieldRvNetwork;
 ```
 
 
 ### variable MamaFieldRvService
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldRvService;
+MAMAExpDLL const MamaReservedField MamaFieldRvService;
 ```
 
 
 ### variable MamaFieldElvinSource
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldElvinSource;
+MAMAExpDLL const MamaReservedField MamaFieldElvinSource;
 ```
 
 
 ### variable MamaFieldElvinSourceOld
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldElvinSourceOld;
+MAMAExpDLL const MamaReservedField MamaFieldElvinSourceOld;
 ```
 
 
 ### variable MamaFieldSubscriptionType
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSubscriptionType;
+MAMAExpDLL const MamaReservedField MamaFieldSubscriptionType;
 ```
 
 
 ### variable MamaFieldSubscMsgType
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSubscMsgType;
+MAMAExpDLL const MamaReservedField MamaFieldSubscMsgType;
 ```
 
 
 ### variable MamaFieldSubscSourceHost
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSubscSourceHost;
+MAMAExpDLL const MamaReservedField MamaFieldSubscSourceHost;
 ```
 
 
 ### variable MamaFieldSubscSourceApp
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSubscSourceApp;
+MAMAExpDLL const MamaReservedField MamaFieldSubscSourceApp;
 ```
 
 
 ### variable MamaFieldSubscSourceUser
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSubscSourceUser;
+MAMAExpDLL const MamaReservedField MamaFieldSubscSourceUser;
 ```
 
 
 ### variable MamaFieldServiceLevel
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldServiceLevel;
+MAMAExpDLL const MamaReservedField MamaFieldServiceLevel;
 ```
 
 
 ### variable MamaFieldSubscSourceIp
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSubscSourceIp;
+MAMAExpDLL const MamaReservedField MamaFieldSubscSourceIp;
 ```
 
 
 ### variable MamaFieldSubscSourceAppClass
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSubscSourceAppClass;
+MAMAExpDLL const MamaReservedField MamaFieldSubscSourceAppClass;
 ```
 
 
 ### variable MamaFieldInterfaceVersion
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldInterfaceVersion;
+MAMAExpDLL const MamaReservedField MamaFieldInterfaceVersion;
 ```
 
 
 ### variable MamaFieldUpdateTopic
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldUpdateTopic;
+MAMAExpDLL const MamaReservedField MamaFieldUpdateTopic;
 ```
 
 
 ### variable MamaFieldSubscSymbol
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSubscSymbol;
+MAMAExpDLL const MamaReservedField MamaFieldSubscSymbol;
 ```
 
 
 ### variable MamaFieldTportName
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldTportName;
+MAMAExpDLL const MamaReservedField MamaFieldTportName;
 ```
 
 
 ### variable MamaFieldSubscNamespace
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSubscNamespace;
+MAMAExpDLL const MamaReservedField MamaFieldSubscNamespace;
 ```
 
 
 ### variable MamaFieldSymbolList
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldSymbolList;
+MAMAExpDLL const MamaReservedField MamaFieldSymbolList;
 ```
 
 
 ### variable MamaFieldTemplate
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldTemplate;
+MAMAExpDLL const MamaReservedField MamaFieldTemplate;
 ```
 
 
 ### variable MamaFieldTemplateLen
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaFieldTemplateLen;
+MAMAExpDLL const MamaReservedField MamaFieldTemplateLen;
 ```
 
 
@@ -737,4 +737,4 @@ extern mamaFieldDescriptor MamaReservedFieldSymbolList;            /* FID  81 */
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

@@ -20,6 +20,7 @@ MAMA - Middleware Agnostic Messaging API  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
+| [MamaLogLevel](namespaceWombat.html#enum-mamaloglevel) | **[GetLogLevelForString](classWombat_1_1Mama.html#function-getloglevelforstring)**(string level) |
 | void | **[setLogCallback](classWombat_1_1Mama.html#function-setlogcallback)**([MamaLogFileCallback2](interfaceWombat_1_1MamaLogFileCallback2.html) callback)<br>Sets the log callback, this will be invoked every time a log is written in MAMA.  |
 | void | **[setLogSizeCb](classWombat_1_1Mama.html#function-setlogsizecb)**([MamaLogFileCallback](interfaceWombat_1_1MamaLogFileCallback.html) callback)<br>Set callback for log max size exceeded. Applies only to USER policy.  |
 | void | **[onNativeLogCallback](classWombat_1_1Mama.html#function-onnativelogcallback)**(int level, string message)<br>This handler is called by the C layer whenever a log comes in, it will invoke the managed object.  |
@@ -30,8 +31,14 @@ MAMA - Middleware Agnostic Messaging API  [More...](#detailed-description)
 | void | **[openWithProperties](classWombat_1_1Mama.html#function-openwithproperties)**(string path, string filename) |
 | void | **[setProperty](classWombat_1_1Mama.html#function-setproperty)**(string name, string value)<br>Set a specific property for the API. If the property being set has already been given a value from a properties file that value will be replaced. See the example mama.properties provided with the distribution for examples of property formatting. The properties set via this function should be formatted in the same manner as those specified in mama.properties. The strings passed to the function are copied.  |
 | string | **[getProperty](classWombat_1_1Mama.html#function-getproperty)**(string name)<br>Retrieve a specific property from the API. If the property has not been set, a null value will be returned.  |
+| void | **[loadDefaultProperties](classWombat_1_1Mama.html#function-loaddefaultproperties)**()<br>Load in default mama.properties from the default WOMBAT_PATH directory.  |
+| string | **[getProperty](classWombat_1_1Mama.html#function-getproperty)**(string name, string defaultValue)<br>Retrieve a specific property from the API. If the property has not been set, the default value will be returned  |
+| Dictionary< string, string > | **[getProperties](classWombat_1_1Mama.html#function-getproperties)**()<br>Retrieve all configured properties as a dictionary from the current configuration.  |
 | string | **[getVersion](classWombat_1_1Mama.html#function-getversion)**([MamaBridge](classWombat_1_1MamaBridge.html) bridgeImpl)<br>Return the version information for the library The version of [Mama](classWombat_1_1Mama.html) follows in parenthesis  |
 | void | **[start](classWombat_1_1Mama.html#function-start)**([MamaBridge](classWombat_1_1MamaBridge.html) bridgeImpl)<br>Start processing messages on the internal queue. This starts [Mama](classWombat_1_1Mama.html)'s internal throttle, refresh logic, and other internal [Mama](classWombat_1_1Mama.html) processes as well as dispatching messages from the internal queue.  |
+| void | **[startAll](classWombat_1_1Mama.html#function-startall)**()<br>Starts and starts dispatching on all currently loaded MAMA bridges and blocks until they have been stopped.  |
+| void | **[startAll](classWombat_1_1Mama.html#function-startall)**(bool isBlocking)<br>Starts and starts dispatching on all currently loaded MAMA bridges and optionally blocks until they have been stopped.  |
+| void | **[stopAll](classWombat_1_1Mama.html#function-stopall)**()<br>Stops dispatching for all currently started MAMA bridges.  |
 | void | **[close](classWombat_1_1Mama.html#function-close)**() |
 | void | **[startBackground](classWombat_1_1Mama.html#function-startbackground)**([MamaBridge](classWombat_1_1MamaBridge.html) bridgeImpl, [MamaStartBackgroundCallback](interfaceWombat_1_1MamaStartBackgroundCallback.html) callback)<br>Start [Mama](classWombat_1_1Mama.html) in the background. This method invokes [Mama.start()](classWombat_1_1Mama.html#function-start) in a separate thread.  |
 | void | **[stop](classWombat_1_1Mama.html#function-stop)**([MamaBridge](classWombat_1_1MamaBridge.html) bridgeImpl)<br>Stop dispatching on the default event queue for the specified bridge.  |
@@ -90,6 +97,15 @@ Future supported platforms may include:
 A higher level market data API is also available: the Middleware Agnostic Market Data API (MAMDA). While MAMA provides a field-based abstraction to market data, MAMDA provides smart, specialized data types to deal with specific market data events, such as trades, quotes, order books, etc. MAMDA is particularly suitable for applications such as program trading and tick capture systems, where context is important. MAMA is more suited to applications that don't care about the meaning of fields, such as a simple, field-based market data display application. 
 
 ## Public Functions Documentation
+
+### function GetLogLevelForString
+
+```csharp
+static MamaLogLevel GetLogLevelForString(
+    string level
+)
+```
+
 
 ### function setLogCallback
 
@@ -266,6 +282,33 @@ static string getProperty(
 
 Retrieve a specific property from the API. If the property has not been set, a null value will be returned. 
 
+### function loadDefaultProperties
+
+```csharp
+static void loadDefaultProperties()
+```
+
+Load in default mama.properties from the default WOMBAT_PATH directory. 
+
+### function getProperty
+
+```csharp
+static string getProperty(
+    string name,
+    string defaultValue
+)
+```
+
+Retrieve a specific property from the API. If the property has not been set, the default value will be returned 
+
+### function getProperties
+
+```csharp
+static Dictionary< string, string > getProperties()
+```
+
+Retrieve all configured properties as a dictionary from the current configuration. 
+
 ### function getVersion
 
 ```csharp
@@ -299,6 +342,32 @@ MAMA employs a reference count to track multiple calls to [Mama.start()](classWo
 
 This function is thread safe. 
 
+
+### function startAll
+
+```csharp
+static void startAll()
+```
+
+Starts and starts dispatching on all currently loaded MAMA bridges and blocks until they have been stopped. 
+
+### function startAll
+
+```csharp
+static void startAll(
+    bool isBlocking
+)
+```
+
+Starts and starts dispatching on all currently loaded MAMA bridges and optionally blocks until they have been stopped. 
+
+### function stopAll
+
+```csharp
+static void stopAll()
+```
+
+Stops dispatching for all currently started MAMA bridges. 
 
 ### function close
 
@@ -635,4 +704,4 @@ Name of DLL containing Native code
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:32 +0100

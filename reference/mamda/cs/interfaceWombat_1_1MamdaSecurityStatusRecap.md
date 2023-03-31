@@ -191,7 +191,7 @@ string getSecurityStatusQualifierStr()
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaSecurityStatusListener::getSecurityStatusQualifierStr](classWombat_1_1MamdaSecurityStatusListener.html#function-getsecuritystatusqualifierstr), [Wombat::MamdaConcreteSecurityStatusRecap::getSecurityStatusQualifierStr](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getsecuritystatusqualifierstr)
+**Reimplemented by**: [Wombat::MamdaConcreteSecurityStatusRecap::getSecurityStatusQualifierStr](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getsecuritystatusqualifierstr), [Wombat::MamdaSecurityStatusListener::getSecurityStatusQualifierStr](classWombat_1_1MamdaSecurityStatusListener.html#function-getsecuritystatusqualifierstr)
 
 
 ### function getSecurityStatusQualifierStrFieldState
@@ -217,7 +217,7 @@ Return the native security status qualifier
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaSecurityStatusListener::getSecurityStatusOrigStr](classWombat_1_1MamdaSecurityStatusListener.html#function-getsecuritystatusorigstr), [Wombat::MamdaConcreteSecurityStatusRecap::getSecurityStatusOrigStr](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getsecuritystatusorigstr)
+**Reimplemented by**: [Wombat::MamdaConcreteSecurityStatusRecap::getSecurityStatusOrigStr](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getsecuritystatusorigstr), [Wombat::MamdaSecurityStatusListener::getSecurityStatusOrigStr](classWombat_1_1MamdaSecurityStatusListener.html#function-getsecuritystatusorigstr)
 
 
 ### function getSecurityStatusOrigStrFieldState
@@ -243,7 +243,7 @@ string getReason()
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaSecurityStatusListener::getReason](classWombat_1_1MamdaSecurityStatusListener.html#function-getreason), [Wombat::MamdaConcreteSecurityStatusRecap::getReason](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getreason)
+**Reimplemented by**: [Wombat::MamdaConcreteSecurityStatusRecap::getReason](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getreason), [Wombat::MamdaSecurityStatusListener::getReason](classWombat_1_1MamdaSecurityStatusListener.html#function-getreason)
 
 
 ### function getReasonFieldState
@@ -256,7 +256,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaSecurityStatusListener::getReasonFieldState](classWombat_1_1MamdaSecurityStatusListener.html#function-getreasonfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteSecurityStatusRecap::getReasonFieldState](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getreasonfieldstate), [Wombat::MamdaSecurityStatusListener::getReasonFieldState](classWombat_1_1MamdaSecurityStatusListener.html#function-getreasonfieldstate)
 
 
 ### function getShortSaleCircuitBreaker
@@ -295,7 +295,7 @@ DateTime getLuldTime()
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaSecurityStatusListener::getLuldTime](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldtime), [Wombat::MamdaConcreteSecurityStatusRecap::getLuldTime](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldtime)
+**Reimplemented by**: [Wombat::MamdaConcreteSecurityStatusRecap::getLuldTime](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldtime), [Wombat::MamdaSecurityStatusListener::getLuldTime](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldtime)
 
 
 ### function getLuldTimeFieldState
@@ -308,7 +308,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaSecurityStatusListener::getLuldTimeFieldState](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldtimefieldstate), [Wombat::MamdaConcreteSecurityStatusRecap::getLuldTimeFieldState](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldtimefieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteSecurityStatusRecap::getLuldTimeFieldState](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldtimefieldstate), [Wombat::MamdaSecurityStatusListener::getLuldTimeFieldState](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldtimefieldstate)
 
 
 ### function getLuldIndicator
@@ -321,7 +321,7 @@ char getLuldIndicator()
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaSecurityStatusListener::getLuldIndicator](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldindicator), [Wombat::MamdaConcreteSecurityStatusRecap::getLuldIndicator](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldindicator)
+**Reimplemented by**: [Wombat::MamdaConcreteSecurityStatusRecap::getLuldIndicator](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldindicator), [Wombat::MamdaSecurityStatusListener::getLuldIndicator](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldindicator)
 
 
 ### function getLuldIndicatorFieldState
@@ -334,7 +334,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaSecurityStatusListener::getLuldIndicatorFieldState](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldindicatorfieldstate), [Wombat::MamdaConcreteSecurityStatusRecap::getLuldIndicatorFieldState](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldindicatorfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteSecurityStatusRecap::getLuldIndicatorFieldState](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldindicatorfieldstate), [Wombat::MamdaSecurityStatusListener::getLuldIndicatorFieldState](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldindicatorfieldstate)
 
 
 ### function getLuldHighLimit
@@ -347,7 +347,7 @@ MamaPrice getLuldHighLimit()
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaSecurityStatusListener::getLuldHighLimit](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldhighlimit), [Wombat::MamdaConcreteSecurityStatusRecap::getLuldHighLimit](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldhighlimit)
+**Reimplemented by**: [Wombat::MamdaConcreteSecurityStatusRecap::getLuldHighLimit](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldhighlimit), [Wombat::MamdaSecurityStatusListener::getLuldHighLimit](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldhighlimit)
 
 
 ### function getLuldHighLimitFieldState
@@ -360,7 +360,7 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaSecurityStatusListener::getLuldHighLimitFieldState](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldhighlimitfieldstate), [Wombat::MamdaConcreteSecurityStatusRecap::getLuldHighLimitFieldState](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldhighlimitfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteSecurityStatusRecap::getLuldHighLimitFieldState](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldhighlimitfieldstate), [Wombat::MamdaSecurityStatusListener::getLuldHighLimitFieldState](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldhighlimitfieldstate)
 
 
 ### function getLuldLowLimit
@@ -373,7 +373,7 @@ MamaPrice getLuldLowLimit()
 
 **Return**: 
 
-**Reimplemented by**: [Wombat::MamdaSecurityStatusListener::getLuldLowLimit](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldlowlimit), [Wombat::MamdaConcreteSecurityStatusRecap::getLuldLowLimit](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldlowlimit)
+**Reimplemented by**: [Wombat::MamdaConcreteSecurityStatusRecap::getLuldLowLimit](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldlowlimit), [Wombat::MamdaSecurityStatusListener::getLuldLowLimit](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldlowlimit)
 
 
 ### function getLuldLowLimitFieldState
@@ -386,9 +386,9 @@ Get the field state
 
 **Return**: Field State
 
-**Reimplemented by**: [Wombat::MamdaSecurityStatusListener::getLuldLowLimitFieldState](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldlowlimitfieldstate), [Wombat::MamdaConcreteSecurityStatusRecap::getLuldLowLimitFieldState](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldlowlimitfieldstate)
+**Reimplemented by**: [Wombat::MamdaConcreteSecurityStatusRecap::getLuldLowLimitFieldState](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getluldlowlimitfieldstate), [Wombat::MamdaSecurityStatusListener::getLuldLowLimitFieldState](classWombat_1_1MamdaSecurityStatusListener.html#function-getluldlowlimitfieldstate)
 
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:11 +0100
+Updated on 2023-03-31 at 15:30:14 +0100

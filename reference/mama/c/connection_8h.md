@@ -27,7 +27,7 @@ with_doxylinks: true
 | MAMAExpDLL mama_status | **[mamaConnection_getQueueSize](connection_8h.html#function-mamaconnection-getqueuesize)**(mamaConnection connection, uint32_t * numItems)<br>Get the number of items in the queue when structure was created.  |
 | MAMAExpDLL mama_status | **[mamaConnection_getMsgCount](connection_8h.html#function-mamaconnection-getmsgcount)**(mamaConnection connection, uint32_t * msgCount)<br>Get the number of messages sent on the connection.  |
 | MAMAExpDLL mama_status | **[mamaConnection_getBytesSent](connection_8h.html#function-mamaconnection-getbytessent)**(mamaConnection connection, uint32_t * bytesSent)<br>Get the number of bytes sent on the connection.  |
-| const MAMAExpDLL char * | **[mamaConnection_toString](connection_8h.html#function-mamaconnection-tostring)**(mamaConnection connection)<br>Convert a connection to a string.  |
+| MAMAExpDLL const char * | **[mamaConnection_toString](connection_8h.html#function-mamaconnection-tostring)**(mamaConnection connection)<br>Convert a connection to a string.  |
 | MAMAExpDLL mama_status | **[mamaConnection_isIntercepted](connection_8h.html#function-mamaconnection-isintercepted)**(mamaConnection connection, uint8_t * result)<br>Check if the conneciton is intercepted.  |
 
 
@@ -50,7 +50,7 @@ Free the connection.
 
 **Return**: mama_status return code MAMA_STATUS_OK 
 
-This class contains information regarding outbound connections for per/connection conflation. 
+This class contains information regarding outbound connections for per/connection conflation.
 
 
 ### function mamaConnection_getTransport
@@ -218,7 +218,7 @@ Get the number of bytes sent on the connection.
 ### function mamaConnection_toString
 
 ```cpp
-const MAMAExpDLL char * mamaConnection_toString(
+MAMAExpDLL const char * mamaConnection_toString(
     mamaConnection connection
 )
 ```
@@ -354,4 +354,4 @@ mamaConnection_isIntercepted (mamaConnection connection, uint8_t* result);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

@@ -38,8 +38,8 @@ A class that represents a single option contract. Instances of this object are t
 | PutOrCall | **[getPutCall](classWombat_1_1MamdaOptionContract.html#function-getputcall)**()<br>Return the put/call indicator.  |
 | long | **[getOpenInterest](classWombat_1_1MamdaOptionContract.html#function-getopeninterest)**()<br>Return the open interest.  |
 | ExerciseStyle | **[getExerciseStyle](classWombat_1_1MamdaOptionContract.html#function-getexercisestyle)**()<br>Return the exercise style.  |
-| void | **[addTradeHandler](classWombat_1_1MamdaOptionContract.html#function-addtradehandler)**([MamdaTradeHandler](interfaceWombat_1_1MamdaTradeHandler.html) handler)<br>Add a [MamdaTradeHandler]() for handling trade updates to this option contract.  |
-| void | **[addQuoteHandler](classWombat_1_1MamdaOptionContract.html#function-addquotehandler)**([MamdaQuoteHandler](interfaceWombat_1_1MamdaQuoteHandler.html) handler)<br>Add a [MamdaQuoteHandler]() for handling quote updates to this option contract.  |
+| void | **[addTradeHandler](classWombat_1_1MamdaOptionContract.html#function-addtradehandler)**([MamdaTradeHandler](interfaceWombat_1_1MamdaTradeHandler.html) handler)<br>Add a [MamdaTradeHandler](interfaceWombat_1_1MamdaTradeHandler.html) for handling trade updates to this option contract.  |
+| void | **[addQuoteHandler](classWombat_1_1MamdaOptionContract.html#function-addquotehandler)**([MamdaQuoteHandler](interfaceWombat_1_1MamdaQuoteHandler.html) handler)<br>Add a [MamdaQuoteHandler](interfaceWombat_1_1MamdaQuoteHandler.html) for handling quote updates to this option contract.  |
 | void | **[addFundamentalHandler](classWombat_1_1MamdaOptionContract.html#function-addfundamentalhandler)**([MamdaFundamentalHandler](interfaceWombat_1_1MamdaFundamentalHandler.html) handler)<br>Add a [MamdaFundamentalHandler](interfaceWombat_1_1MamdaFundamentalHandler.html) for handling fundamental updates to this option contract.  |
 | void | **[setCustomObject](classWombat_1_1MamdaOptionContract.html#function-setcustomobject)**(object obj)<br>Add a custom object to this option contract. Such an object might contain customer per-contract data.  |
 | [MamdaTradeRecap](interfaceWombat_1_1MamdaTradeRecap.html) | **[getTradeInfo](classWombat_1_1MamdaOptionContract.html#function-gettradeinfo)**()<br>Return the current trade fields.  |
@@ -230,7 +230,7 @@ void addTradeHandler(
 )
 ```
 
-Add a [MamdaTradeHandler]() for handling trade updates to this option contract. 
+Add a [MamdaTradeHandler](interfaceWombat_1_1MamdaTradeHandler.html) for handling trade updates to this option contract. 
 
 **Parameters**: 
 
@@ -245,7 +245,7 @@ void addQuoteHandler(
 )
 ```
 
-Add a [MamdaQuoteHandler]() for handling quote updates to this option contract. 
+Add a [MamdaQuoteHandler](interfaceWombat_1_1MamdaQuoteHandler.html) for handling quote updates to this option contract. 
 
 **Parameters**: 
 
@@ -379,4 +379,4 @@ Return whether this contract is in the "view" within the option chain. [MamdaOpt
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:11 +0100
+Updated on 2023-03-31 at 15:30:16 +0100

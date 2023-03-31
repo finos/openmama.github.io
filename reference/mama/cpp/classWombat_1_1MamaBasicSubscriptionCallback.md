@@ -13,10 +13,7 @@ with_doxylinks: true
 
 
 
- [More...](#detailed-description)
 
-
-`#include <MamaBasicSubscriptionCallback.h>`
 
 ## Public Functions
 
@@ -27,21 +24,6 @@ with_doxylinks: true
 | virtual void | **[onError](classWombat_1_1MamaBasicSubscriptionCallback.html#function-onerror)**([MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html) * subscription, const [MamaStatus](classWombat_1_1MamaStatus.html) & status, const char * topic) =0 |
 | virtual void | **[onMsg](classWombat_1_1MamaBasicSubscriptionCallback.html#function-onmsg)**([MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html) * subscription, [MamaMsg](classWombat_1_1MamaMsg.html) & msg) =0 |
 | virtual void | **[onDestroy](classWombat_1_1MamaBasicSubscriptionCallback.html#function-ondestroy)**([MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html) * subscription, void * closure) |
-
-## Detailed Description
-
-```cpp
-class Wombat::MamaBasicSubscriptionCallback;
-```
-
-
-**See**: [MamaSubscription](classWombat_1_1MamaSubscription.html)
-
-**Author**: mls 
-
-The message callback interface for basic subscriptions. Callers provide an object implementing this interface on creating a `[MamaSubscription](classWombat_1_1MamaSubscription.html)`.
-
-Copyright 2003 Wombat Consulting
 
 ## Public Functions Documentation
 
@@ -132,4 +114,4 @@ This method is invoked when a subscription has been completely destroyed, the cl
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:25 +0100

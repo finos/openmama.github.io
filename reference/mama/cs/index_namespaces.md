@@ -24,6 +24,7 @@ with_doxylinks: true
 * **namespace [System::Runtime::InteropServices](namespaceSystem_1_1Runtime_1_1InteropServices.html)** 
 * **namespace [System::Runtime::Serialization](namespaceSystem_1_1Runtime_1_1Serialization.html)** 
 * **namespace [System::Text](namespaceSystem_1_1Text.html)** 
+* **namespace [System::Text::RegularExpressions](namespaceSystem_1_1Text_1_1RegularExpressions.html)** 
 * **namespace [System::Threading](namespaceSystem_1_1Threading.html)** 
 * **namespace [Wombat](namespaceWombat.html)** 
 
@@ -31,4 +32,4 @@ with_doxylinks: true
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:34 +0100

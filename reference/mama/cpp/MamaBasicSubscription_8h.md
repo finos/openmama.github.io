@@ -60,12 +60,15 @@ with_doxylinks: true
 namespace Wombat
 {
 class MamaStatus;
+class MamaSubscriptionCallback;
 class MamaMsg;
 class MamaQueue;
-class MamaTransport;
 class MamaBasicSubscriptionCallback;
+class MamaSubscriptionCallbackToMamaBasicSubscriptionCallbackMapper;
+class MamaTransport;
 
 struct MamaBasicSubscriptionImpl;
+
 class MAMACPPExpDLL MamaBasicSubscription
 {
 public:
@@ -78,6 +81,13 @@ public:
         MamaTransport*                 transport,
         MamaQueue*                     queue,
         MamaBasicSubscriptionCallback* callback,
+        const char*                    topic,
+        void*                          closure = NULL);
+
+    virtual void createBasic (
+        MamaTransport*                 transport,
+        MamaQueue*                     queue,
+        MamaSubscriptionCallback*      callback,
         const char*                    topic,
         void*                          closure = NULL);
 
@@ -119,6 +129,8 @@ private:
     MamaBasicSubscriptionCallback *mCallback;
 
     MamaBasicSubscriptionImpl*     mImpl;
+
+    MamaSubscriptionCallbackToMamaBasicSubscriptionCallbackMapper* mCallbackMapper;
 protected:
 
     // The closure passed to the create function
@@ -141,4 +153,4 @@ protected:
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:26 +0100

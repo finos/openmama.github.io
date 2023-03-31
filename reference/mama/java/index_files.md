@@ -106,7 +106,9 @@ with_doxylinks: true
     * **file [mama/MamaQueueEventCallback.java](MamaQueueEventCallback_8java.html#file-mamaqueueeventcallback.java)** 
     * **file [mama/MamaQueueGroup.java](MamaQueueGroup_8java.html#file-mamaqueuegroup.java)** 
     * **file [mama/MamaQueueMonitorCallback.java](MamaQueueMonitorCallback_8java.html#file-mamaqueuemonitorcallback.java)** 
+    * **file [mama/MamaRegexChannelFilter.java](MamaRegexChannelFilter_8java.html#file-mamaregexchannelfilter.java)** 
     * **file [mama/MamaReservedFields.java](MamaReservedFields_8java.html#file-mamareservedfields.java)** 
+    * **file [mama/MamaResourcePool.java](MamaResourcePool_8java.html#file-mamaresourcepool.java)** 
     * **file [mama/MamaServiceLevel.java](MamaServiceLevel_8java.html#file-mamaservicelevel.java)** 
     * **file [mama/MamaShort.java](MamaShort_8java.html#file-mamashort.java)** 
     * **file [mama/MamaSource.java](MamaSource_8java.html#file-mamasource.java)** 
@@ -152,4 +154,4 @@ with_doxylinks: true
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:09 +0100
+Updated on 2023-03-31 at 15:29:46 +0100

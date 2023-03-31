@@ -27,6 +27,7 @@ with_doxylinks: true
 | int | **[mamaQueue_setHighWatermark](structWombat_1_1MamaQueue_1_1NativeMethods.html#function-mamaqueue-sethighwatermark)**(IntPtr nativeHandle, int highWatermark) |
 | int | **[mamaQueue_getHighWatermark](structWombat_1_1MamaQueue_1_1NativeMethods.html#function-mamaqueue-gethighwatermark)**(IntPtr nativeHandle, ref int highWatermark) |
 | int | **[mamaQueue_setLowWatermark](structWombat_1_1MamaQueue_1_1NativeMethods.html#function-mamaqueue-setlowwatermark)**(IntPtr nativeHandle, int lowWatermark) |
+| int | **[mamaQueue_setQueueName](structWombat_1_1MamaQueue_1_1NativeMethods.html#function-mamaqueue-setqueuename)**(IntPtr nativeHandle, string name) |
 | int | **[mamaQueue_getLowWatermark](structWombat_1_1MamaQueue_1_1NativeMethods.html#function-mamaqueue-getlowwatermark)**(IntPtr nativeHandle, ref int lowWatermark) |
 | int | **[mamaQueue_getEventCount](structWombat_1_1MamaQueue_1_1NativeMethods.html#function-mamaqueue-geteventcount)**(IntPtr nativeHandle, ref int eventCount) |
 | int | **[mamaQueue_getQueueBridgeName](structWombat_1_1MamaQueue_1_1NativeMethods.html#function-mamaqueue-getqueuebridgename)**(IntPtr nativeHandle, ref IntPtr name) |
@@ -113,6 +114,16 @@ int mamaQueue_getHighWatermark(
 int mamaQueue_setLowWatermark(
     IntPtr nativeHandle,
     int lowWatermark
+)
+```
+
+
+### function mamaQueue_setQueueName
+
+```csharp
+int mamaQueue_setQueueName(
+    IntPtr nativeHandle,
+    string name
 )
 ```
 
@@ -229,4 +240,4 @@ Add an user event to a queue. Currently only supported using [Wombat](namespaceW
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:32 +0100

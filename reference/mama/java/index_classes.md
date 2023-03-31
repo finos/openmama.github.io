@@ -113,7 +113,15 @@ with_doxylinks: true
             * **interface [MamaQueueEventCallback](interfacecom_1_1wombat_1_1mama_1_1MamaQueueEventCallback.html)** 
             * **class [MamaQueueGroup](classcom_1_1wombat_1_1mama_1_1MamaQueueGroup.html)** 
             * **interface [MamaQueueMonitorCallback](interfacecom_1_1wombat_1_1mama_1_1MamaQueueMonitorCallback.html)** 
+            * **class [MamaRegexChannelFilter](classcom_1_1wombat_1_1mama_1_1MamaRegexChannelFilter.html)** 
             * **class [MamaReservedFields](classcom_1_1wombat_1_1mama_1_1MamaReservedFields.html)** 
+            * **class [MamaResourcePool](classcom_1_1wombat_1_1mama_1_1MamaResourcePool.html)** 
+                * **class [DestroySubscriptionHandler](classcom_1_1wombat_1_1mama_1_1MamaResourcePool_1_1DestroySubscriptionHandler.html)** 
+                * **class [MamaResourcePoolBridgeImpl](classcom_1_1wombat_1_1mama_1_1MamaResourcePool_1_1MamaResourcePoolBridgeImpl.html)** 
+                * **class [MamaResourcePoolOptionsImpl](classcom_1_1wombat_1_1mama_1_1MamaResourcePool_1_1MamaResourcePoolOptionsImpl.html)** 
+                * **class [MamaResourcePoolSourceImpl](classcom_1_1wombat_1_1mama_1_1MamaResourcePool_1_1MamaResourcePoolSourceImpl.html)** 
+                * **class [MamaResourcePoolSubscriptionImpl](classcom_1_1wombat_1_1mama_1_1MamaResourcePool_1_1MamaResourcePoolSubscriptionImpl.html)** 
+                * **class [MamaResourcePoolTransportImpl](classcom_1_1wombat_1_1mama_1_1MamaResourcePool_1_1MamaResourcePoolTransportImpl.html)** 
             * **class [MamaServiceLevel](classcom_1_1wombat_1_1mama_1_1MamaServiceLevel.html)** 
             * **class [MamaShort](classcom_1_1wombat_1_1mama_1_1MamaShort.html)** 
             * **class [MamaSource](classcom_1_1wombat_1_1mama_1_1MamaSource.html)** 
@@ -198,4 +206,4 @@ with_doxylinks: true
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:09 +0100
+Updated on 2023-03-31 at 15:29:46 +0100

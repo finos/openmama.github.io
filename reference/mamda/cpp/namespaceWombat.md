@@ -17,32 +17,25 @@ with_doxylinks: true
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Wombat::MamdaAndQuery](classWombat_1_1MamdaAndQuery.html)**  |
 | class | **[Wombat::MamdaAuctionFields](classWombat_1_1MamdaAuctionFields.html)**  |
 | class | **[Wombat::MamdaAuctionHandler](classWombat_1_1MamdaAuctionHandler.html)**  |
 | class | **[Wombat::MamdaAuctionListener](classWombat_1_1MamdaAuctionListener.html)**  |
 | class | **[Wombat::MamdaAuctionRecap](classWombat_1_1MamdaAuctionRecap.html)**  |
 | class | **[Wombat::MamdaAuctionUpdate](classWombat_1_1MamdaAuctionUpdate.html)**  |
-| class | **[Wombat::MamdaBasicErrorListener](classWombat_1_1MamdaBasicErrorListener.html)**  |
 | class | **[Wombat::MamdaBasicEvent](classWombat_1_1MamdaBasicEvent.html)**  |
-| class | **[Wombat::MamdaBasicMsgListener](classWombat_1_1MamdaBasicMsgListener.html)**  |
-| class | **[Wombat::MamdaBasicQualityListener](classWombat_1_1MamdaBasicQualityListener.html)**  |
 | class | **[Wombat::MamdaBasicRecap](classWombat_1_1MamdaBasicRecap.html)**  |
 | class | **[Wombat::MamdaBasicSubscription](classWombat_1_1MamdaBasicSubscription.html)**  |
 | class | **[Wombat::MamdaCheckerHandler](classWombat_1_1MamdaCheckerHandler.html)**  |
 | class | **[Wombat::MamdaCommonFields](classWombat_1_1MamdaCommonFields.html)**  |
 | class | **[Wombat::MamdaConcreteBasicEvent](classWombat_1_1MamdaConcreteBasicEvent.html)**  |
-| class | **[Wombat::MamdaContainsAllQuery](classWombat_1_1MamdaContainsAllQuery.html)**  |
-| class | **[Wombat::MamdaContainsQuery](classWombat_1_1MamdaContainsQuery.html)**  |
 | class | **[Wombat::MamdaCurrencyFields](classWombat_1_1MamdaCurrencyFields.html)**  |
 | class | **[Wombat::MamdaCurrencyHandler](classWombat_1_1MamdaCurrencyHandler.html)**  |
 | class | **[Wombat::MamdaCurrencyListener](classWombat_1_1MamdaCurrencyListener.html)**  |
 | class | **[Wombat::MamdaCurrencyRecap](classWombat_1_1MamdaCurrencyRecap.html)**  |
 | class | **[Wombat::MamdaCurrencyUpdate](classWombat_1_1MamdaCurrencyUpdate.html)**  |
 | class | **[Wombat::MamdaDataException](classWombat_1_1MamdaDataException.html)**  |
-| class | **[Wombat::MamdaDateQuery](classWombat_1_1MamdaDateQuery.html)**  |
-| class | **[Wombat::MamdaEqualsQuery](classWombat_1_1MamdaEqualsQuery.html)**  |
 | class | **[Wombat::MamdaErrorListener](classWombat_1_1MamdaErrorListener.html)**  |
+| class | **[Wombat::MamdaBasicErrorListener](classWombat_1_1MamdaBasicErrorListener.html)**  |
 | class | **[Wombat::MamdaFields](classWombat_1_1MamdaFields.html)**  |
 | class | **[Wombat::MamdaFundamentalFields](classWombat_1_1MamdaFundamentalFields.html)**  |
 | class | **[Wombat::MamdaFundamentalHandler](classWombat_1_1MamdaFundamentalHandler.html)**  |
@@ -50,6 +43,7 @@ with_doxylinks: true
 | class | **[Wombat::MamdaFundamentals](classWombat_1_1MamdaFundamentals.html)**  |
 | class | **[Wombat::MamdaLock](classWombat_1_1MamdaLock.html)**  |
 | class | **[Wombat::MamdaMsgListener](classWombat_1_1MamdaMsgListener.html)**  |
+| class | **[Wombat::MamdaBasicMsgListener](classWombat_1_1MamdaBasicMsgListener.html)**  |
 | class | **[Wombat::MamdaMultiParticipantHandler](classWombat_1_1MamdaMultiParticipantHandler.html)**  |
 | class | **[Wombat::MamdaMultiParticipantManager](classWombat_1_1MamdaMultiParticipantManager.html)**  |
 | class | **[Wombat::MamdaMultiSecurityHandler](classWombat_1_1MamdaMultiSecurityHandler.html)**  |
@@ -61,13 +55,19 @@ with_doxylinks: true
 | class | **[Wombat::MamdaOrderImbalanceSide](classWombat_1_1MamdaOrderImbalanceSide.html)**  |
 | class | **[Wombat::MamdaOrderImbalanceType](classWombat_1_1MamdaOrderImbalanceType.html)**  |
 | class | **[Wombat::MamdaOrderImbalanceUpdate](classWombat_1_1MamdaOrderImbalanceUpdate.html)**  |
-| class | **[Wombat::MamdaOrQuery](classWombat_1_1MamdaOrQuery.html)**  |
 | class | **[Wombat::MamdaPubStatus](classWombat_1_1MamdaPubStatus.html)**  |
 | class | **[Wombat::MamdaPubStatusFields](classWombat_1_1MamdaPubStatusFields.html)**  |
 | class | **[Wombat::MamdaPubStatusHandler](classWombat_1_1MamdaPubStatusHandler.html)**  |
 | class | **[Wombat::MamdaPubStatusListener](classWombat_1_1MamdaPubStatusListener.html)**  |
 | class | **[Wombat::MamdaQualityListener](classWombat_1_1MamdaQualityListener.html)**  |
+| class | **[Wombat::MamdaBasicQualityListener](classWombat_1_1MamdaBasicQualityListener.html)**  |
 | class | **[Wombat::MamdaQuery](classWombat_1_1MamdaQuery.html)**  |
+| class | **[Wombat::MamdaOrQuery](classWombat_1_1MamdaOrQuery.html)**  |
+| class | **[Wombat::MamdaAndQuery](classWombat_1_1MamdaAndQuery.html)**  |
+| class | **[Wombat::MamdaEqualsQuery](classWombat_1_1MamdaEqualsQuery.html)**  |
+| class | **[Wombat::MamdaDateQuery](classWombat_1_1MamdaDateQuery.html)**  |
+| class | **[Wombat::MamdaContainsAllQuery](classWombat_1_1MamdaContainsAllQuery.html)**  |
+| class | **[Wombat::MamdaContainsQuery](classWombat_1_1MamdaContainsQuery.html)**  |
 | class | **[Wombat::MamdaQuoteChecker](classWombat_1_1MamdaQuoteChecker.html)**  |
 | class | **[Wombat::MamdaQuoteClosing](classWombat_1_1MamdaQuoteClosing.html)**  |
 | class | **[Wombat::MamdaQuoteFields](classWombat_1_1MamdaQuoteFields.html)**  |
@@ -119,21 +119,21 @@ with_doxylinks: true
 
 |                | Name           |
 | -------------- | -------------- |
-| const MAMDAExpDLL char * | **[mamdaCheckTypeToString](namespaceWombat.html#function-mamdachecktypetostring)**(MamdaCheckerType type) |
-| const MAMDAExpDLL char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaFieldState](namespaceWombat.html#enum-mamdafieldstate) fieldState) |
-| const MAMDAExpDLL char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaSecurityStatus](namespaceWombat.html#enum-mamdasecuritystatus) securityStatus) |
+| MAMDAExpDLL const char * | **[mamdaCheckTypeToString](namespaceWombat.html#function-mamdachecktypetostring)**(MamdaCheckerType type) |
+| MAMDAExpDLL const char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaFieldState](namespaceWombat.html#enum-mamdafieldstate) fieldState) |
+| MAMDAExpDLL const char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaSecurityStatus](namespaceWombat.html#enum-mamdasecuritystatus) securityStatus) |
 | MAMDAExpDLL [MamdaSecurityStatus](namespaceWombat.html#enum-mamdasecuritystatus) | **[mamdaSecurityStatusFromString](namespaceWombat.html#function-mamdasecuritystatusfromstring)**(const char * securityStatusStr) |
-| const MAMDAExpDLL char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaSecurityStatusQual](namespaceWombat.html#enum-mamdasecuritystatusqual) securityStatusQual) |
+| MAMDAExpDLL const char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaSecurityStatusQual](namespaceWombat.html#enum-mamdasecuritystatusqual) securityStatusQual) |
 | MAMDAExpDLL [MamdaSecurityStatusQual](namespaceWombat.html#enum-mamdasecuritystatusqual) | **[mamdaSecurityStatusQualFromString](namespaceWombat.html#function-mamdasecuritystatusqualfromstring)**(const char * securityStatusQualStr) |
-| const MAMDAExpDLL char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaTradeDirection](namespaceWombat.html#enum-mamdatradedirection) tradeDir) |
+| MAMDAExpDLL const char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaTradeDirection](namespaceWombat.html#enum-mamdatradedirection) tradeDir) |
 | MAMDAExpDLL [MamdaTradeDirection](namespaceWombat.html#enum-mamdatradedirection) | **[mamdaTradeDirectionFromString](namespaceWombat.html#function-mamdatradedirectionfromstring)**(const char * tradeDirStr) |
-| const MAMDAExpDLL char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaTradeExecVenue](namespaceWombat.html#enum-mamdatradeexecvenue) tradeExecVenue) |
+| MAMDAExpDLL const char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaTradeExecVenue](namespaceWombat.html#enum-mamdatradeexecvenue) tradeExecVenue) |
 | MAMDAExpDLL [MamdaTradeExecVenue](namespaceWombat.html#enum-mamdatradeexecvenue) | **[mamdaTradeExecVenueFromString](namespaceWombat.html#function-mamdatradeexecvenuefromstring)**(const char * tradeExecVenueStr) |
-| const MAMDAExpDLL char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaTradeSide](namespaceWombat.html#enum-mamdatradeside) tradeSide) |
+| MAMDAExpDLL const char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaTradeSide](namespaceWombat.html#enum-mamdatradeside) tradeSide) |
 | MAMDAExpDLL [MamdaTradeSide](namespaceWombat.html#enum-mamdatradeside) | **[mamdaTradeSideFromString](namespaceWombat.html#function-mamdatradesidefromstring)**(const char * tradeSideStr) |
-| const MAMDAExpDLL char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaUncrossPriceInd](namespaceWombat.html#enum-mamdauncrosspriceind) securityStatus) |
+| MAMDAExpDLL const char * | **[toString](namespaceWombat.html#function-tostring)**([MamdaUncrossPriceInd](namespaceWombat.html#enum-mamdauncrosspriceind) securityStatus) |
 | MAMDAExpDLL [MamdaUncrossPriceInd](namespaceWombat.html#enum-mamdauncrosspriceind) | **[mamdaUncrossPriceIndFromString](namespaceWombat.html#function-mamdauncrosspriceindfromstring)**(const char * uncrossPriceInd) |
-| const MAMDAExpDLL char * | **[getMamdaVersion](namespaceWombat.html#function-getmamdaversion)**(void ) |
+| MAMDAExpDLL const char * | **[getMamdaVersion](namespaceWombat.html#function-getmamdaversion)**(void ) |
 
 ## Detailed Description
 
@@ -432,7 +432,7 @@ An enumeration representing the uncross price Ind.
 ### function mamdaCheckTypeToString
 
 ```cpp
-const MAMDAExpDLL char * mamdaCheckTypeToString(
+MAMDAExpDLL const char * mamdaCheckTypeToString(
     MamdaCheckerType type
 )
 ```
@@ -441,7 +441,7 @@ const MAMDAExpDLL char * mamdaCheckTypeToString(
 ### function toString
 
 ```cpp
-const MAMDAExpDLL char * toString(
+MAMDAExpDLL const char * toString(
     MamdaFieldState fieldState
 )
 ```
@@ -460,7 +460,7 @@ Convert a MamdaFieldState to an appropriate, displayable string.
 ### function toString
 
 ```cpp
-const MAMDAExpDLL char * toString(
+MAMDAExpDLL const char * toString(
     MamdaSecurityStatus securityStatus
 )
 ```
@@ -496,7 +496,7 @@ Convert a string representation of a security status to the enumeration. This fu
 ### function toString
 
 ```cpp
-const MAMDAExpDLL char * toString(
+MAMDAExpDLL const char * toString(
     MamdaSecurityStatusQual securityStatusQual
 )
 ```
@@ -534,7 +534,7 @@ Convert a string representation of a security status to the enumeration. This fu
 ### function toString
 
 ```cpp
-const MAMDAExpDLL char * toString(
+MAMDAExpDLL const char * toString(
     MamdaTradeDirection tradeDir
 )
 ```
@@ -572,7 +572,7 @@ Convert a string representation of a trade direction to the enumeration. This fu
 ### function toString
 
 ```cpp
-const MAMDAExpDLL char * toString(
+MAMDAExpDLL const char * toString(
     MamdaTradeExecVenue tradeExecVenue
 )
 ```
@@ -610,7 +610,7 @@ Convert a string representation of a trade execution venue to the enumeration. T
 ### function toString
 
 ```cpp
-const MAMDAExpDLL char * toString(
+MAMDAExpDLL const char * toString(
     MamdaTradeSide tradeSide
 )
 ```
@@ -648,7 +648,7 @@ Convert a string representation of a trade side to the enumeration. This functio
 ### function toString
 
 ```cpp
-const MAMDAExpDLL char * toString(
+MAMDAExpDLL const char * toString(
     MamdaUncrossPriceInd securityStatus
 )
 ```
@@ -684,7 +684,7 @@ Convert a string representation of a uncross price Ind to the enumeration. This 
 ### function getMamdaVersion
 
 ```cpp
-const MAMDAExpDLL char * getMamdaVersion(
+MAMDAExpDLL const char * getMamdaVersion(
     void 
 )
 ```
@@ -701,4 +701,4 @@ Get the version of Mamda
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:09 +0100
+Updated on 2023-03-31 at 15:29:57 +0100

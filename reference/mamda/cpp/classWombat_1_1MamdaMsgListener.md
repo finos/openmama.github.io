@@ -49,7 +49,7 @@ virtual void onMsg(
 ```
 
 
-**Reimplemented by**: [Wombat::MamdaMultiSecurityManager::onMsg](classWombat_1_1MamdaMultiSecurityManager.html#function-onmsg), [Wombat::MamdaMultiParticipantManager::onMsg](classWombat_1_1MamdaMultiParticipantManager.html#function-onmsg), [Wombat::MamdaCurrencyListener::onMsg](classWombat_1_1MamdaCurrencyListener.html#function-onmsg), [Wombat::MamdaAuctionListener::onMsg](classWombat_1_1MamdaAuctionListener.html#function-onmsg), [Wombat::MamdaPubStatusListener::onMsg](classWombat_1_1MamdaPubStatusListener.html#function-onmsg), [Wombat::MamdaFundamentalListener::onMsg](classWombat_1_1MamdaFundamentalListener.html#function-onmsg), [Wombat::MamdaSecStatusListener::onMsg](classWombat_1_1MamdaSecStatusListener.html#function-onmsg), [Wombat::MamdaOrderImbalanceListener::onMsg](classWombat_1_1MamdaOrderImbalanceListener.html#function-onmsg), [Wombat::MamdaQuoteListener::onMsg](classWombat_1_1MamdaQuoteListener.html#function-onmsg), [Wombat::MamdaTradeListener::onMsg](classWombat_1_1MamdaTradeListener.html#function-onmsg)
+**Reimplemented by**: [Wombat::MamdaAuctionListener::onMsg](classWombat_1_1MamdaAuctionListener.html#function-onmsg), [Wombat::MamdaCurrencyListener::onMsg](classWombat_1_1MamdaCurrencyListener.html#function-onmsg), [Wombat::MamdaFundamentalListener::onMsg](classWombat_1_1MamdaFundamentalListener.html#function-onmsg), [Wombat::MamdaMultiParticipantManager::onMsg](classWombat_1_1MamdaMultiParticipantManager.html#function-onmsg), [Wombat::MamdaMultiSecurityManager::onMsg](classWombat_1_1MamdaMultiSecurityManager.html#function-onmsg), [Wombat::MamdaOrderImbalanceListener::onMsg](classWombat_1_1MamdaOrderImbalanceListener.html#function-onmsg), [Wombat::MamdaPubStatusListener::onMsg](classWombat_1_1MamdaPubStatusListener.html#function-onmsg), [Wombat::MamdaQuoteListener::onMsg](classWombat_1_1MamdaQuoteListener.html#function-onmsg), [Wombat::MamdaSecStatusListener::onMsg](classWombat_1_1MamdaSecStatusListener.html#function-onmsg), [Wombat::MamdaTradeListener::onMsg](classWombat_1_1MamdaTradeListener.html#function-onmsg)
 
 
 ### function ~MamdaMsgListener
@@ -61,4 +61,4 @@ inline virtual ~MamdaMsgListener()
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:09 +0100
+Updated on 2023-03-31 at 15:29:57 +0100

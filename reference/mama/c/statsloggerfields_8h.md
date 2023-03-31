@@ -17,15 +17,15 @@ with_doxylinks: true
 
 |                | Name           |
 | -------------- | -------------- |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaSlIntervalStartTime](statsloggerfields_8h.html#variable-mamaslintervalstarttime)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaSlIntervalEndTime](statsloggerfields_8h.html#variable-mamaslintervalendtime)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaSlEvents](statsloggerfields_8h.html#variable-mamaslevents)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaSlEventTime](statsloggerfields_8h.html#variable-mamasleventtime)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaSlEventType](statsloggerfields_8h.html#variable-mamasleventtype)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaSlEventReason](statsloggerfields_8h.html#variable-mamasleventreason)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaSlTotalMsgCount](statsloggerfields_8h.html#variable-mamasltotalmsgcount)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaSlIntervalMsgCount](statsloggerfields_8h.html#variable-mamaslintervalmsgcount)**  |
-| const MAMAExpDLL [MamaReservedField](structMamaReservedField__.html) | **[MamaStatEvents](statsloggerfields_8h.html#variable-mamastatevents)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaSlIntervalStartTime](statsloggerfields_8h.html#variable-mamaslintervalstarttime)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaSlIntervalEndTime](statsloggerfields_8h.html#variable-mamaslintervalendtime)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaSlEvents](statsloggerfields_8h.html#variable-mamaslevents)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaSlEventTime](statsloggerfields_8h.html#variable-mamasleventtime)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaSlEventType](statsloggerfields_8h.html#variable-mamasleventtype)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaSlEventReason](statsloggerfields_8h.html#variable-mamasleventreason)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaSlTotalMsgCount](statsloggerfields_8h.html#variable-mamasltotalmsgcount)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaSlIntervalMsgCount](statsloggerfields_8h.html#variable-mamaslintervalmsgcount)**  |
+| MAMAExpDLL const [MamaReservedField](structMamaReservedField__.html) | **[MamaStatEvents](statsloggerfields_8h.html#variable-mamastatevents)**  |
 
 
 
@@ -34,63 +34,63 @@ with_doxylinks: true
 ### variable MamaSlIntervalStartTime
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaSlIntervalStartTime;
+MAMAExpDLL const MamaReservedField MamaSlIntervalStartTime;
 ```
 
 
 ### variable MamaSlIntervalEndTime
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaSlIntervalEndTime;
+MAMAExpDLL const MamaReservedField MamaSlIntervalEndTime;
 ```
 
 
 ### variable MamaSlEvents
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaSlEvents;
+MAMAExpDLL const MamaReservedField MamaSlEvents;
 ```
 
 
 ### variable MamaSlEventTime
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaSlEventTime;
+MAMAExpDLL const MamaReservedField MamaSlEventTime;
 ```
 
 
 ### variable MamaSlEventType
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaSlEventType;
+MAMAExpDLL const MamaReservedField MamaSlEventType;
 ```
 
 
 ### variable MamaSlEventReason
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaSlEventReason;
+MAMAExpDLL const MamaReservedField MamaSlEventReason;
 ```
 
 
 ### variable MamaSlTotalMsgCount
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaSlTotalMsgCount;
+MAMAExpDLL const MamaReservedField MamaSlTotalMsgCount;
 ```
 
 
 ### variable MamaSlIntervalMsgCount
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaSlIntervalMsgCount;
+MAMAExpDLL const MamaReservedField MamaSlIntervalMsgCount;
 ```
 
 
 ### variable MamaStatEvents
 
 ```cpp
-const MAMAExpDLL MamaReservedField MamaStatEvents;
+MAMAExpDLL const MamaReservedField MamaStatEvents;
 ```
 
 
@@ -157,4 +157,4 @@ extern const MamaReservedField  MamaStatEvents;
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:17 +0100

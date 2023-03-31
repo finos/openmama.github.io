@@ -14,7 +14,6 @@ with_doxylinks: true
 
 
 
-* **file [CMakeLists.txt](CMakeLists_8txt.html#file-cmakelists.txt)** 
 * **dir [cs](dir_4e4f46edf152d32654a17ae649564aeb.html#dir-cs)** 
     * **file [cs/AssemblyInfo.cs](AssemblyInfo_8cs.html#file-assemblyinfo.cs)** 
     * **file [cs/ISourceManager.cs](ISourceManager_8cs.html#file-isourcemanager.cs)** 
@@ -50,7 +49,9 @@ with_doxylinks: true
     * **file [cs/MamaQueueEventCallback.cs](MamaQueueEventCallback_8cs.html#file-mamaqueueeventcallback.cs)** 
     * **file [cs/MamaQueueGroup.cs](MamaQueueGroup_8cs.html#file-mamaqueuegroup.cs)** 
     * **file [cs/MamaQueueMonitorCallback.cs](MamaQueueMonitorCallback_8cs.html#file-mamaqueuemonitorcallback.cs)** 
+    * **file [cs/MamaRegexChannelFilter.cs](MamaRegexChannelFilter_8cs.html#file-mamaregexchannelfilter.cs)** 
     * **file [cs/MamaReservedFields.cs](MamaReservedFields_8cs.html#file-mamareservedfields.cs)** 
+    * **file [cs/MamaResourcePool.cs](MamaResourcePool_8cs.html#file-mamaresourcepool.cs)** 
     * **file [cs/MamaSendCompleteCallback.cs](MamaSendCompleteCallback_8cs.html#file-mamasendcompletecallback.cs)** 
     * **file [cs/MamaSource.cs](MamaSource_8cs.html#file-mamasource.cs)** 
     * **file [cs/MamaSourceGroup.cs](MamaSourceGroup_8cs.html#file-mamasourcegroup.cs)** 
@@ -82,4 +83,4 @@ with_doxylinks: true
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:34 +0100

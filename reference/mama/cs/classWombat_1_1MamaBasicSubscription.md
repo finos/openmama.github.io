@@ -31,6 +31,13 @@ Inherited by [Wombat.MamaSubscription](classWombat_1_1MamaSubscription.html)
 
 |                | Name           |
 | -------------- | -------------- |
+| delegate void | **[OnSubscriptionCreateDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptioncreatedelegate)**(IntPtr nativeHandle, IntPtr closure)<br>This delegate describes that native callback function that is invoked whenever the subscription has been created.  |
+| delegate void | **[OnSubscriptionDestroyDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptiondestroydelegate)**(IntPtr nativeHandle, IntPtr closure)<br>This delegate describes the native function invoked whenever the subscription has been either destroyed or deactivated.  |
+| delegate void | **[OnSubscriptionErrorDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptionerrordelegate)**(IntPtr nativeHandle, int status, IntPtr platformError, string subject, IntPtr closure)<br>This delegate describes the native function invoked if an error occurs during prior to subscription creation or if the subscription receives a message for an un-entitled subject. If the status is MAMA_MSG_STATUS_NOT_ENTITTLED the subject parameter is the specific unentitled subject. If the subscription subject contains wildcards, the subscription may still receive messages for other entitled subjects. Note wildcard subscriptions are not supported on all platforms.  |
+| delegate void | **[OnSubscriptionGapDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptiongapdelegate)**(IntPtr nativeHandle, IntPtr closure)<br>This delegate describes the native function invoked when a sequence number gap is detected. At this point the topic is considered stale and the subscription will not receive further messages until the feed handler satisfies a recap request.  |
+| delegate void | **[OnSubscriptionMessageDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptionmessagedelegate)**(IntPtr nativeHandle, IntPtr msg, IntPtr closure, IntPtr itemClosure)<br>This delegate describes the native function that is invoked whenever a message arrives.  |
+| delegate void | **[OnSubscriptionQualityDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptionqualitydelegate)**(IntPtr nativeHandle, int quality, string symbol, short cause, string platforminfo, IntPtr closure)<br>This delegate describes the native function invoked to indicate a data quality event.  |
+| delegate void | **[OnSubscriptionRecapRequestDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptionrecaprequestdelegate)**(IntPtr nativeHandle, IntPtr closure)<br>This delegate describes the native function invoked when a recap is requested upon detecting a sequence number gap.  |
 | | **[MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html#function-mamabasicsubscription)**()<br>Constructor constructs a new basic subscription including creating the underlying native subscription.  |
 | void | **[createBasic](classWombat_1_1MamaBasicSubscription.html#function-createbasic)**([MamaTransport](classWombat_1_1MamaTransport.html) transport, [MamaQueue](classWombat_1_1MamaQueue.html) queue, [MamaBasicSubscriptionCallback](interfaceWombat_1_1MamaBasicSubscriptionCallback.html) callback, string symbol)<br>This function will create the basic subscription without marketdata semantics. To pass a closure use the overload.  |
 | void | **[createBasic](classWombat_1_1MamaBasicSubscription.html#function-createbasic)**([MamaTransport](classWombat_1_1MamaTransport.html) transport, [MamaQueue](classWombat_1_1MamaQueue.html) queue, [MamaBasicSubscriptionCallback](interfaceWombat_1_1MamaBasicSubscriptionCallback.html) callback, string symbol, object closure)<br>This function will create the basic subscription without marketdata semantics.  |
@@ -42,13 +49,6 @@ Inherited by [Wombat.MamaSubscription](classWombat_1_1MamaSubscription.html)
 
 |                | Name           |
 | -------------- | -------------- |
-| delegate void | **[OnSubscriptionCreateDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptioncreatedelegate)**(IntPtr nativeHandle, IntPtr closure)<br>This delegate describes that native callback function that is invoked whenever the subscription has been created.  |
-| delegate void | **[OnSubscriptionDestroyDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptiondestroydelegate)**(IntPtr nativeHandle, IntPtr closure)<br>This delegate describes the native function invoked whenever the subscription has been either destroyed or deactivated.  |
-| delegate void | **[OnSubscriptionErrorDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptionerrordelegate)**(IntPtr nativeHandle, int status, IntPtr platformError, string subject, IntPtr closure)<br>This delegate describes the native function invoked if an error occurs during prior to subscription creation or if the subscription receives a message for an un-entitled subject. If the status is MAMA_MSG_STATUS_NOT_ENTITTLED the subject parameter is the specific unentitled subject. If the subscription subject contains wildcards, the subscription may still receive messages for other entitled subjects. Note wildcard subscriptions are not supported on all platforms.  |
-| delegate void | **[OnSubscriptionGapDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptiongapdelegate)**(IntPtr nativeHandle, IntPtr closure)<br>This delegate describes the native function invoked when a sequence number gap is detected. At this point the topic is considered stale and the subscription will not receive further messages until the feed handler satisfies a recap request.  |
-| delegate void | **[OnSubscriptionMessageDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptionmessagedelegate)**(IntPtr nativeHandle, IntPtr msg, IntPtr closure, IntPtr itemClosure)<br>This delegate describes the native function that is invoked whenever a message arrives.  |
-| delegate void | **[OnSubscriptionQualityDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptionqualitydelegate)**(IntPtr nativeHandle, int quality, string symbol, short cause, string platforminfo, IntPtr closure)<br>This delegate describes the native function invoked to indicate a data quality event.  |
-| delegate void | **[OnSubscriptionRecapRequestDelegate](classWombat_1_1MamaBasicSubscription.html#function-onsubscriptionrecaprequestdelegate)**(IntPtr nativeHandle, IntPtr closure)<br>This delegate describes the native function invoked when a recap is requested upon detecting a sequence number gap.  |
 | virtual override [MamaStatus.mamaStatus](classWombat_1_1MamaStatus.html#enum-mamastatus) | **[DestroyNativePeer](classWombat_1_1MamaBasicSubscription.html#function-destroynativepeer)**()<br>This will be called by the base class to de-allocate the native subscription. [MamaWrapper.DestroyNativePeer]() |
 
 ## Public Properties
@@ -95,87 +95,6 @@ Inherited by [Wombat.MamaSubscription](classWombat_1_1MamaSubscription.html)
 
 
 ## Public Functions Documentation
-
-### function MamaBasicSubscription
-
-```csharp
-MamaBasicSubscription()
-```
-
-Constructor constructs a new basic subscription including creating the underlying native subscription. 
-
-### function createBasic
-
-```csharp
-void createBasic(
-    MamaTransport transport,
-    MamaQueue queue,
-    MamaBasicSubscriptionCallback callback,
-    string symbol
-)
-```
-
-This function will create the basic subscription without marketdata semantics. To pass a closure use the overload. 
-
-**Parameters**: 
-
-  * **transport** The [MamaTransport](classWombat_1_1MamaTransport.html). 
-  * **queue** The [MamaQueue](classWombat_1_1MamaQueue.html). 
-  * **callback** Provide callback function implementations to be informed of events on the subscription. 
-  * **symbol** The symbol to subscribe to. 
-
-
-### function createBasic
-
-```csharp
-void createBasic(
-    MamaTransport transport,
-    MamaQueue queue,
-    MamaBasicSubscriptionCallback callback,
-    string symbol,
-    object closure
-)
-```
-
-This function will create the basic subscription without marketdata semantics. 
-
-**Parameters**: 
-
-  * **transport** The [MamaTransport](classWombat_1_1MamaTransport.html). 
-  * **queue** The [MamaQueue](classWombat_1_1MamaQueue.html). 
-  * **callback** Provide callback function implementations to be informed of events on the subscription. 
-  * **symbol** The symbol to subscribe to. 
-  * **closure** The closure that will be passed back with the callback functions. 
-
-
-### function deallocate
-
-```csharp
-void deallocate()
-```
-
-Free the memory for a mamaSubscription which was allocated via a call to constructor. This function will call [destroy()]() if the subscription has not already been destroyed. Calling this function will reduce time during finalization. 
-
-### function destroy
-
-```csharp
-void destroy()
-```
-
-This function will destroy the subscription, it must be called from the same thread that is processing the queue for the subscription. Use destroyEx to destroy the subscription from any thread. Note that the subscription will not be fully destroyed until the onDestroy callback is received. 
-
-### function destroyEx
-
-```csharp
-void destroyEx()
-```
-
-Destroy the subscription. This function is another option to destroy the resources associated with the subscription It will schedule the [destroy()](classWombat_1_1MamaBasicSubscription.html#function-destroy) of the subscription on the queue on which it dispatches. This function does not free the memory associated with the subscription. create() can be called again after this function has been called. After the Subscription is effectively destroyed, the OnDestroy callback will be triggered for it. 
-
-This function can be called from any thread, as opposed to [destroy()](classWombat_1_1MamaBasicSubscription.html#function-destroy).
-
-
-## Protected Functions Documentation
 
 ### function OnSubscriptionCreateDelegate
 
@@ -314,6 +233,87 @@ This delegate describes the native function invoked when a recap is requested up
   * **closure** The native closure passed to the create function. 
 
 
+### function MamaBasicSubscription
+
+```csharp
+MamaBasicSubscription()
+```
+
+Constructor constructs a new basic subscription including creating the underlying native subscription. 
+
+### function createBasic
+
+```csharp
+void createBasic(
+    MamaTransport transport,
+    MamaQueue queue,
+    MamaBasicSubscriptionCallback callback,
+    string symbol
+)
+```
+
+This function will create the basic subscription without marketdata semantics. To pass a closure use the overload. 
+
+**Parameters**: 
+
+  * **transport** The [MamaTransport](classWombat_1_1MamaTransport.html). 
+  * **queue** The [MamaQueue](classWombat_1_1MamaQueue.html). 
+  * **callback** Provide callback function implementations to be informed of events on the subscription. 
+  * **symbol** The symbol to subscribe to. 
+
+
+### function createBasic
+
+```csharp
+void createBasic(
+    MamaTransport transport,
+    MamaQueue queue,
+    MamaBasicSubscriptionCallback callback,
+    string symbol,
+    object closure
+)
+```
+
+This function will create the basic subscription without marketdata semantics. 
+
+**Parameters**: 
+
+  * **transport** The [MamaTransport](classWombat_1_1MamaTransport.html). 
+  * **queue** The [MamaQueue](classWombat_1_1MamaQueue.html). 
+  * **callback** Provide callback function implementations to be informed of events on the subscription. 
+  * **symbol** The symbol to subscribe to. 
+  * **closure** The closure that will be passed back with the callback functions. 
+
+
+### function deallocate
+
+```csharp
+void deallocate()
+```
+
+Free the memory for a mamaSubscription which was allocated via a call to constructor. This function will call [destroy()]() if the subscription has not already been destroyed. Calling this function will reduce time during finalization. 
+
+### function destroy
+
+```csharp
+void destroy()
+```
+
+This function will destroy the subscription, it must be called from the same thread that is processing the queue for the subscription. Use destroyEx to destroy the subscription from any thread. Note that the subscription will not be fully destroyed until the onDestroy callback is received. 
+
+### function destroyEx
+
+```csharp
+void destroyEx()
+```
+
+Destroy the subscription. This function is another option to destroy the resources associated with the subscription It will schedule the [destroy()](classWombat_1_1MamaBasicSubscription.html#function-destroy) of the subscription on the queue on which it dispatches. This function does not free the memory associated with the subscription. create() can be called again after this function has been called. After the Subscription is effectively destroyed, the OnDestroy callback will be triggered for it. 
+
+This function can be called from any thread, as opposed to [destroy()](classWombat_1_1MamaBasicSubscription.html#function-destroy).
+
+
+## Protected Functions Documentation
+
 ### function DestroyNativePeer
 
 ```csharp
@@ -397,4 +397,4 @@ This structure holds all of the callback delegates, it is initialised in the sta
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:32 +0100

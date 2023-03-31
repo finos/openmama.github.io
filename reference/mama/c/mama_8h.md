@@ -47,11 +47,14 @@ with_doxylinks: true
 | MAMAExpDLL mama_status | **[mama_openWithPropertiesCount](mama_8h.html#function-mama-openwithpropertiescount)**(const char * path, const char * filename, unsigned int * count) |
 | MAMAExpDLL mama_status | **[mama_setProperty](mama_8h.html#function-mama-setproperty)**(const char * name, const char * value) |
 | MAMAExpDLL mama_status | **[mama_setPropertiesFromFile](mama_8h.html#function-mama-setpropertiesfromfile)**(const char * path, const char * filename) |
-| const MAMAExpDLL char * | **[mama_getProperty](mama_8h.html#function-mama-getproperty)**(const char * name) |
+| MAMAExpDLL const char * | **[mama_getProperty](mama_8h.html#function-mama-getproperty)**(const char * name) |
+| MAMAExpDLL void | **[mama_loadDefaultProperties](mama_8h.html#function-mama-loaddefaultproperties)**(void ) |
+| MAMAExpDLL const char * | **[mama_getPropertiesAsString](mama_8h.html#function-mama-getpropertiesasstring)**(void ) |
 | MAMAExpDLL mama_status | **[mama_close](mama_8h.html#function-mama-close)**(void ) |
 | MAMAExpDLL mama_status | **[mama_closeCount](mama_8h.html#function-mama-closecount)**(unsigned int * count) |
-| const MAMAExpDLL char * | **[mama_getVersion](mama_8h.html#function-mama-getversion)**(mamaBridge bridgeImpl) |
+| MAMAExpDLL const char * | **[mama_getVersion](mama_8h.html#function-mama-getversion)**(mamaBridge bridgeImpl) |
 | MAMAExpDLL mama_status | **[mama_start](mama_8h.html#function-mama-start)**(mamaBridge bridgeImpl) |
+| MAMAExpDLL mama_status | **[mama_startAll](mama_8h.html#function-mama-startall)**(mama_bool_t isBlocking) |
 | MAMAExpDLL mama_status | **[mama_startBackground](mama_8h.html#function-mama-startbackground)**(mamaBridge bridgeImpl, mamaStartCB callback) |
 | MAMAExpDLL mama_status | **[mama_startBackgroundEx](mama_8h.html#function-mama-startbackgroundex)**(mamaBridge bridgeImpl, mamaStopCBEx callback, void * closure) |
 | MAMAExpDLL mama_status | **[mama_stop](mama_8h.html#function-mama-stop)**(mamaBridge bridgeImpl) |
@@ -67,13 +70,14 @@ with_doxylinks: true
 | MAMAExpDLL mama_status | **[mama_getDefaultEventQueue](mama_8h.html#function-mama-getdefaulteventqueue)**(mamaBridge bridgeImpl, mamaQueue * defaultQueue) |
 | MAMAExpDLL void | **[mama_setLastError](mama_8h.html#function-mama-setlasterror)**(mamaError error) |
 | MAMAExpDLL mamaError | **[mama_getLastErrorCode](mama_8h.html#function-mama-getlasterrorcode)**(void ) |
-| const MAMAExpDLL char * | **[mama_getLastErrorText](mama_8h.html#function-mama-getlasterrortext)**(void ) |
+| MAMAExpDLL const char * | **[mama_getLastErrorText](mama_8h.html#function-mama-getlasterrortext)**(void ) |
 | MAMAExpDLL mama_status | **[mama_setBridgeInfoCallback](mama_8h.html#function-mama-setbridgeinfocallback)**(mamaBridge bridgeImpl, bridgeInfoCallback callback) |
 | MAMAExpDLL mama_status | **[mama_addStatsCollector](mama_8h.html#function-mama-addstatscollector)**(mamaStatsCollector statsCollector) |
 | MAMAExpDLL mama_status | **[mama_removeStatsCollector](mama_8h.html#function-mama-removestatscollector)**(mamaStatsCollector statsCollector) |
 | MAMAExpDLL int | **[mama_getGenerateTransportStats](mama_8h.html#function-mama-getgeneratetransportstats)**(void ) |
 | MAMAExpDLL mama_status | **[mama_getMiddlewareBridge](mama_8h.html#function-mama-getmiddlewarebridge)**(mamaBridge * bridge, const char * middlewareName) |
 | MAMAExpDLL mama_status | **[mama_getPayloadBridge](mama_8h.html#function-mama-getpayloadbridge)**(mamaPayloadBridge * payloadBridge, const char * payloadName) |
+| MAMAExpDLL mama_status | **[mama_getAvailableTransportNames](mama_8h.html#function-mama-getavailabletransportnames)**(char transports[][MAMA_MAX_TRANSPORT_LEN], size_t maxCount, size_t * count) |
 
 ## Defines
 
@@ -89,6 +93,8 @@ with_doxylinks: true
 |  | **[MAMA_MAX_ROOT_LEN](mama_8h.html#define-mama-max-root-len)**  |
 |  | **[MAMA_MAX_SOURCE_LEN](mama_8h.html#define-mama-max-source-len)**  |
 |  | **[MAMA_MAX_TRANSPORT_LEN](mama_8h.html#define-mama-max-transport-len)**  |
+|  | **[MAMA_MAX_BRIDGE_NAME_LEN](mama_8h.html#define-mama-max-bridge-name-len)**  |
+|  | **[MAMA_MAX_RESOURCE_POOL_LEN](mama_8h.html#define-mama-max-resource-pool-len)**  |
 |  | **[MAMA_MAX_TOTAL_SYMBOL_LEN](mama_8h.html#define-mama-max-total-symbol-len)**  |
 |  | **[MAMA_LINK_BRIDGE](mama_8h.html#define-mama-link-bridge)**(implIdentifier, impl)  |
 |  | **[MAMA_CREATE_BRIDGE](mama_8h.html#define-mama-create-bridge)**(implIdentifier, impl)  |
@@ -428,7 +434,7 @@ If null is passed as the path the API will look for the properties file on the $
 ### function mama_getProperty
 
 ```cpp
-const MAMAExpDLL char * mama_getProperty(
+MAMAExpDLL const char * mama_getProperty(
     const char * name
 )
 ```
@@ -444,6 +450,34 @@ const MAMAExpDLL char * mama_getProperty(
 Retrieve a specific property from the API.
 
 If the property has not been set, a NULL value will be returned.
+
+
+### function mama_loadDefaultProperties
+
+```cpp
+MAMAExpDLL void mama_loadDefaultProperties(
+    void 
+)
+```
+
+
+Load in default mama.properties from the default WOMBAT_PATH directory. 
+
+
+### function mama_getPropertiesAsString
+
+```cpp
+MAMAExpDLL const char * mama_getPropertiesAsString(
+    void 
+)
+```
+
+
+**Return**: String representing all the properties 
+
+Build a string containing all configuration properties in the format: key1=value key2=value key3=value
+
+NB The caller is responsible for destroying memory allocated by this function
 
 
 ### function mama_close
@@ -482,7 +516,7 @@ Close MAMA and free all associated resources if no more references exist (e.g.if
 ### function mama_getVersion
 
 ```cpp
-const MAMAExpDLL char * mama_getVersion(
+MAMAExpDLL const char * mama_getVersion(
     mamaBridge bridgeImpl
 )
 ```
@@ -513,6 +547,25 @@ MAMAExpDLL mama_status mama_start(
 Start processing messages on the internal queue. This starts Mama's internal throttle, refresh logic, and other internal Mama processes as well as dispatching messages from the internal queue. 
 
 mama_start( ) blocks until an invocation of mama_stop() occurs.
+
+
+### function mama_startAll
+
+```cpp
+MAMAExpDLL mama_status mama_startAll(
+    mama_bool_t isBlocking
+)
+```
+
+
+**Parameters**: 
+
+  * **bridgeImpl** The bridge specific structure. 
+
+
+Start processing messages on the internal queue for all currently loaded MAMA bridges. This starts Mama's internal throttle, refresh logic, and other internal Mama processes as well as dispatching messages from the internal queue. 
+
+mama_startAll( ) blocks until all currently outstandin
 
 
 ### function mama_startBackground
@@ -787,7 +840,7 @@ Get the code of the last error to have occurred in Mama. Each thread will have i
 ### function mama_getLastErrorText
 
 ```cpp
-const MAMAExpDLL char * mama_getLastErrorText(
+MAMAExpDLL const char * mama_getLastErrorText(
     void 
 )
 ```
@@ -889,6 +942,26 @@ MAMAExpDLL mama_status mama_getPayloadBridge(
 Get Payload bridge by payload name
 
 
+### function mama_getAvailableTransportNames
+
+```cpp
+MAMAExpDLL mama_status mama_getAvailableTransportNames(
+    char transports[][MAMA_MAX_TRANSPORT_LEN],
+    size_t maxCount,
+    size_t * count
+)
+```
+
+
+**Parameters**: 
+
+  * **transports** 
+  * **count** 
+  * **maxCount** 
+
+
+**Return**: 
+
 
 
 ## Macros Documentation
@@ -960,6 +1033,20 @@ Get Payload bridge by payload name
 
 ```cpp
 #define MAMA_MAX_TRANSPORT_LEN 64
+```
+
+
+### define MAMA_MAX_BRIDGE_NAME_LEN
+
+```cpp
+#define MAMA_MAX_BRIDGE_NAME_LEN 64
+```
+
+
+### define MAMA_MAX_RESOURCE_POOL_LEN
+
+```cpp
+#define MAMA_MAX_RESOURCE_POOL_LEN 128
 ```
 
 
@@ -1082,6 +1169,8 @@ extern "C"
 #define MAMA_MAX_ROOT_LEN          5 // e.g. _MDDD
 #define MAMA_MAX_SOURCE_LEN        64
 #define MAMA_MAX_TRANSPORT_LEN     64
+#define MAMA_MAX_BRIDGE_NAME_LEN   64
+#define MAMA_MAX_RESOURCE_POOL_LEN 128
 // This is source + symbol + root + 2 delimiting periods
 #define MAMA_MAX_TOTAL_SYMBOL_LEN  (MAMA_MAX_SYMBOL_LEN + MAMA_MAX_SOURCE_LEN + \
                                     MAMA_MAX_ROOT_LEN + 2)
@@ -1163,6 +1252,13 @@ extern "C"
     mama_getProperty (const char* name);
 
     MAMAExpDLL
+    extern void
+    mama_loadDefaultProperties (void);
+
+    MAMAExpDLL
+    extern const char * mama_getPropertiesAsString (void);
+
+    MAMAExpDLL
     extern mama_status
     mama_close (void);
 
@@ -1178,6 +1274,10 @@ extern "C"
     MAMAExpDLL
     extern mama_status
     mama_start (mamaBridge bridgeImpl);
+
+    MAMAExpDLL
+    extern mama_status
+    mama_startAll (mama_bool_t isBlocking);
 
     typedef void (MAMACALLTYPE *mamaStartCB) (mama_status status);
 
@@ -1309,6 +1409,12 @@ extern "C"
     mama_getPayloadBridge (mamaPayloadBridge *payloadBridge,
                            const char        *payloadName);
 
+    MAMAExpDLL
+    extern mama_status
+    mama_getAvailableTransportNames (char transports[][MAMA_MAX_TRANSPORT_LEN],
+                                     size_t maxCount,
+                                     size_t* count);
+
 #if defined(__cplusplus)
 }
 #endif
@@ -1319,4 +1425,4 @@ extern "C"
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

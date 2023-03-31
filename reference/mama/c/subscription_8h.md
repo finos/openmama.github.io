@@ -97,7 +97,7 @@ with_doxylinks: true
 | MAMAExpDLL mama_status | **[mamaSubscription_setup](subscription_8h.html#function-mamasubscription-setup)**(mamaSubscription subscription, mamaQueue queue, const [mamaMsgCallbacks](structmamaMsgCallbacks__.html) * callbacks, mamaSource source, const char * symbol, void * closure)<br>Set the parameters for a subscription that may be actually activated later. Activate the subscription using mamaSubscription_activate().  |
 | MAMAExpDLL mama_status | **[mamaSubscription_setup2](subscription_8h.html#function-mamasubscription-setup2)**(mamaSubscription subscription, mamaTransport transport, mamaQueue queue, const [mamaMsgCallbacks](structmamaMsgCallbacks__.html) * callbacks, const char * sourceName, const char * symbol, void * closure)<br>Set the parameters for a subscription that may be actually activated later. Activate the subscription using mamaSubscription_activate().  |
 | MAMAExpDLL mama_status | **[mamaSubscription_setupBasicWildCard](subscription_8h.html#function-mamasubscription-setupbasicwildcard)**(mamaSubscription subscription, mamaTransport transport, mamaQueue queue, const [mamaWildCardMsgCallbacks](structmamaWildCardMsgCallbacks__.html) * callbacks, const char * source, const char * symbol, void * closure)<br>Set the parameters for a wildcard subscription that may be actually activated later. Activate the subscription using mamaSubscription_activate().  |
-| const MAMAExpDLL char * | **[mamaSubscription_stringForState](subscription_8h.html#function-mamasubscription-stringforstate)**(mamaSubscriptionState state)<br>This function will return the string representation of the subscription state. The subscription state can be obtained by calling the mamaSubscription_getState function.  |
+| MAMAExpDLL const char * | **[mamaSubscription_stringForState](subscription_8h.html#function-mamasubscription-stringforstate)**(mamaSubscriptionState state)<br>This function will return the string representation of the subscription state. The subscription state can be obtained by calling the mamaSubscription_getState function.  |
 
 ## Types Documentation
 
@@ -1483,7 +1483,7 @@ Applications may set and retireve per-topic closures using mamaSubscription_setI
 ### function mamaSubscription_stringForState
 
 ```cpp
-const MAMAExpDLL char * mamaSubscription_stringForState(
+MAMAExpDLL const char * mamaSubscription_stringForState(
     mamaSubscriptionState state
 )
 ```
@@ -2053,4 +2053,4 @@ mamaSubscription_stringForState(
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:17 +0100

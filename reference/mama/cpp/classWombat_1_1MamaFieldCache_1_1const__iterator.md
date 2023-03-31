@@ -27,27 +27,22 @@ Inherits from [Wombat::MamaFieldCache::MamaFieldCacheIterator](classWombat_1_1Ma
 | typedef std::input_iterator_tag | **[iterator_category](classWombat_1_1MamaFieldCache_1_1const__iterator.html#typedef-iterator-category)**  |
 | typedef [MamaFieldCacheField](classWombat_1_1MamaFieldCacheField.html) | **[value_type](classWombat_1_1MamaFieldCache_1_1const__iterator.html#typedef-value-type)**  |
 | typedef std::iterator_traits< [MamaFieldCacheField](classWombat_1_1MamaFieldCacheField.html) > | **[difference_type](classWombat_1_1MamaFieldCache_1_1const__iterator.html#typedef-difference-type)**  |
+| typedef const [MamaFieldCacheField](classWombat_1_1MamaFieldCacheField.html) * | **[pointer](classWombat_1_1MamaFieldCache_1_1const__iterator.html#typedef-pointer)**  |
+| typedef const [MamaFieldCacheField](classWombat_1_1MamaFieldCacheField.html) & | **[reference](classWombat_1_1MamaFieldCache_1_1const__iterator.html#typedef-reference)**  |
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
 | | **[const_iterator](classWombat_1_1MamaFieldCache_1_1const__iterator.html#function-const-iterator)**(const [iterator](classWombat_1_1MamaFieldCache_1_1iterator.html) & it) |
-| reference | **[operator*](classWombat_1_1MamaFieldCache_1_1const__iterator.html#function-operator*)**() |
-| pointer | **[operator->](classWombat_1_1MamaFieldCache_1_1const__iterator.html#function-operator->)**() |
+| [reference](classWombat_1_1MamaFieldCacheField.html) | **[operator*](classWombat_1_1MamaFieldCache_1_1const__iterator.html#function-operator*)**() |
+| [pointer](classWombat_1_1MamaFieldCacheField.html) | **[operator->](classWombat_1_1MamaFieldCache_1_1const__iterator.html#function-operator->)**() |
 
 ## Protected Functions
 
 |                | Name           |
 | -------------- | -------------- |
 | | **[const_iterator](classWombat_1_1MamaFieldCache_1_1const__iterator.html#function-const-iterator)**(mamaFieldCache fieldCache) |
-
-## Public Attributes
-
-|                | Name           |
-| -------------- | -------------- |
-| const typedef [MamaFieldCacheField](classWombat_1_1MamaFieldCacheField.html) * | **[pointer](classWombat_1_1MamaFieldCache_1_1const__iterator.html#variable-pointer)**  |
-| const typedef [MamaFieldCacheField](classWombat_1_1MamaFieldCacheField.html) & | **[reference](classWombat_1_1MamaFieldCache_1_1const__iterator.html#variable-reference)**  |
 
 ## Friends
 
@@ -114,6 +109,20 @@ typedef std::iterator_traits<MamaFieldCacheField> Wombat::MamaFieldCache::const_
 ```
 
 
+### typedef pointer
+
+```cpp
+typedef const MamaFieldCacheField* Wombat::MamaFieldCache::const_iterator::pointer;
+```
+
+
+### typedef reference
+
+```cpp
+typedef const MamaFieldCacheField& Wombat::MamaFieldCache::const_iterator::reference;
+```
+
+
 ## Public Functions Documentation
 
 ### function const_iterator
@@ -150,31 +159,17 @@ const_iterator(
 ```
 
 
-## Public Attributes Documentation
-
-### variable pointer
-
-```cpp
-const typedef MamaFieldCacheField * pointer;
-```
-
-
-### variable reference
-
-```cpp
-const typedef MamaFieldCacheField & reference;
-```
-
-
 ## Friends
 
 ### friend MamaFieldCache
 
 ```cpp
-friend class MamaFieldCache;
+friend class MamaFieldCache(
+    MamaFieldCache 
+);
 ```
 
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:24 +0100

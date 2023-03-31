@@ -25,7 +25,7 @@ with_doxylinks: true
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Wombat::MamaMsgIterator](classWombat_1_1MamaMsgIterator.html)** <br>Class for iterating through the fields in a [MamaMsg](classWombat_1_1MamaMsg.html) |
+| class | **[Wombat::MamaMsgIterator](classWombat_1_1MamaMsgIterator.html)** <br>Class for iterating through the fields in a [MamaMsg]() |
 | class | **[Wombat::MamaMsg](classWombat_1_1MamaMsg.html)** <br>Class which encapsulates the messages used in the MAMA infrastructure  |
 
 
@@ -5101,4 +5101,4 @@ namespace Wombat
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:34 +0100

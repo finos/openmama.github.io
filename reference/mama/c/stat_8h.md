@@ -37,13 +37,13 @@ with_doxylinks: true
 | MAMAExpDLL int | **[mamaStat_getMaxValue](stat_8h.html#function-mamastat-getmaxvalue)**(mamaStat stat) |
 | MAMAExpDLL int | **[mamaStat_getTotalValue](stat_8h.html#function-mamastat-gettotalvalue)**(mamaStat stat) |
 | MAMAExpDLL void | **[mamaStat_getStats](stat_8h.html#function-mamastat-getstats)**(mamaStat stat, mama_i32_t * intervalValue, mama_u32_t * maxValue, mama_u32_t * totalValue) |
-| const MAMAExpDLL char * | **[mamaStat_getName](stat_8h.html#function-mamastat-getname)**(mamaStat stat) |
+| MAMAExpDLL const char * | **[mamaStat_getName](stat_8h.html#function-mamastat-getname)**(mamaStat stat) |
 | MAMAExpDLL mama_status | **[mamaStat_setLog](stat_8h.html#function-mamastat-setlog)**(mamaStat stat, int log) |
 | MAMAExpDLL int | **[mamaStat_getLog](stat_8h.html#function-mamastat-getlog)**(mamaStat stat) |
 | MAMAExpDLL mama_status | **[mamaStat_setPublish](stat_8h.html#function-mamastat-setpublish)**(mamaStat stat, int publish) |
 | MAMAExpDLL int | **[mamaStat_getPublish](stat_8h.html#function-mamastat-getpublish)**(mamaStat stat) |
 | MAMAExpDLL mamaStatType | **[mamaStatType_fromString](stat_8h.html#function-mamastattype-fromstring)**(const char * statTypeString) |
-| const MAMAExpDLL char * | **[mamaStatType_toString](stat_8h.html#function-mamastattype-tostring)**(mamaStatType statType) |
+| MAMAExpDLL const char * | **[mamaStatType_toString](stat_8h.html#function-mamastattype-tostring)**(mamaStatType statType) |
 
 ## Defines
 
@@ -340,7 +340,7 @@ Get the interval, maximum, and total values for the stat
 ### function mamaStat_getName
 
 ```cpp
-const MAMAExpDLL char * mamaStat_getName(
+MAMAExpDLL const char * mamaStat_getName(
     mamaStat stat
 )
 ```
@@ -442,7 +442,7 @@ Returns a mamaStatType from a string.
 ### function mamaStatType_toString
 
 ```cpp
-const MAMAExpDLL char * mamaStatType_toString(
+MAMAExpDLL const char * mamaStatType_toString(
     mamaStatType statType
 )
 ```
@@ -631,4 +631,4 @@ mamaStatType_toString (mamaStatType statType);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

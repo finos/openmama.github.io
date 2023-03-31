@@ -49,7 +49,7 @@ Create a new [MamaSource]() and add it to the manager.
 
 **Return**: The created [MamaSource](classWombat_1_1MamaSource.html) object if execution is successful.
 
-**Reimplemented by**: [Wombat::MamaSourceManager::create](classWombat_1_1MamaSourceManager.html#function-create), [Wombat::MamaSource::create](classWombat_1_1MamaSource.html#function-create)
+**Reimplemented by**: [Wombat::MamaSource::create](classWombat_1_1MamaSource.html#function-create), [Wombat::MamaSourceManager::create](classWombat_1_1MamaSourceManager.html#function-create)
 
 
 ### function findOrCreate
@@ -69,7 +69,7 @@ Locates an existing [MamaSource]() for the given name. If none exists creates an
 
 **Return**: The [MamaSource](classWombat_1_1MamaSource.html) object if execution is successful.
 
-**Reimplemented by**: [Wombat::MamaSourceManager::findOrCreate](classWombat_1_1MamaSourceManager.html#function-findorcreate), [Wombat::MamaSource::findOrCreate](classWombat_1_1MamaSource.html#function-findorcreate)
+**Reimplemented by**: [Wombat::MamaSource::findOrCreate](classWombat_1_1MamaSource.html#function-findorcreate), [Wombat::MamaSourceManager::findOrCreate](classWombat_1_1MamaSourceManager.html#function-findorcreate)
 
 
 ### function find
@@ -87,9 +87,9 @@ Locates an existing [MamaSource]() with the specified string 'name' identifier. 
   * **name** The string identifier for the required [MamaSource](classWombat_1_1MamaSource.html)
 
 
-**Return**: The [MamaSource](classWombat_1_1MamaSource.html) object if found, or null if not found (if execution is successful)
+**Return**: The [MamaSource](classWombat_1_1MamaSource.html) object if found, or null if not found (if execution is successful) 
 
-**Reimplemented by**: [Wombat::MamaSourceManager::find](classWombat_1_1MamaSourceManager.html#function-find), [Wombat::MamaSource::find](classWombat_1_1MamaSource.html#function-find)
+**Reimplemented by**: [Wombat::MamaSource::find](classWombat_1_1MamaSource.html#function-find), [Wombat::MamaSourceManager::find](classWombat_1_1MamaSourceManager.html#function-find)
 
 
 ### function add
@@ -107,7 +107,7 @@ Add an existing [MamaSource](). The id of the source will be used instead of the
   * **source** The [MamaSource](classWombat_1_1MamaSource.html) being added
 
 
-**Reimplemented by**: [Wombat::MamaSourceManager::add](classWombat_1_1MamaSourceManager.html#function-add), [Wombat::MamaSource::add](classWombat_1_1MamaSource.html#function-add)
+**Reimplemented by**: [Wombat::MamaSource::add](classWombat_1_1MamaSource.html#function-add), [Wombat::MamaSourceManager::add](classWombat_1_1MamaSourceManager.html#function-add)
 
 
 ### function add
@@ -127,9 +127,9 @@ Add an existing [MamaSource]() using the specified name as a unique identifier.
   * **source** The [MamaSource](classWombat_1_1MamaSource.html) being added
 
 
-**Reimplemented by**: [Wombat::MamaSourceManager::add](classWombat_1_1MamaSourceManager.html#function-add), [Wombat::MamaSource::add](classWombat_1_1MamaSource.html#function-add)
+**Reimplemented by**: [Wombat::MamaSource::add](classWombat_1_1MamaSource.html#function-add), [Wombat::MamaSourceManager::add](classWombat_1_1MamaSourceManager.html#function-add)
 
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:32 +0100

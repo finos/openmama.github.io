@@ -25,7 +25,7 @@ with_doxylinks: true
 |                | Name           |
 | -------------- | -------------- |
 | MAMAExpDLL mamaQuality | **[mamaQuality_convertFromString](quality_8h.html#function-mamaquality-convertfromstring)**(const char * str) |
-| const MAMAExpDLL char * | **[mamaQuality_convertToString](quality_8h.html#function-mamaquality-converttostring)**(mamaQuality quality) |
+| MAMAExpDLL const char * | **[mamaQuality_convertToString](quality_8h.html#function-mamaquality-converttostring)**(mamaQuality quality) |
 
 ## Types Documentation
 
@@ -74,7 +74,7 @@ Convert a string to a mamaQuality value.
 ### function mamaQuality_convertToString
 
 ```cpp
-const MAMAExpDLL char * mamaQuality_convertToString(
+MAMAExpDLL const char * mamaQuality_convertToString(
     mamaQuality quality
 )
 ```
@@ -154,4 +154,4 @@ mamaQuality_convertToString (mamaQuality  quality);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

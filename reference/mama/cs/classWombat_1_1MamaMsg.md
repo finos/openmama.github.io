@@ -32,6 +32,7 @@ Inherits from [Wombat.MamaWrapper](classWombat_1_1MamaWrapper.html), IDisposable
 | void | **[createForBridgeFromBuffer](classWombat_1_1MamaMsg.html#function-createforbridgefrombuffer)**(byte[] byteBuffer, int size, [MamaBridge](classWombat_1_1MamaBridge.html) bridgeImpl) |
 | [MamaMsg](classWombat_1_1MamaMsg.html) | **[detach](classWombat_1_1MamaMsg.html#function-detach)**() |
 | [mamaMsgType](namespaceWombat.html#enum-mamamsgtype) | **[getType](classWombat_1_1MamaMsg.html#function-gettype)**()<br>Extract the type  |
+| [mamaMsgStatus](namespaceWombat.html#enum-mamamsgstatus) | **[getStatus](classWombat_1_1MamaMsg.html#function-getstatus)**()<br>Return the status  |
 | [mamaPayloadType](namespaceWombat.html#enum-mamapayloadtype) | **[getPayloadType](classWombat_1_1MamaMsg.html#function-getpayloadtype)**() |
 | void | **[iterateFields](classWombat_1_1MamaMsg.html#function-iteratefields)**([MamaMsgFieldIterator](interfaceWombat_1_1MamaMsgFieldIterator.html) iterator, [MamaDictionary](classWombat_1_1MamaDictionary.html) dictionary, object closure)<br>Invoke the specified callback for each field in the message.  |
 | void | **[clear](classWombat_1_1MamaMsg.html#function-clear)**()<br>Clear a msg. All fields are removed.  |
@@ -467,6 +468,20 @@ mamaMsgType getType()
 Extract the type 
 
 **Return**: 
+
+### function getStatus
+
+```csharp
+mamaMsgStatus getStatus()
+```
+
+Return the status 
+
+**Return**: 
+
+
+summary> Return the payload type /summary> 
+
 
 ### function getPayloadType
 
@@ -3974,4 +3989,4 @@ bool isFromInbox;
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:32 +0100

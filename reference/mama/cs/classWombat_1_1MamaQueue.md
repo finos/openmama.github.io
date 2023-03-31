@@ -26,6 +26,7 @@ Inherits from [Wombat.MamaWrapper](classWombat_1_1MamaWrapper.html), IDisposable
 | void | **[setHighWatermark](classWombat_1_1MamaQueue.html#function-sethighwatermark)**(int highWatermark)<br>Specify a high watermark for events on the queue. The behaviour for setting this value results in on the underlying middleware varies.  |
 | int | **[getHighWatermark](classWombat_1_1MamaQueue.html#function-gethighwatermark)**()<br>Get the value of the high water mark for the specified queue. A value of 0 will be returned if no high water mark was previously specified.  |
 | void | **[setLowWatermark](classWombat_1_1MamaQueue.html#function-setlowwatermark)**(int lowWatermark)<br>Set the low water mark for the queue. Only supported by [Wombat](namespaceWombat.html) TCP middleware.  |
+| void | **[setQueueName](classWombat_1_1MamaQueue.html#function-setqueuename)**(string queueName)<br>Sets the name of the queue to the given name (for stats, OS naming etc).  |
 | int | **[getLowWatermark](classWombat_1_1MamaQueue.html#function-getlowwatermark)**()<br>Get the value of the low water mark for the specified queue. A value of 1 will be returned if no low water mark was previously specified.  |
 | int | **[getEventCount](classWombat_1_1MamaQueue.html#function-geteventcount)**() |
 | string | **[getQueueBridgeName](classWombat_1_1MamaQueue.html#function-getqueuebridgename)**()<br>Get the name of the bridge associated with the queue - either "wmw", "lbm", or "tibrv".  |
@@ -121,6 +122,16 @@ Set the low water mark for the queue. Only supported by [Wombat](namespaceWombat
 
 The low watermark must be greater than 1 and less than highWaterMark otherwise this method returns MAMA_STATUS_INVALID_ARG. For this reason the high water mark must be set before invoking this method. 
 
+
+### function setQueueName
+
+```csharp
+void setQueueName(
+    string queueName
+)
+```
+
+Sets the name of the queue to the given name (for stats, OS naming etc). 
 
 ### function getLowWatermark
 
@@ -292,4 +303,4 @@ This function is called by the base class whenever the [MamaQueue](classWombat_1
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:32 +0100

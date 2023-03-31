@@ -25,6 +25,7 @@ with_doxylinks: true
 | void | **[destroyWait](classcom_1_1wombat_1_1mama_1_1MamaQueueGroup.html#function-destroywait)**() |
 | void | **[destroyTimedWait](classcom_1_1wombat_1_1mama_1_1MamaQueueGroup.html#function-destroytimedwait)**(long timeout) |
 | [MamaQueue](classcom_1_1wombat_1_1mama_1_1MamaQueue.html) | **[getNextQueue](classcom_1_1wombat_1_1mama_1_1MamaQueueGroup.html#function-getnextqueue)**() |
+| [MamaQueue](classcom_1_1wombat_1_1mama_1_1MamaQueue.html) | **[getQueueByIndex](classcom_1_1wombat_1_1mama_1_1MamaQueueGroup.html#function-getqueuebyindex)**(int index) |
 | void | **[stopDispatch](classcom_1_1wombat_1_1mama_1_1MamaQueueGroup.html#function-stopdispatch)**() |
 | void | **[startDispatch](classcom_1_1wombat_1_1mama_1_1MamaQueueGroup.html#function-startdispatch)**() |
 
@@ -126,6 +127,20 @@ inline MamaQueue getNextQueue()
 Return the next queue. The queues are returned in a round robin.
 
 
+### function getQueueByIndex
+
+```java
+inline MamaQueue getQueueByIndex(
+    int index
+)
+```
+
+
+**Return**: The queue object 
+
+Return the requested Queue based on the given index, or null if it is not a valid index.
+
+
 ### function stopDispatch
 
 ```java
@@ -142,4 +157,4 @@ inline void startDispatch()
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:08 +0100
+Updated on 2023-03-31 at 15:29:43 +0100

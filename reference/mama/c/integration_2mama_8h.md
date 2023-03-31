@@ -24,7 +24,7 @@ with_doxylinks: true
 #define OPENMAMA_INTEGRATION_MAMA_H__
 
 #include <wombat/wtable.h>
-#include <property.h>
+#include <wombat/property.h>
 #include <mama/mama.h>
 #include <mama/version.h>
 
@@ -33,7 +33,7 @@ extern "C"
 {
 #endif
 
-#define MAMA_PAYLOAD_MAX        CHAR_MAX
+#define MAMA_PAYLOAD_MAX        UCHAR_MAX
 #define MAMA_MAX_MIDDLEWARES    CHAR_MAX
 #define MAMA_MAX_ENTITLEMENTS   CHAR_MAX
 #define MAX_ENTITLEMENT_BRIDGES CHAR_MAX
@@ -178,6 +178,20 @@ mama_status
 mamaImpl_setDefaultEventQueue (mamaBridge bridgeImpl,
                                mamaQueue defaultQueue);
 
+MAMAExpDLL
+extern long int
+mamaImpl_getParameterAsLong (
+    long defaultVal,
+    long minimum,
+    long maximum,
+    const char* format, ...);
+
+MAMAExpDLL
+extern const char*
+mamaImpl_getParameter (
+    const char* defaultVal,
+    const char* format, ...);
+
 #if defined (__cplusplus)
 }
 #endif
@@ -188,4 +202,4 @@ mamaImpl_setDefaultEventQueue (mamaBridge bridgeImpl,
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

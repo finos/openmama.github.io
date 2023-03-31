@@ -45,7 +45,9 @@ Inherits from [Wombat.MamdaSecurityStatusRecap](interfaceWombat_1_1MamdaSecurity
 | void | **[setSecurityStatusStr](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-setsecuritystatusstr)**(string securityStatusStr)<br>Set the security status string [MamdaSecurityStatusUpdate.getSecurityStatusQualifier()]() |
 | string | **[getSecurityStatusQualifierStr](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getsecuritystatusqualifierstr)**()<br>Returns the security status qualifier string [MamdaSecurityStatusUpdate.getSecurityStatusQualifier()]() |
 | [MamdaFieldState](namespaceWombat.html#enum-mamdafieldstate) | **[getSecurityStatusQualifierStrFieldState](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getsecuritystatusqualifierstrfieldstate)**()<br>Returns Field State, always MODIFIED  |
+| void | **[setSecurityStatusQualifierStr](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-setsecuritystatusqualifierstr)**(String securityStatusQualifierStr)<br>Set the security status qualifier string [MamdaSecurityStatusUpdate.getSecurityStatusQualifier()]() |
 | string | **[getReason](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getreason)**()<br>[MamdaSecurityStatusUpdate.getReason()]() |
+| [MamdaFieldState](namespaceWombat.html#enum-mamdafieldstate) | **[getReasonFieldState](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getreasonfieldstate)**()<br>Returns Field State, always MODIFIED  |
 | void | **[setReason](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-setreason)**(string reason) |
 | DateTime | **[getActivityTime](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getactivitytime)**()<br>[MamdaBasicRecap.getActivityTime](interfaceWombat_1_1MamdaBasicRecap.html#function-getactivitytime) |
 | [MamdaFieldState](namespaceWombat.html#enum-mamdafieldstate) | **[getActivityTimeFieldState](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-getactivitytimefieldstate)**()<br>Returns Field State, always MODIFIED  |
@@ -65,15 +67,6 @@ Inherits from [Wombat.MamdaSecurityStatusRecap](interfaceWombat_1_1MamdaSecurity
 | void | **[setLuldIndicator](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-setluldindicator)**(char luldIndicator)<br>Set the Limit Up Limit Down Indicator  |
 | void | **[setLuldHighLimit](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-setluldhighlimit)**(MamaPrice luldHighLimit)<br>Set the Limit Up Limit Down High Limit  |
 | void | **[setLuldLowLimit](classWombat_1_1MamdaConcreteSecurityStatusRecap.html#function-setluldlowlimit)**(MamaPrice luldLowLimit)<br>Set the Limit Up Limit Down Low Limit  |
-
-## Additional inherited members
-
-**Public Functions inherited from [Wombat.MamdaSecurityStatusRecap](interfaceWombat_1_1MamdaSecurityStatusRecap.html)**
-
-|                | Name           |
-| -------------- | -------------- |
-| [MamdaFieldState](namespaceWombat.html#enum-mamdafieldstate) | **[getReasonFieldState](interfaceWombat_1_1MamdaSecurityStatusRecap.html#function-getreasonfieldstate)**()<br>Get the field state  |
-
 
 ## Public Functions Documentation
 
@@ -389,6 +382,27 @@ Returns Field State, always MODIFIED
 **Reimplements**: [Wombat::MamdaSecurityStatusRecap::getSecurityStatusQualifierStrFieldState](interfaceWombat_1_1MamdaSecurityStatusRecap.html#function-getsecuritystatusqualifierstrfieldstate)
 
 
+### function setSecurityStatusQualifierStr
+
+```csharp
+void setSecurityStatusQualifierStr(
+    String securityStatusQualifierStr
+)
+```
+
+Set the security status qualifier string [MamdaSecurityStatusUpdate.getSecurityStatusQualifier()]()
+
+**Parameters**: 
+
+  * **securityStatusQualifierStr** 
+
+
+**Return**: 
+
+
+summary> Returns the security status reason [MamdaSecurityStatusRecap.getReason()](interfaceWombat_1_1MamdaSecurityStatusRecap.html#function-getreason)
+
+
 ### function getReason
 
 ```csharp
@@ -400,6 +414,28 @@ string getReason()
 **Return**: 
 
 **Reimplements**: [Wombat::MamdaSecurityStatusRecap::getReason](interfaceWombat_1_1MamdaSecurityStatusRecap.html#function-getreason)
+
+
+### function getReasonFieldState
+
+```csharp
+MamdaFieldState getReasonFieldState()
+```
+
+Returns Field State, always MODIFIED 
+
+**Parameters**: 
+
+  * **reason** 
+
+
+**Return**: Field State MODIFIED
+
+**Reimplements**: [Wombat::MamdaSecurityStatusRecap::getReasonFieldState](interfaceWombat_1_1MamdaSecurityStatusRecap.html#function-getreasonfieldstate)
+
+
+
+summary> Set the security status reason [MamdaSecurityStatusRecap.getReason()](interfaceWombat_1_1MamdaSecurityStatusRecap.html#function-getreason)
 
 
 ### function setReason
@@ -637,4 +673,4 @@ Set the Limit Up Limit Down Low Limit
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:11 +0100
+Updated on 2023-03-31 at 15:30:12 +0100

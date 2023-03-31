@@ -116,9 +116,9 @@ object lastKey()
 ```
 
 
-**Reimplemented by**: [Wombat::Containers::TreeMap::lastKey](classWombat_1_1Containers_1_1TreeMap.html#function-lastkey), [Wombat::Containers::RedBlackTree::lastKey](classWombat_1_1Containers_1_1RedBlackTree.html#function-lastkey)
+**Reimplemented by**: [Wombat::Containers::RedBlackTree::lastKey](classWombat_1_1Containers_1_1RedBlackTree.html#function-lastkey), [Wombat::Containers::TreeMap::lastKey](classWombat_1_1Containers_1_1TreeMap.html#function-lastkey)
 
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:11 +0100
+Updated on 2023-03-31 at 15:30:17 +0100

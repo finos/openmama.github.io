@@ -24,7 +24,7 @@ with_doxylinks: true
 
 |                | Name           |
 | -------------- | -------------- |
-| const MAMAExpDLL char * | **[MamaSubscMsgTypeStr](subscmsgtype_8h.html#function-mamasubscmsgtypestr)**(mamaSubscMsgType msgType)<br>Return a string representation for a subscribe message type.  |
+| MAMAExpDLL const char * | **[MamaSubscMsgTypeStr](subscmsgtype_8h.html#function-mamasubscmsgtypestr)**(mamaSubscMsgType msgType)<br>Return a string representation for a subscribe message type.  |
 
 ## Defines
 
@@ -83,7 +83,7 @@ This enumeration describes the type of subscription messsage.
 ### function MamaSubscMsgTypeStr
 
 ```cpp
-const MAMAExpDLL char * MamaSubscMsgTypeStr(
+MAMAExpDLL const char * MamaSubscMsgTypeStr(
     mamaSubscMsgType msgType
 )
 ```
@@ -247,4 +247,4 @@ extern const char* MamaSubscMsgTypeStr    (mamaSubscMsgType    msgType);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:17 +0100

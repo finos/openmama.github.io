@@ -17,81 +17,84 @@ with_doxylinks: true
 
 |                | Name           |
 | -------------- | -------------- |
-| class | **[Wombat::Mama](classWombat_1_1Mama.html)**  |
+| class | **[Wombat::MamaConnection](classWombat_1_1MamaConnection.html)**  |
+| class | **[Wombat::MamaServerConnection](classWombat_1_1MamaServerConnection.html)**  |
+| class | **[Wombat::MamaFieldCache](classWombat_1_1MamaFieldCache.html)**  |
+| class | **[Wombat::MamaFieldCacheField](classWombat_1_1MamaFieldCacheField.html)**  |
+| class | **[Wombat::MamaFieldCacheFieldBase](classWombat_1_1MamaFieldCacheFieldBase.html)**  |
+| class | **[Wombat::MamaFieldCacheFieldBasic](classWombat_1_1MamaFieldCacheFieldBasic.html)**  |
+| class | **[Wombat::MamaFieldCacheFieldString](classWombat_1_1MamaFieldCacheFieldString.html)**  |
+| class | **[Wombat::MamaFieldCacheFieldPrice](classWombat_1_1MamaFieldCacheFieldPrice.html)**  |
+| class | **[Wombat::MamaFieldCacheFieldDateTime](classWombat_1_1MamaFieldCacheFieldDateTime.html)**  |
+| class | **[Wombat::MamaFieldCacheFieldVectorBasic](classWombat_1_1MamaFieldCacheFieldVectorBasic.html)**  |
+| class | **[Wombat::MamaFieldCacheFieldStringVector](classWombat_1_1MamaFieldCacheFieldStringVector.html)**  |
+| class | **[Wombat::MamaFieldCacheFieldVector](classWombat_1_1MamaFieldCacheFieldVector.html)**  |
+| class | **[Wombat::MamaFieldCacheFieldPriceVector](classWombat_1_1MamaFieldCacheFieldPriceVector.html)**  |
+| class | **[Wombat::MamaFieldCacheFieldDateTimeVector](classWombat_1_1MamaFieldCacheFieldDateTimeVector.html)**  |
+| class | **[Wombat::Type](classWombat_1_1Type.html)**  |
+| class | **[Wombat::MamaFieldCacheRecord](classWombat_1_1MamaFieldCacheRecord.html)**  |
 | class | **[Wombat::MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html)**  |
 | class | **[Wombat::MamaBasicSubscriptionCallback](classWombat_1_1MamaBasicSubscriptionCallback.html)**  |
 | class | **[Wombat::MamaBasicWildCardSubscription](classWombat_1_1MamaBasicWildCardSubscription.html)**  |
 | class | **[Wombat::MamaBasicWildCardSubscriptionCallback](classWombat_1_1MamaBasicWildCardSubscriptionCallback.html)**  |
 | class | **[Wombat::MamaBridgeCallback](classWombat_1_1MamaBridgeCallback.html)**  |
-| class | **[Wombat::MamaBridgeFtMember](classWombat_1_1MamaBridgeFtMember.html)**  |
-| class | **[Wombat::MamaConnection](classWombat_1_1MamaConnection.html)**  |
+| class | **[Wombat::MamaLogFileCallback](classWombat_1_1MamaLogFileCallback.html)**  |
+| class | **[Wombat::MamaStartCallback](classWombat_1_1MamaStartCallback.html)**  |
+| class | **[Wombat::MamaEntitlementCallback](classWombat_1_1MamaEntitlementCallback.html)**  |
+| class | **[Wombat::Mama](classWombat_1_1Mama.html)**  |
 | class | **[Wombat::MamaDateTime](classWombat_1_1MamaDateTime.html)**  |
 | class | **[Wombat::MamaDictionary](classWombat_1_1MamaDictionary.html)**  |
 | class | **[Wombat::MamaDictionaryCallback](classWombat_1_1MamaDictionaryCallback.html)**  |
 | class | **[Wombat::MamaDispatcher](classWombat_1_1MamaDispatcher.html)**  |
 | class | **[Wombat::MamaDQPublisher](classWombat_1_1MamaDQPublisher.html)**  |
+| class | **[Wombat::MamaPublishTopic](classWombat_1_1MamaPublishTopic.html)**  |
 | class | **[Wombat::MamaDQPublisherManager](classWombat_1_1MamaDQPublisherManager.html)**  |
 | class | **[Wombat::MamaDQPublisherManagerCallback](classWombat_1_1MamaDQPublisherManagerCallback.html)**  |
-| class | **[Wombat::MamaEntitlementCallback](classWombat_1_1MamaEntitlementCallback.html)**  |
-| class | **[Wombat::MamaFieldCache](classWombat_1_1MamaFieldCache.html)**  |
-| class | **[Wombat::MamaFieldCacheField](classWombat_1_1MamaFieldCacheField.html)**  |
-| class | **[Wombat::MamaFieldCacheFieldBase](classWombat_1_1MamaFieldCacheFieldBase.html)**  |
-| class | **[Wombat::MamaFieldCacheFieldBasic](classWombat_1_1MamaFieldCacheFieldBasic.html)**  |
-| class | **[Wombat::MamaFieldCacheFieldDateTime](classWombat_1_1MamaFieldCacheFieldDateTime.html)**  |
-| class | **[Wombat::MamaFieldCacheFieldDateTimeVector](classWombat_1_1MamaFieldCacheFieldDateTimeVector.html)**  |
-| class | **[Wombat::MamaFieldCacheFieldPrice](classWombat_1_1MamaFieldCacheFieldPrice.html)**  |
-| class | **[Wombat::MamaFieldCacheFieldPriceVector](classWombat_1_1MamaFieldCacheFieldPriceVector.html)**  |
-| class | **[Wombat::MamaFieldCacheFieldString](classWombat_1_1MamaFieldCacheFieldString.html)**  |
-| class | **[Wombat::MamaFieldCacheFieldStringVector](classWombat_1_1MamaFieldCacheFieldStringVector.html)**  |
-| class | **[Wombat::MamaFieldCacheFieldVector](classWombat_1_1MamaFieldCacheFieldVector.html)**  |
-| class | **[Wombat::MamaFieldCacheFieldVectorBasic](classWombat_1_1MamaFieldCacheFieldVectorBasic.html)**  |
-| class | **[Wombat::MamaFieldCacheRecord](classWombat_1_1MamaFieldCacheRecord.html)**  |
 | class | **[Wombat::MamaFieldDescriptor](classWombat_1_1MamaFieldDescriptor.html)**  |
-| class | **[Wombat::MamaFtMember](classWombat_1_1MamaFtMember.html)**  |
 | class | **[Wombat::MamaFtMemberCallback](classWombat_1_1MamaFtMemberCallback.html)**  |
+| class | **[Wombat::MamaFtMember](classWombat_1_1MamaFtMember.html)**  |
+| class | **[Wombat::MamaMulticastFtMember](classWombat_1_1MamaMulticastFtMember.html)**  |
+| class | **[Wombat::MamaBridgeFtMember](classWombat_1_1MamaBridgeFtMember.html)**  |
 | class | **[Wombat::MamaInbox](classWombat_1_1MamaInbox.html)**  |
 | class | **[Wombat::MamaInboxCallback](classWombat_1_1MamaInboxCallback.html)**  |
 | class | **[Wombat::MamaIo](classWombat_1_1MamaIo.html)**  |
 | class | **[Wombat::MamaIoCallback](classWombat_1_1MamaIoCallback.html)**  |
 | class | **[Wombat::MamaLogFile](classWombat_1_1MamaLogFile.html)**  |
-| class | **[Wombat::MamaLogFileCallback](classWombat_1_1MamaLogFileCallback.html)**  |
+| class | **[Wombat::MamaMsgIterator](classWombat_1_1MamaMsgIterator.html)**  |
 | class | **[Wombat::MamaMsg](classWombat_1_1MamaMsg.html)**  |
 | class | **[Wombat::MamaMsgField](classWombat_1_1MamaMsgField.html)**  |
 | class | **[Wombat::MamaMsgFieldIterator](classWombat_1_1MamaMsgFieldIterator.html)**  |
-| class | **[Wombat::MamaMsgIterator](classWombat_1_1MamaMsgIterator.html)**  |
 | class | **[Wombat::MamaMsgQual](classWombat_1_1MamaMsgQual.html)**  |
-| class | **[Wombat::MamaMulticastFtMember](classWombat_1_1MamaMulticastFtMember.html)**  |
 | class | **[Wombat::MamaPrice](classWombat_1_1MamaPrice.html)**  |
 | class | **[Wombat::MamaPublisher](classWombat_1_1MamaPublisher.html)**  |
 | class | **[Wombat::MamaPublisherCallback](classWombat_1_1MamaPublisherCallback.html)**  |
-| class | **[Wombat::MamaPublishTopic](classWombat_1_1MamaPublishTopic.html)**  |
 | class | **[Wombat::MamaQueue](classWombat_1_1MamaQueue.html)**  |
 | class | **[Wombat::MamaQueueEnqueueCallback](classWombat_1_1MamaQueueEnqueueCallback.html)**  |
 | class | **[Wombat::MamaQueueEventCallback](classWombat_1_1MamaQueueEventCallback.html)**  |
 | class | **[Wombat::MamaQueueGroup](classWombat_1_1MamaQueueGroup.html)**  |
 | class | **[Wombat::MamaQueueMonitorCallback](classWombat_1_1MamaQueueMonitorCallback.html)**  |
+| class | **[Wombat::MamaRegexChannelFilter](classWombat_1_1MamaRegexChannelFilter.html)**  |
 | class | **[Wombat::MamaReservedFields](classWombat_1_1MamaReservedFields.html)**  |
+| class | **[Wombat::MamaResourcePool](classWombat_1_1MamaResourcePool.html)**  |
 | class | **[Wombat::MamaSendCompleteCallback](classWombat_1_1MamaSendCompleteCallback.html)**  |
-| class | **[Wombat::MamaServerConnection](classWombat_1_1MamaServerConnection.html)**  |
+| class | **[Wombat::MamaSubscriptionIteratorCallback](classWombat_1_1MamaSubscriptionIteratorCallback.html)**  |
 | class | **[Wombat::MamaSource](classWombat_1_1MamaSource.html)**  |
 | class | **[Wombat::MamaSourceDerivative](classWombat_1_1MamaSourceDerivative.html)**  |
 | class | **[Wombat::MamaSourceGroup](classWombat_1_1MamaSourceGroup.html)**  |
 | class | **[Wombat::MamaSourceGroupManager](classWombat_1_1MamaSourceGroupManager.html)**  |
 | class | **[Wombat::MamaSourceManager](classWombat_1_1MamaSourceManager.html)**  |
 | class | **[Wombat::MamaSourceStateChangeCallback](classWombat_1_1MamaSourceStateChangeCallback.html)**  |
-| class | **[Wombat::MamaStartCallback](classWombat_1_1MamaStartCallback.html)**  |
 | class | **[Wombat::MamaStat](classWombat_1_1MamaStat.html)**  |
 | class | **[Wombat::MamaStatsCollector](classWombat_1_1MamaStatsCollector.html)**  |
 | class | **[Wombat::MamaStatus](classWombat_1_1MamaStatus.html)**  |
 | class | **[Wombat::MamaSubscription](classWombat_1_1MamaSubscription.html)**  |
 | class | **[Wombat::MamaSubscriptionCallback](classWombat_1_1MamaSubscriptionCallback.html)**  |
-| class | **[Wombat::MamaSubscriptionIteratorCallback](classWombat_1_1MamaSubscriptionIteratorCallback.html)**  |
 | class | **[Wombat::MamaSymbolList](classWombat_1_1MamaSymbolList.html)**  |
 | class | **[Wombat::MamaSymbolListFile](classWombat_1_1MamaSymbolListFile.html)**  |
 | class | **[Wombat::MamaSymbolListIteratorHandler](classWombat_1_1MamaSymbolListIteratorHandler.html)**  |
-| class | **[Wombat::MamaSymbolListMember](classWombat_1_1MamaSymbolListMember.html)**  |
 | class | **[Wombat::MamaSymbolListMembershipHandler](classWombat_1_1MamaSymbolListMembershipHandler.html)**  |
 | class | **[Wombat::MamaSymbolListResortHandler](classWombat_1_1MamaSymbolListResortHandler.html)**  |
+| class | **[Wombat::MamaSymbolListMember](classWombat_1_1MamaSymbolListMember.html)**  |
 | class | **[Wombat::MamaSymbolMap](classWombat_1_1MamaSymbolMap.html)**  |
 | class | **[Wombat::MamaSymbolMapFile](classWombat_1_1MamaSymbolMapFile.html)**  |
 | class | **[Wombat::MamaSymbolSource](classWombat_1_1MamaSymbolSource.html)**  |
@@ -100,11 +103,10 @@ with_doxylinks: true
 | class | **[Wombat::MamaTimer](classWombat_1_1MamaTimer.html)**  |
 | class | **[Wombat::MamaTimerCallback](classWombat_1_1MamaTimerCallback.html)**  |
 | class | **[Wombat::MamaTimeZone](classWombat_1_1MamaTimeZone.html)**  |
-| class | **[Wombat::MamaTransport](classWombat_1_1MamaTransport.html)**  |
-| class | **[Wombat::MamaTransportCallback](classWombat_1_1MamaTransportCallback.html)**  |
-| class | **[Wombat::MamaTransportMap](classWombat_1_1MamaTransportMap.html)**  |
 | class | **[Wombat::MamaTransportTopicEventCallback](classWombat_1_1MamaTransportTopicEventCallback.html)**  |
-| class | **[Wombat::Type](classWombat_1_1Type.html)**  |
+| class | **[Wombat::MamaTransportCallback](classWombat_1_1MamaTransportCallback.html)**  |
+| class | **[Wombat::MamaTransport](classWombat_1_1MamaTransport.html)**  |
+| class | **[Wombat::MamaTransportMap](classWombat_1_1MamaTransportMap.html)**  |
 
 ## Types
 
@@ -968,4 +970,4 @@ void mamaFieldCacheFieldFromString(
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:24 +0100

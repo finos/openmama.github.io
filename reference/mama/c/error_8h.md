@@ -25,7 +25,7 @@ with_doxylinks: true
 |                | Name           |
 | -------------- | -------------- |
 | MAMAExpDLL mamaError | **[mamaError_convertFromString](error_8h.html#function-mamaerror-convertfromstring)**(const char * str) |
-| const MAMAExpDLL char * | **[mamaError_convertToString](error_8h.html#function-mamaerror-converttostring)**(mamaError error) |
+| MAMAExpDLL const char * | **[mamaError_convertToString](error_8h.html#function-mamaerror-converttostring)**(mamaError error) |
 
 ## Types Documentation
 
@@ -73,7 +73,7 @@ Convert a string to a mamaError value.
 ### function mamaError_convertToString
 
 ```cpp
-const MAMAExpDLL char * mamaError_convertToString(
+MAMAExpDLL const char * mamaError_convertToString(
     mamaError error
 )
 ```
@@ -152,4 +152,4 @@ mamaError_convertToString (mamaError error);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

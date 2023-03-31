@@ -18,6 +18,7 @@ with_doxylinks: true
 | Name           |
 | -------------- |
 | **[Wombat](namespaceWombat.html)**  |
+| **[System::Collections::Generic](namespaceSystem_1_1Collections_1_1Generic.html)**  |
 | **[System::IO](namespaceSystem_1_1IO.html)**  |
 | **[System::Runtime::InteropServices](namespaceSystem_1_1Runtime_1_1InteropServices.html)**  |
 | **[System::Threading](namespaceSystem_1_1Threading.html)**  |
@@ -56,6 +57,7 @@ with_doxylinks: true
  */
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Threading;
@@ -115,6 +117,43 @@ namespace Wombat
 
         #endregion
 
+        public static MamaLogLevel GetLogLevelForString(string level)
+        {
+            if (level.Equals("OFF", StringComparison.OrdinalIgnoreCase))
+            {
+                return MamaLogLevel.MAMA_LOG_LEVEL_OFF;
+            }
+            if (level.Equals("SEVERE", StringComparison.OrdinalIgnoreCase))
+            {
+                return MamaLogLevel.MAMA_LOG_LEVEL_SEVERE;
+            }
+            if (level.Equals("ERROR", StringComparison.OrdinalIgnoreCase))
+            {
+                return MamaLogLevel.MAMA_LOG_LEVEL_ERROR;
+            }
+            if (level.Equals("WARN", StringComparison.OrdinalIgnoreCase))
+            {
+                return MamaLogLevel.MAMA_LOG_LEVEL_WARN;
+            }
+            if (level.Equals("NORMAL", StringComparison.OrdinalIgnoreCase))
+            {
+                return MamaLogLevel.MAMA_LOG_LEVEL_NORMAL;
+            }
+            if (level.Equals("FINE", StringComparison.OrdinalIgnoreCase))
+            {
+                return MamaLogLevel.MAMA_LOG_LEVEL_FINE;
+            }
+            if (level.Equals("FINER", StringComparison.OrdinalIgnoreCase))
+            {
+                return MamaLogLevel.MAMA_LOG_LEVEL_FINER;
+            }
+            if (level.Equals("FINEST", StringComparison.OrdinalIgnoreCase))
+            {
+                return MamaLogLevel.MAMA_LOG_LEVEL_FINEST;
+            }
+
+            return MamaLogLevel.MAMA_LOG_LEVEL_NORMAL;
+        }
 
         public static void setLogCallback(MamaLogFileCallback2 callback)
         {
@@ -198,6 +237,8 @@ namespace Wombat
 
 #if _GNU
         public const string DllName = "mama";
+#elif _OSX
+        public const string DllName = "mama";
 #elif DEBUG
         public const string DllName = "libmamacmdd.dll";
 #else
@@ -244,6 +285,46 @@ namespace Wombat
             return Marshal.PtrToStringAnsi(NativeMethods.mama_getProperty (name));
         }
 
+        public static void loadDefaultProperties ()
+        {
+            NativeMethods.mama_loadDefaultProperties ();
+        }
+
+        public static string getProperty (string name, string defaultValue)
+        {
+            string property = getProperty(name);
+            if (null == property)
+            {
+                return defaultValue;
+            }
+            else
+            {
+                return property;
+            }
+        }
+
+        public static Dictionary<string, string> getProperties ()
+        {
+            IntPtr propertiesAsStringPtr = NativeMethods.mama_getPropertiesAsString();
+            string propertiesAsString = Marshal.PtrToStringAnsi(propertiesAsStringPtr);
+            // We have our C# string now - free underlying native memory
+            NativeMethods.mama_freeAllocatedBuffer(propertiesAsStringPtr);
+
+            Dictionary<string, string> result = new Dictionary<string, string>();
+            if (null == propertiesAsString)
+            {
+                return result;
+            }
+            string[] propPairs = propertiesAsString.Split('\n');
+            foreach (string propStringPair in propPairs) {
+                String[] pair = propStringPair.Split('=');
+                if (pair.Length > 1) {
+                    result.Add(pair[0], pair[1]);
+                }
+            }
+            return result;
+        }
+
         public static string getVersion (MamaBridge bridgeImpl)
         {
             return MamaVersion.MAMADOTNET_VERSION + " (" + Marshal.PtrToStringAnsi(NativeMethods.mama_getVersion (bridgeImpl.NativeHandle)) + ")";
@@ -259,6 +340,21 @@ namespace Wombat
             MamaWrapper.CheckResultCode(NativeMethods.mama_start(bridgeImpl.NativeHandle));
         }
 
+        public static void startAll()
+        {
+            MamaWrapper.CheckResultCode(NativeMethods.mama_startAll(true));
+        }
+
+        public static void startAll(bool isBlocking)
+        {
+            MamaWrapper.CheckResultCode(NativeMethods.mama_startAll(isBlocking));
+        }
+
+        public static void stopAll()
+        {
+            MamaWrapper.CheckResultCode(NativeMethods.mama_stopAll());
+        }
+        
         public static void close ()
         {
             try
@@ -512,15 +608,25 @@ namespace Wombat
             [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
             public static extern IntPtr mama_getProperty (string name);
             [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+            public static extern void mama_loadDefaultProperties ();
+            [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+            public static extern IntPtr mama_getPropertiesAsString ();
+            [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+            public static extern void mama_freeAllocatedBuffer (IntPtr buffer);
+            [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
             public static extern IntPtr mama_getVersion (IntPtr bridgeImpl);
             [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
             public static extern int mama_close();
             [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
             public static extern int mama_start (IntPtr bridgeImpl);
             [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int mama_startAll(bool isBlocking);
+            [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
             public static extern int mama_startBackground(IntPtr bridgeImpl, StartBackgroundCallbackForwarder.StartBackgroundCompleteDelegate callback);
             [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
             public static extern int mama_stop (IntPtr bridgeImpl);
+            [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+            public static extern int mama_stopAll();
             [DllImport(DllName, CallingConvention=CallingConvention.Cdecl)]
             public static extern int mama_enableLogging (IntPtr f, int level);
             [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
@@ -571,4 +677,4 @@ namespace Wombat
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:33 +0100

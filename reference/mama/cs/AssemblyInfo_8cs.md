@@ -18,7 +18,6 @@ with_doxylinks: true
 | Name           |
 | -------------- |
 | **[System::Reflection](namespaceSystem_1_1Reflection.html)**  |
-| **[System::Runtime::CompilerServices](namespaceSystem_1_1Runtime_1_1CompilerServices.html)**  |
 
 
 
@@ -27,7 +26,7 @@ with_doxylinks: true
 
 ```csharp
 using System.Reflection;
-using System.Runtime.CompilerServices;
+
 [assembly: AssemblyTitle("OpenMAMA")]
 [assembly: AssemblyDescription("OpenMAMA API C#")]
 [assembly: AssemblyConfiguration("")]
@@ -44,4 +43,4 @@ using System.Runtime.CompilerServices;
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:33 +0100

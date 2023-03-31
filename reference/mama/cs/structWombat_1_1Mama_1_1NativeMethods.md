@@ -23,11 +23,16 @@ with_doxylinks: true
 | int | **[mama_openWithProperties](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-openwithproperties)**(string path, string filename) |
 | int | **[mama_setProperty](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-setproperty)**(string name, string value) |
 | IntPtr | **[mama_getProperty](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-getproperty)**(string name) |
+| void | **[mama_loadDefaultProperties](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-loaddefaultproperties)**() |
+| IntPtr | **[mama_getPropertiesAsString](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-getpropertiesasstring)**() |
+| void | **[mama_freeAllocatedBuffer](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-freeallocatedbuffer)**(IntPtr buffer) |
 | IntPtr | **[mama_getVersion](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-getversion)**(IntPtr bridgeImpl) |
 | int | **[mama_close](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-close)**() |
 | int | **[mama_start](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-start)**(IntPtr bridgeImpl) |
+| int | **[mama_startAll](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-startall)**(bool isBlocking) |
 | int | **[mama_startBackground](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-startbackground)**(IntPtr bridgeImpl, StartBackgroundCallbackForwarder.StartBackgroundCompleteDelegate callback) |
 | int | **[mama_stop](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-stop)**(IntPtr bridgeImpl) |
+| int | **[mama_stopAll](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-stopall)**() |
 | int | **[mama_enableLogging](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-enablelogging)**(IntPtr f, int level) |
 | int | **[mama_logToFile](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-logtofile)**(string fileName, int level) |
 | int | **[mama_disableLogging](structWombat_1_1Mama_1_1NativeMethods.html#function-mama-disablelogging)**() |
@@ -84,6 +89,29 @@ IntPtr mama_getProperty(
 ```
 
 
+### function mama_loadDefaultProperties
+
+```csharp
+void mama_loadDefaultProperties()
+```
+
+
+### function mama_getPropertiesAsString
+
+```csharp
+IntPtr mama_getPropertiesAsString()
+```
+
+
+### function mama_freeAllocatedBuffer
+
+```csharp
+void mama_freeAllocatedBuffer(
+    IntPtr buffer
+)
+```
+
+
 ### function mama_getVersion
 
 ```csharp
@@ -109,6 +137,15 @@ int mama_start(
 ```
 
 
+### function mama_startAll
+
+```csharp
+int mama_startAll(
+    bool isBlocking
+)
+```
+
+
 ### function mama_startBackground
 
 ```csharp
@@ -125,6 +162,13 @@ int mama_startBackground(
 int mama_stop(
     IntPtr bridgeImpl
 )
+```
+
+
+### function mama_stopAll
+
+```csharp
+int mama_stopAll()
 ```
 
 
@@ -280,4 +324,4 @@ int mama_setLogCallback2(
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:32 +0100

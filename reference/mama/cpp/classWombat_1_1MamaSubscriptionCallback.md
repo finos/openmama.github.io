@@ -23,13 +23,13 @@ with_doxylinks: true
 |                | Name           |
 | -------------- | -------------- |
 | virtual | **[~MamaSubscriptionCallback](classWombat_1_1MamaSubscriptionCallback.html#function-~mamasubscriptioncallback)**() |
-| virtual void | **[onCreate](classWombat_1_1MamaSubscriptionCallback.html#function-oncreate)**([MamaSubscription](classWombat_1_1MamaSubscription.html) * subscription) =0 |
-| virtual void | **[onError](classWombat_1_1MamaSubscriptionCallback.html#function-onerror)**([MamaSubscription](classWombat_1_1MamaSubscription.html) * subscription, const [MamaStatus](classWombat_1_1MamaStatus.html) & status, const char * symbol) =0 |
+| virtual void | **[onCreate](classWombat_1_1MamaSubscriptionCallback.html#function-oncreate)**([MamaSubscription](classWombat_1_1MamaSubscription.html) * subscription) |
+| virtual void | **[onError](classWombat_1_1MamaSubscriptionCallback.html#function-onerror)**([MamaSubscription](classWombat_1_1MamaSubscription.html) * subscription, const [MamaStatus](classWombat_1_1MamaStatus.html) & status, const char * symbol) |
 | virtual void | **[onGap](classWombat_1_1MamaSubscriptionCallback.html#function-ongap)**([MamaSubscription](classWombat_1_1MamaSubscription.html) * subscription) |
 | virtual void | **[onDestroy](classWombat_1_1MamaSubscriptionCallback.html#function-ondestroy)**([MamaSubscription](classWombat_1_1MamaSubscription.html) * subscription) |
 | virtual void | **[onRecapRequest](classWombat_1_1MamaSubscriptionCallback.html#function-onrecaprequest)**([MamaSubscription](classWombat_1_1MamaSubscription.html) * subscription) |
 | virtual void | **[onMsg](classWombat_1_1MamaSubscriptionCallback.html#function-onmsg)**([MamaSubscription](classWombat_1_1MamaSubscription.html) * subscription, [MamaMsg](classWombat_1_1MamaMsg.html) & msg) =0 |
-| virtual void | **[onQuality](classWombat_1_1MamaSubscriptionCallback.html#function-onquality)**([MamaSubscription](classWombat_1_1MamaSubscription.html) * subscription, mamaQuality quality, const char * symbol, short cause, const void * platformInfo) =0 |
+| virtual void | **[onQuality](classWombat_1_1MamaSubscriptionCallback.html#function-onquality)**([MamaSubscription](classWombat_1_1MamaSubscription.html) * subscription, mamaQuality quality, const char * symbol, short cause, const void * platformInfo) |
 | virtual void | **[onCreate](classWombat_1_1MamaSubscriptionCallback.html#function-oncreate)**([MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html) * subscription) |
 | virtual void | **[onError](classWombat_1_1MamaSubscriptionCallback.html#function-onerror)**([MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html) * subscription, const [MamaStatus](classWombat_1_1MamaStatus.html) & status, const char * symbol) |
 | virtual void | **[onMsg](classWombat_1_1MamaSubscriptionCallback.html#function-onmsg)**([MamaBasicSubscription](classWombat_1_1MamaBasicSubscription.html) * subscription, [MamaMsg](classWombat_1_1MamaMsg.html) & msg) |
@@ -59,9 +59,9 @@ inline virtual ~MamaSubscriptionCallback()
 ### function onCreate
 
 ```cpp
-virtual void onCreate(
+inline virtual void onCreate(
     MamaSubscription * subscription
-) =0
+)
 ```
 
 
@@ -76,11 +76,11 @@ Method invoked when subscription creation is complete, and before any calls to `
 ### function onError
 
 ```cpp
-virtual void onError(
+inline virtual void onError(
     MamaSubscription * subscription,
     const MamaStatus & status,
     const char * symbol
-) =0
+)
 ```
 
 
@@ -169,13 +169,13 @@ Invoked when a message arrives.
 ### function onQuality
 
 ```cpp
-virtual void onQuality(
+inline virtual void onQuality(
     MamaSubscription * subscription,
     mamaQuality quality,
     const char * symbol,
     short cause,
     const void * platformInfo
-) =0
+)
 ```
 
 
@@ -237,4 +237,4 @@ Invoked when a message arrives.
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:25 +0100

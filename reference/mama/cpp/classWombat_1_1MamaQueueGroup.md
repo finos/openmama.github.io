@@ -26,6 +26,7 @@ with_doxylinks: true
 | | **[MamaQueueGroup](classWombat_1_1MamaQueueGroup.html#function-mamaqueuegroup)**(int numberOfQueues, mamaBridge bridgeImpl) |
 | virtual void | **[destroyWait](classWombat_1_1MamaQueueGroup.html#function-destroywait)**() |
 | virtual [MamaQueue](classWombat_1_1MamaQueue.html) * | **[getNextQueue](classWombat_1_1MamaQueueGroup.html#function-getnextqueue)**() |
+| [MamaQueue](classWombat_1_1MamaQueue.html) * | **[getQueueByIndex](classWombat_1_1MamaQueueGroup.html#function-getqueuebyindex)**(int index) |
 | virtual int | **[getNumberOfQueues](classWombat_1_1MamaQueueGroup.html#function-getnumberofqueues)**() |
 | virtual void | **[stopDispatch](classWombat_1_1MamaQueueGroup.html#function-stopdispatch)**() |
 | virtual void | **[startDispatch](classWombat_1_1MamaQueueGroup.html#function-startdispatch)**() |
@@ -81,6 +82,20 @@ virtual MamaQueue * getNextQueue()
 Return the next available queue from the queue group. Queues are returned in a round robin fashion. 
 
 
+### function getQueueByIndex
+
+```cpp
+MamaQueue * getQueueByIndex(
+    int index
+)
+```
+
+
+**Return**: pointer to queue object 
+
+Return the requested Queue based on the given index, or NULL if it is not a valid index. 
+
+
 ### function getNumberOfQueues
 
 ```cpp
@@ -113,4 +128,4 @@ Start dispatching on all queues in a group. NOTE: This only should be used after
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:25 +0100

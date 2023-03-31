@@ -115,7 +115,9 @@ with_doxylinks: true
 | interface | **[com::wombat::mama::MamaQueueEventCallback](interfacecom_1_1wombat_1_1mama_1_1MamaQueueEventCallback.html)**  |
 | class | **[com::wombat::mama::MamaQueueGroup](classcom_1_1wombat_1_1mama_1_1MamaQueueGroup.html)**  |
 | interface | **[com::wombat::mama::MamaQueueMonitorCallback](interfacecom_1_1wombat_1_1mama_1_1MamaQueueMonitorCallback.html)**  |
+| class | **[com::wombat::mama::MamaRegexChannelFilter](classcom_1_1wombat_1_1mama_1_1MamaRegexChannelFilter.html)**  |
 | class | **[com::wombat::mama::MamaReservedFields](classcom_1_1wombat_1_1mama_1_1MamaReservedFields.html)**  |
+| class | **[com::wombat::mama::MamaResourcePool](classcom_1_1wombat_1_1mama_1_1MamaResourcePool.html)**  |
 | class | **[com::wombat::mama::MamaServiceLevel](classcom_1_1wombat_1_1mama_1_1MamaServiceLevel.html)**  |
 | class | **[com::wombat::mama::MamaShort](classcom_1_1wombat_1_1mama_1_1MamaShort.html)**  |
 | class | **[com::wombat::mama::MamaSource](classcom_1_1wombat_1_1mama_1_1MamaSource.html)**  |
@@ -149,4 +151,4 @@ with_doxylinks: true
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:08 +0100
+Updated on 2023-03-31 at 15:29:42 +0100

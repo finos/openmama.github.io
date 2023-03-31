@@ -70,7 +70,10 @@ with_doxylinks: true
     * **file [mama/publisher.h](publisher_8h.html#file-publisher.h)** 
     * **file [mama/quality.h](quality_8h.html#file-quality.h)** 
     * **file [mama/queue.h](queue_8h.html#file-queue.h)** 
+    * **file [mama/queuegroup.h](queuegroup_8h.html#file-queuegroup.h)** 
+    * **file [mama/regexchannelfilter.h](regexchannelfilter_8h.html#file-regexchannelfilter.h)** 
     * **file [mama/reservedfields.h](reservedfields_8h.html#file-reservedfields.h)** 
+    * **file [mama/resourcepool.h](resourcepool_8h.html#file-resourcepool.h)** 
     * **file [mama/senderId.h](senderId_8h.html#file-senderid.h)** 
     * **file [mama/servicelevel.h](servicelevel_8h.html#file-servicelevel.h)** 
     * **file [mama/source.h](source_8h.html#file-source.h)** 
@@ -98,4 +101,4 @@ with_doxylinks: true
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:17 +0100

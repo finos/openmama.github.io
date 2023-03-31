@@ -56,9 +56,12 @@ with_doxylinks: true
 #define MAMA_BASIC_SUBSCRIPTION_CALLBACK_CPP_H__
 
 #include "mama/mamacpp.h"
+#include "mama/MamaStatus.h"
 
 namespace Wombat 
 {
+class MamaBasicSubscription;
+
 class MAMACPPExpDLL MamaBasicSubscriptionCallback
 {
 public:
@@ -93,4 +96,4 @@ public:
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:26 +0100

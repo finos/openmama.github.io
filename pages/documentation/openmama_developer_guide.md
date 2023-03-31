@@ -903,7 +903,7 @@ Load balancing is currently only currently available with selected middlewares. 
 provider's documentation / support for details.
 
 
-# Resource Pool (Work In Progress)
+# Resource Pool (v6.3.2+)
 
 The OpenMAMA resource pool is a convenience layer around OpenMAMA core which allows the caller to
 create subscriptions, subscribe to messages and build applications without having to get involved in the

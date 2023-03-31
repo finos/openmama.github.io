@@ -91,7 +91,7 @@ The registered remove symbol callback is executed just prior to a symbol being r
   * **userData** User-data previously associated with symbol 
 
 
-Prototype for remove symbol callback. 
+Prototype for remove symbol callback.
 
 
 
@@ -589,4 +589,4 @@ mamaSymbolList_setRemoveSymbolHandler(
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:17 +0100

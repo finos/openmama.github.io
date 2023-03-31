@@ -56,6 +56,8 @@ with_doxylinks: true
 package com.wombat.mama;
 
 import java.io.*;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.*;
 import java.net.InetAddress;
 import java.util.Date;
@@ -127,9 +129,17 @@ public class Mama
 
     public static native void start (MamaBridge bridge);
 
+     public static native void startAll (boolean isBlocking);
+
+     public static void startAll () {
+        startAll(true);
+     }
+
     public static native void startBackground (MamaBridge bridge, MamaStartBackgroundCallback callback);
 
     public static native void stop (MamaBridge bridge);
+
+    public static native void stopAll ();
 
     public static native void close();
 
@@ -305,6 +315,30 @@ public class Mama
 
     public static native String getProperty(String name);
 
+    public static native void loadDefaultProperties();
+
+    public static String getProperty(String name, String defaultValue) {
+        String property = getProperty(name);
+        if (null == property) {
+            property = defaultValue;
+        }
+        return property;
+    }
+
+    public static Map<String, String> getProperties() {
+        Map<String, String> result = new HashMap<>();
+        String propertiesAsString = getPropertiesAsString();
+        for (String propStringPair : propertiesAsString.split("\n")) {
+            String[] pair = propStringPair.split("=");
+            if (pair.length > 1) {
+                result.put(pair[0], pair[1]);
+            }
+        }
+        return result;
+    }
+
+    private static native String getPropertiesAsString ();
+
     public static native void setProperty (String name, String value);
 
     private static native int logToFile(String file, int mamaLevel);
@@ -457,4 +491,4 @@ public class Mama
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:08 +0100
+Updated on 2023-03-31 at 15:29:45 +0100

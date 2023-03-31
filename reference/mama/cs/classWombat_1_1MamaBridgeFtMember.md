@@ -22,7 +22,7 @@ Inherits from [Wombat.MamaFtMember](classWombat_1_1MamaFtMember.html), [Wombat.M
 
 |                | Name           |
 | -------------- | -------------- |
-| new void | **[setup](classWombat_1_1MamaBridgeFtMember.html#function-setup)**([MamaQueue](classWombat_1_1MamaQueue.html) queue, [MamaFtMemberCallback](interfaceWombat_1_1MamaFtMemberCallback.html) callback, [MamaTransport](classWombat_1_1MamaTransport.html) transport, string groupName, uint weight, double heartbeatInterval, double timeoutInterval, object closure)<br>Set up the object. This is only an initialization function. In order to actually start the fault tolerance monitoring, use [MamaFtMember.activate]() |
+| new void | **[setup](classWombat_1_1MamaBridgeFtMember.html#function-setup)**([MamaQueue](classWombat_1_1MamaQueue.html) queue, [MamaFtMemberCallback](interfaceWombat_1_1MamaFtMemberCallback.html) callback, [MamaTransport](classWombat_1_1MamaTransport.html) transport, string groupName, uint weight, double heartbeatInterval, double timeoutInterval, object closure)<br>Set up the object. This is only an initialization function. In order to actually start the fault tolerance monitoring, use [MamaFtMember.activate](classWombat_1_1MamaFtMember.html#function-activate) |
 
 ## Additional inherited members
 
@@ -92,8 +92,8 @@ new void setup(
 )
 ```
 
-Set up the object. This is only an initialization function. In order to actually start the fault tolerance monitoring, use [MamaFtMember.activate]()
+Set up the object. This is only an initialization function. In order to actually start the fault tolerance monitoring, use [MamaFtMember.activate](classWombat_1_1MamaFtMember.html#function-activate)
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:07 +0100
+Updated on 2023-03-31 at 15:29:32 +0100

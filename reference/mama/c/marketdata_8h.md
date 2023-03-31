@@ -27,8 +27,8 @@ with_doxylinks: true
 |                | Name           |
 | -------------- | -------------- |
 | MAMAExpDLL mamaMdMsgType | **[mamaMdMsgType_typeForMsg](marketdata_8h.html#function-mamamdmsgtype-typeformsg)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaMdMsgType_stringForMsg](marketdata_8h.html#function-mamamdmsgtype-stringformsg)**(const mamaMsg msg) |
-| const MAMAExpDLL char * | **[mamaMdMsgType_stringForType](marketdata_8h.html#function-mamamdmsgtype-stringfortype)**(mamaMdMsgType type) |
+| MAMAExpDLL const char * | **[mamaMdMsgType_stringForMsg](marketdata_8h.html#function-mamamdmsgtype-stringformsg)**(const mamaMsg msg) |
+| MAMAExpDLL const char * | **[mamaMdMsgType_stringForType](marketdata_8h.html#function-mamamdmsgtype-stringfortype)**(mamaMdMsgType type) |
 | MAMAExpDLL mamaMsgType | **[mamaMdMsgType_compatMsgType](marketdata_8h.html#function-mamamdmsgtype-compatmsgtype)**(mamaMdMsgType type) |
 
 ## Types Documentation
@@ -113,7 +113,7 @@ Extract the market data message type from the message.
 ### function mamaMdMsgType_stringForMsg
 
 ```cpp
-const MAMAExpDLL char * mamaMdMsgType_stringForMsg(
+MAMAExpDLL const char * mamaMdMsgType_stringForMsg(
     const mamaMsg msg
 )
 ```
@@ -130,7 +130,7 @@ Extract the market data message type as a string from a message.
 ### function mamaMdMsgType_stringForType
 
 ```cpp
-const MAMAExpDLL char * mamaMdMsgType_stringForType(
+MAMAExpDLL const char * mamaMdMsgType_stringForType(
     mamaMdMsgType type
 )
 ```
@@ -286,4 +286,4 @@ mamaMdMsgType_compatMsgType (mamaMdMsgType type);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

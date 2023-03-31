@@ -574,7 +574,7 @@ baseBridgeMamaInboxImpl_getReplySubject (inboxBridge inbox);
 
 MAMAExpBridgeDLL
 extern mama_status
-baseBridgeMamaIoImpl_start (void* closure);
+baseBridgeMamaIoImpl_start (void** closure);
 
 MAMAExpBridgeDLL
 extern mama_status
@@ -652,13 +652,7 @@ MAMAExpBridgeDLL
 extern mama_status
 baseBridgeMamaMsgReplyHandleImpl_getInboxName (void*       replyHandle,
                                                char**      value);
-MAMAExpBridgeDLL
-extern mama_status
-baseBridgeMamaIoImpl_start (void* closure);
 
-MAMAExpBridgeDLL
-extern mama_status
-baseBridgeMamaIoImpl_stop  (void* closure);
 MAMAExpBridgeDLL
 extern mama_status
 baseBridgeMamaMsgReplyHandleImpl_setInboxName (void*       replyHandle,
@@ -708,4 +702,4 @@ baseBridgeMamaMsgImpl_getSerializationBuffer (msgBridge    msg,
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

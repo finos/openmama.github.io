@@ -31,6 +31,8 @@ class com::wombat::mama::examples::MamaFtMemberJava;
 
 [MamaFtMember](classcom_1_1wombat_1_1mama_1_1MamaFtMember.html) - Simple fault tolerance example.
 
+
+
 Demonstrates use of the MAMA FT API.
 
 ## Public Functions Documentation
@@ -53,4 +55,4 @@ static inline void initializeMama()
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:08 +0100
+Updated on 2023-03-31 at 15:29:44 +0100

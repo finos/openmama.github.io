@@ -50,7 +50,7 @@ with_doxylinks: true
 | MAMAExpDLL mama_status | **[mamaPublisherCallbacks_deallocate](publisher_8h.html#function-mamapublishercallbacks-deallocate)**([mamaPublisherCallbacks](structmamaPublisherCallbacks.html) * cb) |
 | MAMAExpDLL mama_status | **[mamaPublisher_getUserCallbacks](publisher_8h.html#function-mamapublisher-getusercallbacks)**(mamaPublisher publisher, [mamaPublisherCallbacks](structmamaPublisherCallbacks.html) * cb) |
 | MAMAExpDLL mama_status | **[mamaPublisher_getState](publisher_8h.html#function-mamapublisher-getstate)**(mamaPublisher publisher, mamaPublisherState * state) |
-| const MAMAExpDLL char * | **[mamaPublisher_stringForState](publisher_8h.html#function-mamapublisher-stringforstate)**(mamaPublisherState state) |
+| MAMAExpDLL const char * | **[mamaPublisher_stringForState](publisher_8h.html#function-mamapublisher-stringforstate)**(mamaPublisherState state) |
 | MAMAExpDLL mama_status | **[mamaPublisher_getRoot](publisher_8h.html#function-mamapublisher-getroot)**(mamaPublisher publisher, const char ** root) |
 | MAMAExpDLL mama_status | **[mamaPublisher_getSource](publisher_8h.html#function-mamapublisher-getsource)**(mamaPublisher publisher, const char ** source) |
 | MAMAExpDLL mama_status | **[mamaPublisher_getSymbol](publisher_8h.html#function-mamapublisher-getsymbol)**(mamaPublisher publisher, const char ** symbol) |
@@ -419,7 +419,7 @@ MAMAExpDLL mama_status mamaPublisher_getState(
 ### function mamaPublisher_stringForState
 
 ```cpp
-const MAMAExpDLL char * mamaPublisher_stringForState(
+MAMAExpDLL const char * mamaPublisher_stringForState(
     mamaPublisherState state
 )
 ```
@@ -684,4 +684,4 @@ mamaPublisher_getSymbol (mamaPublisher publisher, const char** symbol);
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100

@@ -24,7 +24,7 @@ with_doxylinks: true
 #define OPENMAMA_INTEGRATION_TYPES_H__
 
 #include <mama/mama.h>
-#include "list.h"
+#include <wombat/list.h>
 
 #if defined (__cplusplus)
 extern "C"
@@ -129,4 +129,4 @@ typedef struct
 
 -------------------------------
 
-Updated on 2022-05-04 at 07:54:06 +0100
+Updated on 2023-03-31 at 15:29:16 +0100
